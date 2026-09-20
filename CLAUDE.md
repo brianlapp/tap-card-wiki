@@ -16,7 +16,8 @@ Context for AI agents working in this repo. Read this first, then load only the 
 | Who we compete with, pricing reality | `docs/research/competitive-landscape.md` |
 | Why a choice was made | `docs/decisions/` (numbered ADRs) |
 | How to write/update these docs | `docs/conventions.md` |
-| Full 526-task build catalogue | Google Sheet (see scope.md) |
+| A task: what it is, who owns it, what blocks it | `docs/tasks/` — **grep, do not read whole** |
+| Full 526-task build catalogue | `docs/tasks/tasks.csv` (exported; do not use the Sheet) |
 
 `docs/index.md` lists every doc with a one-line summary. When you add a doc, add it there too.
 
@@ -30,6 +31,7 @@ Context for AI agents working in this repo. Read this first, then load only the 
 - **Stripe is deferred.** Do not scaffold, connect or mock payments.
 - **Small slices.** One thin vertical slice, working, before any parallel expansion.
 - **Every change needs a rollback path.**
+- **Never load the build catalogue spreadsheet.** It costs ~118,000 tokens and needs Jordan's Drive. Everything useful is in `docs/tasks/` — `grep '^T-002,' docs/tasks/tasks.csv` costs about 40.
 
 ## Task sizing
 

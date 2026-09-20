@@ -1,0 +1,527 @@
+task_id,phase,area,component_id,task,proposed_owner,status,size,depends_on,priority
+T-001,P0 Define and verify,Kickoff,C-SCOPE,Review the inspected reference inventory together,Jordan,Backlog,S: 1–2h proposed,,P0
+T-002,P0 Define and verify,Kickoff,C-SCOPE,Confirm the authoritative product project and branch,Brian Lapp,Backlog,S: 1–2h proposed,T-001,P0
+T-003,P0 Define and verify,Kickoff,C-SCOPE,Assign and accept founder task ownership,Jordan,Backlog,S: 1–2h proposed,T-002,P0
+T-004,P0 Define and verify,Kickoff,C-SCOPE,"Approve the schema, telemetry and evaluation contracts",Brian Lapp,Backlog,S: 1–2h proposed,T-003,P0
+T-005,P0 Define and verify,Kickoff,C-SCOPE,Choose one synthetic child-friendly golden card,Tim Miller,Backlog,S: 1–2h proposed,T-004,P0
+T-006,P0 Define and verify,Kickoff,C-SCOPE,Run initial readiness evidence review,Jordan,Backlog,S: 1–2h proposed,T-005,P0
+T-SCOPE-01,P0 Define and verify,Scope and governance,C-SCOPE,Confirm the purpose and non-goals,Jordan,Backlog,S: 1–2h proposed,T-004,P0
+T-SCOPE-02,P0 Define and verify,Scope and governance,C-SCOPE,Record current product and repository ownership,Jordan,Backlog,S: 1–2h proposed,T-SCOPE-01,P0
+T-SCOPE-03,P0 Define and verify,Scope and governance,C-SCOPE,Compare reported features with actual staging behavior,Jordan,To verify,S: 1–2h proposed,T-SCOPE-02,P0
+T-SCOPE-04,P0 Define and verify,Scope and governance,C-SCOPE,Agree one shared Player and JSON spec boundary,Jordan,Backlog,S: 1–2h proposed,T-SCOPE-03,P0
+T-SCOPE-05,P0 Define and verify,Scope and governance,C-SCOPE,Confirm founders’ proposed responsibilities and weekly capacity,Jordan,Backlog,S: 1–2h proposed,T-SCOPE-04,P0
+T-SCOPE-06,P0 Define and verify,Scope and governance,C-SCOPE,Approve the first end-to-end slice,Jordan,Backlog,S: 1–2h proposed,T-SCOPE-05,P0
+T-SCOPE-07,P0 Define and verify,Scope and governance,C-SCOPE,Set a weekly review and work-in-progress limit,Jordan,Backlog,S: 1–2h proposed,T-SCOPE-06,P0
+T-SCOPE-08,P0 Define and verify,Scope and governance,C-SCOPE,Create a change-intake rule,Jordan,Backlog,S: 1–2h proposed,T-SCOPE-07,P0
+T-ACCOUNT-01,P1 Shared foundation,Adult accounts and grants,C-ACCOUNT,Verify adult signup and sign-in,Brian Lapp,To verify,S: 1–2h proposed,T-004,P0
+T-ACCOUNT-02,P1 Shared foundation,Adult accounts and grants,C-ACCOUNT,Verify session expiry and recovery,Brian Lapp,To verify,S: 1–2h proposed,T-ACCOUNT-01,P0
+T-ACCOUNT-03,P1 Shared foundation,Adult accounts and grants,C-ACCOUNT,Separate creator grant from administrator role,Brian Lapp,Backlog,S: 1–2h proposed,T-ACCOUNT-02,P0
+T-ACCOUNT-04,P1 Shared foundation,Adult accounts and grants,C-ACCOUNT,Replace any monthly-credit workaround for approved family,Brian Lapp,Backlog,S: 1–2h proposed,T-ACCOUNT-03,P0
+T-ACCOUNT-05,P1 Shared foundation,Adult accounts and grants,C-ACCOUNT,Verify ordinary courtesy credit debit,Brian Lapp,To verify,S: 1–2h proposed,T-ACCOUNT-04,P0
+T-ACCOUNT-06,P1 Shared foundation,Adult accounts and grants,C-ACCOUNT,Implement auditable grant issue and revocation,Brian Lapp,Backlog,M: 2–4h proposed,T-ACCOUNT-05,P0
+T-ACCOUNT-07,P1 Shared foundation,Adult accounts and grants,C-ACCOUNT,Verify recipient isolation,Brian Lapp,To verify,S: 1–2h proposed,T-ACCOUNT-06,P0
+T-ACCOUNT-08,P1 Shared foundation,Adult accounts and grants,C-ACCOUNT,Define account closure and published-gift treatment,Brian Lapp,Backlog,S: 1–2h proposed,T-ACCOUNT-07,P0
+T-EV-001,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test creator_started,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-002,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test interview_step_saved,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-003,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test interview_validation_failed,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-004,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test generation_requested,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-005,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test generation_completed,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-006,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test generation_failed,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-007,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test review_decided,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-008,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test card_published,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-009,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test card_opened,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-010,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test boot_started,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-011,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test boot_completed,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-012,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test scene_entered,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-013,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test scene_exited,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-014,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test scene_action,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-015,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test scene_completed,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-016,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test navigation_used,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-017,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test audio_requested,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-018,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test audio_started,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-019,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test audio_stopped,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-020,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test audio_error,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-021,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test renderer_fallback,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-022,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test asset_load_result,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-023,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test card_completed,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-024,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test share_maker_opened,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-025,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test share_preview_ready,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-026,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test share_export_started,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-027,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test share_export_completed,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-028,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test share_export_failed,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-029,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test share_handoff_requested,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-030,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test share_handoff_resolved,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-031,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test share_handoff_cancelled,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-032,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test download_offered,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-033,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test link_copied,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-034,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test referral_landing,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-035,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test feedback_submitted,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-036,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test privacy_gate_result,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-037,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test upload_validated,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-038,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test entitlement_checked,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-039,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test credit_ledger_written,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-040,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test model_decision,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-041,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test human_override,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-042,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test model_call_finished,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-043,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test experiment_exposed,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-044,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test experiment_stopped,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-045,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test release_activated,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-046,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test rollback_completed,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-047,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test agent_run_finished,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-048,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test review_queue_changed,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-049,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test eval_run_finished,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-050,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test data_request_completed,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-051,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test telemetry_rejected,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-052,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test performance_sample,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-053,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test error_captured,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-054,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test draft_saved,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-055,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test reminder_consent_changed,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-056,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test support_case_resolved,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-057,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test music_rights_checked,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-058,P1 Shared foundation,Event implementation,C-TELEM,Instrument and contract-test tag_link_resolved,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-04,P1
+T-GEN-01,P1 Shared foundation,Generation pipeline,C-GEN,Normalize approved interview facts,Brian Lapp,Backlog,S: 1–2h proposed,T-004,P0
+T-GEN-02,P1 Shared foundation,Generation pipeline,C-GEN,Compose a bounded card outline,Brian Lapp,Backlog,S: 1–2h proposed,T-GEN-01,P0
+T-GEN-03,P1 Shared foundation,Generation pipeline,C-GEN,Generate copy against explicit scene contracts,Brian Lapp,Backlog,M: 2–4h proposed,T-GEN-02,P0
+T-GEN-04,P1 Shared foundation,Generation pipeline,C-GEN,Validate and repair JSON within bounded attempts,Brian Lapp,Backlog,S: 1–2h proposed,T-GEN-03,P0
+T-GEN-05,P1 Shared foundation,Generation pipeline,C-GEN,Build asynchronous job states,Brian Lapp,Backlog,M: 2–4h proposed,T-GEN-04,P0
+T-GEN-06,P1 Shared foundation,Generation pipeline,C-GEN,Apply idempotency and bounded retries,Brian Lapp,Backlog,S: 1–2h proposed,T-GEN-05,P0
+T-GEN-07,P1 Shared foundation,Generation pipeline,C-GEN,Add provider adapter and version pinning,Brian Lapp,Backlog,S: 1–2h proposed,T-GEN-06,P0
+T-GEN-08,P1 Shared foundation,Generation pipeline,C-GEN,Implement scoped cache keys,Brian Lapp,Backlog,M: 2–4h proposed,T-GEN-07,P0
+T-GEN-09,P1 Shared foundation,Generation pipeline,C-GEN,Capture supplier usage and actual cost,Brian Lapp,Backlog,S: 1–2h proposed,T-GEN-08,P0
+T-GEN-10,P1 Shared foundation,Generation pipeline,C-GEN,Handle provider outage and manual completion,Brian Lapp,Backlog,S: 1–2h proposed,T-GEN-09,P0
+T-GEN-11,P1 Shared foundation,Generation pipeline,C-GEN,Separate candidate draft from accepted output,Brian Lapp,Backlog,S: 1–2h proposed,T-GEN-10,P0
+T-GEN-12,P1 Shared foundation,Generation pipeline,C-GEN,Compare low-cost model cascade on fixed cases,Brian Lapp,Backlog,S: 1–2h proposed,T-GEN-11,P0
+T-INTERVIEW-01,P1 Shared foundation,Creator interview,C-INTERVIEW,Map the beginning-to-publish interview steps,Tim Miller,Backlog,S: 1–2h proposed,T-004,P0
+T-INTERVIEW-02,P1 Shared foundation,Creator interview,C-INTERVIEW,Specify minimum recipient data,Tim Miller,Backlog,S: 1–2h proposed,T-INTERVIEW-01,P0
+T-INTERVIEW-03,P1 Shared foundation,Creator interview,C-INTERVIEW,Support saved people with explicit adult control,Tim Miller,Backlog,S: 1–2h proposed,T-INTERVIEW-02,P0
+T-INTERVIEW-04,P1 Shared foundation,Creator interview,C-INTERVIEW,Collect pronunciation as optional structured guidance,Tim Miller,Backlog,S: 1–2h proposed,T-INTERVIEW-03,P0
+T-INTERVIEW-05,P1 Shared foundation,Creator interview,C-INTERVIEW,Collect relationship and affectionate stories,Tim Miller,Backlog,S: 1–2h proposed,T-INTERVIEW-04,P0
+T-INTERVIEW-06,P1 Shared foundation,Creator interview,C-INTERVIEW,Add content exclusions and surprise boundaries,Tim Miller,Backlog,S: 1–2h proposed,T-INTERVIEW-05,P0
+T-INTERVIEW-07,P1 Shared foundation,Creator interview,C-INTERVIEW,Implement input length/type and injection boundaries,Tim Miller,Backlog,M: 2–4h proposed,T-INTERVIEW-06,P0
+T-INTERVIEW-08,P1 Shared foundation,Creator interview,C-INTERVIEW,Implement save/resume and conflict handling,Tim Miller,Backlog,M: 2–4h proposed,T-INTERVIEW-07,P0
+T-INTERVIEW-09,P1 Shared foundation,Creator interview,C-INTERVIEW,"Show progress, back and skip-optional controls",Tim Miller,Backlog,S: 1–2h proposed,T-INTERVIEW-08,P0
+T-INTERVIEW-10,P1 Shared foundation,Creator interview,C-INTERVIEW,Run five uncoached adult interview sessions,Tim Miller,Backlog,S: 1–2h proposed,T-INTERVIEW-09,P0
+T-PLAYER-01,P1 Shared foundation,Shared slideshow player,C-PLAYER,Define the versioned card JSON schema,Brian Lapp,Backlog,S: 1–2h proposed,T-004,P0
+T-PLAYER-02,P1 Shared foundation,Shared slideshow player,C-PLAYER,Create the scene capability registry,Brian Lapp,Backlog,M: 2–4h proposed,T-PLAYER-01,P0
+T-PLAYER-03,P1 Shared foundation,Shared slideshow player,C-PLAYER,Build next/back/jump state transitions,Brian Lapp,Backlog,M: 2–4h proposed,T-PLAYER-02,P0
+T-PLAYER-04,P1 Shared foundation,Shared slideshow player,C-PLAYER,Add keyboard and touch navigation,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P0
+T-PLAYER-05,P1 Shared foundation,Shared slideshow player,C-PLAYER,Preserve local play state deliberately,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-04,P0
+T-PLAYER-06,P1 Shared foundation,Shared slideshow player,C-PLAYER,Pause and clean up inactive scene work,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-05,P0
+T-PLAYER-07,P1 Shared foundation,Shared slideshow player,C-PLAYER,Implement authorized scene deep links,Brian Lapp,Backlog,M: 2–4h proposed,T-PLAYER-06,P0
+T-PLAYER-08,P1 Shared foundation,Shared slideshow player,C-PLAYER,"Add progress, replay and completion semantics",Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-07,P0
+T-PLAYER-09,P1 Shared foundation,Shared slideshow player,C-PLAYER,Implement scene errors and missing asset fallbacks,Brian Lapp,Backlog,M: 2–4h proposed,T-PLAYER-08,P0
+T-PLAYER-10,P1 Shared foundation,Shared slideshow player,C-PLAYER,Verify responsive layout and browser history,Brian Lapp,To verify,S: 1–2h proposed,T-PLAYER-09,P0
+T-PUBLISH-01,P1 Shared foundation,Preview and publishing,C-PUBLISH,"Verify preview, edit and explicit approval flow",Brian Lapp,To verify,S: 1–2h proposed,T-004,P0
+T-PUBLISH-02,P1 Shared foundation,Preview and publishing,C-PUBLISH,Verify immutable live snapshot,Brian Lapp,To verify,S: 1–2h proposed,T-PUBLISH-01,P0
+T-PUBLISH-03,P1 Shared foundation,Preview and publishing,C-PUBLISH,Verify atomic first publish and entitlement check,Brian Lapp,To verify,S: 1–2h proposed,T-PUBLISH-02,P0
+T-PUBLISH-04,P1 Shared foundation,Preview and publishing,C-PUBLISH,Implement republish and previous-version restore,Brian Lapp,Backlog,M: 2–4h proposed,T-PUBLISH-03,P0
+T-PUBLISH-05,P1 Shared foundation,Preview and publishing,C-PUBLISH,Test PIN/private/unlisted semantics already claimed,Brian Lapp,Backlog,S: 1–2h proposed,T-PUBLISH-04,P0
+T-PUBLISH-06,P1 Shared foundation,Preview and publishing,C-PUBLISH,Verify share revocation and cache invalidation,Brian Lapp,To verify,S: 1–2h proposed,T-PUBLISH-05,P0
+T-PUBLISH-07,P1 Shared foundation,Preview and publishing,C-PUBLISH,Test signed-out recipient experience,Brian Lapp,Backlog,S: 1–2h proposed,T-PUBLISH-06,P0
+T-PUBLISH-08,P1 Shared foundation,Preview and publishing,C-PUBLISH,Clarify delivery confirmation,Brian Lapp,Backlog,S: 1–2h proposed,T-PUBLISH-07,P0
+T-TELEM-01,P1 Shared foundation,Telemetry foundation,C-TELEM,Audit existing telemetry before adding SDKs,Brian Lapp,To verify,S: 1–2h proposed,T-004,P0
+T-TELEM-02,P1 Shared foundation,Telemetry foundation,C-TELEM,Define common event envelope and naming,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-01,P0
+T-TELEM-03,P1 Shared foundation,Telemetry foundation,C-TELEM,Separate operational audit from optional analytics,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-02,P0
+T-TELEM-04,P1 Shared foundation,Telemetry foundation,C-TELEM,Implement schema validation and PII rejection,Brian Lapp,Backlog,M: 2–4h proposed,T-TELEM-03,P0
+T-TELEM-05,P1 Shared foundation,Telemetry foundation,C-TELEM,Implement dedupe and offline retry,Brian Lapp,Backlog,M: 2–4h proposed,T-TELEM-04,P0
+T-TELEM-06,P1 Shared foundation,Telemetry foundation,C-TELEM,Link job/decision/review/export/outcome traces,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-05,P0
+T-TELEM-07,P1 Shared foundation,Telemetry foundation,C-TELEM,Define environment and cohort exclusions,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-06,P0
+T-TELEM-08,P1 Shared foundation,Telemetry foundation,C-TELEM,Create funnel aggregations with explicit denominators,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-07,P0
+T-TELEM-09,P1 Shared foundation,Telemetry foundation,C-TELEM,Add retention/access and deletion propagation,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-08,P0
+T-TELEM-10,P1 Shared foundation,Telemetry foundation,C-TELEM,Set missing-event/error-budget alerts,Brian Lapp,Backlog,S: 1–2h proposed,T-TELEM-09,P0
+T-A-001,P2 Card experience,Asset preparation,C-SCOPE,Prepare the production-safe Inline bone favicon asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-002,P2 Card experience,Asset preparation,C-THEME,Prepare the production-safe Rubik Glitch asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-003,P2 Card experience,Asset preparation,C-THEME,Prepare the production-safe Big Shoulders Display 700/900 asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-004,P2 Card experience,Asset preparation,C-THEME,Prepare the production-safe Permanent Marker asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-005,P2 Card experience,Asset preparation,C-THEME,Prepare the production-safe Chivo 400/700 italic asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-006,P2 Card experience,Asset preparation,C-THEME,Prepare the production-safe Red Hat Mono 400/700 asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-007,P2 Card experience,Asset preparation,C-THEME,Prepare the production-safe Neon palette and paper/tape textures asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-008,P2 Card experience,Asset preparation,C-BOOT,Prepare the production-safe CRT scanlines and vignette asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-009,P2 Card experience,Asset preparation,C-FIN,Prepare the production-safe Confetti canvas particles asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-010,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe Three.js module asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-011,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe Arcade stages stylesheet asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-012,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe Arcade geometry and scene code asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-013,P2 Card experience,Asset preparation,C-INC,Prepare the production-safe Rider/board/curb/cast SVG asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-014,P2 Card experience,Asset preparation,C-INC,Prepare the production-safe Low-poly human and board asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-015,P2 Card experience,Asset preparation,C-PET,Prepare the production-safe Dog SVG and speech bubble asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-016,P2 Card experience,Asset preparation,C-PET,"Prepare the production-safe Low-poly dog, collar, ball, platform asset",Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-017,P2 Card experience,Asset preparation,C-GAUGE,Prepare the production-safe Needle and gauge labels asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-018,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Cassette and 16 pads asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-019,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Brian full recording asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-020,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Brian fallback recording asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-021,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe 12 Side A lyric lines asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-022,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Side A beat composition asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-023,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Side B arrangement asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-024,P2 Card experience,Asset preparation,C-REPS,"Prepare the production-safe Arm, cast and dumbbell SVG asset",Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-025,P2 Card experience,Asset preparation,C-REPS,Prepare the production-safe Low-poly human and weights asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-026,P2 Card experience,Asset preparation,C-FUEL,"Prepare the production-safe Cup, clip path, liquid and steam asset",Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-027,P2 Card experience,Asset preparation,C-FUEL,"Prepare the production-safe 3D mug, labels and steam asset",Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-028,P2 Card experience,Asset preparation,C-CHART,Prepare the production-safe Three chart curves and labels asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-029,P2 Card experience,Asset preparation,C-CERT,Prepare the production-safe Seal/paper/stamp/memo asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-030,P2 Card experience,Asset preparation,C-FIN,"Prepare the production-safe Cake, nine candles, flames and smoke asset",Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-031,P2 Card experience,Asset preparation,C-FIN,"Prepare the production-safe 3D cake, flames and platform asset",Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-032,P2 Card experience,Asset preparation,C-END,Prepare the production-safe Handwritten note and signatures asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-1,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe jitter asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-10,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe needle transform asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-11,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe bicep/forearm transform asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-12,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe paper/stamp/memo transitions asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-13,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe 3D pointer parallax asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-14,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe 3D crash timeline asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-15,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe 3D pet head/tail reaction asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-16,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe 3D reps rotation asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-17,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe 3D steam drift asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-18,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe 3D flame scale asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-2,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe glitchOut asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-3,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe blink asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-4,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe bob asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-5,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe wag asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-6,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe steam asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-7,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe flicker asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-8,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe smoke asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-MOTION-9,P2 Card experience,Asset preparation,C-PLAYER,Prepare the production-safe reveal opacity/translate asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-1,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Square beep asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-10,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Sad trombone asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-11,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Stamp sound asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-12,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Sip beep pair asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-13,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Fanfare asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-14,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Candle puff noise asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-2,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Triangle/square melody tone asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-3,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Kick oscillator asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-4,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Snare noise and tone asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-5,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Closed/open hi-hat noise asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-6,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Sub bass asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-7,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Distorted power chord asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-8,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Crash noise asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-A-SFX-9,P2 Card experience,Asset preparation,C-MUSIC,Prepare the production-safe Synthesized bark asset,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-BOOT-01,P2 Card experience,Opening boot,C-BOOT-01,Implement terminal copy in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-BOOT-02,P2 Card experience,Opening boot,C-BOOT-02,Implement typing effect in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-BOOT-03,P2 Card experience,Opening boot,C-BOOT-03,Implement continue gate in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-BOOT-04,P2 Card experience,Opening boot,C-BOOT-04,Implement glitch transition in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-BOOT-05,P2 Card experience,Opening boot,C-BOOT-05,Implement intro confetti in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-BOOT-COPY,P2 Card experience,Opening boot,C-BOOT,Approve the child-friendly content contract and sparse-facts fallback,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-BOOT-EVENT,P2 Card experience,Opening boot,C-BOOT,"Wire scene entry, action and semantic completion events",Brian Lapp,Backlog,S: 1–2h proposed,T-BOOT-TEST,P1
+T-BOOT-SKINS,P2 Card experience,Opening boot,C-BOOT,Verify this module across the ten actual skin manifests,Tim Miller,Backlog,S: 1–2h proposed,T-BOOT-TEST,P1
+T-BOOT-TEST,P2 Card experience,Opening boot,C-BOOT,"Exercise entry, interaction, exit and replay boundaries",Tim Miller,Backlog,M: 2–4h proposed,T-BOOT-01; T-BOOT-02; T-BOOT-03; T-BOOT-04; T-BOOT-05; T-BOOT-COPY,P1
+T-CERT-01,P2 Card experience,Birthday certificate,C-CERT-01,Implement paper layout in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-CERT-02,P2 Card experience,Birthday certificate,C-CERT-02,Implement signature button in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-CERT-03,P2 Card experience,Birthday certificate,C-CERT-03,Implement stamp in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-CERT-04,P2 Card experience,Birthday certificate,C-CERT-04,Implement hidden memo in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-CERT-COPY,P2 Card experience,Birthday certificate,C-CERT,Approve the child-friendly content contract and sparse-facts fallback,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-CERT-EVENT,P2 Card experience,Birthday certificate,C-CERT,"Wire scene entry, action and semantic completion events",Brian Lapp,Backlog,S: 1–2h proposed,T-CERT-TEST,P1
+T-CERT-SKINS,P2 Card experience,Birthday certificate,C-CERT,Verify this module across the ten actual skin manifests,Tim Miller,Backlog,S: 1–2h proposed,T-CERT-TEST,P1
+T-CERT-TEST,P2 Card experience,Birthday certificate,C-CERT,"Exercise entry, interaction, exit and replay boundaries",Tim Miller,Backlog,M: 2–4h proposed,T-CERT-01; T-CERT-02; T-CERT-03; T-CERT-04; T-CERT-COPY,P1
+T-CHART-01,P2 Card experience,Story briefing,C-CHART-01,Implement six-part story in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-CHART-02,P2 Card experience,Story briefing,C-CHART-02,Implement chart illustration in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-CHART-03,P2 Card experience,Story briefing,C-CHART-03,Implement chart reveal in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-CHART-04,P2 Card experience,Story briefing,C-CHART-04,Implement supporting prose in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-CHART-COPY,P2 Card experience,Story briefing,C-CHART,Approve the child-friendly content contract and sparse-facts fallback,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-CHART-EVENT,P2 Card experience,Story briefing,C-CHART,"Wire scene entry, action and semantic completion events",Brian Lapp,Backlog,S: 1–2h proposed,T-CHART-TEST,P1
+T-CHART-SKINS,P2 Card experience,Story briefing,C-CHART,Verify this module across the ten actual skin manifests,Tim Miller,Backlog,S: 1–2h proposed,T-CHART-TEST,P1
+T-CHART-TEST,P2 Card experience,Story briefing,C-CHART,"Exercise entry, interaction, exit and replay boundaries",Tim Miller,Backlog,M: 2–4h proposed,T-CHART-01; T-CHART-02; T-CHART-03; T-CHART-04; T-CHART-COPY,P1
+T-END-01,P2 Card experience,Closing note,C-END-01,Implement message in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-END-02,P2 Card experience,Closing note,C-END-02,Implement paper style in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-END-03,P2 Card experience,Closing note,C-END-03,Implement replay in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-END-04,P2 Card experience,Closing note,C-END-04,Implement product invitation in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-END-COPY,P2 Card experience,Closing note,C-END,Approve the child-friendly content contract and sparse-facts fallback,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-END-EVENT,P2 Card experience,Closing note,C-END,"Wire scene entry, action and semantic completion events",Brian Lapp,Backlog,S: 1–2h proposed,T-END-TEST,P1
+T-END-SKINS,P2 Card experience,Closing note,C-END,Verify this module across the ten actual skin manifests,Tim Miller,Backlog,S: 1–2h proposed,T-END-TEST,P1
+T-END-TEST,P2 Card experience,Closing note,C-END,"Exercise entry, interaction, exit and replay boundaries",Tim Miller,Backlog,M: 2–4h proposed,T-END-01; T-END-02; T-END-03; T-END-04; T-END-COPY,P1
+T-FIN-01,P2 Card experience,Finale and candles,C-FIN-01,Implement finale trigger in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-FIN-02,P2 Card experience,Finale and candles,C-FIN-02,Implement pipeline in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-FIN-03,P2 Card experience,Finale and candles,C-FIN-03,Implement cake artwork in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-FIN-04,P2 Card experience,Finale and candles,C-FIN-04,Implement nine candles in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-FIN-05,P2 Card experience,Finale and candles,C-FIN-05,Implement candle state in the shared scene module,Brian Lapp,Backlog,M: 2–4h proposed,T-PLAYER-03,P1
+T-FIN-06,P2 Card experience,Finale and candles,C-FIN-06,Implement final reward in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-FIN-07,P2 Card experience,Finale and candles,C-FIN-07,Implement camera/scroll in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-FIN-COPY,P2 Card experience,Finale and candles,C-FIN,Approve the child-friendly content contract and sparse-facts fallback,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-FIN-EVENT,P2 Card experience,Finale and candles,C-FIN,"Wire scene entry, action and semantic completion events",Brian Lapp,Backlog,S: 1–2h proposed,T-FIN-TEST,P1
+T-FIN-SKINS,P2 Card experience,Finale and candles,C-FIN,Verify this module across the ten actual skin manifests,Tim Miller,Backlog,S: 1–2h proposed,T-FIN-TEST,P1
+T-FIN-TEST,P2 Card experience,Finale and candles,C-FIN,"Exercise entry, interaction, exit and replay boundaries",Tim Miller,Backlog,M: 2–4h proposed,T-FIN-01; T-FIN-02; T-FIN-03; T-FIN-04; T-FIN-05; T-FIN-06; T-FIN-07; T-FIN-COPY,P1
+T-FUEL-01,P2 Card experience,Fill meter,C-FUEL-01,Implement cup art in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-FUEL-02,P2 Card experience,Fill meter,C-FUEL-02,Implement fill state in the shared scene module,Brian Lapp,Backlog,M: 2–4h proposed,T-PLAYER-03,P1
+T-FUEL-03,P2 Card experience,Fill meter,C-FUEL-03,Implement reaction copy in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-FUEL-04,P2 Card experience,Fill meter,C-FUEL-04,Implement shake and reward in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-FUEL-05,P2 Card experience,Fill meter,C-FUEL-05,Implement reset in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-FUEL-COPY,P2 Card experience,Fill meter,C-FUEL,Approve the child-friendly content contract and sparse-facts fallback,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-FUEL-EVENT,P2 Card experience,Fill meter,C-FUEL,"Wire scene entry, action and semantic completion events",Brian Lapp,Backlog,S: 1–2h proposed,T-FUEL-TEST,P1
+T-FUEL-SKINS,P2 Card experience,Fill meter,C-FUEL,Verify this module across the ten actual skin manifests,Tim Miller,Backlog,S: 1–2h proposed,T-FUEL-TEST,P1
+T-FUEL-TEST,P2 Card experience,Fill meter,C-FUEL,"Exercise entry, interaction, exit and replay boundaries",Tim Miller,Backlog,M: 2–4h proposed,T-FUEL-01; T-FUEL-02; T-FUEL-03; T-FUEL-04; T-FUEL-05; T-FUEL-COPY,P1
+T-GAME-01,P2 Card experience,Reusable mini-game engine,C-GAME,Define a common mini-game interface,Brian Lapp,Backlog,S: 1–2h proposed,T-004,P1
+T-GAME-02,P2 Card experience,Reusable mini-game engine,C-GAME,Make tap-and-collect challenge configurable,Brian Lapp,Backlog,S: 1–2h proposed,T-GAME-01,P1
+T-GAME-05,P2 Card experience,Reusable mini-game engine,C-GAME,Define easy/standard difficulty profiles,Brian Lapp,Backlog,S: 1–2h proposed,T-GAME-04,P1
+T-GAME-06,P2 Card experience,Reusable mini-game engine,C-GAME,Implement skip/help/restart controls,Brian Lapp,Backlog,M: 2–4h proposed,T-GAME-05,P1
+T-GAME-07,P2 Card experience,Reusable mini-game engine,C-GAME,Use seeded randomness for repeatable tests and export,Brian Lapp,Backlog,S: 1–2h proposed,T-GAME-06,P1
+T-GAME-08,P2 Card experience,Reusable mini-game engine,C-GAME,Separate display score from trusted state,Brian Lapp,Backlog,S: 1–2h proposed,T-GAME-07,P1
+T-GAME-09,P2 Card experience,Reusable mini-game engine,C-GAME,"Test pointer, keyboard and assistive paths",Brian Lapp,Backlog,S: 1–2h proposed,T-GAME-08,P1
+T-GAME-10,P2 Card experience,Reusable mini-game engine,C-GAME,Budget animation and memory per game,Brian Lapp,Backlog,S: 1–2h proposed,T-GAME-09,P1
+T-GAUGE-01,P2 Card experience,Playful diagnostic,C-GAUGE-01,Implement gauge art in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-GAUGE-02,P2 Card experience,Playful diagnostic,C-GAUGE-02,Implement measurement sequence in the shared scene module,Brian Lapp,Backlog,M: 2–4h proposed,T-PLAYER-03,P1
+T-GAUGE-03,P2 Card experience,Playful diagnostic,C-GAUGE-03,Implement result rows in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-GAUGE-04,P2 Card experience,Playful diagnostic,C-GAUGE-04,Implement verdict in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-GAUGE-COPY,P2 Card experience,Playful diagnostic,C-GAUGE,Approve the child-friendly content contract and sparse-facts fallback,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-GAUGE-EVENT,P2 Card experience,Playful diagnostic,C-GAUGE,"Wire scene entry, action and semantic completion events",Brian Lapp,Backlog,S: 1–2h proposed,T-GAUGE-TEST,P1
+T-GAUGE-SKINS,P2 Card experience,Playful diagnostic,C-GAUGE,Verify this module across the ten actual skin manifests,Tim Miller,Backlog,S: 1–2h proposed,T-GAUGE-TEST,P1
+T-GAUGE-TEST,P2 Card experience,Playful diagnostic,C-GAUGE,"Exercise entry, interaction, exit and replay boundaries",Tim Miller,Backlog,M: 2–4h proposed,T-GAUGE-01; T-GAUGE-02; T-GAUGE-03; T-GAUGE-04; T-GAUGE-COPY,P1
+T-HERO-01,P2 Card experience,Birthday opening,C-HERO-01,Implement greeting in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-HERO-02,P2 Card experience,Birthday opening,C-HERO-02,Implement ransom typography in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-HERO-03,P2 Card experience,Birthday opening,C-HERO-03,Implement advisory badge in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-HERO-04,P2 Card experience,Birthday opening,C-HERO-04,Implement birthday timing in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-HERO-05,P2 Card experience,Birthday opening,C-HERO-05,Implement scroll hint in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-HERO-COPY,P2 Card experience,Birthday opening,C-HERO,Approve the child-friendly content contract and sparse-facts fallback,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-HERO-EVENT,P2 Card experience,Birthday opening,C-HERO,"Wire scene entry, action and semantic completion events",Brian Lapp,Backlog,S: 1–2h proposed,T-HERO-TEST,P1
+T-HERO-SKINS,P2 Card experience,Birthday opening,C-HERO,Verify this module across the ten actual skin manifests,Tim Miller,Backlog,S: 1–2h proposed,T-HERO-TEST,P1
+T-HERO-TEST,P2 Card experience,Birthday opening,C-HERO,"Exercise entry, interaction, exit and replay boundaries",Tim Miller,Backlog,M: 2–4h proposed,T-HERO-01; T-HERO-02; T-HERO-03; T-HERO-04; T-HERO-05; T-HERO-COPY,P1
+T-IMAGE-01,P2 Card experience,Images and illustration,C-IMAGE,Define reusable versus personalized art inventory,Tim Miller,Backlog,S: 1–2h proposed,T-004,P1
+T-IMAGE-02,P2 Card experience,Images and illustration,C-IMAGE,Create a consistent character style guide,Tim Miller,Backlog,S: 1–2h proposed,T-IMAGE-01,P1
+T-IMAGE-03,P2 Card experience,Images and illustration,C-IMAGE,Prototype no-photo personalization first,Tim Miller,Backlog,S: 1–2h proposed,T-IMAGE-02,P1
+T-IMAGE-04,P2 Card experience,Images and illustration,C-IMAGE,Specify consented photo upload boundaries,Tim Miller,Backlog,S: 1–2h proposed,T-IMAGE-03,P1
+T-IMAGE-05,P2 Card experience,Images and illustration,C-IMAGE,Implement file validation and metadata stripping,Tim Miller,Backlog,M: 2–4h proposed,T-IMAGE-04,P1
+T-IMAGE-06,P2 Card experience,Images and illustration,C-IMAGE,Build image crop and preview controls,Tim Miller,Backlog,M: 2–4h proposed,T-IMAGE-05,P1
+T-IMAGE-07,P2 Card experience,Images and illustration,C-IMAGE,Benchmark candidate image model and edit mode,Tim Miller,Backlog,S: 1–2h proposed,T-IMAGE-06,P1
+T-IMAGE-08,P2 Card experience,Images and illustration,C-IMAGE,Create optimized responsive derivatives,Tim Miller,Backlog,S: 1–2h proposed,T-IMAGE-07,P1
+T-IMAGE-09,P2 Card experience,Images and illustration,C-IMAGE,Review generated image defects,Tim Miller,Backlog,M: 2–4h proposed,T-IMAGE-08,P1
+T-IMAGE-10,P2 Card experience,Images and illustration,C-IMAGE,Track regeneration and approved version lineage,Tim Miller,Backlog,S: 1–2h proposed,T-IMAGE-09,P1
+T-INC-01,P2 Card experience,Incident replay,C-INC-01,Implement rider scene in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-INC-02,P2 Card experience,Incident replay,C-INC-02,Implement crash sequence in the shared scene module,Brian Lapp,Backlog,M: 2–4h proposed,T-PLAYER-03,P1
+T-INC-03,P2 Card experience,Incident replay,C-INC-03,Implement sound effects in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-INC-04,P2 Card experience,Incident replay,C-INC-04,Implement replay statistics in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-INC-05,P2 Card experience,Incident replay,C-INC-05,Implement terminal result in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-INC-06,P2 Card experience,Incident replay,C-INC-06,Implement replay cleanup in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-INC-COPY,P2 Card experience,Incident replay,C-INC,Approve the child-friendly content contract and sparse-facts fallback,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-INC-EVENT,P2 Card experience,Incident replay,C-INC,"Wire scene entry, action and semantic completion events",Brian Lapp,Backlog,S: 1–2h proposed,T-INC-TEST,P1
+T-INC-SKINS,P2 Card experience,Incident replay,C-INC,Verify this module across the ten actual skin manifests,Tim Miller,Backlog,S: 1–2h proposed,T-INC-TEST,P1
+T-INC-TEST,P2 Card experience,Incident replay,C-INC,"Exercise entry, interaction, exit and replay boundaries",Tim Miller,Backlog,M: 2–4h proposed,T-INC-01; T-INC-02; T-INC-03; T-INC-04; T-INC-05; T-INC-06; T-INC-COPY,P1
+T-MUSIC-01,P2 Card experience,Mixtape,C-MUSIC-01,Implement cassette ui in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-MUSIC-02,P2 Card experience,Mixtape,C-MUSIC-02,Implement side a beat in the shared scene module,Brian Lapp,Backlog,M: 2–4h proposed,T-PLAYER-03,P1
+T-MUSIC-03,P2 Card experience,Mixtape,C-MUSIC-03,Implement side a lyrics in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-MUSIC-04,P2 Card experience,Mixtape,C-MUSIC-04,Implement side b melody in the shared scene module,Brian Lapp,Backlog,M: 2–4h proposed,T-PLAYER-03,P1
+T-MUSIC-05,P2 Card experience,Mixtape,C-MUSIC-05,Implement side c recording in the shared scene module,Brian Lapp,Backlog,M: 2–4h proposed,T-PLAYER-03,P1
+T-MUSIC-06,P2 Card experience,Mixtape,C-MUSIC-06,Implement sequencer pads in the shared scene module,Brian Lapp,Backlog,M: 2–4h proposed,T-PLAYER-03,P1
+T-MUSIC-07,P2 Card experience,Mixtape,C-MUSIC-07,Implement stop and switching in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-MUSIC-08,P2 Card experience,Mixtape,C-MUSIC-08,Implement track failure in the shared scene module,Brian Lapp,Backlog,M: 2–4h proposed,T-PLAYER-03,P1
+T-MUSIC-COPY,P2 Card experience,Mixtape,C-MUSIC,Approve the child-friendly content contract and sparse-facts fallback,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-MUSIC-EVENT,P2 Card experience,Mixtape,C-MUSIC,"Wire scene entry, action and semantic completion events",Brian Lapp,Backlog,S: 1–2h proposed,T-MUSIC-TEST,P1
+T-MUSIC-SKINS,P2 Card experience,Mixtape,C-MUSIC,Verify this module across the ten actual skin manifests,Tim Miller,Backlog,S: 1–2h proposed,T-MUSIC-TEST,P1
+T-MUSIC-TEST,P2 Card experience,Mixtape,C-MUSIC,"Exercise entry, interaction, exit and replay boundaries",Tim Miller,Backlog,M: 2–4h proposed,T-MUSIC-01; T-MUSIC-02; T-MUSIC-03; T-MUSIC-04; T-MUSIC-05; T-MUSIC-06; T-MUSIC-07; T-MUSIC-08; T-MUSIC-COPY,P1
+T-MUSICFLOW-01,P2 Card experience,Real song production,C-MUSICFLOW,Define the music promise for standard card,Tim Miller,Backlog,S: 1–2h proposed,T-004,P1
+T-MUSICFLOW-02,P2 Card experience,Real song production,C-MUSICFLOW,Approve original lyrics and pronunciation,Tim Miller,Backlog,S: 1–2h proposed,T-MUSICFLOW-01,P1
+T-MUSICFLOW-03,P2 Card experience,Real song production,C-MUSICFLOW,Benchmark Suno on approved synthetic briefs,Tim Miller,Backlog,S: 1–2h proposed,T-MUSICFLOW-02,P1
+T-MUSICFLOW-04,P2 Card experience,Real song production,C-MUSICFLOW,Verify current commercial download and customer redistribution rights,Tim Miller,To verify,S: 1–2h proposed,T-MUSICFLOW-03,P1
+T-MUSICFLOW-05,P2 Card experience,Real song production,C-MUSICFLOW,Decide manual pilot versus authorized automation,Tim Miller,Backlog,S: 1–2h proposed,T-MUSICFLOW-04,P1
+T-MUSICFLOW-06,P2 Card experience,Real song production,C-MUSICFLOW,Generate and select candidate songs,Tim Miller,Backlog,M: 2–4h proposed,T-MUSICFLOW-05,P1
+T-MUSICFLOW-07,P2 Card experience,Real song production,C-MUSICFLOW,Prepare normalized full track and short excerpts,Tim Miller,Backlog,S: 1–2h proposed,T-MUSICFLOW-06,P1
+T-MUSICFLOW-08,P2 Card experience,Real song production,C-MUSICFLOW,Create lyrics/caption transcript aligned to actual audio,Tim Miller,Backlog,S: 1–2h proposed,T-MUSICFLOW-07,P1
+T-MUSICFLOW-09,P2 Card experience,Real song production,C-MUSICFLOW,Implement audio exclusivity and cancellation,Tim Miller,Backlog,M: 2–4h proposed,T-MUSICFLOW-08,P1
+T-MUSICFLOW-10,P2 Card experience,Real song production,C-MUSICFLOW,Define fallback if song fails or is disputed,Tim Miller,Backlog,S: 1–2h proposed,T-MUSICFLOW-09,P1
+T-MUSICFLOW-11,P2 Card experience,Real song production,C-MUSICFLOW,Check Brian recording permissions separately,Tim Miller,Backlog,S: 1–2h proposed,T-MUSICFLOW-10,P1
+T-MUSICFLOW-12,P2 Card experience,Real song production,C-MUSICFLOW,Measure total cost per accepted song,Tim Miller,Backlog,S: 1–2h proposed,T-MUSICFLOW-11,P1
+T-PET-01,P2 Card experience,Companion scene,C-PET-01,Implement pet illustration in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-PET-02,P2 Card experience,Companion scene,C-PET-02,Implement reaction bank in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-PET-03,P2 Card experience,Companion scene,C-PET-03,Implement bark and bubble in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-PET-04,P2 Card experience,Companion scene,C-PET-04,Implement pet animation in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-PET-05,P2 Card experience,Companion scene,C-PET-05,Implement performance review in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-PET-COPY,P2 Card experience,Companion scene,C-PET,Approve the child-friendly content contract and sparse-facts fallback,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-PET-EVENT,P2 Card experience,Companion scene,C-PET,"Wire scene entry, action and semantic completion events",Brian Lapp,Backlog,S: 1–2h proposed,T-PET-TEST,P1
+T-PET-SKINS,P2 Card experience,Companion scene,C-PET,Verify this module across the ten actual skin manifests,Tim Miller,Backlog,S: 1–2h proposed,T-PET-TEST,P1
+T-PET-TEST,P2 Card experience,Companion scene,C-PET,"Exercise entry, interaction, exit and replay boundaries",Tim Miller,Backlog,M: 2–4h proposed,T-PET-01; T-PET-02; T-PET-03; T-PET-04; T-PET-05; T-PET-COPY,P1
+T-REPS-01,P2 Card experience,Tap challenge,C-REPS-01,Implement character and dumbbell in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-REPS-02,P2 Card experience,Tap challenge,C-REPS-02,Implement counter in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-REPS-03,P2 Card experience,Tap challenge,C-REPS-03,Implement milestones in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-REPS-04,P2 Card experience,Tap challenge,C-REPS-04,Implement static stats in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-REPS-05,P2 Card experience,Tap challenge,C-REPS-05,Implement motion in the shared scene module,Brian Lapp,Backlog,S: 1–2h proposed,T-PLAYER-03,P1
+T-REPS-COPY,P2 Card experience,Tap challenge,C-REPS,Approve the child-friendly content contract and sparse-facts fallback,Tim Miller,Backlog,S: 1–2h proposed,T-005,P1
+T-REPS-EVENT,P2 Card experience,Tap challenge,C-REPS,"Wire scene entry, action and semantic completion events",Brian Lapp,Backlog,S: 1–2h proposed,T-REPS-TEST,P1
+T-REPS-SKINS,P2 Card experience,Tap challenge,C-REPS,Verify this module across the ten actual skin manifests,Tim Miller,Backlog,S: 1–2h proposed,T-REPS-TEST,P1
+T-REPS-TEST,P2 Card experience,Tap challenge,C-REPS,"Exercise entry, interaction, exit and replay boundaries",Tim Miller,Backlog,M: 2–4h proposed,T-REPS-01; T-REPS-02; T-REPS-03; T-REPS-04; T-REPS-05; T-REPS-COPY,P1
+T-THEME-01,P2 Card experience,Ten reusable skins,C-THEME,Inventory all ten actual theme names and versions,Tim Miller,Backlog,S: 1–2h proposed,T-004,P1
+T-THEME-02,P2 Card experience,Ten reusable skins,C-THEME,Define shared design tokens,Tim Miller,Backlog,S: 1–2h proposed,T-THEME-01,P1
+T-THEME-03,P2 Card experience,Ten reusable skins,C-THEME,Prioritize Quest for first child-friendly slice,Tim Miller,Backlog,S: 1–2h proposed,T-THEME-02,P1
+T-THEME-04,P2 Card experience,Ten reusable skins,C-THEME,Review Little Legend child suitability,Tim Miller,Backlog,S: 1–2h proposed,T-THEME-03,P1
+T-THEME-05,P2 Card experience,Ten reusable skins,C-THEME,Review Stadium treatment,Tim Miller,Backlog,S: 1–2h proposed,T-THEME-04,P1
+T-THEME-06,P2 Card experience,Ten reusable skins,C-THEME,Review Pet HQ treatment,Tim Miller,Backlog,S: 1–2h proposed,T-THEME-05,P1
+T-THEME-07,P2 Card experience,Ten reusable skins,C-THEME,Retain Firmware as internal regression example,Tim Miller,Backlog,S: 1–2h proposed,T-THEME-06,P1
+T-THEME-08,P2 Card experience,Ten reusable skins,C-THEME,Verify the remaining five actual skins,Tim Miller,To verify,S: 1–2h proposed,T-THEME-07,P1
+T-THEME-09,P2 Card experience,Ten reusable skins,C-THEME,Build per-skin asset and export manifests,Tim Miller,Backlog,M: 2–4h proposed,T-THEME-08,P1
+T-THEME-10,P2 Card experience,Ten reusable skins,C-THEME,Test mixed lengths and language samples across skins,Tim Miller,Backlog,S: 1–2h proposed,T-THEME-09,P1
+T-BOOT-SHARE,P3 Sharing and pilot,Opening boot,C-BOOT,Build the approved still and motion share recipe,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-03; T-BOOT-TEST,P1
+T-CERT-SHARE,P3 Sharing and pilot,Birthday certificate,C-CERT,Build the approved still and motion share recipe,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-03; T-CERT-TEST,P1
+T-CHART-SHARE,P3 Sharing and pilot,Story briefing,C-CHART,Build the approved still and motion share recipe,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-03; T-CHART-TEST,P1
+T-END-SHARE,P3 Sharing and pilot,Closing note,C-END,Build the approved still and motion share recipe,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-03; T-END-TEST,P1
+T-FIN-SHARE,P3 Sharing and pilot,Finale and candles,C-FIN,Build the approved still and motion share recipe,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-03; T-FIN-TEST,P1
+T-FUEL-SHARE,P3 Sharing and pilot,Fill meter,C-FUEL,Build the approved still and motion share recipe,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-03; T-FUEL-TEST,P1
+T-GAUGE-SHARE,P3 Sharing and pilot,Playful diagnostic,C-GAUGE,Build the approved still and motion share recipe,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-03; T-GAUGE-TEST,P1
+T-HERO-SHARE,P3 Sharing and pilot,Birthday opening,C-HERO,Build the approved still and motion share recipe,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-03; T-HERO-TEST,P1
+T-INC-SHARE,P3 Sharing and pilot,Incident replay,C-INC,Build the approved still and motion share recipe,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-03; T-INC-TEST,P1
+T-MUSIC-SHARE,P3 Sharing and pilot,Mixtape,C-MUSIC,Build the approved still and motion share recipe,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-03; T-MUSIC-TEST,P1
+T-OPS-01,P3 Sharing and pilot,Release and founder operations,C-OPS,Verify repository and Lovable sync workflow,Brian Lapp,To verify,S: 1–2h proposed,T-004,P1
+T-OPS-02,P3 Sharing and pilot,Release and founder operations,C-OPS,Create isolated preview/staging environment,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-01,P1
+T-OPS-03,P3 Sharing and pilot,Release and founder operations,C-OPS,Add affected-suite CI gates,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-02,P1
+T-OPS-04,P3 Sharing and pilot,Release and founder operations,C-OPS,"Version config, prompts, models and assets separately",Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-03,P1
+T-OPS-05,P3 Sharing and pilot,Release and founder operations,C-OPS,Practice app/config/model/asset rollback,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-04,P1
+T-OPS-06,P3 Sharing and pilot,Release and founder operations,C-OPS,Implement incident severity and on-call backup,Brian Lapp,Backlog,M: 2–4h proposed,T-OPS-05,P1
+T-OPS-07,P3 Sharing and pilot,Release and founder operations,C-OPS,Create customer support queue and draft-only assistance,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-OPS-08,P3 Sharing and pilot,Release and founder operations,C-OPS,Reconcile vendor bills and accepted outputs,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-07,P1
+T-OPS-09,P3 Sharing and pilot,Release and founder operations,C-OPS,Set provider spend and queue controls,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-08,P1
+T-OPS-10,P3 Sharing and pilot,Release and founder operations,C-OPS,Export planning and operational history periodically,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-09,P1
+T-PET-SHARE,P3 Sharing and pilot,Companion scene,C-PET,Build the approved still and motion share recipe,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-03; T-PET-TEST,P1
+T-PILOT-01,P3 Sharing and pilot,Kids-first pilot and growth,C-PILOT,Select ten proposed gift cases with adult permission,Jordan,Backlog,S: 1–2h proposed,T-004,P1
+T-PILOT-02,P3 Sharing and pilot,Kids-first pilot and growth,C-PILOT,Schedule unassisted giver tests,Jordan,Backlog,S: 1–2h proposed,T-PILOT-01,P1
+T-PILOT-03,P3 Sharing and pilot,Kids-first pilot and growth,C-PILOT,Review each card before gifting,Jordan,Backlog,S: 1–2h proposed,T-PILOT-02,P1
+T-PILOT-04,P3 Sharing and pilot,Kids-first pilot and growth,C-PILOT,Collect adult giver and recipient-experience feedback,Jordan,Backlog,S: 1–2h proposed,T-PILOT-03,P1
+T-PILOT-05,P3 Sharing and pilot,Kids-first pilot and growth,C-PILOT,Create synthetic public product examples,Jordan,Backlog,S: 1–2h proposed,T-PILOT-04,P1
+T-PILOT-06,P3 Sharing and pilot,Kids-first pilot and growth,C-PILOT,Define referral attribution and exclusions,Jordan,Backlog,S: 1–2h proposed,T-PILOT-05,P1
+T-PILOT-07,P3 Sharing and pilot,Kids-first pilot and growth,C-PILOT,Test optional post-finale product invitation,Jordan,Backlog,S: 1–2h proposed,T-PILOT-06,P1
+T-PILOT-08,P3 Sharing and pilot,Kids-first pilot and growth,C-PILOT,Review top objections and corrections,Jordan,Backlog,S: 1–2h proposed,T-PILOT-07,P1
+T-PILOT-09,P3 Sharing and pilot,Kids-first pilot and growth,C-PILOT,Plan optional birthday reminders,Jordan,Backlog,S: 1–2h proposed,T-PILOT-08,P1
+T-PILOT-10,P3 Sharing and pilot,Kids-first pilot and growth,C-PILOT,Decide next cohort based on quality and workload,Jordan,Backlog,S: 1–2h proposed,T-PILOT-09,P1
+T-QUALITY-01,P3 Sharing and pilot,Quality and compatibility,C-QUALITY,Create synthetic reference fixtures,Tim Miller,Backlog,S: 1–2h proposed,T-004,P1
+T-QUALITY-02,P3 Sharing and pilot,Quality and compatibility,C-QUALITY,Run keyboard/focus/screen-reader checks,Tim Miller,Backlog,S: 1–2h proposed,T-QUALITY-01,P1
+T-QUALITY-03,P3 Sharing and pilot,Quality and compatibility,C-QUALITY,Run reduced-motion and mute tests,Tim Miller,Backlog,S: 1–2h proposed,T-QUALITY-02,P1
+T-QUALITY-04,P3 Sharing and pilot,Quality and compatibility,C-QUALITY,Run real iOS Safari playback tests,Tim Miller,Backlog,S: 1–2h proposed,T-QUALITY-03,P1
+T-QUALITY-05,P3 Sharing and pilot,Quality and compatibility,C-QUALITY,Run midrange Android Chrome tests,Tim Miller,Backlog,S: 1–2h proposed,T-QUALITY-04,P1
+T-QUALITY-06,P3 Sharing and pilot,Quality and compatibility,C-QUALITY,Run IG/Facebook in-app browser tests,Tim Miller,Backlog,S: 1–2h proposed,T-QUALITY-05,P1
+T-QUALITY-07,P3 Sharing and pilot,Quality and compatibility,C-QUALITY,Run desktop Chrome/Safari/Firefox/Edge smoke,Tim Miller,Backlog,S: 1–2h proposed,T-QUALITY-06,P1
+T-QUALITY-08,P3 Sharing and pilot,Quality and compatibility,C-QUALITY,Test dependency/asset outages,Tim Miller,Backlog,S: 1–2h proposed,T-QUALITY-07,P1
+T-QUALITY-09,P3 Sharing and pilot,Quality and compatibility,C-QUALITY,Check repeat navigation memory and timers,Tim Miller,Backlog,S: 1–2h proposed,T-QUALITY-08,P1
+T-QUALITY-10,P3 Sharing and pilot,Quality and compatibility,C-QUALITY,Review malicious text and uploaded asset cases,Tim Miller,Backlog,S: 1–2h proposed,T-QUALITY-09,P1
+T-QUALITY-11,P3 Sharing and pilot,Quality and compatibility,C-QUALITY,Measure performance budgets on actual devices,Tim Miller,Backlog,S: 1–2h proposed,T-QUALITY-10,P1
+T-QUALITY-12,P3 Sharing and pilot,Quality and compatibility,C-QUALITY,Record release evidence and known limitations,Tim Miller,Backlog,S: 1–2h proposed,T-QUALITY-11,P1
+T-REPS-SHARE,P3 Sharing and pilot,Tap challenge,C-REPS,Build the approved still and motion share recipe,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-03; T-REPS-TEST,P1
+T-SHARE-01,P3 Sharing and pilot,Share maker platform,C-SHARE,Define share targets and honest capability labels,Brian Lapp,Backlog,S: 1–2h proposed,T-004,P1
+T-SHARE-02,P3 Sharing and pilot,Share maker platform,C-SHARE,Define a share recipe for each scene and whole card,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-01,P1
+T-SHARE-03,P3 Sharing and pilot,Share maker platform,C-SHARE,Build structured export from approved scene data,Brian Lapp,Backlog,M: 2–4h proposed,T-SHARE-02,P1
+T-SHARE-04,P3 Sharing and pilot,Share maker platform,C-SHARE,Build adult preview and privacy edit step,Brian Lapp,Backlog,M: 2–4h proposed,T-SHARE-03,P1
+T-SHARE-05,P3 Sharing and pilot,Share maker platform,C-SHARE,Implement 9:16 master and safe-region guides,Brian Lapp,Backlog,M: 2–4h proposed,T-SHARE-04,P1
+T-SHARE-06,P3 Sharing and pilot,Share maker platform,C-SHARE,Add square and portrait feed derivatives,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-05,P1
+T-SHARE-07,P3 Sharing and pilot,Share maker platform,C-SHARE,Render PNG with fonts and assets ready,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-06,P1
+T-SHARE-08,P3 Sharing and pilot,Share maker platform,C-SHARE,Create deterministic motion capture,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-07,P1
+T-SHARE-09,P3 Sharing and pilot,Share maker platform,C-SHARE,Encode MP4 and provide supported fallbacks,Brian Lapp,Backlog,M: 2–4h proposed,T-SHARE-08,P1
+T-SHARE-10,P3 Sharing and pilot,Share maker platform,C-SHARE,Mix permitted audio and burn captions,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-09,P1
+T-SHARE-11,P3 Sharing and pilot,Share maker platform,C-SHARE,Build whole-card recap/trailer selector,Brian Lapp,Backlog,M: 2–4h proposed,T-SHARE-10,P1
+T-SHARE-12,P3 Sharing and pilot,Share maker platform,C-SHARE,Implement generation progress/cancel/retry,Brian Lapp,Backlog,M: 2–4h proposed,T-SHARE-11,P1
+T-SHARE-13,P3 Sharing and pilot,Share maker platform,C-SHARE,Pre-render before invoking native share,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-12,P1
+T-SHARE-14,P3 Sharing and pilot,Share maker platform,C-SHARE,Handle unsupported share and cancellation,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-13,P1
+T-SHARE-15,P3 Sharing and pilot,Share maker platform,C-SHARE,Add IG Stories guidance,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-14,P1
+T-SHARE-16,P3 Sharing and pilot,Share maker platform,C-SHARE,Add Facebook Stories guidance,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-15,P1
+T-SHARE-17,P3 Sharing and pilot,Share maker platform,C-SHARE,Test in-app browsers and desktop handoff,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-16,P1
+T-SHARE-18,P3 Sharing and pilot,Share maker platform,C-SHARE,Generate safe link previews,Brian Lapp,Backlog,M: 2–4h proposed,T-SHARE-17,P1
+T-SHARE-19,P3 Sharing and pilot,Share maker platform,C-SHARE,Add versioned share IDs and referral attribution,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-18,P1
+T-SHARE-20,P3 Sharing and pilot,Share maker platform,C-SHARE,Expire/revoke hosted derivatives,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-19,P1
+T-SHARE-21,P3 Sharing and pilot,Share maker platform,C-SHARE,Export a keepsake package proposal,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-20,P1
+T-SHARE-22,P3 Sharing and pilot,Share maker platform,C-SHARE,Separate product promotion from sharing a child card,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-21,P1
+T-SHARE-23,P3 Sharing and pilot,Share maker platform,C-SHARE,Evaluate native Story SDK only after browser pilot,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-22,P1
+T-SHARE-24,P3 Sharing and pilot,Share maker platform,C-SHARE,Test every recipe with long names and sparse inputs,Brian Lapp,Backlog,S: 1–2h proposed,T-SHARE-23,P1
+T-AG-01-DRILL,P4 Learning and efficiency,Agent governance,C-LEARN,"Run forbidden-action, kill-switch and recovery drill: Backlog coordinator",Jordan,Backlog,S: 1–2h proposed,T-AG-01-SPEC,P1
+T-AG-01-PILOT,P4 Learning and efficiency,Agent governance,C-LEARN,Run a reviewed sandbox pilot and record workload savings: Backlog coordinator,Jordan,Backlog,S: 1–2h proposed,T-AG-01-DRILL,P1
+T-AG-01-SPEC,P4 Learning and efficiency,Agent governance,C-LEARN,"Finalize permission, memory and escalation contract: Backlog coordinator",Jordan,Backlog,S: 1–2h proposed,T-006,P1
+T-AG-02-DRILL,P4 Learning and efficiency,Agent governance,C-LEARN,"Run forbidden-action, kill-switch and recovery drill: Eval runner",Brian Lapp,Backlog,S: 1–2h proposed,T-AG-02-SPEC,P1
+T-AG-02-PILOT,P4 Learning and efficiency,Agent governance,C-LEARN,Run a reviewed sandbox pilot and record workload savings: Eval runner,Brian Lapp,Backlog,S: 1–2h proposed,T-AG-02-DRILL,P1
+T-AG-02-SPEC,P4 Learning and efficiency,Agent governance,C-LEARN,"Finalize permission, memory and escalation contract: Eval runner",Brian Lapp,Backlog,S: 1–2h proposed,T-006,P1
+T-AG-03-DRILL,P4 Learning and efficiency,Agent governance,C-LEARN,"Run forbidden-action, kill-switch and recovery drill: Content draft assistant",Tim Miller,Backlog,S: 1–2h proposed,T-AG-03-SPEC,P1
+T-AG-03-PILOT,P4 Learning and efficiency,Agent governance,C-LEARN,Run a reviewed sandbox pilot and record workload savings: Content draft assistant,Tim Miller,Backlog,S: 1–2h proposed,T-AG-03-DRILL,P1
+T-AG-03-SPEC,P4 Learning and efficiency,Agent governance,C-LEARN,"Finalize permission, memory and escalation contract: Content draft assistant",Tim Miller,Backlog,S: 1–2h proposed,T-006,P1
+T-AG-04-DRILL,P4 Learning and efficiency,Agent governance,C-LEARN,"Run forbidden-action, kill-switch and recovery drill: Typed decision service",Brian Lapp,Backlog,S: 1–2h proposed,T-AG-04-SPEC,P1
+T-AG-04-PILOT,P4 Learning and efficiency,Agent governance,C-LEARN,Run a reviewed sandbox pilot and record workload savings: Typed decision service,Brian Lapp,Backlog,S: 1–2h proposed,T-AG-04-DRILL,P1
+T-AG-04-SPEC,P4 Learning and efficiency,Agent governance,C-LEARN,"Finalize permission, memory and escalation contract: Typed decision service",Brian Lapp,Backlog,S: 1–2h proposed,T-006,P1
+T-AG-05-DRILL,P4 Learning and efficiency,Agent governance,C-LEARN,"Run forbidden-action, kill-switch and recovery drill: Media production coordinator",Tim Miller,Backlog,S: 1–2h proposed,T-AG-05-SPEC,P1
+T-AG-05-PILOT,P4 Learning and efficiency,Agent governance,C-LEARN,Run a reviewed sandbox pilot and record workload savings: Media production coordinator,Tim Miller,Backlog,S: 1–2h proposed,T-AG-05-DRILL,P1
+T-AG-05-SPEC,P4 Learning and efficiency,Agent governance,C-LEARN,"Finalize permission, memory and escalation contract: Media production coordinator",Tim Miller,Backlog,S: 1–2h proposed,T-006,P1
+T-AG-06-DRILL,P4 Learning and efficiency,Agent governance,C-LEARN,"Run forbidden-action, kill-switch and recovery drill: Support triage assistant",Tim Miller,Backlog,S: 1–2h proposed,T-AG-06-SPEC,P1
+T-AG-06-PILOT,P4 Learning and efficiency,Agent governance,C-LEARN,Run a reviewed sandbox pilot and record workload savings: Support triage assistant,Tim Miller,Backlog,S: 1–2h proposed,T-AG-06-DRILL,P1
+T-AG-06-SPEC,P4 Learning and efficiency,Agent governance,C-LEARN,"Finalize permission, memory and escalation contract: Support triage assistant",Tim Miller,Backlog,S: 1–2h proposed,T-006,P1
+T-AG-07-DRILL,P4 Learning and efficiency,Agent governance,C-LEARN,"Run forbidden-action, kill-switch and recovery drill: Cost anomaly monitor",Brian Lapp,Backlog,S: 1–2h proposed,T-AG-07-SPEC,P1
+T-AG-07-PILOT,P4 Learning and efficiency,Agent governance,C-LEARN,Run a reviewed sandbox pilot and record workload savings: Cost anomaly monitor,Brian Lapp,Backlog,S: 1–2h proposed,T-AG-07-DRILL,P1
+T-AG-07-SPEC,P4 Learning and efficiency,Agent governance,C-LEARN,"Finalize permission, memory and escalation contract: Cost anomaly monitor",Brian Lapp,Backlog,S: 1–2h proposed,T-006,P1
+T-AG-08-DRILL,P4 Learning and efficiency,Agent governance,C-LEARN,"Run forbidden-action, kill-switch and recovery drill: Learning review assistant",Jordan,Backlog,S: 1–2h proposed,T-AG-08-SPEC,P1
+T-AG-08-PILOT,P4 Learning and efficiency,Agent governance,C-LEARN,Run a reviewed sandbox pilot and record workload savings: Learning review assistant,Jordan,Backlog,S: 1–2h proposed,T-AG-08-DRILL,P1
+T-AG-08-SPEC,P4 Learning and efficiency,Agent governance,C-LEARN,"Finalize permission, memory and escalation contract: Learning review assistant",Jordan,Backlog,S: 1–2h proposed,T-006,P1
+T-J-01-BENCH,P4 Learning and efficiency,Jev decisions,C-LEARN,Compare Jev with rules and general-model baseline: Interview completeness,Brian Lapp,Backlog,S: 1–2h proposed,T-J-01-DATA,P1
+T-J-01-DATA,P4 Learning and efficiency,Jev decisions,C-LEARN,"Label ordinary, ambiguous and adversarial examples: Interview completeness",Brian Lapp,Backlog,S: 1–2h proposed,T-J-01-SPEC,P1
+T-J-01-SHADOW,P4 Learning and efficiency,Jev decisions,C-LEARN,Run read-only shadow and review exceptions: Interview completeness,Brian Lapp,Backlog,S: 1–2h proposed,T-J-01-BENCH,P1
+T-J-01-SPEC,P4 Learning and efficiency,Jev decisions,C-LEARN,Define question semantics and allowed outputs: Interview completeness,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-07,P1
+T-J-02-BENCH,P4 Learning and efficiency,Jev decisions,C-LEARN,Compare Jev with rules and general-model baseline: Theme fit,Brian Lapp,Backlog,S: 1–2h proposed,T-J-02-DATA,P1
+T-J-02-DATA,P4 Learning and efficiency,Jev decisions,C-LEARN,"Label ordinary, ambiguous and adversarial examples: Theme fit",Brian Lapp,Backlog,S: 1–2h proposed,T-J-02-SPEC,P1
+T-J-02-SHADOW,P4 Learning and efficiency,Jev decisions,C-LEARN,Run read-only shadow and review exceptions: Theme fit,Brian Lapp,Backlog,S: 1–2h proposed,T-J-02-BENCH,P1
+T-J-02-SPEC,P4 Learning and efficiency,Jev decisions,C-LEARN,Define question semantics and allowed outputs: Theme fit,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-07,P1
+T-J-03-BENCH,P4 Learning and efficiency,Jev decisions,C-LEARN,Compare Jev with rules and general-model baseline: Follow-up relevance,Brian Lapp,Backlog,S: 1–2h proposed,T-J-03-DATA,P1
+T-J-03-DATA,P4 Learning and efficiency,Jev decisions,C-LEARN,"Label ordinary, ambiguous and adversarial examples: Follow-up relevance",Brian Lapp,Backlog,S: 1–2h proposed,T-J-03-SPEC,P1
+T-J-03-SHADOW,P4 Learning and efficiency,Jev decisions,C-LEARN,Run read-only shadow and review exceptions: Follow-up relevance,Brian Lapp,Backlog,S: 1–2h proposed,T-J-03-BENCH,P1
+T-J-03-SPEC,P4 Learning and efficiency,Jev decisions,C-LEARN,Define question semantics and allowed outputs: Follow-up relevance,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-07,P1
+T-J-04-BENCH,P4 Learning and efficiency,Jev decisions,C-LEARN,Compare Jev with rules and general-model baseline: Tone mismatch screening,Brian Lapp,Backlog,S: 1–2h proposed,T-J-04-DATA,P1
+T-J-04-DATA,P4 Learning and efficiency,Jev decisions,C-LEARN,"Label ordinary, ambiguous and adversarial examples: Tone mismatch screening",Brian Lapp,Backlog,S: 1–2h proposed,T-J-04-SPEC,P1
+T-J-04-SHADOW,P4 Learning and efficiency,Jev decisions,C-LEARN,Run read-only shadow and review exceptions: Tone mismatch screening,Brian Lapp,Backlog,S: 1–2h proposed,T-J-04-BENCH,P1
+T-J-04-SPEC,P4 Learning and efficiency,Jev decisions,C-LEARN,Define question semantics and allowed outputs: Tone mismatch screening,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-07,P1
+T-J-05-BENCH,P4 Learning and efficiency,Jev decisions,C-LEARN,Compare Jev with rules and general-model baseline: Factual support screening,Brian Lapp,Backlog,S: 1–2h proposed,T-J-05-DATA,P1
+T-J-05-DATA,P4 Learning and efficiency,Jev decisions,C-LEARN,"Label ordinary, ambiguous and adversarial examples: Factual support screening",Brian Lapp,Backlog,S: 1–2h proposed,T-J-05-SPEC,P1
+T-J-05-SHADOW,P4 Learning and efficiency,Jev decisions,C-LEARN,Run read-only shadow and review exceptions: Factual support screening,Brian Lapp,Backlog,S: 1–2h proposed,T-J-05-BENCH,P1
+T-J-05-SPEC,P4 Learning and efficiency,Jev decisions,C-LEARN,Define question semantics and allowed outputs: Factual support screening,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-07,P1
+T-J-06-BENCH,P4 Learning and efficiency,Jev decisions,C-LEARN,Compare Jev with rules and general-model baseline: Candidate copy ranking,Brian Lapp,Backlog,S: 1–2h proposed,T-J-06-DATA,P1
+T-J-06-DATA,P4 Learning and efficiency,Jev decisions,C-LEARN,"Label ordinary, ambiguous and adversarial examples: Candidate copy ranking",Brian Lapp,Backlog,S: 1–2h proposed,T-J-06-SPEC,P1
+T-J-06-SHADOW,P4 Learning and efficiency,Jev decisions,C-LEARN,Run read-only shadow and review exceptions: Candidate copy ranking,Brian Lapp,Backlog,S: 1–2h proposed,T-J-06-BENCH,P1
+T-J-06-SPEC,P4 Learning and efficiency,Jev decisions,C-LEARN,Define question semantics and allowed outputs: Candidate copy ranking,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-07,P1
+T-J-07-BENCH,P4 Learning and efficiency,Jev decisions,C-LEARN,Compare Jev with rules and general-model baseline: Support intent,Brian Lapp,Backlog,S: 1–2h proposed,T-J-07-DATA,P1
+T-J-07-DATA,P4 Learning and efficiency,Jev decisions,C-LEARN,"Label ordinary, ambiguous and adversarial examples: Support intent",Brian Lapp,Backlog,S: 1–2h proposed,T-J-07-SPEC,P1
+T-J-07-SHADOW,P4 Learning and efficiency,Jev decisions,C-LEARN,Run read-only shadow and review exceptions: Support intent,Brian Lapp,Backlog,S: 1–2h proposed,T-J-07-BENCH,P1
+T-J-07-SPEC,P4 Learning and efficiency,Jev decisions,C-LEARN,Define question semantics and allowed outputs: Support intent,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-07,P1
+T-J-08-BENCH,P4 Learning and efficiency,Jev decisions,C-LEARN,Compare Jev with rules and general-model baseline: Feedback defect label,Brian Lapp,Backlog,S: 1–2h proposed,T-J-08-DATA,P1
+T-J-08-DATA,P4 Learning and efficiency,Jev decisions,C-LEARN,"Label ordinary, ambiguous and adversarial examples: Feedback defect label",Brian Lapp,Backlog,S: 1–2h proposed,T-J-08-SPEC,P1
+T-J-08-SHADOW,P4 Learning and efficiency,Jev decisions,C-LEARN,Run read-only shadow and review exceptions: Feedback defect label,Brian Lapp,Backlog,S: 1–2h proposed,T-J-08-BENCH,P1
+T-J-08-SPEC,P4 Learning and efficiency,Jev decisions,C-LEARN,Define question semantics and allowed outputs: Feedback defect label,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-07,P1
+T-J-09-BENCH,P4 Learning and efficiency,Jev decisions,C-LEARN,Compare Jev with rules and general-model baseline: Issue duplication relevance,Brian Lapp,Backlog,S: 1–2h proposed,T-J-09-DATA,P1
+T-J-09-DATA,P4 Learning and efficiency,Jev decisions,C-LEARN,"Label ordinary, ambiguous and adversarial examples: Issue duplication relevance",Brian Lapp,Backlog,S: 1–2h proposed,T-J-09-SPEC,P1
+T-J-09-SHADOW,P4 Learning and efficiency,Jev decisions,C-LEARN,Run read-only shadow and review exceptions: Issue duplication relevance,Brian Lapp,Backlog,S: 1–2h proposed,T-J-09-BENCH,P1
+T-J-09-SPEC,P4 Learning and efficiency,Jev decisions,C-LEARN,Define question semantics and allowed outputs: Issue duplication relevance,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-07,P1
+T-J-10-BENCH,P4 Learning and efficiency,Jev decisions,C-LEARN,Compare Jev with rules and general-model baseline: Share caption suitability,Brian Lapp,Backlog,S: 1–2h proposed,T-J-10-DATA,P1
+T-J-10-DATA,P4 Learning and efficiency,Jev decisions,C-LEARN,"Label ordinary, ambiguous and adversarial examples: Share caption suitability",Brian Lapp,Backlog,S: 1–2h proposed,T-J-10-SPEC,P1
+T-J-10-SHADOW,P4 Learning and efficiency,Jev decisions,C-LEARN,Run read-only shadow and review exceptions: Share caption suitability,Brian Lapp,Backlog,S: 1–2h proposed,T-J-10-BENCH,P1
+T-J-10-SPEC,P4 Learning and efficiency,Jev decisions,C-LEARN,Define question semantics and allowed outputs: Share caption suitability,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-07,P1
+T-J-11-BENCH,P4 Learning and efficiency,Jev decisions,C-LEARN,Compare Jev with rules and general-model baseline: Music brief genre fit,Brian Lapp,Backlog,S: 1–2h proposed,T-J-11-DATA,P1
+T-J-11-DATA,P4 Learning and efficiency,Jev decisions,C-LEARN,"Label ordinary, ambiguous and adversarial examples: Music brief genre fit",Brian Lapp,Backlog,S: 1–2h proposed,T-J-11-SPEC,P1
+T-J-11-SHADOW,P4 Learning and efficiency,Jev decisions,C-LEARN,Run read-only shadow and review exceptions: Music brief genre fit,Brian Lapp,Backlog,S: 1–2h proposed,T-J-11-BENCH,P1
+T-J-11-SPEC,P4 Learning and efficiency,Jev decisions,C-LEARN,Define question semantics and allowed outputs: Music brief genre fit,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-07,P1
+T-J-12-BENCH,P4 Learning and efficiency,Jev decisions,C-LEARN,Compare Jev with rules and general-model baseline: Experiment proposal relevance,Brian Lapp,Backlog,S: 1–2h proposed,T-J-12-DATA,P1
+T-J-12-DATA,P4 Learning and efficiency,Jev decisions,C-LEARN,"Label ordinary, ambiguous and adversarial examples: Experiment proposal relevance",Brian Lapp,Backlog,S: 1–2h proposed,T-J-12-SPEC,P1
+T-J-12-SHADOW,P4 Learning and efficiency,Jev decisions,C-LEARN,Run read-only shadow and review exceptions: Experiment proposal relevance,Brian Lapp,Backlog,S: 1–2h proposed,T-J-12-BENCH,P1
+T-J-12-SPEC,P4 Learning and efficiency,Jev decisions,C-LEARN,Define question semantics and allowed outputs: Experiment proposal relevance,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-07,P1
+T-LEARN-01,P4 Learning and efficiency,Learning loop implementation,C-LEARN,Create decision trace contract,Brian Lapp,Backlog,S: 1–2h proposed,T-004,P1
+T-LEARN-02,P4 Learning and efficiency,Learning loop implementation,C-LEARN,Create defect taxonomy and correction form,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-01,P1
+T-LEARN-03,P4 Learning and efficiency,Learning loop implementation,C-LEARN,Build historical replay feed,Brian Lapp,Backlog,M: 2–4h proposed,T-LEARN-02,P1
+T-LEARN-04,P4 Learning and efficiency,Learning loop implementation,C-LEARN,Build shadow comparison feed,Brian Lapp,Backlog,M: 2–4h proposed,T-LEARN-03,P1
+T-LEARN-05,P4 Learning and efficiency,Learning loop implementation,C-LEARN,Build human correction feed,Brian Lapp,Backlog,M: 2–4h proposed,T-LEARN-04,P1
+T-LEARN-06,P4 Learning and efficiency,Learning loop implementation,C-LEARN,Build synthetic edge-case feed,Brian Lapp,Backlog,M: 2–4h proposed,T-LEARN-05,P1
+T-LEARN-07,P4 Learning and efficiency,Learning loop implementation,C-LEARN,Separate train/dev/holdout by household and card,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-06,P1
+T-LEARN-08,P4 Learning and efficiency,Learning loop implementation,C-LEARN,Implement blind paired evaluation,Brian Lapp,Backlog,M: 2–4h proposed,T-LEARN-07,P1
+T-LEARN-09,P4 Learning and efficiency,Learning loop implementation,C-LEARN,Add canary promotion and stop conditions,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-08,P1
+T-LEARN-10,P4 Learning and efficiency,Learning loop implementation,C-LEARN,Connect lagged gift outcomes to decisions,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-09,P1
+T-LEARN-11,P4 Learning and efficiency,Learning loop implementation,C-LEARN,Run weekly defect-to-change review,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-10,P1
+T-LEARN-12,P4 Learning and efficiency,Learning loop implementation,C-LEARN,Retire ineffective rules and experiments,Brian Lapp,Backlog,S: 1–2h proposed,T-LEARN-11,P1
+T-ROUTINE-01,P4 Learning and efficiency,Recurring operations,C-OPS,Weekly backlog review,Jordan,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-02,P4 Learning and efficiency,Recurring operations,C-OPS,Weekly quality review,Tim Miller,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-03,P4 Learning and efficiency,Recurring operations,C-OPS,Weekly cost reconciliation,Jordan,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-04,P4 Learning and efficiency,Recurring operations,C-OPS,Daily generation queue check,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-05,P4 Learning and efficiency,Recurring operations,C-OPS,Daily review queue check,Tim Miller,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-06,P4 Learning and efficiency,Recurring operations,C-OPS,Each release rollback drill,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-07,P4 Learning and efficiency,Recurring operations,C-OPS,Each provider/model change benchmark,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-08,P4 Learning and efficiency,Recurring operations,C-OPS,Monthly supplier terms review,Jordan,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-09,P4 Learning and efficiency,Recurring operations,C-OPS,Each gift feedback review,Tim Miller,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-10,P4 Learning and efficiency,Recurring operations,C-OPS,Weekly telemetry health review,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-11,P4 Learning and efficiency,Recurring operations,C-OPS,Monthly access review,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-12,P4 Learning and efficiency,Recurring operations,C-OPS,Each deletion request review,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-13,P4 Learning and efficiency,Recurring operations,C-OPS,Weekly experiment decision,Jordan,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-14,P4 Learning and efficiency,Recurring operations,C-OPS,Monthly restore/export check,Brian Lapp,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-15,P4 Learning and efficiency,Recurring operations,C-OPS,Quarterly unused feature review,Jordan,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-ROUTINE-16,P4 Learning and efficiency,Recurring operations,C-OPS,Six-month readiness review,Jordan,Backlog,S: 1–2h proposed,T-OPS-06,P1
+T-DEFER-01,Deferred,Deferred commercial features,C-DEFER,Confirm single-card inclusions at $4.99,Jordan,Deferred,S: 1–2h proposed,T-004,P3
+T-DEFER-02,Deferred,Deferred commercial features,C-DEFER,Confirm $9.99 monthly terms,Jordan,Deferred,S: 1–2h proposed,T-DEFER-01,P3
+T-DEFER-03,Deferred,Deferred commercial features,C-DEFER,Authorize Stripe work when founders are ready,Jordan,Deferred,S: 1–2h proposed,T-DEFER-02,P3
+T-DEFER-04,Deferred,Deferred commercial features,C-DEFER,Plan verified payment and entitlement webhooks,Jordan,Deferred,S: 1–2h proposed,T-DEFER-03,P3
+T-DEFER-05,Deferred,Deferred commercial features,C-DEFER,Plan cancellation/refund/failed-payment paths,Jordan,Deferred,S: 1–2h proposed,T-DEFER-04,P3
+T-DEFER-06,Deferred,Deferred commercial features,C-DEFER,Verify physical tag pack promise and landed cost,Jordan,Deferred,S: 1–2h proposed,T-DEFER-05,P3
+T-DEFER-07,Deferred,Deferred commercial features,C-DEFER,Prototype tag-to-card mapping and QR fallback,Jordan,Deferred,S: 1–2h proposed,T-DEFER-06,P3
+T-DEFER-08,Deferred,Deferred commercial features,C-DEFER,Evaluate assisted creation as separate proposal,Jordan,Deferred,S: 1–2h proposed,T-DEFER-07,P3
+T-DEFER-09,Deferred,Deferred commercial features,C-DEFER,Consider adult birthdays after kids proof,Jordan,Deferred,S: 1–2h proposed,T-DEFER-08,P3
+T-DEFER-10,Deferred,Deferred commercial features,C-DEFER,Consider native apps and direct Story integration,Jordan,Deferred,S: 1–2h proposed,T-DEFER-09,P3
+T-EV-059,Deferred,Event implementation,C-TELEM,Instrument and contract-test payment_verified,Brian Lapp,Deferred,S: 1–2h proposed,T-TELEM-04,P1
+T-EV-060,Deferred,Event implementation,C-TELEM,Instrument and contract-test subscription_state_changed,Brian Lapp,Deferred,S: 1–2h proposed,T-TELEM-04,P1
+T-GAME-03,Deferred,Reusable mini-game engine,C-GAME,Add replayable sequence challenge proposal,Brian Lapp,Deferred,S: 1–2h proposed,T-GAME-02,P3
+T-GAME-04,Deferred,Reusable mini-game engine,C-GAME,Evaluate a memory-match game as a later module,Brian Lapp,Deferred,S: 1–2h proposed,T-GAME-03,P3
