@@ -83,6 +83,14 @@
   .pill.open{background:var(--open-bg);color:var(--open)}
   .pill.draft{background:var(--draft-bg);color:var(--draft)}
 
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:12px;margin:1.2em 0}
+  .card{display:block;text-decoration:none;color:inherit;background:var(--panel);
+    border:1px solid var(--line);border-radius:11px;padding:14px 15px;transition:border-color .15s,transform .15s}
+  .card:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .card b{display:block;font-size:14.5px;margin-bottom:3px}
+  .card span{display:block;font-size:12.5px;color:var(--muted);line-height:1.45}
+  .card em{display:block;font-style:normal;font-size:10.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--accent);margin-top:9px;font-weight:650}
   .msg{color:var(--muted);padding:40px 0}
   .msg b{color:var(--ink)}
 
@@ -111,7 +119,7 @@
 
 <div class="shell">
   <nav class="side" id="side">
-    <a class="brand" href="#/docs/index.md">
+    <a class="brand" href="#/docs/start-here.md">
       <b>🎂 Tapcard Wiki</b>
       <span>Human view of the agent docs</span>
     </a>
@@ -133,6 +141,7 @@
 <script>
 const DOCS = [
   { grp:'Start here', items:[
+    { p:'docs/start-here.md', t:'Start here', d:'What this is and how to use it' },
     { p:'AGENTS.md',   t:'AGENTS.md',  d:'Agent entry point — rules & doc map' },
     { p:'README.md',   t:'README',     d:'What this repo is' },
   ]},
@@ -192,9 +201,19 @@ function pillify(html){
   });
 }
 
+function cards(){
+  let h = '<h2>Everything in here</h2><div class="cards">';
+  DOCS.forEach(g => g.items.forEach(i => {
+    if (i.p === 'docs/start-here.md') return;
+    h += `<a class="card" href="#/${i.p}"><b>${i.t}</b><span>${i.d}</span>
+          <em>${g.grp}</em></a>`;
+  }));
+  return h + '</div>';
+}
+
 async function route(){
-  let path = decodeURIComponent(location.hash.replace(/^#\/?/, '')) || 'docs/index.md';
-  if (!ALL.includes(path)) path = 'docs/index.md';
+  let path = decodeURIComponent(location.hash.replace(/^#\/?/, '')) || 'docs/start-here.md';
+  if (!ALL.includes(path)) path = 'docs/start-here.md';
 
   document.querySelectorAll('a.nav').forEach(a =>
     a.classList.toggle('on', a.dataset.p === path));
@@ -206,6 +225,7 @@ async function route(){
     const r = await fetch('/' + path, { cache:'no-cache' });
     if (!r.ok) throw new Error(r.status);
     docEl.innerHTML = pillify(marked.parse(await r.text()));
+    if (path === 'docs/start-here.md') docEl.insertAdjacentHTML('beforeend', cards());
   } catch (e) {
     docEl.innerHTML = `<div class="msg"><b>Couldn't load ${path}</b><br>
       Try the raw file: <a href="/${path}">/${path}</a></div>`;

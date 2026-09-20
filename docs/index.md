@@ -2,6 +2,12 @@
 
 Every doc in this wiki, with a one-line summary so an agent can decide what to load without opening files. Keep this current — a doc that isn't listed here effectively does not exist.
 
+## Start here
+
+| Doc | Summary | Status | Updated |
+|---|---|---|---|
+| `start-here.md` | Landing page: what this is, why it exists, how to use it | Draft | 2026-09-20 |
+
 ## product/
 
 | Doc | Summary | Status | Updated |
