@@ -10,7 +10,7 @@ On Sep 29, 2026 the working name changed from **Tapcard** to **UNCARD** ("UN, as
 
 ## Options
 
-1. **A · Matinee** — yellow field, black type, Tomato full stop. Warm, bold, specific. Reads as **for the whole family**. Safer fit for the kids-first milestone (`../product/scope.md`) and the adults buying for them.
+1. **A · Matinee** — yellow field, black type, Tomato full stop. Warm, bold, specific. Reads as **for the whole family**. Closest to the whole-family audience set in `0005`.
 2. **B · Midnight** — black field, Acid and Hot Pink, terminal voice. Fast and funny, **built for the group chat**. Closest to the Jordan.EXE reference that started the project, but leans teen/adult.
 3. **Keep Tapcard.** No evidence yet either way; noted only so the rename is a recorded choice rather than an assumption.
 

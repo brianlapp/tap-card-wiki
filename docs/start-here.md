@@ -44,7 +44,7 @@ So the content got restructured for machines: small files, one fact per line, gr
 
 ## A word on trust
 
-Not everything here is confirmed. Anything marked `(unverified)` or `(assumption)` is a working guess, and three decisions are still open — the authoritative project repo, pricing, and the brand direction.
+Not everything here is confirmed. Anything marked `(unverified)` or `(assumption)` is a working guess, and two decisions are still open — the authoritative project repo, and the brand direction. Where sources disagreed, the newest — the UNCARD brand demo — wins (`decisions/0005`).
 
 That is deliberate. A wiki that quietly states guesses as facts is worse than no wiki, because nobody knows which parts to check. If you know better than something written here, you are the source — correct it.
 
@@ -53,5 +53,4 @@ That is deliberate. A wiki that quietly states guesses as facts is worse than no
 Waiting on Jordan:
 
 1. Which Lovable project, repo and branch are authoritative? (`decisions/0001`)
-2. One-off purchase or subscription — and at which of three prices? (`decisions/0002`)
-3. Matinee or Midnight? (`decisions/0004`)
+2. Matinee or Midnight? (`decisions/0004`)

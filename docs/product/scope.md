@@ -7,7 +7,7 @@
 
 ## TL;DR
 
-Personalized interactive birthday cards adults create for kids. First milestone is one synthetic card working end to end. Everything else waits.
+Personalized interactive birthday cards adults create for someone they love — the whole family, kids through 60+ (`0005`; previously "for kids"). First milestone is one synthetic card working end to end. Everything else waits.
 
 ## What it is
 
@@ -15,9 +15,9 @@ A slideshow player renders themed scenes from a versioned card JSON: opening boo
 
 > **Update 2026-09-30.** The scene list above was the Jordan.EXE starting point. It is now superseded by a catalogue of **50 sections and 20 themes** (`../catalogue/`), a **nine-beat arc** of 8–10 scenes (`experience.md`), and the working name **UNCARD** (`../brand/directions.md`).
 >
-> **Audience shift (unverified):** this doc frames Tapcard as kids-first. The new sources cover every age — the catalogues rate sections and themes for kids through 60+, and the samples include recipients aged 16, 32, 34, 40 and 70. Whether kids-first still holds, or is only the first milestone, needs confirming.
+> **Audience (resolved by `0005`):** not kids-first. UNCARD is for anyone someone loves — the whole family, kids through 60+. Every "kids-first" statement below is superseded. Child-safety rules (no child accounts, Link + PIN for kids) still stand.
 
-Reference implementation: `jordan-exe-birthday.netlify.app`, an adult one-off demo. This project turns its modules into a reusable kids-first product.
+Reference implementation: `jordan-exe-birthday.netlify.app`, an adult one-off demo. This project turns its modules into a reusable product. ~~kids-first~~ *(superseded by `0005`)*
 
 Build catalogue: https://docs.google.com/spreadsheets/u/1/d/1d7c4FesVy08oaTlquBT3FbXUPGZa0_70/htmlview
 
@@ -55,7 +55,7 @@ Build catalogue: https://docs.google.com/spreadsheets/u/1/d/1d7c4FesVy08oaTlquBT
 - Adult accounts only; no child logins or child contact data
 - No PII in telemetry
 - Unlimited free creation for approved founders/family, separate from admin
-- Planned pricing $4.99/card, $9.99/month — not built, and contested (see `decisions/0002`)
+- Pricing: **$5.99 per uncard, $9.99/month for two**, 3 months hosting then free keepsake or $3/year (`0005`). ~~$4.99/card, $9.99/month~~ superseded. Not built. (see `decisions/0002`)
 - Music needs verified commercial rights before any use
 - No promise of one-click social posting
 - Reduced motion, mute, keyboard and touch support required

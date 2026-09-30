@@ -44,9 +44,10 @@ docs/
     competitive-landscape.md               Ecard incumbents, custom-song vendors, direct competitors, pricing implications
   decisions/
     0001-source-of-truth.md                Which Lovable project, repo and branch are authoritative (open)
-    0002-pricing-model.md                  One-off purchase vs subscription (open)
+    0002-pricing-model.md                  $5.99 per uncard, $9.99/month for two (accepted)
     0003-task-catalogue-source.md          The task list lives here, not in the spreadsheet
     0004-brand-direction.md                UNCARD name; Matinee or Midnight (open)
+    0005-demo-is-source-of-truth.md        Where docs disagree, the brand demo wins
   tasks/
     README.md                              How to query the 526 tasks without loading them all
     tasks.csv                              526 tasks: phase, area, owner, status, dependency

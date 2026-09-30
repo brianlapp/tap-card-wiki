@@ -7,7 +7,7 @@
 
 ## TL;DR
 
-What an uncard is made of. **Sections** are the content blocks (a game, a roast, a letter). **Themes** are the look that wraps them. A card is ~8–10 sections inside one theme.
+What an uncard is made of. **Sections** are the content blocks (a game, a roast, a letter). **Themes** are the look that wraps them. An uncard is **8–10 scenes (default 9), one per beat of the nine-beat arc**, inside one world. See `../product/experience.md`.
 
 ```bash
 grep '^S15,' docs/catalogue/sections.csv            # one section
@@ -33,7 +33,7 @@ The catalogues and the site use different words for the same things. IDs are the
 | What's in here, how to query | this file | ~1,000 tokens |
 | One section or theme | `grep` one line | **~100 tokens** |
 | A theme's full kit | `grep '^T03,' theme-kits.csv` | ~250 tokens |
-| Every section, short form | `sections.csv` | ~4,600 tokens |
+| Every section, short form | `sections.csv` | ~5,517 tokens |
 | To generate a card | `prompts.md` + the rows you picked | ~2,000 + rows |
 | Both source workbooks, whole | — | ~59,000 tokens |
 
@@ -78,6 +78,6 @@ Wave 1 is the first-milestone pool.
 
 ## Open questions
 
-1. The catalogues build **8-section** cards; the brand demo builds **9-scene** cards on the spec's nine-beat arc (`../product/experience.md`). Which is canonical?
+1. ~~8 sections or 9 scenes?~~ Resolved by `0005`: 8–10 scenes, default 9. The workbooks' "about 8 sections" is superseded.
 2. Both workbooks cite `Tapcard_Product_and_Build_Spec_v2` (§4.2 arc, §5.1 visual worlds, §6 design direction, Appendix A). That spec is not in this wiki.
 3. Ratings and Wow scores need testing with real people before they drive section picks.

@@ -10,7 +10,7 @@ Load this only when you are generating or reviewing a card. Every section and th
 ## How a card is generated
 
 1. The site interviews the giver and builds a list of **facts** about the person.
-2. It picks about **8 sections** that suit them (`sections.csv`). Missing facts → that section is skipped, never invented.
+2. It picks **8–10 scenes, default 9** — one per beat of the nine-beat arc (`../product/experience.md`) — from `sections.csv`. Missing facts → that section is skipped, never invented. *(The workbooks say "about 8"; superseded by `0005`.)*
 3. For each section it runs the **section prompt** → JSON copy.
 4. It picks one **theme** (`themes.csv`) and runs the **theme prompt** → a ThemeSpec (the look). The theme never writes copy.
 5. The player renders the sections inside the ThemeSpec as one self-contained HTML file.

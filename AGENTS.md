@@ -29,6 +29,9 @@ The repo, file names and older docs still say Tapcard. Same product.
 
 ## Rules for agents
 
+- **The brand demo is the line of truth.** Where docs disagree, the UNCARD brand demo wins; older statements are marked superseded (`docs/decisions/0005-demo-is-source-of-truth.md`). If you find a new contradiction, don't pick a side silently — flag it.
+- **Speak the product's words.** In anything user-facing: *uncard, scene, world, your person, give*. Never *e-card, template, AI-generated, content, user*. File names and IDs keep *section/theme*.
+
 - **Verify before rebuilding.** A Lovable project and backend already exist. Confirm the authoritative project/branch before changing anything.
 - **Staging only.** Never run against production data, credentials or billing.
 - **No invented facts.** If a number, status or capability is unverified, write "unverified" rather than guessing.

@@ -1,6 +1,6 @@
 # 0002 — Pricing model: one-off vs subscription
 
-**Status:** Open
+**Status:** Accepted (demo pricing, per `0005`); Jordan's confirmation still required
 **Date:** 2026-09-20 · **Updated:** 2026-09-30
 **Deciders:** Jordan (owner), Brian Lapp, Tim Miller
 
@@ -15,13 +15,19 @@ The catalogue records a planned $4.99 single card and $9.99/month subscription, 
 
 ## Options
 
-1. **One-off $4.99 per card** — matches how a birthday gift is actually bought: impulse, occasion-driven, no commitment.
-2. **$9.99/month subscription** — priced above Blue Mountain while offering a fraction of the library. Hard to defend on value.
+1. **One-off $4.99 per card** *(price superseded → $5.99)* — matches how a birthday gift is actually bought: impulse, occasion-driven, no commitment.
+2. **$9.99/month subscription** *(now for two uncards)* — priced above Blue Mountain while offering a fraction of the library. Hard to defend on value.
 3. **Free tier + paid upgrade** — needed if we're competing with a free direct competitor; unit economics unknown given AI generation cost.
 
 ## Decision
 
-Pending. Must be decided before any Stripe work is authorized.
+~~Pending.~~ Resolved 2026-09-30 by `0005` — the brand demo is the line of truth:
+
+- **$5.99** per uncard, one-off
+- **$9.99/month** for **two** uncards
+- **3 months** hosting included; reminders at 30 and 7 days; then a **free** offline keepsake download, or **$3/year** to keep the link live
+
+Both option 1 (one-off) and option 2 (subscription) survive, at new prices. Stripe work is still deferred until separately authorised.
 
 ## Consequences
 
@@ -41,4 +47,4 @@ The demo followed its reference mockups, not the spec. The spec itself (`Tapcard
 
 The hosting model is consistent across sources: three months included, reminders at 30 and 7 days, then a free offline keepsake or $3/year to keep the link live. That is effectively a small recurring option already, independent of the plan question.
 
-**Still blocks Stripe work.** Add to the decision: which of the three numbers is the baseline.
+~~Still blocks Stripe work.~~ Resolved by `0005`: the demo's numbers are the baseline. The $4.99 figures are superseded.

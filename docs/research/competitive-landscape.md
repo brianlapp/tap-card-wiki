@@ -28,6 +28,8 @@ Massive libraries, low monthly price, decades of brand trust.
 | JibJab | Membership | Face-swap personalized video cards |
 | Doozy | Free/paid | Kids' animated cards incl. a find-the-cake game card |
 
+> **Update 2026-09-30:** pricing is now $5.99 per uncard and $9.99/month for two (`../decisions/0005-demo-is-source-of-truth.md`). The comparison below was written against $9.99/month. The plan is still priced above Blue Mountain's $7.99/month, now for two uncards. Research findings are otherwise unchanged.
+
 **Implication:** a $9.99/month Tapcard subscription is priced *above* Blue Mountain while offering a fraction of the library. Subscription is the weak flank.
 
 ---

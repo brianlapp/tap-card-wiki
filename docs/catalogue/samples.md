@@ -7,17 +7,17 @@
 
 ## TL;DR
 
-Six made-up recipients show how sections and a theme combine into one uncard. **The two sources disagree**, and the demo is the newer one:
+Six made-up recipients show how scenes and a world combine into one uncard. **The demo's version is canonical** (`../decisions/0005-demo-is-source-of-truth.md`). The catalogue version is kept for reference only. Where they differed:
 
 - The catalogues use **8 sections** with informal beats (Hook, Story, Roast, Play…)
 - The demo uses **9 scenes** on the nine-beat arc — see `../product/experience.md`
 - Jamie's theme differs: **T18 Case File** in the catalogue, **T02 Firmware** in the demo
 
-Which structure is canonical is (unverified) — the spec (`Tapcard_Product_and_Build_Spec_v2`, §4.2) defines the arc but is not in this wiki.
+The demo follows the spec's nine-beat arc (§4.2). **Use the demo decks.**
 
 ## At a glance
 
-| Recipient | From · tone | Theme (catalogue) | World (demo) | Palette (demo) | Demo title |
+| Recipient | From · tone | Theme (catalogue, superseded) | **World** | **Palette** | Title |
 |---|---|---|---|---|---|
 | Riley, 9 | Mum, Dad & Bean · Silly and sweet | T03 Quest Log | T03 Quest Log | Star Chart | Mission: Level Nine |
 | Jamie, 40 | The Sunday ride crew · Roasty, warm ending | T18 Case File | T02 Firmware | After Hours | JAMIE.EXE v40 |
@@ -30,11 +30,11 @@ Which structure is canonical is (unverified) — the spec (`Tapcard_Product_and_
 
 *Space plus a rabbit co-pilot is a ready-made quest. Every game is skippable.*
 
-**Catalogue theme pick:** T03 Quest Log — Space plus a rabbit companion is a ready-made quest world. Level nine, Bean as the companion and star-collecting give three fixed hooks, and every game is skippable.
+**Catalogue theme pick (superseded):** T03 Quest Log — Space plus a rabbit companion is a ready-made quest world. Level nine, Bean as the companion and star-collecting give three fixed hooks, and every game is skippable.
 
 Kit picks: palette *Star Chart: #0D1B2E #E8F1FF #FF8A5B* · type *Fredoka + Nunito* · layout *Quest board: cards pinned to a board* · motif *Stars and planets* · motion *Sparkle pickup* · interaction *Collect three stars*
 
-| # | Catalogue deck (8) | Beat | Demo deck (9) |
+| # | Catalogue deck (8, superseded) | Beat | **Demo deck (canonical)** |
 |---|---|---|---|
 | 1 | S04 Scratch-Off Reveal | Hook | S04 Scratch-Off Reveal |
 | 2 | S14 Talking Pet Cameo | Character | S16 Trading Card |
@@ -50,11 +50,11 @@ Kit picks: palette *Star Chart: #0D1B2E #E8F1FF #FF8A5B* · type *Fredoka + Nuni
 
 *Mock-serious diagnostics for someone who is always ten minutes out.*
 
-**Catalogue theme pick:** T18 Case File — The 'ten minutes out' habit is a running offence. The incident report, the diagnostic and the fine print all shine in a case file, and the verdict scene can turn warm.
+**Catalogue theme pick (superseded):** T18 Case File — The 'ten minutes out' habit is a running offence. The incident report, the diagnostic and the fine print all shine in a case file, and the verdict scene can turn warm.
 
 Kit picks: palette *Night Stakeout: #0E1420 #E9EEF7 #F5C542* · type *IBM Plex Mono + Lora* · layout *Witness statement page* · motif *Rubber stamps (CASE CLOSED, CLASSIFIED)* · motion *Redaction reveal: the bar slides away* · interaction *Tap a redaction to reveal*
 
-| # | Catalogue deck (8) | Beat | Demo deck (9) |
+| # | Catalogue deck (8, superseded) | Beat | **Demo deck (canonical)** |
 |---|---|---|---|
 | 1 | S03 Name Logo Splash | Hook | S01 Boot Gate |
 | 2 | S06 Incident Report & Replay | Story | S15 Fake Diagnostic Scan |
@@ -70,11 +70,11 @@ Kit picks: palette *Night Stakeout: #0E1420 #E9EEF7 #F5C542* · type *IBM Plex M
 
 *The crossword, the garden and far-away voices, lifted out of a keepsake box.*
 
-**Catalogue theme pick:** T04 Memory Box — Family snaps, the year she was born, far-away voices and the closing letter all shine in a memory box. Front Page suits the crossword and Field Guide suits the garden if she likes a lighter touch.
+**Catalogue theme pick (superseded):** T04 Memory Box — Family snaps, the year she was born, far-away voices and the closing letter all shine in a memory box. Front Page suits the crossword and Field Guide suits the garden if she likes a lighter touch.
 
 Kit picks: palette *Kraft & Ink: #F2E8D5 #2B2622 #9C4A2F* · type *Fraunces + Source Serif 4 + Caveat* · layout *Open box with objects fanned* · motif *Ticket stubs and stamps* · motion *Lid lift* · interaction *Unfold the note*
 
-| # | Catalogue deck (8) | Beat | Demo deck (9) |
+| # | Catalogue deck (8, superseded) | Beat | **Demo deck (canonical)** |
 |---|---|---|---|
 | 1 | S03 Name Logo Splash | Hook | S03 Name Logo Splash |
 | 2 | S12 Life Timeline | Story | S12 Life Timeline |
@@ -89,11 +89,11 @@ Kit picks: palette *Kraft & Ink: #F2E8D5 #2B2622 #9C4A2F* · type *Fraunces + So
 
 *Level titles from the squad’s in-jokes. The high-score table carries their initials.*
 
-**Catalogue theme pick:** T07 Arcade Cabinet — Level titles come from the squad's in-jokes and the high-score table carries the friends' initials. Catch, timing and beat pads all feel native.
+**Catalogue theme pick (superseded):** T07 Arcade Cabinet — Level titles come from the squad's in-jokes and the high-score table carries the friends' initials. Catch, timing and beat pads all feel native.
 
 Kit picks: palette *Cabinet Night: #0E0E2A #FFF4D6 #FF3E7F* · type *Silkscreen + Pixelify Sans* · layout *Attract screen with logo and a blinking prompt* · motif *Pixel icons of their favourite things* · motion *Sprite bob (two-frame idle)* · interaction *Insert coin (tap)*
 
-| # | Catalogue deck (8) | Beat | Demo deck (9) |
+| # | Catalogue deck (8, superseded) | Beat | **Demo deck (canonical)** |
 |---|---|---|---|
 | 1 | S01 Boot Gate | Hook | S01 Boot Gate |
 | 2 | S16 Trading Card | Identity | S16 Trading Card |
@@ -108,11 +108,11 @@ Kit picks: palette *Cabinet Night: #0E0E2A #FFF4D6 #FF3E7F* · type *Silkscreen 
 
 *Stamps, status codes and a performance review with five stars where it matters.*
 
-**Catalogue theme pick:** T02 Firmware — Mock-serious documents, stamps and status codes match deadpan office humour. The performance review, the fine print and the framework briefing all shine here.
+**Catalogue theme pick (superseded):** T02 Firmware — Mock-serious documents, stamps and status codes match deadpan office humour. The performance review, the fine print and the framework briefing all shine here.
 
 Kit picks: palette *Paper Tape: #EFEBDD #1E1E1E #C0410F* · type *DM Mono + Syne* · layout *Stamped document on the desk* · motif *Stamps and barcodes* · motion *Snap cut with a beep* · interaction *Hold to run a diagnostic*
 
-| # | Catalogue deck (8) | Beat | Demo deck (9) |
+| # | Catalogue deck (8, superseded) | Beat | **Demo deck (canonical)** |
 |---|---|---|---|
 | 1 | S05 Movie Trailer Opener | Hook | S05 Movie Trailer Opener |
 | 2 | S23 Résumé & Endorsements | Identity | S23 Résumé & Endorsements |
@@ -127,11 +127,11 @@ Kit picks: palette *Paper Tape: #EFEBDD #1E1E1E #C0410F* · type *DM Mono + Syne
 
 *Quiet, elegant, generous with white space. No roast anywhere.*
 
-**Catalogue theme pick:** T19 Gallery Wall — Quiet, elegant and generous with white space. 'Us, so far' as a retrospective, the user guide as a wall label, and the letter last. No roast anywhere.
+**Catalogue theme pick (superseded):** T19 Gallery Wall — Quiet, elegant and generous with white space. 'Us, so far' as a retrospective, the user guide as a wall label, and the letter last. No roast anywhere.
 
 Kit picks: palette *Blue Hour: #E7EDF5 #1A2540 #2F5DAA* · type *Cormorant Garamond + DM Sans* · layout *Triptych: three panels* · motif *Frames and mats* · motion *Slow fade between walls* · interaction *Tap a piece to read its label*
 
-| # | Catalogue deck (8) | Beat | Demo deck (9) |
+| # | Catalogue deck (8, superseded) | Beat | **Demo deck (canonical)** |
 |---|---|---|---|
 | 1 | S03 Name Logo Splash | Hook | S03 Name Logo Splash |
 | 2 | S12 Life Timeline | Story | S12 Life Timeline |
@@ -176,5 +176,4 @@ The two playable demo uncards, mapped to the nine-beat arc. `Tile` is the share 
 
 ## Open questions
 
-1. Is a card 8 sections (catalogues) or 8–10 scenes, default 9, on the nine-beat arc (demo)?
-2. Jamie: Case File or Firmware? Either works; the point is which sample is the reference.
+None. Both earlier questions (deck length, Jamie's world) were resolved by `0005` in the demo's favour.

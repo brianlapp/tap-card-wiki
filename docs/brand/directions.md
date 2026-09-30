@@ -119,4 +119,4 @@ Decision tracked in `../decisions/0004-brand-direction.md`. Demo: <https://claud
 
 1. Matinee or Midnight? (`0004`)
 2. Is UNCARD final, and does it clear trademark and domain checks? (unverified)
-3. The demo prices at $5.99; the spec baseline is $4.99. (`0002`)
+3. ~~Pricing~~ Resolved: $5.99 / $9.99 for two (`0002`, `0005`).

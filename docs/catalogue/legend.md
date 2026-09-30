@@ -12,6 +12,12 @@
 - `theme-kits.csv` is long format: one row per option (`theme_id, axis, n, option`). Palettes live in `palettes.csv` with contrast ratios recomputed during export.
 - `theme-section-fit.csv` is long format: `shines` = native to the theme, `works` = fits well, `avoid` = clashes with the DNA. Pairs not listed are neutral.
 
+## Added from the brand demo
+
+| Column | Meaning |
+|---|---|
+| `site_line` | In `sections.csv` and `themes.csv`. The one-line description the UNCARD site shows for that scene or world. Canonical product copy (`../decisions/0005-demo-is-source-of-truth.md`). |
+
 ## Section columns
 
 | Key | Meaning |

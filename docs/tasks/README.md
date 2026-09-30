@@ -1,7 +1,7 @@
 # Task Catalogue
 
 **Status:** Draft
-**Updated:** 2026-09-20
+**Updated:** 2026-09-30
 **Owner:** Brian Lapp
 **Method:** Exported from `Tapcard_Build_Catalogue.xlsx` (Jordan's Drive) on 2026-09-20 and restructured for agent use. Parse validated against the workbook's own summary tab: 526 unique task IDs, phase counts and owner counts all matched exactly. Column meanings in `legend.md` are inferred and (unverified) by Jordan.
 
@@ -65,6 +65,16 @@ grep -E '^T-00[1-6],' docs/tasks/tasks.csv
 ```
 
 See `../decisions/0001-source-of-truth.md`.
+
+## Known drift from the current product
+
+The build plan predates the UNCARD brand demo, which is now the line of truth (`../decisions/0005-demo-is-source-of-truth.md`). The task text below has **not** been rewritten — changing the plan is its own decision — but these tasks rest on superseded assumptions. Check `0005` before starting any of them.
+
+| Tasks | Assumes | Now |
+|---|---|---|
+| `T-THEME-01` … `T-THEME-10` (area "Ten reusable skins") | 10 skins, Quest first | 20 worlds with fixed DNA and six-axis kits (`../catalogue/`) |
+| `T-DEFER-01`, `T-DEFER-02` | $4.99 single, $9.99/month | $5.99 per uncard, $9.99/month for two |
+| Tasks mentioning "child-friendly" / kids-first | Kids-first product | Whole family, kids through 60+; child-safety rules still apply |
 
 ## Rules for agents
 

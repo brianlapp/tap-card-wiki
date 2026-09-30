@@ -1,7 +1,7 @@
 # Product Experience
 
 **Status:** Draft
-**Updated:** 2026-09-30
+**Updated:** 2026-09-30 · aligned to `0005`
 **Owner:** Brian Lapp
 **Method:** Extracted from the UNCARD brand demo artifact (v0.1, Sep 29, 2026) — its page copy, the two playable sample uncards and its data. The demo is a **design artifact, not the product**: none of this is confirmed as built (unverified). Where the demo cites the spec (`Tapcard_Product_and_Build_Spec_v2`), the spec itself was not available.
 
@@ -27,7 +27,7 @@ An uncard is **8–10 scenes, default 9**, following one arc (demo, citing spec 
 
 Each scene is filled by a section from `../catalogue/`. Worked examples: `../catalogue/samples.md`.
 
-**Conflict:** the catalogues build 8-section decks with informal beats. See Open questions.
+This is canonical (`0005`). The catalogue workbooks' 8-section decks are superseded.
 
 ## For the giver: five steps
 
@@ -90,11 +90,11 @@ These are product commitments stated publicly in the demo. Each needs to be true
 
 ## Pricing shown
 
-$5.99 per uncard · $9.99/month for two · hosting as above. **This conflicts with the spec baseline** — see `../decisions/0002-pricing-model.md`.
+$5.99 per uncard · $9.99/month for two · hosting as above. **Canonical** (`../decisions/0002-pricing-model.md`, `0005`).
 
 ## Open questions
 
-1. 8 sections (catalogues) or 8–10 scenes on the nine-beat arc (demo)?
-2. Pricing: demo $5.99 / two for $9.99 vs spec $4.99 / three credits for $9.99.
+1. ~~8 sections or 8–10 scenes?~~ Resolved: 8–10 scenes, default 9 (`0005`).
+2. ~~Pricing?~~ Resolved: the demo's prices (`0005`).
 3. "No trackers inside an uncard" and "no PII in telemetry" (`scope.md`) need to be reconciled into one analytics rule.
 4. The spec `Tapcard_Product_and_Build_Spec_v2` is referenced throughout but is not in this wiki.
