@@ -3,7 +3,7 @@
 **Status:** Draft
 **Updated:** 2026-09-30 · aligned to `0005`
 **Owner:** Brian Lapp
-**Method:** Extracted from the UNCARD brand demo artifact (v0.1, Sep 29, 2026) — its page copy, the two playable sample uncards and its data. The demo is a **design artifact, not the product**: none of this is confirmed as built (unverified). Where the demo cites the spec (`Tapcard_Product_and_Build_Spec_v2`), the spec itself was not available.
+**Method:** Extracted from the UNCARD brand demo artifact (v0.1, Sep 29, 2026) — its page copy, the two playable sample uncards and its data. The demo is a **design artifact, not the product**: none of this is confirmed as built (unverified). The demo was built from the earlier spec (`Tapcard_Product_and_Build_Spec_v2`) and supersedes it. The demo is the line of truth (`0005`); live copy at `/examples/uncard-demo/`.
 
 ## TL;DR
 
@@ -97,4 +97,4 @@ $5.99 per uncard · $9.99/month for two · hosting as above. **Canonical** (`../
 1. ~~8 sections or 8–10 scenes?~~ Resolved: 8–10 scenes, default 9 (`0005`).
 2. ~~Pricing?~~ Resolved: the demo's prices (`0005`).
 3. "No trackers inside an uncard" and "no PII in telemetry" (`scope.md`) need to be reconciled into one analytics rule.
-4. The spec `Tapcard_Product_and_Build_Spec_v2` is referenced throughout but is not in this wiki.
+4. ~~The spec is not in this wiki.~~ Not needed — superseded by the demo (`0005`).

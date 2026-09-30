@@ -4,6 +4,8 @@ Every doc in this wiki, with a one-line summary so an agent can decide what to l
 
 ## Start here
 
+The working mockup — the line of truth — is outside `docs/`: `examples/uncard-demo/` (see `examples/README.md`).
+
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
 | `start-here.md` | Landing page: what this is, why it exists, how to use it | Draft | 2026-09-30 |
@@ -40,7 +42,7 @@ What a card is made of. **Grep the CSVs; don't read them whole.**
 
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
-| `brand/directions.md` | UNCARD name; Matinee vs Midnight: logo, colour, type, voice | Open | 2026-09-30 |
+| `brand/directions.md` | UNCARD brand (Matinee): logo, colour, type, voice | Accepted | 2026-09-30 |
 | `brand/logos/` | v0.1 logo pack, SVG + PNG, both directions | Draft | 2026-09-30 |
 
 ## research/
@@ -66,10 +68,10 @@ Exported from the build catalogue. **Read these instead of the spreadsheet.**
 
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
-| `decisions/0001-source-of-truth.md` | Which Lovable project, repo and branch are authoritative | Open | 2026-09-20 |
+| `decisions/0001-source-of-truth.md` | No product repo exists; the mockup is the reference | Accepted | 2026-09-30 |
 | `decisions/0002-pricing-model.md` | $5.99 per uncard, $9.99/month for two | Accepted | 2026-09-30 |
 | `decisions/0003-task-catalogue-source.md` | Task list lives in the repo, not the spreadsheet | Accepted | 2026-09-20 |
-| `decisions/0004-brand-direction.md` | UNCARD name; Matinee or Midnight | Open | 2026-09-30 |
+| `decisions/0004-brand-direction.md` | UNCARD, Matinee | Accepted | 2026-09-30 |
 | `decisions/0005-demo-is-source-of-truth.md` | Where docs disagree, the brand demo wins | Accepted | 2026-09-30 |
 
 ## Status values

@@ -1,6 +1,6 @@
 # 0002 — Pricing model: one-off vs subscription
 
-**Status:** Accepted (demo pricing, per `0005`); Jordan's confirmation still required
+**Status:** Accepted (demo pricing, per `0005`)
 **Date:** 2026-09-20 · **Updated:** 2026-09-30
 **Deciders:** Jordan (owner), Brian Lapp, Tim Miller
 
@@ -43,7 +43,7 @@ New sources added two more data points. Nothing above is withdrawn; the options 
 | Spec "approved baseline", as quoted in the brand notes | $4.99 | $9.99/month for **three** credits | 3 months included, then free keepsake download or $3/year |
 | Brand demo (`../product/experience.md`) | **$5.99** | $9.99/month for **two** | same |
 
-The demo followed its reference mockups, not the spec. The spec itself (`Tapcard_Product_and_Build_Spec_v2`) is not in this wiki, so the "approved baseline" is (unverified).
+The demo followed its reference mockups, not the spec. The spec (`Tapcard_Product_and_Build_Spec_v2`) is superseded by the demo, so its baseline no longer applies.
 
 The hosting model is consistent across sources: three months included, reminders at 30 and 7 days, then a free offline keepsake or $3/year to keep the link live. That is effectively a small recurring option already, independent of the plan question.
 

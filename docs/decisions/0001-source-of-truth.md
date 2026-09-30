@@ -1,7 +1,7 @@
 # 0001 — Authoritative project, repo and branch
 
-**Status:** Open
-**Date:** 2026-09-20
+**Status:** Accepted
+**Date:** 2026-09-20 · **Decided:** 2026-09-30
 **Deciders:** Jordan, Brian Lapp
 
 ## Context
@@ -17,19 +17,23 @@ Nothing can be built, and no agent can be pointed at code, until this is answere
 
 ## Decision
 
-Pending. Blocked on Jordan.
+Resolved 2026-09-30 after Brian's meeting with Jordan: **there is no product repo, Lovable project or backend.** The only working version of UNCARD is the mockup — the brand demo artifact, saved in this repo at `examples/uncard-demo/` and treated as the line of truth (`0005`).
+
+Neither option above applied. The build starts from scratch, using the mockup as the reference.
 
 ## Required answers
 
-- [ ] Lovable project URL
-- [ ] GitHub repo and default branch
-- [ ] Staging environment: exists or not
-- [ ] Backend: Supabase or something else
-- [ ] Is anyone else editing outside this repo
+- [x] Lovable project URL — **none exists**
+- [x] GitHub repo and default branch — **none exists**; this wiki is the only repo
+- [x] Staging environment — **none**
+- [x] Backend — **none**; Supabase was only ever an assumption from Lovable defaults
+- [x] Is anyone else editing outside this repo — the mockup is a claude.ai artifact; see `examples/README.md`
 
 ## Consequences
 
-Until resolved: no code changes, no scaffolding, no schema work. Docs and research only.
+- ~~Until resolved: no code changes, no scaffolding, no schema work.~~ Resolved: there is nothing existing to protect, so there is nothing to rebuild over.
+- Choosing a stack and creating the product repo is now its own decision, not yet made.
+- Tasks written to find or verify the existing project are answered or moot — listed in `../tasks/README.md`.
 
 ## Note
 

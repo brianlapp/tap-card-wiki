@@ -12,7 +12,7 @@ By 2026-09-30 the wiki held four generations of product thinking: the build cata
 
 1. **Newest source wins.** The demo is the latest output and was built from all the others. Clear, but older detail it doesn't cover must survive.
 2. **Leave conflicts open for Jordan.** Accurate, but blocks every agent that touches the conflicting areas.
-3. **Spec wins.** The spec (`Tapcard_Product_and_Build_Spec_v2`) is not in the wiki, so this can't be applied.
+3. **Spec wins.** Rejected: the spec (`Tapcard_Product_and_Build_Spec_v2`) is older, and the demo was built from it.
 
 ## Decision
 
@@ -30,10 +30,10 @@ Resolved on this basis:
 | Name | UNCARD (working) | Tapcard |
 | Words | scene, world, uncard, your person, give | section, theme, card, recipient, send (kept in file names and IDs) |
 
-Not resolved by the demo, still open: the authoritative repo (`0001`) and Matinee vs Midnight (`0004`) — the demo presents both directions without choosing.
+Resolved the same day in Brian's meeting with Jordan: **no product repo exists** (`0001`) and the brand is **Matinee** (`0004`). The demo is saved at `examples/uncard-demo/`.
 
 ## Consequences
 
 - `0002` (pricing) is accepted on the demo's numbers. Stripe stays deferred until someone authorises it.
 - The **build plan** in `../tasks/` was written against the older model. Its task text is not rewritten here — changing the plan is a separate decision — but affected tasks are listed in `../tasks/README.md`.
-- Jordan owns pricing and direction. This decision should be confirmed with him; until then it is the working rule for every agent.
+- Confirmed with Jordan, 2026-09-30.

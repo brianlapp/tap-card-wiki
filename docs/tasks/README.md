@@ -58,7 +58,7 @@ Status: 498 Backlog, 14 To verify, 14 Deferred. **Nothing is Done.**
 
 ## Where to start
 
-P0 has six kickoff tasks. T-002 is the blocker — it is the "find the authoritative project" task, and it is yours:
+P0 has six kickoff tasks. T-002 ("find the authoritative project") is answered: there isn't one (`../decisions/0001-source-of-truth.md`).
 
 ```bash
 grep -E '^T-00[1-6],' docs/tasks/tasks.csv
@@ -74,6 +74,7 @@ The build plan predates the UNCARD brand demo, which is now the line of truth (`
 |---|---|---|
 | `T-THEME-01` … `T-THEME-10` (area "Ten reusable skins") | 10 skins, Quest first | 20 worlds with fixed DNA and six-axis kits (`../catalogue/`) |
 | `T-DEFER-01`, `T-DEFER-02` | $4.99 single, $9.99/month | $5.99 per uncard, $9.99/month for two |
+| `T-002`, `T-SCOPE-02`, `T-SCOPE-03`, `T-OPS-01` | An existing Lovable project, repo, staging and backend to find or verify | None exists (`0001`). T-002 is answered; the others are moot until a product repo is created |
 | Tasks mentioning "child-friendly" / kids-first | Kids-first product | Whole family, kids through 60+; child-safety rules still apply |
 
 ## Rules for agents

@@ -79,5 +79,5 @@ Wave 1 is the first-milestone pool.
 ## Open questions
 
 1. ~~8 sections or 9 scenes?~~ Resolved by `0005`: 8–10 scenes, default 9. The workbooks' "about 8 sections" is superseded.
-2. Both workbooks cite `Tapcard_Product_and_Build_Spec_v2` (§4.2 arc, §5.1 visual worlds, §6 design direction, Appendix A). That spec is not in this wiki.
+2. Both workbooks cite `Tapcard_Product_and_Build_Spec_v2`, an earlier spec from the chat-side project. Not needed: the demo was built from it and supersedes it (`0005`).
 3. Ratings and Wow scores need testing with real people before they drive section picks.

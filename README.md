@@ -38,21 +38,24 @@ docs/
     prompts.md                             Shared generation rules and output shapes
     legend.md, samples.md, reference.md    Column keys; worked examples; lineage and parked ideas
   brand/
-    directions.md                          UNCARD: Matinee vs Midnight
+    directions.md                          UNCARD brand: Matinee
     logos/                                 v0.1 logo pack, SVG + PNG
   research/
     competitive-landscape.md               Ecard incumbents, custom-song vendors, direct competitors, pricing implications
   decisions/
-    0001-source-of-truth.md                Which Lovable project, repo and branch are authoritative (open)
+    0001-source-of-truth.md                No product repo exists; the mockup is the reference
     0002-pricing-model.md                  $5.99 per uncard, $9.99/month for two (accepted)
     0003-task-catalogue-source.md          The task list lives here, not in the spreadsheet
-    0004-brand-direction.md                UNCARD name; Matinee or Midnight (open)
+    0004-brand-direction.md                UNCARD, Matinee
     0005-demo-is-source-of-truth.md        Where docs disagree, the brand demo wins
   tasks/
     README.md                              How to query the 526 tasks without loading them all
     tasks.csv                              526 tasks: phase, area, owner, status, dependency
     task-details.csv                       Output, acceptance and tooling per task
     legend.md                              Column meanings and code tables
+examples/
+  README.md                                What the mockup is and how to use it
+  uncard-demo/index.html                   The working UNCARD mockup — the line of truth (~1 MB)
 index.html                                 Renders the docs above for humans; holds no content
 ```
 
@@ -65,6 +68,7 @@ index.html                                 Renders the docs above for humans; ho
 **Don't hand-edit these:**
 
 - `docs/tasks/*.csv` and `docs/catalogue/*.csv` — exported from spreadsheets. See `docs/decisions/0003-task-catalogue-source.md`.
+- `examples/uncard-demo/` — a saved copy of the claude.ai artifact. Replace it with a newer save; don't edit it.
 - `index.html` — the display wrapper. It reads the markdown at runtime and holds no content of its own.
 
 **If you can't answer something, say so rather than guessing.** Mark it `(unverified)` or `(assumption)`, or add it to the `## Open questions` list at the bottom of the relevant doc. Several things in here — the backend choice in `product/scope.md`, the column meanings in `tasks/legend.md` — are inferences waiting on someone who actually knows.

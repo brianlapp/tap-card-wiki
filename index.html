@@ -46,6 +46,7 @@
   .side a.nav{display:block;text-decoration:none;color:var(--ink);font-size:14.5px;
     padding:7px 10px;border-radius:7px;margin-bottom:1px}
   .side a.nav:hover{background:var(--accent-soft)}
+  .side a.nav.mockup{border:1px solid var(--accent);margin:4px 0 6px;font-weight:600}
   .side a.nav.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
   .side a.nav small{display:block;color:var(--muted);font-size:12px;font-weight:400;margin-top:1px}
   .side a.nav.on small{color:var(--muted)}
@@ -124,6 +125,7 @@
       <b>🎂 UNCARD Wiki</b>
       <span>Human view of the agent docs</span>
     </a>
+    <a class="nav mockup" href="/examples/uncard-demo/" target="_blank" rel="noopener">▶ Working mockup<small>The UNCARD demo — the line of truth</small></a>
     <div id="nav"></div>
     <div class="foot">
       Rendered live from the markdown in
@@ -162,7 +164,7 @@ const DOCS = [
     { p:'docs/catalogue/reference.md', t:'Reference',       d:'Lineage and parked ideas' },
   ]},
   { grp:'Brand', items:[
-    { p:'docs/brand/directions.md', t:'Brand directions', d:'UNCARD: Matinee vs Midnight' },
+    { p:'docs/brand/directions.md', t:'Brand', d:'UNCARD · Matinee' },
   ]},
   { grp:'Research', items:[
     { p:'docs/research/competitive-landscape.md', t:'Competitive landscape', d:'Who we are up against' },
@@ -172,10 +174,10 @@ const DOCS = [
     { p:'docs/tasks/legend.md', t:'Legend',         d:'Columns and code tables' },
   ]},
   { grp:'Decisions', items:[
-    { p:'docs/decisions/0001-source-of-truth.md', t:'0001 · Source of truth', d:'Which project is authoritative' },
+    { p:'docs/decisions/0001-source-of-truth.md', t:'0001 · Source of truth', d:'No repo yet — the mockup leads' },
     { p:'docs/decisions/0002-pricing-model.md',  t:'0002 · Pricing model',   d:'$5.99 each, $9.99/mo for two' },
     { p:'docs/decisions/0003-task-catalogue-source.md', t:'0003 · Task catalogue', d:'Repo is the task list' },
-    { p:'docs/decisions/0004-brand-direction.md', t:'0004 · Brand direction', d:'Matinee or Midnight' },
+    { p:'docs/decisions/0004-brand-direction.md', t:'0004 · Brand direction', d:'UNCARD, Matinee' },
     { p:'docs/decisions/0005-demo-is-source-of-truth.md', t:'0005 · Line of truth', d:'Where docs disagree, the demo wins' },
   ]},
 ];

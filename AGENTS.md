@@ -19,7 +19,8 @@ The repo, file names and older docs still say Tapcard. Same product.
 | What the giver and recipient actually experience | `docs/product/experience.md` |
 | What a card is made of: 50 sections, 20 themes | `docs/catalogue/` — **grep, do not read whole** |
 | Generating a card: prompt rules and output shapes | `docs/catalogue/prompts.md` |
-| Name, logo, colours, voice | `docs/brand/directions.md` |
+| Name, logo, colours, voice (brand: **Matinee**) | `docs/brand/directions.md` |
+| The working mockup — what the build reproduces | `examples/uncard-demo/` (~1 MB; content already extracted into the docs above) |
 | Why a choice was made | `docs/decisions/` (numbered ADRs) |
 | How to write/update these docs | `docs/conventions.md` |
 | A task: what it is, who owns it, what blocks it | `docs/tasks/` — **grep, do not read whole** |
@@ -30,9 +31,10 @@ The repo, file names and older docs still say Tapcard. Same product.
 ## Rules for agents
 
 - **The brand demo is the line of truth.** Where docs disagree, the UNCARD brand demo wins; older statements are marked superseded (`docs/decisions/0005-demo-is-source-of-truth.md`). If you find a new contradiction, don't pick a side silently — flag it.
+- **The brand is Matinee.** Yellow Marquee field, Ink type, Tomato full stop. Midnight is rejected. The gift itself wears its world, not the brand.
 - **Speak the product's words.** In anything user-facing: *uncard, scene, world, your person, give*. Never *e-card, template, AI-generated, content, user*. File names and IDs keep *section/theme*.
 
-- **Verify before rebuilding.** A Lovable project and backend already exist. Confirm the authoritative project/branch before changing anything.
+- **There is no product codebase yet.** No repo, no Lovable project, no backend (`docs/decisions/0001`). The working mockup is `examples/uncard-demo/` — reproduce it, don't invent past it.
 - **Staging only.** Never run against production data, credentials or billing.
 - **No invented facts.** If a number, status or capability is unverified, write "unverified" rather than guessing.
 - **Server-side AI only.** No generated code executes in the recipient's browser.

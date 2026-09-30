@@ -1,18 +1,18 @@
 # Brand Directions
 
-**Status:** Open — two directions, one to be chosen
+**Status:** Accepted — **Matinee**
 **Updated:** 2026-09-30
 **Owner:** Brian Lapp
 **Method:** From `UNCARD_Brand_Directions.md` (v0.1, Sep 29, 2026), the logo pack, and the brand-guide pages of the demo artifact. The guide calls itself "a working guide for review, not a final standard". Contrast ratios are as stated in the guide (unverified here).
 
 ## TL;DR
 
-Working name change: **Tapcard → UNCARD**. Two directions, same product, different voice:
+Name: **UNCARD** (was Tapcard). Brand: **Direction A · Matinee** — decided 2026-09-30 (`0004`). Midnight is kept below as the rejected option:
 
-- **A · Matinee** — big, warm, sure of itself. For the whole family.
-- **B · Midnight** — fast, funny, in on the joke. Built for the group chat.
+- **A · Matinee ✓** — big, warm, sure of itself. For the whole family.
+- ~~B · Midnight~~ — fast, funny, in on the joke. Built for the group chat. *(rejected)*
 
-Decision tracked in `../decisions/0004-brand-direction.md`. Demo: <https://claude.ai/artifact/WNJACScZP1etR5EmdV4qaX>
+Decision: `../decisions/0004-brand-direction.md`. Working mockup: `/examples/uncard-demo/`.
 
 <p>
 <img src="/docs/brand/logos/matinee/png/uncard-matinee-wordmark-on-yellow-2000w.png" alt="UNCARD Matinee wordmark" width="320">
@@ -32,7 +32,7 @@ Decision tracked in `../decisions/0004-brand-direction.md`. Demo: <https://claud
 
 ## Side by side
 
-| | A · Matinee | B · Midnight |
+| | A · Matinee ✓ | B · Midnight (rejected) |
 |---|---|---|
 | Modelled on | Yellow "Tenfold" reference | Dark neon "Encore" reference |
 | Headline | Not a card. A whole little world. | Cards get recycled. Uncards get replayed. |
@@ -117,6 +117,6 @@ Decision tracked in `../decisions/0004-brand-direction.md`. Demo: <https://claud
 
 ## Open questions
 
-1. Matinee or Midnight? (`0004`)
-2. Is UNCARD final, and does it clear trademark and domain checks? (unverified)
+1. ~~Matinee or Midnight?~~ Matinee (`0004`).
+2. UNCARD is the name. Trademark and domain checks not yet done (unverified).
 3. ~~Pricing~~ Resolved: $5.99 / $9.99 for two (`0002`, `0005`).

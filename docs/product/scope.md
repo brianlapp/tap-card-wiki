@@ -24,7 +24,7 @@ Build catalogue: https://docs.google.com/spreadsheets/u/1/d/1d7c4FesVy08oaTlquBT
 ## Tech stack
 
 **Product app**
-- Lovable, synced to GitHub (repo URL unknown — see `decisions/0001`)
+- ~~Lovable, synced to GitHub~~ — *superseded 2026-09-30: no Lovable project, repo or backend exists (`../decisions/0001`). Stack not yet chosen. Every line below marked (assumption) came from Lovable defaults and is now open.*
 - React + Vite + TypeScript (assumption: Lovable default)
 - Tailwind CSS + shadcn/ui (assumption)
 - Supabase: auth, Postgres, storage, edge functions (assumption)
@@ -87,6 +87,6 @@ Build catalogue: https://docs.google.com/spreadsheets/u/1/d/1d7c4FesVy08oaTlquBT
 
 ## Open questions
 
-1. Which Lovable project, repo and branch are authoritative?
+1. ~~Which Lovable project, repo and branch are authoritative?~~ None exists (`0001`). Next: choose a stack and create the product repo.
 2. Does a staging environment exist?
 3. Is the backend actually Supabase?

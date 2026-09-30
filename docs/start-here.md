@@ -44,13 +44,16 @@ So the content got restructured for machines: small files, one fact per line, gr
 
 ## A word on trust
 
-Not everything here is confirmed. Anything marked `(unverified)` or `(assumption)` is a working guess, and two decisions are still open — the authoritative project repo, and the brand direction. Where sources disagreed, the newest — the UNCARD brand demo — wins (`decisions/0005`).
+Not everything here is confirmed. Anything marked `(unverified)` or `(assumption)` is a working guess, Where sources disagreed, the newest — the UNCARD brand demo — wins (`decisions/0005`). You can open it yourself: [the working mockup](/examples/uncard-demo/).
 
 That is deliberate. A wiki that quietly states guesses as facts is worse than no wiki, because nobody knows which parts to check. If you know better than something written here, you are the source — correct it.
 
 ## Open questions
 
-Waiting on Jordan:
+None blocking. Decided 2026-09-30:
 
-1. Which Lovable project, repo and branch are authoritative? (`decisions/0001`)
-2. Matinee or Midnight? (`decisions/0004`)
+- **No product repo exists** — the mockup is the reference (`decisions/0001`)
+- **Pricing:** $5.99 per uncard, $9.99/month for two (`decisions/0002`)
+- **Brand:** UNCARD, Matinee (`decisions/0004`)
+
+Next up: choose a stack and create the product repo.
