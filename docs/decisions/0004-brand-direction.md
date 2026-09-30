@@ -20,7 +20,7 @@ Pending.
 
 ## Consequences
 
-Whichever is chosen sets the site's voice, the Studio copy, button labels ("Make one" / "Drop one") and marketing. It does **not** constrain card themes: the 20 themes in `../catalogue/` span both moods, and a Midnight site can still deliver a Memory Box card.
+Whichever is chosen sets the site's voice, the Studio copy, button labels ("Make one" / "Drop one") and marketing. It does **not** constrain card themes — the spec says so directly: "the gift looks like its world, not like the UNCARD marketing brand" (§6.1, quoted in the demo's source): the 20 themes in `../catalogue/` span both moods, and a Midnight site can still deliver a Memory Box card.
 
 Until decided, the wiki uses **UNCARD** as the working name and keeps `Tapcard` in file names, the repo name and historical docs.
 

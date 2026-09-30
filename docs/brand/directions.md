@@ -21,6 +21,7 @@ Decision tracked in `../decisions/0004-brand-direction.md`. Demo: <https://claud
 
 ## Shared rules
 
+- **The gift looks like its world, not like the UNCARD brand.** The brand dresses the site; each uncard wears its own theme (spec §6.1, as quoted in the demo's source).
 - **The wordmark is the whole logo.** No symbol, badge or mascot beside it.
 - A separate app icon exists for app icons, favicons and avatars only, and **never sits next to the wordmark**.
 - Clear space: half the cap height on every side. Minimum: 96 px on screen, 24 mm in print.
