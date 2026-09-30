@@ -1,6 +1,6 @@
 # Tapcard Wiki
 
-Project context for **Tapcard** — personalized, interactive birthday cards that adults create for kids. A slideshow player renders themed scenes from a versioned card JSON; kids just open a link.
+Project context for **UNCARD** (working name; formerly Tapcard) — personalized, interactive birthday cards that adults create for someone they love. A slideshow player renders themed scenes from a versioned card JSON; kids just open a link.
 
 This repo is the shared brain: scope, research, decisions and conventions that people and AI agents both read.
 
@@ -25,14 +25,28 @@ README.md                                  This file
 docs/
   index.md                                 Every doc with a one-line summary and status
   conventions.md                           How to write and update docs in this wiki
+  start-here.md                            Landing page for human readers
   product/
     scope.md                               What Tapcard is, stack, constraints, phases, team
+    experience.md                          Nine-beat arc, giver flow, Studio, sharing, hosting
+  catalogue/
+    README.md                              How sections and themes combine; how to query
+    sections.csv / section-details.csv     50 sections (short form / prompts, examples)
+    themes.csv / theme-details.csv         20 themes (short form / prompts, examples)
+    theme-kits.csv, palettes.csv           Each theme's options on six axes
+    theme-section-fit.csv                  Which sections suit which themes
+    prompts.md                             Shared generation rules and output shapes
+    legend.md, samples.md, reference.md    Column keys; worked examples; lineage and parked ideas
+  brand/
+    directions.md                          UNCARD: Matinee vs Midnight
+    logos/                                 v0.1 logo pack, SVG + PNG
   research/
     competitive-landscape.md               Ecard incumbents, custom-song vendors, direct competitors, pricing implications
   decisions/
     0001-source-of-truth.md                Which Lovable project, repo and branch are authoritative (open)
     0002-pricing-model.md                  One-off purchase vs subscription (open)
     0003-task-catalogue-source.md          The task list lives here, not in the spreadsheet
+    0004-brand-direction.md                UNCARD name; Matinee or Midnight (open)
   tasks/
     README.md                              How to query the 526 tasks without loading them all
     tasks.csv                              526 tasks: phase, area, owner, status, dependency
@@ -49,7 +63,7 @@ index.html                                 Renders the docs above for humans; ho
 
 **Don't hand-edit these:**
 
-- `docs/tasks/*.csv` — exported from the build catalogue. See `docs/decisions/0003-task-catalogue-source.md`.
+- `docs/tasks/*.csv` and `docs/catalogue/*.csv` — exported from spreadsheets. See `docs/decisions/0003-task-catalogue-source.md`.
 - `index.html` — the display wrapper. It reads the markdown at runtime and holds no content of its own.
 
 **If you can't answer something, say so rather than guessing.** Mark it `(unverified)` or `(assumption)`, or add it to the `## Open questions` list at the bottom of the relevant doc. Several things in here — the backend choice in `product/scope.md`, the column meanings in `tasks/legend.md` — are inferences waiting on someone who actually knows.

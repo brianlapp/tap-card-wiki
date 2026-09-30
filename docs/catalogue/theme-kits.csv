@@ -1,0 +1,482 @@
+theme_id,axis,n,option
+T01,type,1,IM Fell English + Libre Baskerville
+T01,type,2,Cormorant Garamond + Lora + IBM Plex Mono
+T01,type,3,Playfair Display SC + Source Serif 4
+T01,type,4,Old Standard TT + Alegreya
+T01,type,5,Fraunces + Source Serif 4 + Special Elite
+T01,layout,1,Single plate: one drawing over a caption block
+T01,layout,2,"Facing pages: drawing left, notes right (stacked on phones)"
+T01,layout,3,Specimen card grid: six small cards
+T01,layout,4,Range map with pinned sightings
+T01,layout,5,Marginalia column: text with a running side note
+T01,motif,1,Birds (from a commute or garden)
+T01,motif,2,"Botanical (plants they grow, a childhood tree)"
+T01,motif,3,Insects and small creatures
+T01,motif,4,Shells and shoreline
+T01,motif,5,Fungi and mosses
+T01,motif,6,"Tools and gear as 'fauna' (bikes, kettles, guitars)"
+T01,motion,1,Ink draw-on (SVG strokes trace in)
+T01,motion,2,Page settle (fade and a 2 px drop)
+T01,motion,3,Pin drop (map pins land in turn)
+T01,motion,4,Loupe reveal (a lens moves over the plate)
+T01,interaction,1,Tap a plate to open its margin note
+T01,interaction,2,Drag a loupe over the drawing
+T01,interaction,3,Turn a page corner
+T01,interaction,4,Tick sightings on a checklist
+T02,type,1,IBM Plex Mono + Space Grotesk
+T02,type,2,Space Mono + Archivo
+T02,type,3,VT323 + Share Tech Mono
+T02,type,4,DM Mono + Syne
+T02,type,5,Share Tech Mono + Barlow Condensed + B612 Mono
+T02,layout,1,Full-screen console: text fills the frame
+T02,layout,2,Panel dashboard: three tiles
+T02,layout,3,Stamped document on the desk
+T02,layout,4,Giant statement over a status bar
+T02,layout,5,Terminal window floating over a graphic
+T02,motif,1,Progress bars and loaders
+T02,motif,2,Warning labels and hazard stripes
+T02,motif,3,Circuit traces and connector pins
+T02,motif,4,Waveforms and gauges
+T02,motif,5,Stamps and barcodes
+T02,motif,6,Pixel icons of their hobbies
+T02,motion,1,"Typed lines, character by character"
+T02,motion,2,Block wipe: the scene swaps in tiles
+T02,motion,3,"Scan-line sweep, once per scene"
+T02,motion,4,Snap cut with a beep
+T02,interaction,1,Press any key to start
+T02,interaction,2,Hold to run a diagnostic
+T02,interaction,3,Slide to unlock
+T02,interaction,4,Type a command (three suggested)
+T03,type,1,MedievalSharp + Alegreya
+T03,type,2,Cinzel + Lora
+T03,type,3,Uncial Antiqua + Merriweather
+T03,type,4,Pixelify Sans + Nunito
+T03,type,5,Exo 2 + Rajdhani
+T03,type,6,Fredoka + Nunito
+T03,layout,1,Quest board: cards pinned to a board
+T03,layout,2,"Journal spread: quest list left, detail right"
+T03,layout,3,HUD overlay: stat bars around the scene
+T03,layout,4,Dialogue stage: portrait and text box
+T03,layout,5,Inventory grid: items in slots
+T03,motif,1,Heraldry and emblems
+T03,motif,2,Map marks and dotted paths
+T03,motif,3,"Potions, scrolls and keys"
+T03,motif,4,Stars and planets
+T03,motif,5,"Companions and creatures (original, drawn from facts)"
+T03,motif,6,Runes and borders
+T03,motion,1,Stamp-in: badges thud into place
+T03,motion,2,Scroll unroll
+T03,motion,3,XP bar fill
+T03,motion,4,Sparkle pickup
+T03,interaction,1,Accept a quest (tap to begin)
+T03,interaction,2,Choose a tool (one of three symbolic items)
+T03,interaction,3,Collect three stars
+T03,interaction,4,Talk to the companion (tap through dialogue)
+T04,type,1,Fraunces + Source Serif 4 + Caveat
+T04,type,2,Instrument Serif + Inter
+T04,type,3,DM Serif Display + Lora + Homemade Apple
+T04,type,4,Playfair Display + Libre Baskerville + Reenie Beanie
+T04,type,5,Cormorant Garamond + Figtree + Kalam
+T04,layout,1,Open box with objects fanned
+T04,layout,2,One object centred on the lid
+T04,layout,3,Timeline strip of small objects
+T04,layout,4,Pinboard of pinned notes
+T04,layout,5,Envelope stack: open one at a time
+T04,motif,1,Ticket stubs and stamps
+T04,motif,2,Pressed leaves and flowers
+T04,motif,3,Recipe cards and lists
+T04,motif,4,Maps and folded plans
+T04,motif,5,Photo corners and tape
+T04,motif,6,"Keys, buttons and small trinkets"
+T04,motion,1,Lid lift
+T04,motion,2,Fold open
+T04,motion,3,Slide out and settle
+T04,motion,4,Photo flip
+T04,interaction,1,Open the lid
+T04,interaction,2,Unfold the note
+T04,interaction,3,Turn the photo over
+T04,interaction,4,Arrange three items in order
+T05,type,1,Abril Fatface + Poppins
+T05,type,2,Shrikhand + DM Sans
+T05,type,3,Rubik Mono One + Work Sans
+T05,type,4,Bowlby One + Figtree
+T05,type,5,Righteous + Work Sans
+T05,layout,1,Giant numeral with a small caption
+T05,layout,2,"Split field: two colours, one headline"
+T05,layout,3,Cut-out collage of shapes and a portrait
+T05,layout,4,Stacked words: one word per row
+T05,layout,5,Sticker grid of facts (taste profile)
+T05,motif,1,"Circles, semicircles and arches"
+T05,motif,2,Halftone dots
+T05,motif,3,Stars and bursts
+T05,motif,4,Waves and stripes
+T05,motif,5,Cut-out paper shapes
+T05,motif,6,Checker and grid patterns
+T05,motion,1,Slide-and-lock: shapes glide into place
+T05,motion,2,Scale pop: numerals grow in
+T05,motion,3,Colour wipe
+T05,motion,4,Card flip (the award)
+T05,interaction,1,Tap to reveal the poster
+T05,interaction,2,Assemble the taste profile (tap facts to place them)
+T05,interaction,3,Flip the award
+T05,interaction,4,Spin the cover
+T06,type,1,Permanent Marker + Space Mono
+T06,type,2,Rock Salt + IBM Plex Mono
+T06,type,3,Caveat Brush + DM Mono
+T06,type,4,Bebas Neue + Courier Prime
+T06,type,5,Yellowtail + Space Mono
+T06,layout,1,Cassette front with a fold-out J-card
+T06,layout,2,Tracklist as a back cover
+T06,layout,3,Record sleeve with a spinning disc
+T06,layout,4,Walkman-style player bar over full-screen art
+T06,layout,5,Playlist screen with cover thumbnails
+T06,motif,1,Cassette reels and tape
+T06,motif,2,Vinyl grooves and labels
+T06,motif,3,Waveforms and EQ bars
+T06,motif,4,Hand-drawn stars and lightning
+T06,motif,5,Stickers and label-maker strips
+T06,motif,6,Headphones and boxy speakers
+T06,motion,1,Reel spin
+T06,motion,2,EQ bounce (idle bars)
+T06,motion,3,Needle drop
+T06,motion,4,Tape-stop slow-down
+T06,interaction,1,Press play
+T06,interaction,2,Flip the cassette to Side B
+T06,interaction,3,Tap the pads to play a beat
+T06,interaction,4,Scrub the tracklist
+T07,type,1,Press Start 2P + Nunito
+T07,type,2,Silkscreen + Pixelify Sans
+T07,type,3,Pixelify Sans + DM Mono
+T07,type,4,VT323 + Silkscreen
+T07,type,5,Press Start 2P + Space Mono
+T07,layout,1,Attract screen with logo and a blinking prompt
+T07,layout,2,Level-select map: tiles in a row
+T07,layout,3,Single-screen game frame with a HUD bar
+T07,layout,4,Boss screen with a health bar
+T07,layout,5,High-score table
+T07,motif,1,Pixel icons of their favourite things
+T07,motif,2,Rows of marching sprites (original shapes)
+T07,motif,3,Maze corridors
+T07,motif,4,Platform steps and ladders
+T07,motif,5,"Coins, stars and hearts"
+T07,motif,6,Racing stripes
+T07,motion,1,Sprite bob (two-frame idle)
+T07,motion,2,Block screen wipe
+T07,motion,3,Score count-up
+T07,motion,4,Pixel dissolve
+T07,interaction,1,Insert coin (tap)
+T07,interaction,2,Pick a level
+T07,interaction,3,Play a 10-second mini game
+T07,interaction,4,Enter three initials
+T08,type,1,Anton + Inter
+T08,type,2,Bebas Neue + Work Sans
+T08,type,3,Big Shoulders Display + DM Sans
+T08,type,4,Teko + Barlow Condensed
+T08,type,5,Graduate + Oswald
+T08,layout,1,Scoreboard hero with stat rows
+T08,layout,2,Line-up card: names in a grid
+T08,layout,3,Broadcast frame with lower-third captions
+T08,layout,4,Tactics board: a diagram on a field
+T08,layout,5,Match programme page: portrait and career stats
+T08,motif,1,Scoreboards and clocks
+T08,motif,2,Field and court markings
+T08,motif,3,Pennants and banners
+T08,motif,4,"Whistle, stopwatch and medal icons"
+T08,motif,5,Jersey numbers
+T08,motif,6,Confetti and trophies
+T08,motion,1,Ticker crawl
+T08,motion,2,Score count-up
+T08,motion,3,Replay wipe (slow-motion swoosh)
+T08,motion,4,Lower-third slide
+T08,interaction,1,Kick off (tap)
+T08,interaction,2,Vote the player of the match
+T08,interaction,3,Replay the moment (tap to rewind)
+T08,interaction,4,Pick the line-up
+T09,type,1,Bangers + Comic Neue
+T09,type,2,Luckiest Guy + Patrick Hand
+T09,type,3,Chewy + Quicksand
+T09,type,4,Bebas Neue + Special Elite
+T09,type,5,Lilita One + Nunito
+T09,layout,1,Six-panel page
+T09,layout,2,Splash page with one big panel
+T09,layout,3,Widescreen strips: three wide panels
+T09,layout,4,Diagonal panels
+T09,layout,5,Cover with masthead and issue banner
+T09,motif,1,Halftone dots
+T09,motif,2,Speed lines and impact bursts
+T09,motif,3,"Sound-effect lettering (POW, ZZZ, DING)"
+T09,motif,4,Thought clouds and captions
+T09,motif,5,Ink splatter and cross-hatch
+T09,motif,6,Cutaway panels with inset details
+T09,motion,1,Panel-by-panel reveal
+T09,motion,2,Page turn with a curl
+T09,motion,3,One shake on impact
+T09,motion,4,Bubble pop-in
+T09,interaction,1,Tap to reveal the next panel
+T09,interaction,2,Swipe the page turn
+T09,interaction,3,Fill in the missing word bubble
+T09,interaction,4,Choose the sound effect
+T10,type,1,Fredoka + Nunito
+T10,type,2,Baloo 2 + Quicksand
+T10,type,3,Grandstander + Patrick Hand
+T10,type,4,Sniglet + Nunito
+T10,type,5,Chewy + Comic Neue
+T10,layout,1,Full-page picture with a text band
+T10,layout,2,"Half picture, half text (stacked)"
+T10,layout,3,Spot illustration with a rhyme couplet
+T10,layout,4,"Wordless spread: one big picture, one line"
+T10,layout,5,Lift-the-flap page with a hidden panel
+T10,motif,1,"Animal friends (original, simple shapes)"
+T10,motif,2,"Moon, stars and clouds"
+T10,motif,3,Garden and woodland
+T10,motif,4,Sea and boats
+T10,motif,5,Toys and blocks
+T10,motif,6,Rockets and planets
+T10,motion,1,Page turn (soft slide)
+T10,motion,2,Bounce-in characters
+T10,motion,3,Gentle sway (idle)
+T10,motion,4,Twinkle
+T10,interaction,1,Tap anywhere to turn the page
+T10,interaction,2,Lift the flap
+T10,interaction,3,Tap the character to hear a sound
+T10,interaction,4,Find the hidden helper
+T11,type,1,Chewy + DM Sans
+T11,type,2,Sniglet + Quicksand
+T11,type,3,Lilita One + Figtree
+T11,type,4,Caveat Brush + Work Sans
+T11,type,5,Baloo 2 + Poppins
+T11,layout,1,Sticker sheet beside the page (stacked on phones)
+T11,layout,2,Scrapbook spread with washi-tape corners
+T11,layout,3,Bullet-journal grid
+T11,layout,4,Collection page with slots to fill
+T11,layout,5,"One big page, one sticker at a time"
+T11,motif,1,Die-cut food and drink
+T11,motif,2,Animals and pets
+T11,motif,3,"Stars, hearts and sparkles"
+T11,motif,4,Sports and hobby gear
+T11,motif,5,Weather and nature
+T11,motif,6,Speech-bubble stickers with their catchphrases
+T11,motion,1,"Peel and stick (a small curl, then a press)"
+T11,motion,2,Wiggle on placement
+T11,motion,3,Sparkle burst on completion
+T11,motion,4,Slide from the tray
+T11,interaction,1,Drag stickers onto the page
+T11,interaction,2,Tap to place the next sticker
+T11,interaction,3,Match stickers to slots
+T11,interaction,4,Scratch a sticker to reveal a message
+T12,type,1,Old Standard TT + Libre Baskerville
+T12,type,2,Playfair Display + Source Serif 4
+T12,type,3,Abril Fatface + Lora
+T12,type,4,Special Elite + Courier Prime
+T12,type,5,DM Serif Display + Inter
+T12,layout,1,"Front page: masthead, banner and columns"
+T12,layout,2,Opinion page with a large pull quote
+T12,layout,3,Classifieds grid
+T12,layout,4,Crossword page with clues
+T12,layout,5,Weather and scores strip
+T12,motif,1,Halftone photo boxes
+T12,motif,2,Column rules and drop caps
+T12,motif,3,Fleurons and pointing hands
+T12,motif,4,Ink smudges and folds
+T12,motif,5,Ticker of 'breaking' headlines
+T12,motif,6,Stamps such as EXCLUSIVE and LATE EDITION
+T12,motion,1,"Press roll-in (the page slides up, slightly rotated)"
+T12,motion,2,Headline type-in
+T12,motion,3,Fold reveal
+T12,motion,4,Stamp thud
+T12,interaction,1,Tap a headline to read the story
+T12,interaction,2,Turn to the next page
+T12,interaction,3,Fill a clue in the crossword
+T12,interaction,4,Cut out the coupon
+T13,type,1,Limelight + Josefin Sans
+T13,type,2,Poiret One + Lora
+T13,type,3,Italiana + Source Serif 4
+T13,type,4,Cinzel + Libre Baskerville
+T13,type,5,Playfair Display SC + Josefin Sans
+T13,layout,1,Marquee front with a title sign
+T13,layout,2,Letterboxed still with a caption bar
+T13,layout,3,One-sheet poster with a cast list
+T13,layout,4,Ticket stub and seat map
+T13,layout,5,End-credits roll
+T13,motif,1,Marquee bulbs
+T13,motif,2,Curtains and spotlights
+T13,motif,3,Film strip and clapperboard
+T13,motif,4,"Popcorn, tickets and stars"
+T13,motif,5,Projector beam and dust
+T13,motif,6,Laurels and award statuettes (original shapes)
+T13,motion,1,Curtain rise
+T13,motion,2,Spotlight sweep
+T13,motion,3,Slow zoom on the title card
+T13,motion,4,Credits roll
+T13,interaction,1,Take your seat (tap to raise the curtain)
+T13,interaction,2,Choose the trailer cut
+T13,interaction,3,Vote on the cast
+T13,interaction,4,Skip to the credits
+T14,type,1,Monoton + Space Grotesk
+T14,type,2,Audiowide + Rubik
+T14,type,3,Orbitron + Exo 2
+T14,type,4,Righteous + DM Sans
+T14,type,5,Bungee + Work Sans
+T14,layout,1,Windshield view: a floating title over the horizon
+T14,layout,2,Billboard along the road
+T14,layout,3,Dashboard radio with a now-playing display
+T14,layout,4,Map of the route with stops
+T14,layout,5,"Poster: sun, grid and chrome title"
+T14,motif,1,Grid horizon and sun stripes
+T14,motif,2,Palm silhouettes
+T14,motif,3,Chrome lettering and lens flare
+T14,motif,4,Neon tubes and signs
+T14,motif,5,Retro car or bike silhouette (original)
+T14,motif,6,Stars and satellites
+T14,motion,1,Road scroll: the grid moves toward you
+T14,motion,2,One neon flicker on entry
+T14,motion,3,Sun rise or set
+T14,motion,4,Parallax drift
+T14,interaction,1,Turn the key (tap to start)
+T14,interaction,2,Change the radio station
+T14,interaction,3,Pull over at the next stop
+T14,interaction,4,Honk the horn for a surprise
+T15,type,1,Architects Daughter + B612 Mono
+T15,type,2,Barlow Condensed + DM Mono
+T15,type,3,Amatic SC + IBM Plex Mono
+T15,type,4,Rajdhani + Share Tech Mono
+T15,type,5,Josefin Sans + Courier Prime
+T15,layout,1,Single sheet: drawing with a title block
+T15,layout,2,Exploded view with numbered parts
+T15,layout,3,Section and elevation pair
+T15,layout,4,Floor plan of a 'home' (their life rooms)
+T15,layout,5,Parts list and revision table
+T15,motif,1,Dimension lines and arrows
+T15,motif,2,Callout bubbles and leader lines
+T15,motif,3,Hatching and cross-sections
+T15,motif,4,Grid paper and registration marks
+T15,motif,5,"Gears, bolts and fasteners"
+T15,motif,6,Schematic symbols
+T15,motion,1,Line draw-on: strokes trace in
+T15,motion,2,Dimension pop: arrows extend
+T15,motion,3,Exploded view: parts drift apart
+T15,motion,4,Stamp of approval
+T15,interaction,1,Tap a callout to read its note
+T15,interaction,2,Drag the exploded view apart
+T15,interaction,3,"Toggle layers (structure, wiring, feelings)"
+T15,interaction,4,Sign the drawing
+T16,type,1,Yellowtail + Josefin Sans
+T16,type,2,Special Elite + Lora
+T16,type,3,Sacramento + Work Sans
+T16,type,4,Caveat + Source Serif 4
+T16,type,5,Alfa Slab One + Figtree
+T16,layout,1,Passport page with stamps
+T16,layout,2,Boarding pass with a tear-off stub
+T16,layout,3,Postcard front and back
+T16,layout,4,Route map with pins
+T16,layout,5,Luggage tag and baggage label
+T16,motif,1,Visa stamps (circular and rectangular)
+T16,motif,2,Airmail stripes and postage stamps
+T16,motif,3,"Compass, globe and route lines"
+T16,motif,4,Luggage tags and stickers
+T16,motif,5,Ticket stubs and boarding passes
+T16,motif,6,Landmarks as line icons (original)
+T16,motion,1,Stamp thud
+T16,motion,2,Route draw: a line traces between stops
+T16,motion,3,Plane or train glide
+T16,motion,4,Page flip
+T16,interaction,1,Tap to stamp the page
+T16,interaction,2,Tear the boarding-pass stub
+T16,interaction,3,Flip the postcard
+T16,interaction,4,Pick the next destination
+T17,type,1,Alfa Slab One + Work Sans
+T17,type,2,Bowlby One + Nunito
+T17,type,3,Chewy + Figtree
+T17,type,4,Lilita One + Quicksand
+T17,type,5,Rock Salt + Source Serif 4
+T17,layout,1,Gate with a ticket booth
+T17,layout,2,Midway strip: booths side by side
+T17,layout,3,Single booth close-up with a sign and prize shelf
+T17,layout,4,Ferris wheel: scenes as gondolas
+T17,layout,5,Prize wall with a claim ticket
+T17,motif,1,Striped awnings and bunting
+T17,motif,2,String lights and bulbs
+T17,motif,3,Tickets and tokens
+T17,motif,4,Ferris wheel and carousel
+T17,motif,5,Balloons and pinwheels
+T17,motif,6,Prize plush shapes (original)
+T17,motion,1,Bulb chase (lights ripple once)
+T17,motion,2,Wheel turn
+T17,motion,3,Sign swing
+T17,motion,4,Prize drop
+T17,interaction,1,Buy a ticket (tap)
+T17,interaction,2,"Play the booth game (easy, always won)"
+T17,interaction,3,Spin the prize wheel
+T17,interaction,4,Ride the wheel to the top
+T18,type,1,Special Elite + Courier Prime
+T18,type,2,Courier Prime + Old Standard TT
+T18,type,3,IBM Plex Mono + Lora
+T18,type,4,Special Elite + Alegreya
+T18,type,5,DM Mono + Instrument Serif
+T18,layout,1,Folder open with clipped documents
+T18,layout,2,Suspect board with photos and string
+T18,layout,3,Witness statement page
+T18,layout,4,Evidence bag with a tag
+T18,layout,5,Surveillance log and timeline
+T18,motif,1,Redaction bars
+T18,motif,2,Paper clips and staples
+T18,motif,3,"Rubber stamps (CASE CLOSED, CLASSIFIED)"
+T18,motif,4,Red string and pins
+T18,motif,5,Coffee rings and fingerprints (original)
+T18,motif,6,Evidence tags and numbers
+T18,motion,1,Stamp thud
+T18,motion,2,Redaction reveal: the bar slides away
+T18,motion,3,String draw: a line connects the pins
+T18,motion,4,Folder open
+T18,interaction,1,Open the folder
+T18,interaction,2,Tap a redaction to reveal
+T18,interaction,3,Connect the pins
+T18,interaction,4,Stamp the verdict
+T19,type,1,Instrument Serif + Inter
+T19,type,2,Cormorant Garamond + DM Sans
+T19,type,3,Fraunces + Figtree
+T19,type,4,DM Serif Display + Work Sans
+T19,type,5,Italiana + Inter
+T19,layout,1,Single framed piece with a wall label
+T19,layout,2,Salon wall: many frames
+T19,layout,3,Triptych: three panels
+T19,layout,4,Room plan with numbered pieces
+T19,layout,5,Vitrine: objects on a plinth
+T19,motif,1,Frames and mats
+T19,motif,2,Plinths and vitrines
+T19,motif,3,Wall labels and catalogue numbers
+T19,motif,4,Spotlights and picture lights
+T19,motif,5,Velvet ropes and ribbons
+T19,motif,6,Abstract shapes as 'art' (original)
+T19,motion,1,Slow fade between walls
+T19,motion,2,Frame lift: a piece is lit
+T19,motion,3,Label slide-in
+T19,motion,4,Room pan: a walk to the next wall
+T19,interaction,1,Tap a piece to read its label
+T19,interaction,2,Walk to the next room
+T19,interaction,3,Use the audio guide (optional)
+T19,interaction,4,Sign the visitors' book
+T20,type,1,Playfair Display + Lora
+T20,type,2,Cormorant Garamond + Work Sans
+T20,type,3,Amatic SC + Nunito
+T20,type,4,Lobster + Quicksand
+T20,type,5,DM Serif Display + Figtree
+T20,layout,1,Menu card with dotted leaders
+T20,layout,2,Chalkboard specials
+T20,layout,3,Course plate: one dish close-up with a note
+T20,layout,4,Pairing list
+T20,layout,5,Bill on a tray
+T20,motif,1,Cutlery and plates
+T20,motif,2,Chalk doodles
+T20,motif,3,Steam curls and bubbles
+T20,motif,4,Tablecloth check
+T20,motif,5,"Herb, spice and fruit line icons"
+T20,motif,6,Price tags and stamps
+T20,motion,1,Cloche lift: the dish is revealed
+T20,motion,2,Chalk write-on
+T20,motion,3,Pour: a glass fills
+T20,motion,4,Bell ding
+T20,interaction,1,Tap the bell to call the next course
+T20,interaction,2,Lift the cloche
+T20,interaction,3,Choose a pairing
+T20,interaction,4,Pay the bill (split among friends)

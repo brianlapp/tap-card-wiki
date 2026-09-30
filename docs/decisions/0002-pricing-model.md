@@ -1,7 +1,7 @@
 # 0002 — Pricing model: one-off vs subscription
 
 **Status:** Open
-**Date:** 2026-09-20
+**Date:** 2026-09-20 · **Updated:** 2026-09-30
 **Deciders:** Jordan (owner), Brian Lapp, Tim Miller
 
 ## Context
@@ -26,3 +26,19 @@ Pending. Must be decided before any Stripe work is authorized.
 ## Consequences
 
 Whatever we choose sets the cost ceiling per card. If AI generation plus a custom song costs more than the price, the model breaks. Cost per accepted card must be measured (catalogue task T-GEN-09) before pricing is locked.
+
+## Update 2026-09-30 — three prices now in play
+
+New sources added two more data points. Nothing above is withdrawn; the options still stand.
+
+| Source | Single | Plan | Hosting |
+|---|---|---|---|
+| Build catalogue (original) | $4.99 | $9.99/month | — |
+| Spec "approved baseline", as quoted in the brand notes | $4.99 | $9.99/month for **three** credits | 3 months included, then free keepsake download or $3/year |
+| Brand demo (`../product/experience.md`) | **$5.99** | $9.99/month for **two** | same |
+
+The demo followed its reference mockups, not the spec. The spec itself (`Tapcard_Product_and_Build_Spec_v2`) is not in this wiki, so the "approved baseline" is (unverified).
+
+The hosting model is consistent across sources: three months included, reminders at 30 and 7 days, then a free offline keepsake or $3/year to keep the link live. That is effectively a small recurring option already, independent of the plan question.
+
+**Still blocks Stripe work.** Add to the decision: which of the three numbers is the baseline.

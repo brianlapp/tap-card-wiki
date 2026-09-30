@@ -6,15 +6,42 @@ Every doc in this wiki, with a one-line summary so an agent can decide what to l
 
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
-| `start-here.md` | Landing page: what this is, why it exists, how to use it | Draft | 2026-09-20 |
+| `start-here.md` | Landing page: what this is, why it exists, how to use it | Draft | 2026-09-30 |
 
 ## product/
 
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
-| `product/scope.md` | What Tapcard is, tech stack, constraints, team, phases | Draft | 2026-09-20 |
+| `product/scope.md` | What Tapcard is, tech stack, constraints, team, phases (partly superseded — see its update note) | Draft | 2026-09-30 |
+| `product/experience.md` | Nine-beat arc, giver's five steps, Studio, sharing controls, hosting and keepsake | Draft | 2026-09-30 |
 | `product/user-stories.md` | Stories for the first end-to-end slice | Not written | — |
 | `product/card-schema.md` | Versioned card JSON contract and scene registry | Not written | — |
+
+## catalogue/
+
+What a card is made of. **Grep the CSVs; don't read them whole.**
+
+| Doc | Summary | Status | Updated |
+|---|---|---|---|
+| `catalogue/README.md` | How sections and themes combine, how to query, the numbers | Draft | 2026-09-30 |
+| `catalogue/sections.csv` | 50 sections: category, age fit, tone, effort, wave, wow | Draft | 2026-09-30 |
+| `catalogue/section-details.csv` | Prompt template, example, giver inputs, watch-outs per section | Draft | 2026-09-30 |
+| `catalogue/themes.csv` | 20 themes: family, age fit, tone fit, effort, look capacity | Draft | 2026-09-30 |
+| `catalogue/theme-details.csv` | Prompt template, examples, fixed DNA, watch-outs per theme | Draft | 2026-09-30 |
+| `catalogue/theme-kits.csv` | Every kit option: type, layout, motif, motion, interaction | Draft | 2026-09-30 |
+| `catalogue/palettes.csv` | 120 palettes with contrast ratios | Draft | 2026-09-30 |
+| `catalogue/theme-section-fit.csv` | 488 theme × section pairings | Draft | 2026-09-30 |
+| `catalogue/prompts.md` | Shared prompt preambles, output shape, originality rule | Draft | 2026-09-30 |
+| `catalogue/legend.md` | Columns, rating scales, gender note, author's assumptions | Draft | 2026-09-30 |
+| `catalogue/samples.md` | Six imaginary recipients, catalogue vs demo builds | Draft | 2026-09-30 |
+| `catalogue/reference.md` | Jordan.EXE lineage and parked ideas | Draft | 2026-09-30 |
+
+## brand/
+
+| Doc | Summary | Status | Updated |
+|---|---|---|---|
+| `brand/directions.md` | UNCARD name; Matinee vs Midnight: logo, colour, type, voice | Open | 2026-09-30 |
+| `brand/logos/` | v0.1 logo pack, SVG + PNG, both directions | Draft | 2026-09-30 |
 
 ## research/
 
@@ -40,8 +67,9 @@ Exported from the build catalogue. **Read these instead of the spreadsheet.**
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
 | `decisions/0001-source-of-truth.md` | Which Lovable project, repo and branch are authoritative | Open | 2026-09-20 |
-| `decisions/0002-pricing-model.md` | One-off purchase vs subscription | Open | 2026-09-20 |
+| `decisions/0002-pricing-model.md` | One-off vs subscription; three competing price points | Open | 2026-09-30 |
 | `decisions/0003-task-catalogue-source.md` | Task list lives in the repo, not the spreadsheet | Accepted | 2026-09-20 |
+| `decisions/0004-brand-direction.md` | UNCARD name; Matinee or Midnight | Open | 2026-09-30 |
 
 ## Status values
 

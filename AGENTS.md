@@ -4,7 +4,9 @@ Context for AI agents working in this repo. Read this first, then load only the 
 
 ## Project
 
-**Tapcard** — personalized, interactive birthday cards that adults create for kids. A slideshow player renders themed scenes (opening boot, greeting, mini-games, mixtape, certificate, candles finale, closing note) from a versioned card JSON. Recipients open a link. No child accounts.
+**UNCARD** (working name since 2026-09-29; formerly Tapcard) — personalized, interactive birthday cards that adults create for someone they love. A player renders 8–10 scenes from a versioned card JSON: sections (the content) inside a theme (the look). Recipients open a link. No child accounts.
+
+The repo, file names and older docs still say Tapcard. Same product.
 
 **Current milestone:** one synthetic test card working end to end (create → preview → publish → play → export). Nothing else ships first.
 
@@ -14,6 +16,10 @@ Context for AI agents working in this repo. Read this first, then load only the 
 |---|---|
 | What we're building, stack, constraints | `docs/product/scope.md` |
 | Who we compete with, pricing reality | `docs/research/competitive-landscape.md` |
+| What the giver and recipient actually experience | `docs/product/experience.md` |
+| What a card is made of: 50 sections, 20 themes | `docs/catalogue/` — **grep, do not read whole** |
+| Generating a card: prompt rules and output shapes | `docs/catalogue/prompts.md` |
+| Name, logo, colours, voice | `docs/brand/directions.md` |
 | Why a choice was made | `docs/decisions/` (numbered ADRs) |
 | How to write/update these docs | `docs/conventions.md` |
 | A task: what it is, who owns it, what blocks it | `docs/tasks/` — **grep, do not read whole** |
@@ -31,6 +37,7 @@ Context for AI agents working in this repo. Read this first, then load only the 
 - **Stripe is deferred.** Do not scaffold, connect or mock payments.
 - **Small slices.** One thin vertical slice, working, before any parallel expansion.
 - **Every change needs a rollback path.**
+- **Facts come only from the giver.** In anything generated, real names, events and numbers come from the giver's facts. Flourish may exaggerate a fact, never invent one. Missing fact → skip. See `docs/catalogue/prompts.md`.
 - **Never load the build catalogue spreadsheet.** It costs ~118,000 tokens and needs Jordan's Drive. Everything useful is in `docs/tasks/` — `grep '^T-002,' docs/tasks/tasks.csv` costs about 40.
 
 ## Task sizing

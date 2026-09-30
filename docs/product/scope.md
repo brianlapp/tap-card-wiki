@@ -1,7 +1,7 @@
 # Scope
 
 **Status:** Draft
-**Updated:** 2026-09-20
+**Updated:** 2026-09-30
 **Owner:** Brian Lapp
 **Method:** Distilled from the 526-task build catalogue Google Sheet. Stack below is partly inferred from Lovable defaults and is (unverified) until the repo is confirmed.
 
@@ -12,6 +12,10 @@ Personalized interactive birthday cards adults create for kids. First milestone 
 ## What it is
 
 A slideshow player renders themed scenes from a versioned card JSON: opening boot, greeting, mini-games, mixtape/music, certificate, candles finale, closing note. Kids open a link — no child accounts.
+
+> **Update 2026-09-30.** The scene list above was the Jordan.EXE starting point. It is now superseded by a catalogue of **50 sections and 20 themes** (`../catalogue/`), a **nine-beat arc** of 8–10 scenes (`experience.md`), and the working name **UNCARD** (`../brand/directions.md`).
+>
+> **Audience shift (unverified):** this doc frames Tapcard as kids-first. The new sources cover every age — the catalogues rate sections and themes for kids through 60+, and the samples include recipients aged 16, 32, 34, 40 and 70. Whether kids-first still holds, or is only the first milestone, needs confirming.
 
 Reference implementation: `jordan-exe-birthday.netlify.app`, an adult one-off demo. This project turns its modules into a reusable kids-first product.
 
@@ -60,7 +64,7 @@ Build catalogue: https://docs.google.com/spreadsheets/u/1/d/1d7c4FesVy08oaTlquBT
 
 - One shared Player + versioned card JSON; no bespoke site per card
 - Scenes are reusable modules driven by schema data
-- 10 reusable skins via design tokens (Quest first)
+- 10 reusable skins via design tokens (Quest first) — *superseded 2026-09-30: the Themes catalogue defines 20 themes, each a fixed DNA plus a six-axis kit (`../catalogue/`). Quest survives as T03 Quest Log.*
 - Drafts separate from immutable published versions
 - Every change has a rollback path
 

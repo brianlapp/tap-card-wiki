@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tapcard Wiki</title>
+<title>UNCARD Wiki</title>
 <meta name="description" content="Human-readable view of the Tapcard agent wiki.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
 <style>
@@ -80,6 +80,7 @@
 
   .pill{display:inline-block;font-size:12px;font-weight:650;padding:2px 9px;border-radius:999px;
     background:var(--code-bg);color:var(--muted);margin-right:6px}
+  .method{font-size:13.5px;color:var(--muted);border-left:2px solid var(--line);padding-left:12px;margin-top:-4px}
   .pill.open{background:var(--open-bg);color:var(--open)}
   .pill.draft{background:var(--draft-bg);color:var(--draft)}
 
@@ -113,14 +114,14 @@
 
 <div class="bar">
   <button id="burger" aria-label="Menu">☰</button>
-  <b>Tapcard Wiki</b>
+  <b>UNCARD Wiki</b>
 </div>
 <div class="scrim" id="scrim"></div>
 
 <div class="shell">
   <nav class="side" id="side">
     <a class="brand" href="#/docs/start-here.md">
-      <b>🎂 Tapcard Wiki</b>
+      <b>🎂 UNCARD Wiki</b>
       <span>Human view of the agent docs</span>
     </a>
     <div id="nav"></div>
@@ -150,7 +151,18 @@ const DOCS = [
     { p:'docs/conventions.md', t:'Conventions', d:'How to write docs here' },
   ]},
   { grp:'Product', items:[
+    { p:'docs/product/experience.md', t:'Experience', d:'Making one, opening one, keeping it' },
     { p:'docs/product/scope.md', t:'Scope', d:'What we build, stack, phases' },
+  ]},
+  { grp:'Catalogue', items:[
+    { p:'docs/catalogue/README.md',  t:'Sections & themes', d:'50 scenes, 20 worlds — how to query' },
+    { p:'docs/catalogue/samples.md', t:'Sample uncards',    d:'Six made-up people, built both ways' },
+    { p:'docs/catalogue/prompts.md', t:'Prompts',           d:'Generation rules and output shapes' },
+    { p:'docs/catalogue/legend.md',  t:'Legend',            d:'Columns, ratings, assumptions' },
+    { p:'docs/catalogue/reference.md', t:'Reference',       d:'Lineage and parked ideas' },
+  ]},
+  { grp:'Brand', items:[
+    { p:'docs/brand/directions.md', t:'Brand directions', d:'UNCARD: Matinee vs Midnight' },
   ]},
   { grp:'Research', items:[
     { p:'docs/research/competitive-landscape.md', t:'Competitive landscape', d:'Who we are up against' },
@@ -163,6 +175,7 @@ const DOCS = [
     { p:'docs/decisions/0001-source-of-truth.md', t:'0001 · Source of truth', d:'Which project is authoritative' },
     { p:'docs/decisions/0002-pricing-model.md',  t:'0002 · Pricing model',   d:'One-off vs subscription' },
     { p:'docs/decisions/0003-task-catalogue-source.md', t:'0003 · Task catalogue', d:'Repo is the task list' },
+    { p:'docs/decisions/0004-brand-direction.md', t:'0004 · Brand direction', d:'Matinee or Midnight' },
   ]},
 ];
 
@@ -181,23 +194,18 @@ const ALL = DOCS.flatMap(g => g.items.map(i => i.p));
 const docEl = document.getElementById('doc');
 const crumbEl = document.getElementById('crumb');
 
-// Turn "**Status:** Open" / "**Updated:** ..." header lines into pills.
+// Turn the doc header ("**Status:** ... **Method:** ...") into pills + a muted method line.
 function pillify(html){
-  return html.replace(/<p>((?:<strong>(?:Status|Updated|Owner|Date|Deciders|Researched|Method):<\/strong>[^<]*(?:<br>)?\s*)+)<\/p>/g, (m, block) => {
-    const rows = block.split(/<br>\s*/).filter(Boolean);
-    let out = '<p>';
-    rows.forEach(r => {
-      const k = (r.match(/<strong>(\w+):<\/strong>/)||[])[1];
-      const v = r.replace(/<strong>\w+:<\/strong>\s*/,'').trim();
-      if (!k) return;
-      if (k === 'Status') {
-        const cls = /open/i.test(v) ? 'open' : /draft/i.test(v) ? 'draft' : '';
-        out += `<span class="pill ${cls}">${v}</span>`;
-      } else {
-        out += `<span class="pill">${k}: ${v}</span>`;
-      }
-    });
-    return out + '</p>';
+  return html.replace(/<p>(<strong>(?:Status|Date):<\/strong>[\s\S]*?)<\/p>/, (m, block) => {
+    const parts = block.split(/<strong>(\w+):<\/strong>/).slice(1);   // [key, value, key, value, ...]
+    let pills = '', method = '';
+    for (let i = 0; i < parts.length; i += 2) {
+      const k = parts[i], v = parts[i + 1].replace(/<br>/g, '').trim();
+      if (k === 'Method') { method = `<p class="method">${v}</p>`; continue; }
+      const cls = k !== 'Status' ? '' : /open/i.test(v) ? 'open' : /draft/i.test(v) ? 'draft' : '';
+      pills += `<span class="pill ${cls}">${k === 'Status' ? v : k + ': ' + v}</span>`;
+    }
+    return `<p>${pills}</p>${method}`;
   });
 }
 

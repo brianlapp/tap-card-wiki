@@ -1,13 +1,13 @@
 # Start Here
 
 **Status:** Draft
-**Updated:** 2026-09-20
+**Updated:** 2026-09-30
 **Owner:** Brian Lapp
 **Method:** Written by hand. Token figures are measured, not estimated — see below.
 
 ## What this is
 
-The shared brain for **Tapcard** — personalized, interactive birthday cards that adults make for kids.
+The shared brain for **UNCARD** (formerly Tapcard) — personalized, interactive birthday cards that adults make for someone they love. Not a card. A whole little world.
 
 Scope, competitor research, decisions and the full 526-task build list live here. One place, so people and AI agents read the same thing.
 
@@ -32,7 +32,10 @@ So the content got restructured for machines: small files, one fact per line, gr
 
 **Start with what you need:**
 
-- New here → `product/scope.md` — what we are building
+- New here → `product/experience.md` — what it's like to make one and to open one
+- What a card is made of → `catalogue/README.md` — 50 scenes, 20 worlds
+- The look and voice → `brand/directions.md` — two directions, both shown
+- The build plan → `product/scope.md`
 - Wondering why something was chosen → `decisions/` — the numbered records, including the ones still open
 - Need a task → `tasks/README.md` — how to query the 526 without loading them all
 - Adding something → `conventions.md` first
@@ -41,13 +44,14 @@ So the content got restructured for machines: small files, one fact per line, gr
 
 ## A word on trust
 
-Not everything here is confirmed. Anything marked `(unverified)` or `(assumption)` is a working guess, and two decisions are still open — the authoritative project repo, and pricing.
+Not everything here is confirmed. Anything marked `(unverified)` or `(assumption)` is a working guess, and three decisions are still open — the authoritative project repo, pricing, and the brand direction.
 
 That is deliberate. A wiki that quietly states guesses as facts is worse than no wiki, because nobody knows which parts to check. If you know better than something written here, you are the source — correct it.
 
 ## Open questions
 
-Both blocking, both waiting on Jordan:
+Waiting on Jordan:
 
 1. Which Lovable project, repo and branch are authoritative? (`decisions/0001`)
-2. One-off purchase or subscription? (`decisions/0002`)
+2. One-off purchase or subscription — and at which of three prices? (`decisions/0002`)
+3. Matinee or Midnight? (`decisions/0004`)
