@@ -7,7 +7,7 @@
 
 ## TL;DR
 
-What an uncard is made of. **Sections** are the content blocks (a game, a roast, a letter). **Themes** are the look that wraps them. An uncard is **8–10 scenes (default 9), one per beat of the nine-beat arc**, inside one world. See `../product/experience.md`.
+What an uncard is made of. **Sections** are the content blocks (a game, a roast, a letter). **Themes** are the look that wraps them. An uncard is **usually 8 to 10 scenes** (default 9), one per beat of the nine-beat arc, inside one world. **Built today: 2 worlds, 15 scenes** (`../product/live-product.md`). See `../product/experience.md`.
 
 ```bash
 grep '^S15,' docs/catalogue/sections.csv            # one section
@@ -78,6 +78,6 @@ Wave 1 is the first-milestone pool.
 
 ## Open questions
 
-1. ~~8 sections or 9 scenes?~~ Resolved by `0005`: 8–10 scenes, default 9. The workbooks' "about 8 sections" is superseded.
+1. ~~8 sections or 9 scenes?~~ Resolved by `0005`: usually 8 to 10, default 9. The workbooks' "about 8 sections" is superseded.
 2. Both workbooks cite `Tapcard_Product_and_Build_Spec_v2`, an earlier spec from the chat-side project. Not needed: the demo was built from it and supersedes it (`0005`).
 3. Ratings and Wow scores need testing with real people before they drive section picks.

@@ -10,7 +10,7 @@
 The **working mockup of UNCARD** and the project's line of truth (`../docs/decisions/0005-demo-is-source-of-truth.md`). Open `uncard-demo/index.html` in a browser, or the live copy on the wiki site at `/examples/uncard-demo/`.
 
 - 10 pages in both brand directions (Matinee chosen — `../docs/decisions/0004-brand-direction.md`) plus a brand guide each
-- Two playable sample uncards: Riley, 9 and Jamie, 40
+- Two playable sample uncards: Riley, 9 and Jamie, 40 (the live product renamed Riley to **Steph**)
 - One self-contained HTML file (~1 MB, fonts embedded, no network calls)
 
 The product itself is built in [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter) (`../docs/decisions/0001-source-of-truth.md`). This mockup is what it should become.

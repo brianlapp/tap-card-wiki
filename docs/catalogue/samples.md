@@ -3,9 +3,11 @@
 **Status:** Draft
 **Updated:** 2026-09-30
 **Owner:** Brian Lapp
-**Method:** Two sources, compared. (1) The Sample decks sheets of both catalogue workbooks. (2) The UNCARD brand demo artifact (Sep 29, 2026), which rebuilt the same six people on the spec's nine-beat arc and made Riley and Jamie fully playable. Every person here is imaginary.
+**Method:** Two sources, compared. (1) The Sample decks sheets of both catalogue workbooks. (2) The UNCARD brand demo artifact (Sep 29, 2026), which rebuilt the same six people on the spec's nine-beat arc and made Steph and Jamie fully playable. Every person here is imaginary.
 
 ## TL;DR
+
+> **Riley is now Steph.** The live product renamed the 9-year-old sample (same family, same Quest Log world). Catalogue workbook text still says Riley; that's the source data, unchanged.
 
 Six made-up recipients show how scenes and a world combine into one uncard. **The demo's version is canonical** (`../decisions/0005-demo-is-source-of-truth.md`). The catalogue version is kept for reference only. Where they differed:
 
@@ -19,14 +21,14 @@ The demo follows the spec's nine-beat arc (§4.2). **Use the demo decks.**
 
 | Recipient | From · tone | Theme (catalogue, superseded) | **World** | **Palette** | Title |
 |---|---|---|---|---|---|
-| Riley, 9 | Mum, Dad & Bean · Silly and sweet | T03 Quest Log | T03 Quest Log | Star Chart | Mission: Level Nine |
+| Steph, 9 | Mum, Dad & Bean · Silly and sweet | T03 Quest Log | T03 Quest Log | Star Chart | Mission: Level Nine |
 | Jamie, 40 | The Sunday ride crew · Roasty, warm ending | T18 Case File | T02 Firmware | After Hours | JAMIE.EXE v40 |
 | Mum, 70 | Her three kids · Warm, gently funny | T04 Memory Box | T04 Memory Box | Kraft & Ink | Seventy, in small things. |
 | Sam, 16 | Best friend · Chaotic, meme-fluent | T07 Arcade Cabinet | T07 Arcade Cabinet | Cabinet Night | PLAYER 1: SAM |
 | Priya, 34 | Her whole team · Deadpan office humour | T02 Firmware | T02 Firmware | Paper Tape | Priya v34: approved. |
 | Alex, 32 | Their partner · Warm and specific, few jokes | T19 Gallery Wall | T19 Gallery Wall | Blue Hour | Us, so far. |
 
-## Riley, 9
+## Steph, 9
 
 *Space plus a rabbit co-pilot is a ready-made quest. Every game is skippable.*
 
@@ -142,11 +144,11 @@ Kit picks: palette *Blue Hour: #E7EDF5 #1A2540 #2F5DAA* · type *Cormorant Garam
 | 7 | S41 The Letter | Heart | S41 The Letter |
 | 8 | S48 Candle Blowout | Finale | S48 Candle Blowout |
 
-## Riley and Jamie, scene by scene (demo)
+## Steph and Jamie, scene by scene (demo)
 
 The two playable demo uncards, mapped to the nine-beat arc. `Tile` is the share tile's headline for that scene.
 
-### Riley
+### Steph
 
 | Beat | Scene | Section | Tile |
 |---|---|---|---|
@@ -158,7 +160,7 @@ The two playable demo uncards, mapped to the nine-beat arc. `Tile` is the share 
 | Cameo | Bean | S14 · Talking Pet Cameo | Official statement from Bean. |
 | Pay off | Level up | S50 · Achievements Unlocked | Level 9 unlocked. |
 | Mean it | The note | S41 · The Letter | A note from Mum & Dad. |
-| Finish | Landing | S48 · Candle Blowout | Happy 9th, Riley. |
+| Finish | Landing | S48 · Candle Blowout | Happy 9th, Steph. |
 
 ### Jamie
 

@@ -28,7 +28,8 @@ docs/
   start-here.md                            Landing page for human readers
   product/
     scope.md                               What Tapcard is, stack, constraints, phases, team
-    experience.md                          Nine-beat arc, giver flow, Studio, sharing, hosting
+    live-product.md                        The MVP at uncard.app: what's built, stack, access, decisions
+    experience.md                          Nine-beat arc, giver flow, Studio, sharing, hosting (designed)
   catalogue/
     README.md                              How sections and themes combine; how to query
     sections.csv / section-details.csv     50 sections (short form / prompts, examples)

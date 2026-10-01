@@ -4,7 +4,7 @@ Context for AI agents working in this repo. Read this first, then load only the 
 
 ## Project
 
-**UNCARD** (working name since 2026-09-29; formerly Tapcard) — personalized, interactive birthday cards that adults create for someone they love. A player renders 8–10 scenes from a versioned card JSON: sections (the content) inside a theme (the look). Recipients open a link. No child accounts.
+**UNCARD** (working name since 2026-09-29; formerly Tapcard) — personalized, interactive birthday cards that adults create for someone they love. A player renders usually 8 to 10 scenes from a versioned card JSON: sections (the content) inside a theme (the look). Recipients open a link. No child accounts.
 
 The repo, file names and older docs still say Tapcard. Same product.
 
@@ -16,7 +16,8 @@ The repo, file names and older docs still say Tapcard. Same product.
 |---|---|
 | What we're building, stack, constraints | `docs/product/scope.md` |
 | Who we compete with, pricing reality | `docs/research/competitive-landscape.md` |
-| What the giver and recipient actually experience | `docs/product/experience.md` |
+| What's built and live today (snapshot) | `docs/product/live-product.md` |
+| What the giver and recipient should experience (designed) | `docs/product/experience.md` |
 | What a card is made of: 50 sections, 20 themes | `docs/catalogue/` — **grep, do not read whole** |
 | Generating a card: prompt rules and output shapes | `docs/catalogue/prompts.md` |
 | Name, logo, colours, voice (brand: **Matinee**) | `docs/brand/directions.md` |

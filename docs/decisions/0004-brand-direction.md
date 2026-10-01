@@ -30,4 +30,6 @@ The wiki uses **UNCARD** and keeps `Tapcard` only in file names, the repo name a
 
 - [x] Matinee, Midnight, or a hybrid — **Matinee**
 - [x] UNCARD confirmed as the name — **yes** (`0005`: the demo is the line of truth)
-- [ ] Trademark and domain check (the demo uses `uncard.com` in sample links — ownership unverified)
+- [x] Domains — the product uses **uncard.app** (site) and **uncard.gifts** (gift links)
+- [ ] Trademark check
+- [ ] Main button colour: red or green — trial live, Jordan's call (product decision D5)

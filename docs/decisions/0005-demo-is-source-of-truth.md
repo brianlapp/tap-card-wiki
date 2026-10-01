@@ -1,6 +1,6 @@
 # 0005 — The brand demo is the line of truth
 
-**Status:** Accepted
+**Status:** Accepted · amended 2026-10-01
 **Date:** 2026-09-30
 **Deciders:** Brian Lapp
 
@@ -18,6 +18,8 @@ By 2026-09-30 the wiki held four generations of product thinking: the build cata
 
 **Option 1.** Where any doc disagrees with the brand demo, **the demo wins**. The older statement is marked superseded and kept, per `../conventions.md`. Where the demo is silent, the older docs stand.
 
+> **Amended 2026-10-01 — newest wins.** The rule's reason was always *the newest output leads*. The live product repo ([`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter), commits to 2026-10-01) is now newer than the demo (2026-09-29), so **where the real product and the demo differ, the product wins**. The demo still defines what isn't built yet. Order: product repo → brand demo → catalogues → build catalogue.
+
 Resolved on this basis:
 
 | Question | Resolved as (demo) | Superseded |
@@ -27,7 +29,10 @@ Resolved on this basis:
 | Audience | Anyone someone loves: the whole family, kids through 60+ | "Kids-first product" |
 | Sample decks | The demo's six uncards | The catalogues' sample decks |
 | Jamie's world | T02 Firmware · After Hours | T18 Case File |
-| Name | UNCARD (working) | Tapcard |
+| Name | UNCARD | Tapcard |
+| Sample girl, 9 | **Steph** (product) | Riley (demo) |
+| Scene count wording | **"usually 8 to 10"**, default 9; shorter when there's little to go on (product, D6) | "8–10, default 9" (demo) |
+| Domains | **uncard.app** (site), **uncard.gifts** (gift links) (product) | uncard.com (demo sample links) |
 | Words | scene, world, uncard, your person, give | section, theme, card, recipient, send (kept in file names and IDs) |
 
 Resolved the same day: the brand is **Matinee** (`0004`). The product repo question is in `0001` (corrected 2026-10-01: the repo exists). The demo is saved at `examples/uncard-demo/`.

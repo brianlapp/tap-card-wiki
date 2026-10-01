@@ -54,7 +54,7 @@ Decision: `../decisions/0004-brand-direction.md`. Working mockup: `/examples/unc
 |---|---|---|---|
 | Marquee | `#FFCB0A` | The field. ~60% of most screens | Ink on Marquee 12.4:1 |
 | Ink | `#121114` | Type, outlines, dark button | Ink on Paper 18.8:1 |
-| Tomato | `#F2442E` | Full stop and main button. **Never body text** | Ink on Tomato 5.1:1 · white only at 19 px bold |
+| Tomato | `#F2442E` | Full stop and main button (**button colour under review** — green trialled beside red on the live site; Jordan picks, D5). **Never body text** | Ink on Tomato 5.1:1 · white only at 19 px bold |
 | Paper | `#FFFFFF` | Cards, forms, tickets | |
 | Butter | `#FFF3C4` | Quiet studio surfaces | Ink on Butter 16.9:1 |
 | Sky / Bubblegum / Mint | `#49B2F5` `#FF8CC6` `#33C584` | Illustration only | |
@@ -103,8 +103,8 @@ Decision: `../decisions/0004-brand-direction.md`. Working mockup: `/examples/unc
 | Follow-up | What's the most Jamie thing they've done lately? | What's the most Jamie thing they've done recently? |
 | Error | That photo didn't upload. Try a JPG or PNG under 20 MB. | Upload failed: that file isn't a photo. Try a JPG or PNG under 20 MB. |
 | Empty state | No uncards yet. Somebody deserves one. | 0 drops. Somebody's birthday is loading. |
-| Reminder | Riley's uncard has 30 days of hosting left | jamie-40: 30 days of uptime left |
-| Recipient opening | Riley, you have one birthday transmission. | Press any key. Or pick one. |
+| Reminder | Steph's uncard has 30 days of hosting left | jamie-40: 30 days of uptime left |
+| Recipient opening | Steph, you have one birthday transmission. | Press any key. Or pick one. |
 
 ## Logo files
 
@@ -118,5 +118,6 @@ Decision: `../decisions/0004-brand-direction.md`. Working mockup: `/examples/unc
 ## Open questions
 
 1. ~~Matinee or Midnight?~~ Matinee (`0004`).
-2. UNCARD is the name. Trademark and domain checks not yet done (unverified).
+2. UNCARD is the name. Domains in use: **uncard.app** and **uncard.gifts**. Trademark check not yet done (unverified).
+3. Main button colour: red (Tomato) or green — trial running on the live site, Jordan's call (D5).
 3. ~~Pricing~~ Resolved: $5.99 / $9.99 for two (`0002`, `0005`).

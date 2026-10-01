@@ -32,6 +32,7 @@ So the content got restructured for machines: small files, one fact per line, gr
 
 **Start with what you need:**
 
+- What actually works today → `product/live-product.md` — the MVP at uncard.app
 - New here → `product/experience.md` — what it's like to make one and to open one
 - What a card is made of → `catalogue/README.md` — 50 scenes, 20 worlds
 - The look and voice → `brand/directions.md` — two directions, both shown
@@ -50,7 +51,9 @@ That is deliberate. A wiki that quietly states guesses as facts is worse than no
 
 ## Open questions
 
-None blocking. Decided 2026-09-30:
+Jordan has about fifteen open product decisions — currency, data retention, studio access, email provider and more. They're listed in `product/live-product.md`; the live list is in the product repo.
+
+Decided:
 
 - **The product repo** is [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter), live at uncard.app (`decisions/0001`)
 - **Pricing:** $5.99 per uncard, $9.99/month for two (`decisions/0002`)

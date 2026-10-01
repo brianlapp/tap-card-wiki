@@ -7,11 +7,13 @@
 
 ## TL;DR
 
+> This page describes the **designed** product. Much of it isn't built yet — sharing controls, PINs, the keepsake and reminders all say "coming soon" on the live site. What actually works today: `live-product.md`.
+
 What the giver does, what the recipient gets, and what happens after. The demo shows it end to end in both brand directions with identical behaviour; only the voice differs.
 
 ## The nine-beat arc
 
-An uncard is **8–10 scenes, default 9**, following one arc (demo, citing spec §4.2):
+An uncard is **usually 8 to 10 scenes** (default 9), following one arc. When the giver has little to go on, the card is **shorter, never padded** (product decision D6):
 
 | # | Beat | Job |
 |---|---|---|
@@ -94,7 +96,7 @@ $5.99 per uncard · $9.99/month for two · hosting as above. **Canonical** (`../
 
 ## Open questions
 
-1. ~~8 sections or 8–10 scenes?~~ Resolved: 8–10 scenes, default 9 (`0005`).
+1. ~~8 sections or 8–10 scenes?~~ Resolved: usually 8 to 10, default 9, shorter for thin briefs (`0005`).
 2. ~~Pricing?~~ Resolved: the demo's prices (`0005`).
 3. "No trackers inside an uncard" and "no PII in telemetry" (`scope.md`) need to be reconciled into one analytics rule.
 4. ~~The spec is not in this wiki.~~ Not needed — superseded by the demo (`0005`).
