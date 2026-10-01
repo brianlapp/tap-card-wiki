@@ -10,6 +10,25 @@ The repo, file names and older docs still say Tapcard. Same product.
 
 **Current milestone:** one synthetic test card working end to end (create → preview → publish → play → export). Nothing else ships first.
 
+## Workspace: two repos, one set of instructions
+
+| Repo | What it holds | Who pushes to `main` |
+|---|---|---|
+| [`brianlapp/tap-card-wiki`](https://github.com/brianlapp/tap-card-wiki) (this one) | Project context: scope, research, decisions, catalogue, brand, the demo. **No code.** | Brian's agents, directly |
+| [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter) | The product, live at **uncard.app**. Lovable-synced. Has its own build docs in `docs/review-2026-09-30/` | **Jordan's build agent and Lovable only.** Everyone else: branch, then pull request |
+
+This file is the shared instructions for both. There is no orchestrator agent: one agent, plugged straight into the repos, reading this.
+
+**How the workspace is laid out**
+- **Local:** `~/uncard/` holds both clones and a one-line `CLAUDE.md` that points here. Run `claude` from `~/uncard/`.
+- **Cloud or phone:** start the session with **both repos selected**.
+
+**Habits**
+- **Pull both repos before you start. Commit and push before you stop** or switch device. Cloud sessions are thrown away; unpushed work is lost.
+- **Product repo:** never push to `main`, never force-push, never rewrite history. `main` is the live site and Lovable syncs it. Work on a branch and open a PR for Jordan.
+- **Where the repos disagree:** build status and code → the product repo. Project context and history → this wiki. On any fact, newest wins (`docs/decisions/0005`). Flag a contradiction; don't silently pick a side.
+- **Don't copy the product repo's build docs here.** They change daily. Link to them.
+
 ## Doc map
 
 | Need | Read |
@@ -32,13 +51,11 @@ The repo, file names and older docs still say Tapcard. Same product.
 
 ## Rules for agents
 
-- **The brand demo is the line of truth.** Where docs disagree, the UNCARD brand demo wins; older statements are marked superseded (`docs/decisions/0005-demo-is-source-of-truth.md`). If you find a new contradiction, don't pick a side silently — flag it.
-- **The brand is Matinee.** Yellow Marquee field, Ink type, Tomato full stop. Midnight is rejected. The gift itself wears its world, not the brand.
+- **Newest wins.** Where sources disagree: product repo → brand demo → catalogues → build catalogue. Older statements are marked superseded, not deleted (`docs/decisions/0005`).
+- **The brand is Matinee.** Yellow Marquee field, Ink type, Tomato full stop (main button colour under review). Midnight is rejected. The gift itself wears its world, not the brand.
 - **Speak the product's words.** In anything user-facing: *uncard, scene, world, your person, give*. Never *e-card, template, AI-generated, content, user*. File names and IDs keep *section/theme*.
 
-- **The product lives in [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter)** — Lovable + TanStack Start + Supabase, live at uncard.app (`docs/decisions/0001`). This wiki holds no code. Lovable and a build agent commit there continuously: never force-push or rewrite its history.
-- **Two sources, two jobs.** The brand demo (`examples/uncard-demo/`) says what UNCARD *should be*. The product repo says what *is built* — its `docs/review-2026-09-30/` is the source of truth for build status, the work list and phase reports. Link to those; don't copy them here.
-- **Staging only.** Never run against production data, credentials or billing.
+- **There is no staging.** The product publishes straight to the live site. Never run anything against the live database, production credentials or billing. AI spending, anyone's access and legal text are Jordan's calls only.
 - **No invented facts.** If a number, status or capability is unverified, write "unverified" rather than guessing.
 - **Server-side AI only.** No generated code executes in the recipient's browser.
 - **Privacy is a hard gate.** No child logins, no child contact data, no PII in telemetry.
