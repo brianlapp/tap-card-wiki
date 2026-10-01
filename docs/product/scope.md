@@ -24,7 +24,8 @@ Build catalogue: https://docs.google.com/spreadsheets/u/1/d/1d7c4FesVy08oaTlquBT
 ## Tech stack
 
 **Product app**
-- ~~Lovable, synced to GitHub~~ — *superseded 2026-09-30: no Lovable project, repo or backend exists (`../decisions/0001`). Stack not yet chosen. Every line below marked (assumption) came from Lovable defaults and is now open.*
+- Lovable, synced to GitHub: [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter) — **verified 2026-10-01** (`../decisions/0001`). *(The 2026-09-30 note that none existed was wrong.)*
+- Verified from the repo: **TanStack Start** (React + Vite + TypeScript), **Tailwind + shadcn/Radix**, **Supabase** (auth, Postgres) with **Drizzle** migrations. The (assumption) markers on the lines below are resolved by this.
 - React + Vite + TypeScript (assumption: Lovable default)
 - Tailwind CSS + shadcn/ui (assumption)
 - Supabase: auth, Postgres, storage, edge functions (assumption)
@@ -87,6 +88,6 @@ Build catalogue: https://docs.google.com/spreadsheets/u/1/d/1d7c4FesVy08oaTlquBT
 
 ## Open questions
 
-1. ~~Which Lovable project, repo and branch are authoritative?~~ None exists (`0001`). Next: choose a stack and create the product repo.
-2. Does a staging environment exist?
-3. Is the backend actually Supabase?
+1. ~~Which Lovable project, repo and branch are authoritative?~~ `JNabsRepo/uncard-starter`, `main` (`0001`).
+2. ~~Does a staging environment exist?~~ No; each phase is published to the live site after its checks (`0001`).
+3. ~~Is the backend actually Supabase?~~ Yes, verified (`0001`).

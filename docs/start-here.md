@@ -52,8 +52,8 @@ That is deliberate. A wiki that quietly states guesses as facts is worse than no
 
 None blocking. Decided 2026-09-30:
 
-- **No product repo exists** — the mockup is the reference (`decisions/0001`)
+- **The product repo** is [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter), live at uncard.app (`decisions/0001`)
 - **Pricing:** $5.99 per uncard, $9.99/month for two (`decisions/0002`)
 - **Brand:** UNCARD, Matinee (`decisions/0004`)
 
-Next up: choose a stack and create the product repo.
+What's being built right now, and its status, lives in the product repo (`docs/review-2026-09-30/`).

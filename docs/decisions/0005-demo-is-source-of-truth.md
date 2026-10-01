@@ -30,7 +30,7 @@ Resolved on this basis:
 | Name | UNCARD (working) | Tapcard |
 | Words | scene, world, uncard, your person, give | section, theme, card, recipient, send (kept in file names and IDs) |
 
-Resolved the same day in Brian's meeting with Jordan: **no product repo exists** (`0001`) and the brand is **Matinee** (`0004`). The demo is saved at `examples/uncard-demo/`.
+Resolved the same day: the brand is **Matinee** (`0004`). The product repo question is in `0001` (corrected 2026-10-01: the repo exists). The demo is saved at `examples/uncard-demo/`.
 
 ## Consequences
 

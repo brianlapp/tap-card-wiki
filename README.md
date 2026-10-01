@@ -43,7 +43,7 @@ docs/
   research/
     competitive-landscape.md               Ecard incumbents, custom-song vendors, direct competitors, pricing implications
   decisions/
-    0001-source-of-truth.md                No product repo exists; the mockup is the reference
+    0001-source-of-truth.md                Product repo: JNabsRepo/uncard-starter
     0002-pricing-model.md                  $5.99 per uncard, $9.99/month for two (accepted)
     0003-task-catalogue-source.md          The task list lives here, not in the spreadsheet
     0004-brand-direction.md                UNCARD, Matinee

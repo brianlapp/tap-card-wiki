@@ -1,7 +1,7 @@
 # 0001 — Authoritative project, repo and branch
 
 **Status:** Accepted
-**Date:** 2026-09-20 · **Decided:** 2026-09-30
+**Date:** 2026-09-20 · **Decided:** 2026-09-30 · **Corrected:** 2026-10-01
 **Deciders:** Jordan, Brian Lapp
 
 ## Context
@@ -17,23 +17,25 @@ Nothing can be built, and no agent can be pointed at code, until this is answere
 
 ## Decision
 
-Resolved 2026-09-30 after Brian's meeting with Jordan: **there is no product repo, Lovable project or backend.** The only working version of UNCARD is the mockup — the brand demo artifact, saved in this repo at `examples/uncard-demo/` and treated as the line of truth (`0005`).
+**The product repo is [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter), branch `main`.** It is a Lovable project (TanStack Start template), live at **uncard.app**, with a Supabase backend and Drizzle migrations. Commits since 2026-09-22.
 
-Neither option above applied. The build starts from scratch, using the mockup as the reference.
+> **Correction 2026-10-01.** On 2026-09-30 this record said no repo, Lovable project or backend existed. That was wrong — the repo already existed. Brian supplied the link on 2026-10-01.
+
+The brand demo (`examples/uncard-demo/`) remains the line of truth for **what the product should be** (`0005`). The product repo is the source of truth for **what is built and being built**, and for its own build docs (`docs/review-2026-09-30/` there).
 
 ## Required answers
 
-- [x] Lovable project URL — **none exists**
-- [x] GitHub repo and default branch — **none exists**; this wiki is the only repo
-- [x] Staging environment — **none**
-- [x] Backend — **none**; Supabase was only ever an assumption from Lovable defaults
-- [x] Is anyone else editing outside this repo — the mockup is a claude.ai artifact; see `examples/README.md`
+- [x] Lovable project URL — `lovable.dev/projects/3a7b58dd-a027-4ee9-9df4-96c469e3f8ac` (from the repo README)
+- [x] GitHub repo and default branch — `JNabsRepo/uncard-starter`, `main`
+- [x] Staging environment — none separate; the build agent publishes each phase to the live site after its checks pass (product repo `docs/review-2026-09-30/OPERATING-MODE.md`)
+- [x] Backend — **Supabase** (verified: `@supabase/supabase-js`, `.env`, 7 Drizzle migrations with SQL tests)
+- [x] Is anyone else editing outside this repo — yes: Lovable and a Claude build agent both commit to the product repo. Lovable warns never to rewrite its history.
 
 ## Consequences
 
-- ~~Until resolved: no code changes, no scaffolding, no schema work.~~ Resolved: there is nothing existing to protect, so there is nothing to rebuild over.
-- Choosing a stack and creating the product repo is now its own decision, not yet made.
-- Tasks written to find or verify the existing project are answered or moot — listed in `../tasks/README.md`.
+- Nothing in this wiki is code. Product work happens in the product repo; this wiki links to it and never copies its build docs, so the two can't drift.
+- The 2026-09-30 "nothing to rebuild over" consequence is withdrawn: a working backend exists and must be preserved.
+- `T-002` is answered. `T-SCOPE-02`, `T-SCOPE-03` and `T-OPS-01` are live again — see `../tasks/README.md`.
 
 ## Note
 

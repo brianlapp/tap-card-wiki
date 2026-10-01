@@ -68,7 +68,7 @@ Exported from the build catalogue. **Read these instead of the spreadsheet.**
 
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
-| `decisions/0001-source-of-truth.md` | No product repo exists; the mockup is the reference | Accepted | 2026-09-30 |
+| `decisions/0001-source-of-truth.md` | Product repo: JNabsRepo/uncard-starter (Lovable, Supabase, live at uncard.app) | Accepted | 2026-10-01 |
 | `decisions/0002-pricing-model.md` | $5.99 per uncard, $9.99/month for two | Accepted | 2026-09-30 |
 | `decisions/0003-task-catalogue-source.md` | Task list lives in the repo, not the spreadsheet | Accepted | 2026-09-20 |
 | `decisions/0004-brand-direction.md` | UNCARD, Matinee | Accepted | 2026-09-30 |

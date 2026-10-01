@@ -20,6 +20,7 @@ The repo, file names and older docs still say Tapcard. Same product.
 | What a card is made of: 50 sections, 20 themes | `docs/catalogue/` — **grep, do not read whole** |
 | Generating a card: prompt rules and output shapes | `docs/catalogue/prompts.md` |
 | Name, logo, colours, voice (brand: **Matinee**) | `docs/brand/directions.md` |
+| What's built and being built now, the active work list | Product repo: `docs/review-2026-09-30/` in [`uncard-starter`](https://github.com/JNabsRepo/uncard-starter) |
 | The working mockup — what the build reproduces | `examples/uncard-demo/` (~1 MB; content already extracted into the docs above) |
 | Why a choice was made | `docs/decisions/` (numbered ADRs) |
 | How to write/update these docs | `docs/conventions.md` |
@@ -34,7 +35,8 @@ The repo, file names and older docs still say Tapcard. Same product.
 - **The brand is Matinee.** Yellow Marquee field, Ink type, Tomato full stop. Midnight is rejected. The gift itself wears its world, not the brand.
 - **Speak the product's words.** In anything user-facing: *uncard, scene, world, your person, give*. Never *e-card, template, AI-generated, content, user*. File names and IDs keep *section/theme*.
 
-- **There is no product codebase yet.** No repo, no Lovable project, no backend (`docs/decisions/0001`). The working mockup is `examples/uncard-demo/` — reproduce it, don't invent past it.
+- **The product lives in [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter)** — Lovable + TanStack Start + Supabase, live at uncard.app (`docs/decisions/0001`). This wiki holds no code. Lovable and a build agent commit there continuously: never force-push or rewrite its history.
+- **Two sources, two jobs.** The brand demo (`examples/uncard-demo/`) says what UNCARD *should be*. The product repo says what *is built* — its `docs/review-2026-09-30/` is the source of truth for build status, the work list and phase reports. Link to those; don't copy them here.
 - **Staging only.** Never run against production data, credentials or billing.
 - **No invented facts.** If a number, status or capability is unverified, write "unverified" rather than guessing.
 - **Server-side AI only.** No generated code executes in the recipient's browser.
