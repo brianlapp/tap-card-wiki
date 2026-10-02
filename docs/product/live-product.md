@@ -27,7 +27,7 @@ That snapshot (commit `5649437`) said the studio and giving were labelled sample
 | Editor | Lovable project `3a7b58dd-a027-4ee9-9df4-96c469e3f8ac` — commits sync both ways |
 | Marketing + account site | **uncard.app** |
 | Gift links | Served from uncard.app at `/c/:id` today. Serving them from **uncard.gifts** instead is Jordan's open decision D16 (no default; not built) |
-| DNS | Both domains on **Cloudflare** (Jordan's account). uncard.app points at Lovable's hosting; uncard.gifts has no web record yet, so it serves nothing (checked 2026-10-02) |
+| DNS | Both domains on **Cloudflare** (Jordan's account). uncard.app and www point at Lovable's hosting (DNS only, not proxied). **invest.uncard.app** is a proxied placeholder record, so something on Cloudflare serves it (a Worker or Pages site, unverified). uncard.gifts has **no DNS records** and serves nothing. No Worker routes on either zone (read via API, 2026-10-02) |
 | Build docs (source of truth for status) | `docs/review-2026-09-30/` in the product repo — one report per phase in `build-reports/` |
 
 ## Stack (verified)
@@ -80,7 +80,7 @@ Who may use it while it's shut to the public (D24 default): a live Golden Pass h
 - **Only the owner** makes admins, switches card-making or the studio on, or changes their limits. Brian and Tim are promoted by Jordan after they sign in (D4) — **not done yet** as of 2 Oct.
 - **Golden Pass:** granted by email, even before sign-up, singly or as a list of up to 50. Covers everything, including hosting past three months (D8).
 - **Suspend and restore** exist. A suspended person sees "contact [contact email]" — the address is still a placeholder (D20), so nobody should be suspended yet.
-- **Cloudflare:** Brian has full access to the uncard.app and uncard.gifts zones, including Workers, since 2026-10-02 (Jordan, Slack). Relevant if D16 puts gifts on uncard.gifts. Changing DNS or Workers touches the live site, so it's still Jordan's call.
+- **Cloudflare:** since 2026-10-02 Brian is **Domain Administrator** on uncard.app and uncard.gifts (plus Workers Routes), not a member of Jordan's account. So he can change DNS, settings, SSL, cache and Worker *routes*, but cannot deploy Worker *code* — that needs an account-level role from Jordan (e.g. Workers Admin). Brian's agents use a zone-only API token (1Password: "Cloudflare API Token (uncard)"). Relevant if D16 puts gifts on uncard.gifts. Changing DNS touches the live site, so it's still Jordan's call.
 - **Everything is audited:** every access, settings or gift-withdrawal change writes an `admin_audit` row in the same transaction.
 - **The browser never writes** account, job, allowance or card tables. Roles are checked server-side only.
 
