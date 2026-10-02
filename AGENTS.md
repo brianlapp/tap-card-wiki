@@ -21,6 +21,7 @@ This file is the shared instructions for both. There is no orchestrator agent: o
 
 **How the workspace is laid out**
 - **Local:** `~/uncard/` holds both clones and a one-line `CLAUDE.md` that points here. Run `claude` from `~/uncard/`.
+  Keep the clones out of iCloud-synced folders (`~/Documents`, `~/Desktop`): iCloud offloads git's pack files and git then hangs or reports a corrupt repo.
 - **Cloud or phone:** start the session with **both repos selected**.
 
 **Habits**

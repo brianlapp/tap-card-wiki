@@ -15,7 +15,7 @@ The working mockup — the line of truth — is outside `docs/`: `examples/uncar
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
 | `product/scope.md` | What Tapcard is, tech stack, constraints, team, phases (partly superseded — see its update note) | Draft | 2026-09-30 |
-| `product/live-product.md` | The MVP at uncard.app: what works, stack, access, generator, measurement, Jordan's decisions | Draft | 2026-10-01 |
+| `product/live-product.md` | The MVP at uncard.app after build Phases 1–5: studio and giving built but shut, what's waiting on Jordan | Draft | 2026-10-02 |
 | `product/experience.md` | Nine-beat arc, giver's five steps, Studio, sharing controls, hosting and keepsake | Draft | 2026-09-30 |
 | `product/user-stories.md` | Stories for the first end-to-end slice | Not written | — |
 | `product/card-schema.md` | Versioned card JSON contract and scene registry | Not written | — |
@@ -53,6 +53,21 @@ What a card is made of. **Grep the CSVs; don't read them whole.**
 | `research/competitive-landscape.md` | Ecard incumbents, custom-song vendors, one free direct competitor, pricing implications | Draft | 2026-09-30 |
 | `research/competitor-teardown-ari-gateaux.md` | Hands-on teardown of personalized-birthday-games.com | Not written | — |
 | `research/parent-willingness-to-pay.md` | What adults actually pay for kids' digital gifts | Not written | — |
+
+### Waiting to be ingested
+
+Jordan shared these in Slack on 2026-10-02 (#non-build-stuff) and asked Oy to file them in his Drive, markdown under a "Research" sub-folder. **Not yet in this wiki** — the files aren't reachable from Brian's Drive or machine. Until they land, don't cite them.
+
+| Source file | Intended home | Status |
+|---|---|---|
+| Uncard Checkout Research: How to Get Givers to Pay on a Phone, on the Day (.md) | `research/checkout.md` | Not ingested |
+| Making an Uncard Feel Like a Joy: Research-Backed Creation Flow, Landing to Paid (.md) | `research/creation-flow.md` | Not ingested |
+| Sharing and Referral Loop Design, Incentives and Measurement, October 2026 (.md) | `research/sharing-referral-loop.md` | Not ingested |
+| Holding the Recipient's Attention: Research Findings, Generator Rules and Metrics (.md) | `research/recipient-attention.md` | Not ingested |
+| Uncard growth strategy (.pdf) | `strategy/growth-strategy.md` | Not ingested |
+| UNCARD investor deck (.pdf) | `strategy/investor-deck.md` | Not ingested |
+| UNCARD brand guide (.pdf) | `brand/` (check against `directions.md`) | Not ingested |
+| UNCARD brand system (.zip) | `brand/` (check against `logos/`) | Not ingested |
 
 ## tasks/
 
