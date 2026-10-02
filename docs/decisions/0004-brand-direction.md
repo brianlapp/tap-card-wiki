@@ -32,4 +32,4 @@ The wiki uses **UNCARD** and keeps `Tapcard` only in file names, the repo name a
 - [x] UNCARD confirmed as the name — **yes** (`0005`: the demo is the line of truth)
 - [x] Domains — the product uses **uncard.app** (site) and **uncard.gifts** (gift links)
 - [ ] Trademark check
-- [ ] Main button colour: red or green — trial live, Jordan's call (product decision D5)
+- [ ] Main button colour: red or green — trial live, team call (product decision D5)

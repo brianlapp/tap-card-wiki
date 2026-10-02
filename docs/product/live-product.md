@@ -7,7 +7,7 @@
 
 ## TL;DR
 
-UNCARD is live at **uncard.app**. Phases 0 to 5 of the six-phase build are built and published. The real studio (the interview, edit, approve) and giving (private links, PINs, withdraw) **exist but are shut**: nobody can make or give a real uncard until Jordan switches card-making and the studio on. No AI credits have been spent; the real AI gateway has never been called. Phase 6 (celebrations) is not built. Two worlds and fifteen scenes play, unchanged since 1 Oct.
+UNCARD is live at **uncard.app**. Phases 0 to 5 of the six-phase build are built and published. The real studio (the interview, edit, approve) and giving (private links, PINs, withdraw) **exist but are shut**: nobody can make or give a real uncard until card-making and the studio are switched on (that needs the owner login, which is Jordan's). No AI credits have been spent; the real AI gateway has never been called. Phase 6 (celebrations) is not built. Two worlds and fifteen scenes play, unchanged since 1 Oct.
 
 ## Changed since the 2026-10-01 snapshot
 
@@ -26,7 +26,7 @@ That snapshot (commit `5649437`) said the studio and giving were labelled sample
 | Code | [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter), branch `main` |
 | Editor | Lovable project `3a7b58dd-a027-4ee9-9df4-96c469e3f8ac` — commits sync both ways |
 | Marketing + account site | **uncard.app** |
-| Gift links | Served from uncard.app at `/c/:id` today. Serving them from **uncard.gifts** instead is Jordan's open decision D16 (no default; not built) |
+| Gift links | Served from uncard.app at `/c/:id` today. Serving them from **uncard.gifts** instead is open decision D16 (no default; not built) |
 | DNS | Both domains on **Cloudflare** (Jordan's account). uncard.app and www point at Lovable's hosting (DNS only, not proxied). **invest.uncard.app** is a proxied placeholder record, so something on Cloudflare serves it (a Worker or Pages site, unverified). uncard.gifts has **no DNS records** and serves nothing. No Worker routes on either zone (read via API, 2026-10-02) |
 | Build docs (source of truth for status) | `docs/review-2026-09-30/` in the product repo — one report per phase in `build-reports/` |
 
@@ -46,7 +46,7 @@ That snapshot (commit `5649437`) said the studio and giving were labelled sample
 | Scenes ready | **15 of 50**: S01, S04, S06, S08, S14, S15, S16, S18, S26, S33, S37, S41, S47, S48, S50 |
 | Sample uncards | **Steph, 9** (Quest Log) and **Jamie, 40** (Firmware), fully playable |
 | Sign in | Google (official button) or an email sign-in link. Adults only: 18+ confirmation |
-| Studio | **Built, shut three ways**: a code switch, a database switch only Jordan can flip, and card-making being off. Plain `/make` still shows the Steph sample. Testers will enter at `/make?studio=1` |
+| Studio | **Built, shut three ways**: a code switch, a database switch only the owner login can flip, and card-making being off. Plain `/make` still shows the Steph sample. Testers will enter at `/make?studio=1` |
 | Giving | **Built and published**, but nothing can be given until the studio opens. Unknown, closed or withdrawn links all show the same "This uncard isn't here." page |
 | Card lab | `/admin/lab` — make a test card and watch every model call, its tokens and cost. Unused: card-making is off |
 | Admin | Tabs: People and cards, Testers, Metrics, Gifts. Panels for the card-making switch and the studio (owner only) |
@@ -77,10 +77,10 @@ Who may use it while it's shut to the public (D24 default): a live Golden Pass h
 ## People and access
 
 - **Roles:** creator (everyone), admin, owner. Exactly one owner: **Jordan**.
-- **Only the owner** makes admins, switches card-making or the studio on, or changes their limits. Brian and Tim are promoted by Jordan after they sign in (D4) — **not done yet** as of 2 Oct.
+- **Only the owner** makes admins, switches card-making or the studio on, or changes their limits. Brian and Tim are promoted by the owner login after they sign in (D4). **Contradiction:** in Slack on 30 Sep Jordan told Brian "You are now admin" (Oy granted it), but every phase report through 2 Oct still lists D4 as open. Unverified which is current.
 - **Golden Pass:** granted by email, even before sign-up, singly or as a list of up to 50. Covers everything, including hosting past three months (D8).
 - **Suspend and restore** exist. A suspended person sees "contact [contact email]" — the address is still a placeholder (D20), so nobody should be suspended yet.
-- **Cloudflare:** since 2026-10-02 Brian is **Domain Administrator** on uncard.app and uncard.gifts (plus Workers Routes), not a member of Jordan's account. So he can change DNS, settings, SSL, cache and Worker *routes*, but cannot deploy Worker *code* — that needs an account-level role from Jordan (e.g. Workers Admin). Brian's agents use a zone-only API token (1Password: "Cloudflare API Token (uncard)"). Relevant if D16 puts gifts on uncard.gifts. Changing DNS touches the live site, so it's still Jordan's call.
+- **Cloudflare:** since 2026-10-02 Brian is **Domain Administrator** on uncard.app and uncard.gifts (plus Workers Routes), not a member of Jordan's account (Jordan confirmed full admin on both domains in Slack, 2 Oct). So he can change DNS, settings, SSL, cache and Worker *routes*. Deploying Worker *code* is account-level: hand Jordan a ready-to-run prompt for his Codex, or ask him to do it (his preference, 2 Oct). Brian's agents use a zone-only API token (1Password: "Cloudflare API Token (uncard)"). Changing DNS touches the live site, so tell the team before you do.
 - **Everything is audited:** every access, settings or gift-withdrawal change writes an `admin_audit` row in the same transaction.
 - **The browser never writes** account, job, allowance or card tables. Roles are checked server-side only.
 
@@ -156,9 +156,9 @@ Three fictional recipients, hash-locked so tests stay comparable. Loaded in the 
 
 A lab run is scored on seven 0–2 marks plus ten ticks. A change may go live only if it has no hard failure, meets every must-include, drops no mark by 1+ against the baseline, and stays under the cost ceiling.
 
-## Waiting on Jordan
+## Open items from the build
 
-From the phase reports, newest first. None blocks the build; several block real testers or real gifts.
+From the phase reports, newest first. None blocks the build; several block real testers or real gifts. Items that flip a switch in the app need the owner login (Jordan's); the decisions themselves belong to the partners.
 
 | Item | Blocks |
 |---|---|
@@ -175,11 +175,11 @@ From the phase reports, newest first. None blocks the build; several block real 
 | Terms and Privacy wording; lawyer before launch (D10, D20) | Public launch |
 | Phone checks listed in each report | — |
 
-## Jordan's decisions
+## Decisions
 
-**Approved 30 Sep:** sample labels (D1) · invite testers once the studio works (D2) · 6–10 skippable interview questions, draft at 3 facts (D3) · Brian and Tim made admins after sign-in (D4) · green buttons trialled beside red (D5) · thin brief → shorter card (D6) · "private" = kept off share tiles, not hidden (D7) · Golden Pass covers everything (D8) · "coming soon" labels (D9) · Terms and Privacy drafted, lawyer before launch (D10) · pricing terms wait for payments (D11) · full measurement, recipients never tracked (D12).
+**Approved 30 Sep** (Jordan, on the build agent's recommendations): sample labels (D1) · invite testers once the studio works (D2) · 6–10 skippable interview questions, draft at 3 facts (D3) · Brian and Tim made admins after sign-in (D4) · green buttons trialled beside red (D5) · thin brief → shorter card (D6) · "private" = kept off share tiles, not hidden (D7) · Golden Pass covers everything (D8) · "coming soon" labels (D9) · Terms and Privacy drafted, lawyer before launch (D10) · pricing terms wait for payments (D11) · full measurement, recipients never tracked (D12).
 
-**Still open** (the build is running on the bold defaults): currency, CAD or USD (D11a) · raw-data retention, **13 months** or 30 days (D12b) · copy approvals (D13) · model prices (D14) · Metrics access, **owner + admins** (D15) · gift hosting, uncard.app or uncard.gifts (D16, no default) · what happens to gifts if a pass is revoked or an account suspended, **they stay live** (D17) · milestone and birthday rules (D18–D19) · legal details (D20) · nightly job (D21) · AI budget (D22) · studio access before payments, **pass holders + staff** (D24) · email provider (D25) · scene rewrites per card, **5** (D26).
+**Still open, for the partners** (the build is running on the bold defaults): currency, CAD or USD (D11a) · raw-data retention, **13 months** or 30 days (D12b) · copy approvals (D13) · model prices (D14) · Metrics access, **owner + admins** (D15) · gift hosting, uncard.app or uncard.gifts (D16, no default) · what happens to gifts if a pass is revoked or an account suspended, **they stay live** (D17) · milestone and birthday rules (D18–D19) · legal details (D20) · nightly job (D21) · AI budget (D22) · studio access before payments, **pass holders + staff** (D24) · email provider (D25) · scene rewrites per card, **5** (D26).
 
 Live list: `improvement-spec.md` §8.3 in the product repo.
 

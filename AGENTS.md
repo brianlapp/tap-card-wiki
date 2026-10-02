@@ -8,6 +8,8 @@ Context for AI agents working in this repo. Read this first, then load only the 
 
 The repo, file names and older docs still say Tapcard. Same product.
 
+**Team:** Jordan, Brian and Tim are equal partners. Jordan holds the app's single *owner* login, so switches that need that login wait on him; decisions don't. Brian leads engineering and infrastructure.
+
 **Current milestone:** one synthetic test card working end to end (create → preview → publish → play → export). Nothing else ships first.
 
 ## Workspace: two repos, one set of instructions
@@ -26,7 +28,7 @@ This file is the shared instructions for both. There is no orchestrator agent: o
 
 **Habits**
 - **Pull both repos before you start. Commit and push before you stop** or switch device. Cloud sessions are thrown away; unpushed work is lost.
-- **Product repo:** never push to `main`, never force-push, never rewrite history. `main` is the live site and Lovable syncs it. Work on a branch and open a PR for Jordan.
+- **Product repo:** never push to `main`, never force-push, never rewrite history. `main` is the live site and Lovable syncs it. Work on a branch and open a PR.
 - **Where the repos disagree:** build status and code → the product repo. Project context and history → this wiki. On any fact, newest wins (`docs/decisions/0005`). Flag a contradiction; don't silently pick a side.
 - **Don't copy the product repo's build docs here.** They change daily. Link to them.
 
@@ -56,7 +58,7 @@ This file is the shared instructions for both. There is no orchestrator agent: o
 - **The brand is Matinee.** Yellow Marquee field, Ink type, Tomato full stop (main button colour under review). Midnight is rejected. The gift itself wears its world, not the brand.
 - **Speak the product's words.** In anything user-facing: *uncard, scene, world, your person, give*. Never *e-card, template, AI-generated, content, user*. File names and IDs keep *section/theme*.
 
-- **There is no staging.** The product publishes straight to the live site. Never run anything against the live database, production credentials or billing. AI spending, anyone's access and legal text are Jordan's calls only.
+- **There is no staging.** The product publishes straight to the live site. Never run anything against the live database, production credentials or billing. AI spending, anyone's access and legal text are partner decisions: agents never make them alone. Need something from a partner? Post the ask with the link and steps; don't stall.
 - **No invented facts.** If a number, status or capability is unverified, write "unverified" rather than guessing.
 - **Server-side AI only.** No generated code executes in the recipient's browser.
 - **Privacy is a hard gate.** No child logins, no child contact data, no PII in telemetry.

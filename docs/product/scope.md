@@ -80,11 +80,13 @@ Build catalogue: https://docs.google.com/spreadsheets/u/1/d/1d7c4FesVy08oaTlquBT
 | P4 Learning and efficiency | 100 |
 | Deferred (incl. all payments) | 14 |
 
-## Team (proposed, not yet accepted)
+## Team
 
-- Jordan — direction and commercial (43 tasks)
+Jordan, Brian and Tim are **equal partners** (Brian, 2026-10-02). Areas of focus (task counts from the build catalogue):
+
+- Jordan — direction and commercial (43 tasks). Holds the app's owner login
 - Tim Miller — experience and quality (167)
-- Brian Lapp — engineering and reliability (316)
+- Brian Lapp — engineering, infrastructure and reliability (316)
 
 ## Open questions
 
