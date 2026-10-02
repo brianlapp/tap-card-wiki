@@ -34,7 +34,7 @@ Option 3. It replaces W-48's second Lovable project.
 
 | # | Slice | Who | Undo |
 |---|---|---|---|
-| 1 | **Plumbing.** Proxied DNS record on uncard.gifts plus route `uncard.gifts/*` → `uncard-gifts`. The placeholder answers every address with the neutral 404 and the three gift headers. Proves the domain end to end with nothing real behind it | Brian's agent (has the rights) | Delete the route and record |
+| 1 ✅ | **Plumbing.** *Done 2026-10-02: uncard.gifts/* answers 404 "This uncard isn't here." from the Worker, verified with curl. The placeholder doesn't send the three gift headers yet; slice 3 adds them.* Proxied DNS record on uncard.gifts plus route `uncard.gifts/*` → `uncard-gifts`. The placeholder answers every address with the neutral 404 and the three gift headers. Proves the domain end to end with nothing real behind it | Brian's agent (has the rights) | Delete the route and record |
 | 2 | **App endpoints.** Two server routes on uncard.app: `POST /api/gifts/open {id}` → live / pin / missing, and `POST /api/gifts/pin {id, pin}` → the existing PIN answer. Both reuse `loadGift` and `tryPin` unchanged and refuse any request without the shared secret header. No id in the path, so even the app's own logs never list gift ids | PR to the product repo, reviewed by the build agent | Endpoints do nothing without the secret |
 | 3 | **The gift Worker.** Code in the product repo at `workers/gifts/`, importing `src/uncard/player` and the gift words and headers, so there's one source of truth. Serves the player, styles and fonts as static files; renders the three states; forwards PIN tries. No cookies, no storage, no analytics, no third-party requests | Brian's agent, deployed with wrangler | Point the route back at the placeholder |
 | 4 | **Switch the link.** The Give panel copies `uncard.gifts/{id}`. uncard.app/c/{id} redirects there, so links already sent keep working | PR to the product repo | Revert one line |
@@ -50,7 +50,7 @@ Option 3. It replaces W-48's second Lovable project.
 
 ## Open questions
 
-- Can Brian deploy with wrangler under a per-Worker Editor role, including uploading static files? (unverified) Fallback: Jordan's Codex deploys, or an account API token scoped to `uncard-gifts`.
+- Can Brian deploy with wrangler under a per-Worker Editor role, including uploading static files? (unverified; wrangler needs Node 22+, and Brian's Mac has Node 20) Fallback: Jordan's Codex deploys, or an account API token scoped to `uncard-gifts`.
 - Does Lovable's analytics log server-to-server POSTs to `/api/...`? (unverified) Without an id in the path and with Cloudflare's IP as the source, nothing about a recipient would be in them either way.
 - The shared secret has to be set in two places: Lovable's secrets (write-only) and the Worker's. Generate it once and save it in 1Password.
 - Should `www.uncard.gifts` redirect to the bare domain? (assumption: yes)
