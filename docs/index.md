@@ -89,6 +89,7 @@ Exported from the build catalogue. **Read these instead of the spreadsheet.**
 | `decisions/0003-task-catalogue-source.md` | Task list lives in the repo, not the spreadsheet | Accepted | 2026-09-20 |
 | `decisions/0004-brand-direction.md` | UNCARD, Matinee | Accepted | 2026-09-30 |
 | `decisions/0005-demo-is-source-of-truth.md` | Where docs disagree, the brand demo wins | Accepted | 2026-09-30 |
+| `decisions/0006-gifts-on-uncard-gifts.md` | Gift links on uncard.gifts via the `uncard-gifts` Worker; recipients never reach Lovable (D16, W-37) | Open | 2026-10-02 |
 
 ## Status values
 

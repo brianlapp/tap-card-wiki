@@ -26,7 +26,7 @@ That snapshot (commit `5649437`) said the studio and giving were labelled sample
 | Code | [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter), branch `main` |
 | Editor | Lovable project `3a7b58dd-a027-4ee9-9df4-96c469e3f8ac` — commits sync both ways |
 | Marketing + account site | **uncard.app** |
-| Gift links | Served from uncard.app at `/c/:id` today. Serving them from **uncard.gifts** instead is open decision D16 (no default; not built) |
+| Gift links | Served from uncard.app at `/c/:id` today. Serving them from **uncard.gifts** instead is open decision D16; proposal in `decisions/0006` (a Cloudflare Worker, `uncard-gifts`, created 2026-10-02, no route yet) |
 | DNS | Both domains on **Cloudflare** (Jordan's account). uncard.app and www point at Lovable's hosting (DNS only, not proxied). **invest.uncard.app** is a proxied placeholder record, so something on Cloudflare serves it (a Worker or Pages site, unverified). uncard.gifts has **no DNS records** and serves nothing. No Worker routes on either zone (read via API, 2026-10-02) |
 | Build docs (source of truth for status) | `docs/review-2026-09-30/` in the product repo — one report per phase in `build-reports/` |
 
