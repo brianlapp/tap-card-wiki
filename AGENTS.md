@@ -19,7 +19,9 @@ The repo, file names and older docs still say Tapcard. Same product.
 | [`brianlapp/tap-card-wiki`](https://github.com/brianlapp/tap-card-wiki) (this one) | Project context: scope, research, decisions, catalogue, brand, the demo. **No code.** | Brian's agents, directly |
 | [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter) | The product, live at **uncard.app**. Lovable-synced. Has its own build docs in `docs/review-2026-09-30/` | **Jordan's build agent and Lovable only.** Everyone else: branch, then pull request |
 
-This file is the shared instructions for both. There is no orchestrator agent: one agent, plugged straight into the repos, reading this.
+This file is the shared instructions for both. There is no orchestrator agent: one agent, plugged straight into the repos, reading this. *(Proposed change, Open: Brian's Claude Code as team lead with sub-agents — `docs/decisions/0008-agent-team-orchestrator.md`.)*
+
+Two private support repos sit beside these, for Brian's agents: `brianlapp/uncard-brain` (the team brain, `0007`) and `brianlapp/agent-team` (the orchestrator template, `0008`). Locally they live in `~/uncard/` too.
 
 **How the workspace is laid out**
 - **Local:** `~/uncard/` holds both clones and a one-line `CLAUDE.md` that points here. Run `claude` from `~/uncard/`.

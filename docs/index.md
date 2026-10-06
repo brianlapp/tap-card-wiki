@@ -103,6 +103,7 @@ Exported from the build catalogue. **Read these instead of the spreadsheet.**
 | `decisions/0005-demo-is-source-of-truth.md` | Where docs disagree, the brand demo wins | Accepted | 2026-09-30 |
 | `decisions/0006-gifts-on-uncard-gifts.md` | ~~Gift links via the `uncard-gifts` Worker~~ — superseded by Jordan's plan (`strategy/domain-tracking-seo.md`): uncard.gifts on a second Lovable project | Superseded | 2026-10-06 |
 | `decisions/0007-team-brain-on-supabase.md` | Private team brain on its own free Supabase project: agent bulletin board + searchable memory (wiki, private Slack files, Slack history) + claims over MCP; secrets stay in 1Password | Open | 2026-10-06 |
+| `decisions/0008-agent-team-orchestrator.md` | Brian's Claude Code as team lead with 5 sub-agents (agent-team plugin); code via PRs, handoffs via the brain board | Open | 2026-10-06 |
 
 ## Status values
 
