@@ -7,7 +7,7 @@
 
 ## TL;DR
 
-Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table, and rights emails are ready to go. uncard.gifts slice 1 is done, and the plan (0006) is waiting on partner input. The seven research, brand and strategy files from the 2026-10-02 Slack drop are now ingested (2026-10-06; see `docs/index.md`); the growth-strategy PDF and investor deck stay held, private and out of this public wiki.
+Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table, and rights emails are ready to go. D16 is settled: uncard.gifts goes on a second Lovable project per Jordan's plan (0006 superseded, 2026-10-06). The seven research, brand and strategy files from the 2026-10-02 Slack drop are now ingested (2026-10-06; see `docs/index.md`); the growth-strategy PDF and investor deck stay held, private and out of this public wiki.
 
 ## Decided in Slack
 
@@ -17,6 +17,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 | 2026-09-30 | Golden Pass: unlimited, free for friends and family, separate from admin access | Jordan / Oy | `2026-09.md` |
 | 2026-10-02 | uncard.gifts runs on a Worker **route**, not a Custom Domain | Brian's agent, Oy | `2026-10.md` |
 | 2026-10-02 | Account-level Cloudflare changes go to Jordan as a ready-to-run Codex prompt | Jordan | `2026-10.md` |
+| 2026-10-06 | **D16 settled:** gifts live on uncard.gifts as a second Lovable project (W-48), per Jordan's Domain, Tracking and SEO Plan; `decisions/0006` (Worker) superseded | Brian, choosing Jordan's plan | `strategy/domain-tracking-seo.md` |
 | 2026-10-05 | Music must come from a cloud **API** the backend calls, not manual or home-PC generation; plan for 10 → 100,000+ users | Jordan | `2026-10.md` |
 | 2026-10-05 | **Suno is out** (no public API; terms ban automation and redistribution). Udio out too (downloads disabled) | Tim, agreed by Jordan | `2026-10.md` |
 | 2026-10-06 | Confirm commercial rights in writing before building on any music API | Tim | `2026-10.md` |
@@ -25,7 +26,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 
 | Since | Question | Waiting on | Log |
 |---|---|---|---|
-| 2026-10-02 | uncard.gifts plan, `decisions/0006` (D16): any objections before slices 2–4? No replies in Slack yet | Jordan, Tim | `2026-10.md` |
+| ~~2026-10-02~~ | ~~uncard.gifts plan, `decisions/0006` (D16): any objections before slices 2–4?~~ — closed 2026-10-06: Brian chose Jordan's newer plan (uncard.gifts on a second Lovable project); 0006 superseded | Brian | `2026-10.md` |
 | 2026-10-05 | Free procedural sounds plus paid sung songs (S37) as an upsell — adopt? | All three | `2026-10.md` |
 | 2026-10-05 | AI budget (D22), needed before any paid music pilot | All three | `2026-10.md` |
 | 2026-10-05 | Legal review of delivering generated songs to givers and recipients | All three | `2026-10.md` |
@@ -47,6 +48,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 | 2026-09-30 | Post the full testing and learning plan document once storage is agreed | Jordan / Oy | `2026-09.md` |
 | ~~2026-10-02~~ | ~~Create the `uncard-gifts` Worker and give Brian Editor on it~~ — done 2026-10-02 | Jordan (Codex) | `2026-10.md` |
 | ~~2026-10-02~~ | ~~uncard.gifts slice 1: route to the placeholder 404~~ — done 2026-10-02 | Brian | `2026-10.md` |
+| 2026-10-06 | Delete the `uncard.gifts/*` Worker route once the second Lovable project connects uncard.gifts | Brian | `decisions/0006` |
 
 ## Waiting to be ingested
 

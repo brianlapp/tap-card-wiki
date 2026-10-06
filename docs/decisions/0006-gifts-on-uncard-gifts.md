@@ -1,9 +1,15 @@
 # 0006 — Gift links live on uncard.gifts, served by a Cloudflare Worker
 
-**Status:** Open (proposed by Brian, 2026-10-02)
+**Status:** Superseded by Jordan's Domain, Tracking and SEO Plan (`strategy/domain-tracking-seo.md`), 2026-10-06 — Brian chose Jordan's plan as the more up to date. Kept for the record; don't build from it.
 **Date:** 2026-10-02
 **Deciders:** Jordan, Brian Lapp, Tim Miller (equal partners)
 **Method:** Read from the product repo at `ffd1adc` (gift route, gift server functions, Give panel, player, spec W-37/W-47/W-48) and Cloudflare's Workers permissions docs. Not built or tested. Anything marked (unverified) needs checking before it is relied on.
+
+## Superseded
+
+On 2026-10-06 Brian picked Jordan's Domain, Tracking and SEO Plan over this proposal: uncard.gifts becomes a separate host on a **second Lovable project (W-48)**, not a Cloudflare Worker. Slices 2–4 below won't be built.
+
+Slice 1 is still live: the route `uncard.gifts/*` → Worker `uncard-gifts` answers every address with a placeholder 404. It's harmless while uncard.gifts serves nothing. **Delete that route** (Cloudflare → uncard.gifts → Workers Routes) when the second Lovable project connects the domain, so the two don't fight over traffic. The Worker itself can then be deleted or kept for later jobs.
 
 ## TL;DR
 
