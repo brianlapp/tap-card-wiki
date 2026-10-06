@@ -30,7 +30,8 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 | 2026-10-05 | AI budget (D22), needed before any paid music pilot | All three | `2026-10.md` |
 | 2026-10-05 | Legal review of delivering generated songs to givers and recipients | All three | `2026-10.md` |
 | 2026-10-06 | **Cost per song** (Jordan). Tim's per-card figures are for one accepted song at 3 attempts, so per *attempt* that's about $0.04–0.13 ACE-Step, $0.08 Lyria, $0.19 ElevenLabs (derived here, unverified) | Tim's report | `2026-10.md` |
-| 2026-10-06 | Song lengths: which lengths, for which uses? Jordan wants variety, including short ones | All three | `2026-10.md` |
+| 2026-10-06 | Song lengths: which lengths, for which uses? Jordan wants variety, including short ones. Spike finding: Lyria 3.5 ignores requested length (15 s asked, 145 s back); Lyria 3 Clip is always about 30 s | All three | `2026-10.md` |
+| 2026-10-06 | **Google's Gemini API terms bar apps "directed towards or likely to be accessed by individuals under the age of 18".** Kids receive uncards. Does Lyria through Vertex AI (Google Cloud terms) avoid this? Needs a legal read before building on Lyria | All three | music spike |
 | 2026-09-29 | Free-uncard-for-signup plus birthday-card loop (Jordan's idea; Oy's plan item 4). Rules are D18–D19 in the product repo | All three | `2026-09.md` |
 | 2026-10-02 | customer.io: Jordan's suggestion for the email provider (D25)? Only a bare link so far | Jordan | `2026-10.md` |
 
@@ -38,7 +39,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 
 | Since | Item | Owner | Log |
 |---|---|---|---|
-| 2026-10-05 | One-day music spike: the same 5 prompts through Lyria, ElevenLabs and ACE-Step | Brian | `2026-10.md` |
+| 2026-10-05 | One-day music spike: the same 5 prompts through Lyria, ElevenLabs, ACE-Step and Mureka. **Day 1 done 2026-10-06:** Lyria 3.5 ran (94–97% of our words sung, $0.08 a song, but no line timing, no length control, filter blocked two kids' songs until reworded). Mureka, ACE-Step and ElevenLabs wait on accounts (Mureka $10 top-up, free Hugging Face token, ElevenLabs $6/mo) | Brian | `2026-10.md` |
 | 2026-10-06 | Send the rights-confirmation emails to Google (Lyria) and ElevenLabs | Tim | `2026-10.md` |
 | 2026-10-05 | Share the music research artifact with Jordan and Brian (it's private) | Tim | `2026-10.md` |
 | 2026-10-05 | Opus review of the music research | Jordan | `2026-10.md` |
