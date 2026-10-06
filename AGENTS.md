@@ -42,7 +42,8 @@ This file is the shared instructions for both. There is no orchestrator agent: o
 | What the giver and recipient should experience (designed) | `docs/product/experience.md` |
 | What a card is made of: 50 sections, 20 themes | `docs/catalogue/` — **grep, do not read whole** |
 | Generating a card: prompt rules and output shapes | `docs/catalogue/prompts.md` |
-| Name, logo, colours, voice (brand: **Matinee**) | `docs/brand/directions.md` |
+| Name, logo, colours, voice (brand: **Matinee**) | `docs/brand/directions.md` (v1.0 guide + system detail: `docs/brand/brand-guide.md`) |
+| Business/growth plans not for the public (domain, SEO, growth, investor) | `docs/strategy/` — **growth-strategy and investor-deck stay out of this public wiki; everything else in there is fine to read** |
 | What's built and being built now, the active work list | Product repo: `docs/review-2026-09-30/` in [`uncard-starter`](https://github.com/JNabsRepo/uncard-starter) |
 | The working mockup — what the build reproduces | `examples/uncard-demo/` (~1 MB; content already extracted into the docs above) |
 | Why a choice was made | `docs/decisions/` (numbered ADRs) |

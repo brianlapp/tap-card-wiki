@@ -1,0 +1,5 @@
+<svg viewBox="0 0 130 86" role="img" aria-label="cassette illustration" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="122" height="78" rx="8" fill="#FFFFFF" stroke="#121114" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+        <rect x="14" y="12" width="102" height="48" rx="5" fill="#FFCB0A" stroke="#121114" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+        <rect x="30" y="32" width="70" height="24" rx="12" fill="#121114"/><circle cx="46" cy="44" r="9" fill="#FFFFFF" stroke="#121114" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="46" cy="44" r="3" fill="#121114"/><circle cx="84" cy="44" r="9" fill="#FFFFFF" stroke="#121114" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="84" cy="44" r="3" fill="#121114"/>
+        <path d="M22 20 H108" stroke="#121114" stroke-width="2" opacity=".35"/>
+        <path d="M30 82 L38 66 H92 L100 82" fill="#49B2F5" stroke="#121114" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg>

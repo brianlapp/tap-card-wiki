@@ -45,6 +45,8 @@ What a card is made of. **Grep the CSVs; don't read them whole.**
 |---|---|---|---|
 | `brand/directions.md` | UNCARD brand (Matinee): logo, colour, type, voice | Accepted | 2026-09-30 |
 | `brand/logos/` | v0.1 logo pack, SVG + PNG, both directions | Draft | 2026-09-30 |
+| `brand/brand-guide.md` | v1.0 brand guide + system vs. `directions.md`: new tokens, components, conflicts flagged | Draft | 2026-10-06 |
+| `brand/system/` | v1.0 assets not already in `logos/`: tokens, components, illustrations, fonts (OFL), favicon | Draft | 2026-10-06 |
 
 ## research/
 
@@ -53,22 +55,20 @@ What a card is made of. **Grep the CSVs; don't read them whole.**
 | `research/competitive-landscape.md` | Ecard incumbents, custom-song vendors, one free direct competitor, pricing implications | Draft | 2026-09-30 |
 | `research/competitor-teardown-ari-gateaux.md` | Hands-on teardown of personalized-birthday-games.com | Not written | — |
 | `research/parent-willingness-to-pay.md` | What adults actually pay for kids' digital gifts | Not written | — |
+| `research/creation-flow.md` | Research-backed creation flow, landing to paid: intake, AI-disclosure penalty, pricing | Draft | 2026-10-06 |
+| `research/checkout.md` | Checkout research: paywall placement, payment methods, price testing, tax | Draft | 2026-10-06 |
+| `research/sharing-referral-loop.md` | Sharing and referral loop design, incentives, measurement | Draft | 2026-10-06 |
+| `research/recipient-attention.md` | Holding the recipient's attention: generator rules, metrics, analytics events | Draft | 2026-10-06 |
 
-### Waiting to be ingested
+Ingested 2026-10-06 from the 2026-10-02 Slack drop (`slack/ledger.md`). Each carries the research agent's own findings, not re-verified here — see each doc's Method line and Open questions.
 
-Jordan shared these in Slack on 2026-10-02 (#non-build-stuff; Slack file IDs in `slack/ledger.md`) and asked Oy to file them in his Drive, markdown under a "Research" sub-folder. **Not yet in this wiki** — the files aren't reachable from Brian's Drive or machine. Until they land, don't cite them.
+## strategy/
 
-| Source file | Intended home | Status |
-|---|---|---|
-| Uncard Checkout Research: How to Get Givers to Pay on a Phone, on the Day (.md) | `research/checkout.md` | Not ingested |
-| Making an Uncard Feel Like a Joy: Research-Backed Creation Flow, Landing to Paid (.md) | `research/creation-flow.md` | Not ingested |
-| Sharing and Referral Loop Design, Incentives and Measurement, October 2026 (.md) | `research/sharing-referral-loop.md` | Not ingested |
-| Holding the Recipient's Attention: Research Findings, Generator Rules and Metrics (.md) | `research/recipient-attention.md` | Not ingested |
-| Uncard growth strategy (.pdf) | `strategy/growth-strategy.md` | Not ingested |
-| UNCARD investor deck (.pdf) | `strategy/investor-deck.md` | Not ingested |
-| UNCARD brand guide (.pdf) | `brand/` (check against `directions.md`) | Not ingested |
-| UNCARD brand system (.zip) | `brand/` (check against `logos/`) | Not ingested |
-| uncard Domain, Tracking and SEO Plan (.pdf) — posted 2026-10-02 evening | `strategy/domain-tracking-seo.md` | Not ingested |
+| Doc | Summary | Status | Updated |
+|---|---|---|---|
+| `strategy/domain-tracking-seo.md` | Domain, tracking and SEO plan: uncard.gifts vs. uncard.app, measurement, SEO/AI-answer plan | Draft | 2026-10-06 |
+
+**Held, not ingested:** "Uncard growth strategy" (.pdf) and "UNCARD investor deck" (.pdf), both posted by Jordan in Slack #non-build-stuff on 2026-10-02 — **Held: private, not for the public wiki** (this repo is public; see `slack/ledger.md`).
 
 ## slack/
 

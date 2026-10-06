@@ -7,7 +7,7 @@
 
 ## TL;DR
 
-Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table, and rights emails are ready to go. uncard.gifts slice 1 is done, and the plan (0006) is waiting on partner input. Eight research and brand files (nine with the SEO plan) are still waiting to be filed and ingested.
+Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table, and rights emails are ready to go. uncard.gifts slice 1 is done, and the plan (0006) is waiting on partner input. The seven research, brand and strategy files from the 2026-10-02 Slack drop are now ingested (2026-10-06; see `docs/index.md`); the growth-strategy PDF and investor deck stay held, private and out of this public wiki.
 
 ## Decided in Slack
 
@@ -51,19 +51,19 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 
 Posted in Slack, not yet in the Drive or this wiki. The Drive folder is where originals belong. Slack still holds copies (#non-build-stuff); file IDs below, readable with `slack_read_file`.
 
-| File | Posted | Slack file ID |
-|---|---|---|
-| Making an Uncard Feel Like a Joy: Research-Backed Creation Flow, Landing to Paid (.md) | 2026-10-02 | `F0C6CGA9W1F` |
-| Uncard Checkout Research: How to Get Givers to Pay on a Phone, on the Day (.md) | 2026-10-02 | `F0C6594SY5T` |
-| Sharing and Referral Loop Design, Incentives and Measurement, October 2026 (.md) | 2026-10-02 | `F0C751G8NNL` |
-| Holding the Recipient's Attention: Research Findings, Generator Rules and Metrics (.md) | 2026-10-02 | `F0C751HS9GQ` |
-| Uncard growth strategy (.pdf) | 2026-10-02 | `F0C74UW6GFJ` |
-| UNCARD investor deck (.pdf) | 2026-10-02 | `F0C6CGAKC2V` |
-| UNCARD brand guide (.pdf) | 2026-10-02 | `F0C6594QXEH` |
-| UNCARD brand system (.zip) | 2026-10-02 | `F0C68KBKKQW` |
-| uncard Domain, Tracking and SEO Plan (.pdf) — **new, not in `index.md` before today** | 2026-10-02 | `F0C69E3DNKX` |
-| Testing and learning plan (Oy) | 2026-09-30 | not posted yet |
-| Music-generation research (Tim's Claude) | 2026-10-05 | private Claude artifact, not in Slack |
+| File | Posted | Slack file ID | Status |
+|---|---|---|---|
+| ~~Making an Uncard Feel Like a Joy: Research-Backed Creation Flow, Landing to Paid (.md)~~ | 2026-10-02 | `F0C6CGA9W1F` | Ingested 2026-10-06 → `research/creation-flow.md` |
+| ~~Uncard Checkout Research: How to Get Givers to Pay on a Phone, on the Day (.md)~~ | 2026-10-02 | `F0C6594SY5T` | Ingested 2026-10-06 → `research/checkout.md` |
+| ~~Sharing and Referral Loop Design, Incentives and Measurement, October 2026 (.md)~~ | 2026-10-02 | `F0C751G8NNL` | Ingested 2026-10-06 → `research/sharing-referral-loop.md` |
+| ~~Holding the Recipient's Attention: Research Findings, Generator Rules and Metrics (.md)~~ | 2026-10-02 | `F0C751HS9GQ` | Ingested 2026-10-06 → `research/recipient-attention.md` |
+| Uncard growth strategy (.pdf) | 2026-10-02 | `F0C74UW6GFJ` | **Held: private, not for the public wiki** |
+| UNCARD investor deck (.pdf) | 2026-10-02 | `F0C6CGAKC2V` | **Held: private, not for the public wiki** |
+| ~~UNCARD brand guide (.pdf)~~ | 2026-10-02 | `F0C6594QXEH` | Ingested 2026-10-06 → `brand/brand-guide.md` |
+| ~~UNCARD brand system (.zip)~~ | 2026-10-02 | `F0C68KBKKQW` | Ingested 2026-10-06 → `brand/brand-guide.md` + `brand/system/` |
+| ~~uncard Domain, Tracking and SEO Plan (.pdf)~~ | 2026-10-02 | `F0C69E3DNKX` | Ingested 2026-10-06 → `strategy/domain-tracking-seo.md` |
+| Testing and learning plan (Oy) | 2026-09-30 | not posted yet | Not ingested |
+| Music-generation research (Tim's Claude) | 2026-10-05 | private Claude artifact, not in Slack | Not ingested |
 
 ## Wiki follow-ups
 
@@ -72,3 +72,4 @@ Places where Slack is newer than the wiki.
 - `product/scope.md` said "Suno for songs — manual pilot". Superseded 2026-10-05 (marked in that doc).
 - `index.md`'s "Waiting to be ingested" table was missing the Domain, Tracking and SEO Plan PDF. Added 2026-10-06.
 - `decisions/0006`: slice 1 is recorded there. Partner feedback still needed before it can move from Open to Accepted.
+- **2026-10-06:** the seven 2026-10-02 research/brand/strategy files ingested into `docs/research/`, `docs/brand/brand-guide.md` and `docs/strategy/domain-tracking-seo.md` (see `index.md`). The SEO plan PDF itself claims "Jordan adopted this plan on 2 October 2026" and that it settles D16 (a separate uncard.gifts host) — but `decisions/0006` is still `Status: Open` and this ledger's own open-questions table above shows no partner replies. It also assumes uncard.gifts runs as a second Lovable project (W-48), where `decisions/0006` chose a Cloudflare Worker instead. Neither conflict is resolved here — see `strategy/domain-tracking-seo.md`'s Open questions.

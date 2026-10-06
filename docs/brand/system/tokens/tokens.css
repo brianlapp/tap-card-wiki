@@ -1,0 +1,55 @@
+/* UNCARD brand tokens (Matinee). Generated from tokens.json. Link this file, then components/bundle.css. */
+
+@font-face { font-family: 'Archivo'; src: url('../fonts/Archivo-Variable.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Archivo Condensed'; src: url('../fonts/ArchivoCondensed-Variable.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Archivo SemiExpanded'; src: url('../fonts/ArchivoSemiExpanded-Variable.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+
+:root {
+  --marquee: #ffcb0a;
+  --ink: #121114;
+  --ink-70: #57524a;
+  --tomato: #f2442e;
+  --paper: #ffffff;
+  --butter: #fff3c4;
+  --cream: #fff9e6;
+  --line: rgba(18,17,20,0.16);
+  --sky: #49b2f5;
+  --bubblegum: #ff8cc6;
+  --mint: #33c584;
+  --sky-soft: #bfe5ff;
+  --bubblegum-soft: #ffd1e8;
+  --mint-soft: #c6f2dc;
+  --focus-ring: #2f6bff;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --radius-sm: 12px;
+  --radius-button-sm: 11px;
+  --radius-button: 14px;
+  --radius-card: 18px;
+  --radius-tile: 22px;
+  --radius-pill: 999px;
+  --shadow-button: 4px 4px 0 #121114;
+  --shadow-sticker: 6px 6px 0 #121114;
+  --shadow-prompt-focus: 8px 8px 0 #f2442e;
+  --stroke-outline: 2.5px;
+  --stroke-chip: 2px;
+  --font-display: "Archivo Condensed", "Archivo Black", "Arial Narrow", sans-serif;
+  --font-text: Archivo, Arial, sans-serif;
+  --font-label: "Archivo SemiExpanded", Archivo, Arial, sans-serif;
+}
+
+/* Type styles */
+.display-120 { font-family: var(--font-display); font-size: 120px; line-height: 0.92; font-weight: 900; }
+.display-88 { font-family: var(--font-display); font-size: 88px; line-height: 0.92; font-weight: 900; }
+.display-56 { font-family: var(--font-display); font-size: 56px; line-height: 0.95; font-weight: 900; }
+.display-36 { font-family: var(--font-display); font-size: 36px; line-height: 1; font-weight: 900; }
+.display-24 { font-family: var(--font-display); font-size: 24px; line-height: 1; font-weight: 900; }
+.text-20 { font-family: var(--font-text); font-size: 20px; line-height: 1.5; font-weight: 400; }
+.text-17 { font-family: var(--font-text); font-size: 17px; line-height: 1.5; font-weight: 400; }
+.text-17-semibold { font-family: var(--font-text); font-size: 17px; line-height: 1.5; font-weight: 600; }
+.label-13 { font-family: var(--font-label); font-size: 13px; line-height: 1.2; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; }
