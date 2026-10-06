@@ -1,7 +1,7 @@
 # Scope
 
 **Status:** Draft
-**Updated:** 2026-09-30
+**Updated:** 2026-10-06
 **Owner:** Brian Lapp
 **Method:** Distilled from the 526-task build catalogue Google Sheet. Stack below is partly inferred from Lovable defaults and is (unverified) until the repo is confirmed.
 
@@ -41,7 +41,7 @@ Build catalogue: https://docs.google.com/spreadsheets/u/1/d/1d7c4FesVy08oaTlquBT
 **AI and media**
 - OpenAI text generation, server-side via a provider adapter, pinned versions
 - OpenAI image generation, offline and human-reviewed
-- Suno for songs — manual pilot; commercial rights (unverified)
+- ~~Suno for songs — manual pilot; commercial rights (unverified)~~ superseded 2026-10-05: Suno is out (no public API, terms ban automation and redistribution). Songs must come from a cloud API; candidates are Google Lyria, ElevenLabs Music and ACE-Step, with rights still to be confirmed (`slack/ledger.md`)
 
 **Sharing**
 - PNG first, then deterministic MP4

@@ -14,7 +14,7 @@ The working mockup — the line of truth — is outside `docs/`: `examples/uncar
 
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
-| `product/scope.md` | What Tapcard is, tech stack, constraints, team, phases (partly superseded — see its update note) | Draft | 2026-09-30 |
+| `product/scope.md` | What Tapcard is, tech stack, constraints, team, phases (partly superseded — see its update note) | Draft | 2026-10-06 |
 | `product/live-product.md` | The MVP at uncard.app after build Phases 1–5: studio and giving built but shut, what's waiting on Jordan | Draft | 2026-10-02 |
 | `product/experience.md` | Nine-beat arc, giver's five steps, Studio, sharing controls, hosting and keepsake | Draft | 2026-09-30 |
 | `product/user-stories.md` | Stories for the first end-to-end slice | Not written | — |
@@ -56,7 +56,7 @@ What a card is made of. **Grep the CSVs; don't read them whole.**
 
 ### Waiting to be ingested
 
-Jordan shared these in Slack on 2026-10-02 (#non-build-stuff) and asked Oy to file them in his Drive, markdown under a "Research" sub-folder. **Not yet in this wiki** — the files aren't reachable from Brian's Drive or machine. Until they land, don't cite them.
+Jordan shared these in Slack on 2026-10-02 (#non-build-stuff; Slack file IDs in `slack/ledger.md`) and asked Oy to file them in his Drive, markdown under a "Research" sub-folder. **Not yet in this wiki** — the files aren't reachable from Brian's Drive or machine. Until they land, don't cite them.
 
 | Source file | Intended home | Status |
 |---|---|---|
@@ -68,6 +68,18 @@ Jordan shared these in Slack on 2026-10-02 (#non-build-stuff) and asked Oy to fi
 | UNCARD investor deck (.pdf) | `strategy/investor-deck.md` | Not ingested |
 | UNCARD brand guide (.pdf) | `brand/` (check against `directions.md`) | Not ingested |
 | UNCARD brand system (.zip) | `brand/` (check against `logos/`) | Not ingested |
+| uncard Domain, Tracking and SEO Plan (.pdf) — posted 2026-10-02 evening | `strategy/domain-tracking-seo.md` | Not ingested |
+
+## slack/
+
+Running summary of the team Slack. **Start with the ledger.**
+
+| Doc | Summary | Status | Updated |
+|---|---|---|---|
+| `slack/README.md` | How the archive works, channels, who's who, how to update it (last-read timestamps) | Draft | 2026-10-06 |
+| `slack/ledger.md` | Decisions made in Slack, open questions, action items, files waiting to be ingested | Draft | 2026-10-06 |
+| `slack/2026-09.md` | Day-by-day log, 21–30 Sep: wiki, brand demos, build kickoff, Golden Pass, Oy's testing plan | Draft | 2026-10-06 |
+| `slack/2026-10.md` | Day-by-day log from 1 Oct: research drop, Cloudflare Worker, uncard.gifts slice 1, music research | Draft | 2026-10-06 |
 
 ## tasks/
 

@@ -46,6 +46,7 @@ This file is the shared instructions for both. There is no orchestrator agent: o
 | What's built and being built now, the active work list | Product repo: `docs/review-2026-09-30/` in [`uncard-starter`](https://github.com/JNabsRepo/uncard-starter) |
 | The working mockup — what the build reproduces | `examples/uncard-demo/` (~1 MB; content already extracted into the docs above) |
 | Why a choice was made | `docs/decisions/` (numbered ADRs) |
+| What the team said in Slack: decisions, open asks, who owes what | `docs/slack/ledger.md` (day logs beside it) |
 | How to write/update these docs | `docs/conventions.md` |
 | A task: what it is, who owns it, what blocks it | `docs/tasks/` — **grep, do not read whole** |
 | Full 526-task build catalogue | `docs/tasks/tasks.csv` (exported; do not use the Sheet) |
