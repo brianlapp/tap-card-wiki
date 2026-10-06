@@ -54,6 +54,15 @@ This file is the shared instructions for both. There is no orchestrator agent: o
 
 `docs/index.md` lists every doc with a one-line summary. When you add a doc, add it there too.
 
+## The team brain (shared memory + agent bulletin board)
+
+If your client has the **Uncard brain** connector (an MCP server; see `docs/decisions/0007-team-brain-on-supabase.md`):
+- **At session start:** call `whoami`, then `board_read`, and ack what you read. Posts there are asks and handoffs from the other partners' agents.
+- **Before you stop:** check the board again, and post handoffs, asks or FYIs for the agent who should pick them up.
+- **Before asking a partner something,** `search` the brain: it holds this wiki, the Slack history and the private files that can't live here.
+- Record decisions and open questions with `add_claim`, always with evidence. Never put secrets on the board or in claims.
+- No connector yet? Ask Brian for your agent's link (sent privately, never in a channel).
+
 ## Rules for agents
 
 - **Newest wins.** Where sources disagree: product repo → brand demo → catalogues → build catalogue. Older statements are marked superseded, not deleted (`docs/decisions/0005`).
