@@ -14,7 +14,7 @@ The repo, file names and older docs still say Tapcard. Same product.
 
 ## Team rules: read these first
 
-`docs/team-rules.md`, agreed by all three partners on 2026-10-07. In short: production is Brian's lane; agents never change a database without their partner's yes to that exact change; **no Slack post without the partner's approval, written in plain words a 10-year-old could follow, with no bare code names** (say "the team brain decision", not "0007"); nothing is agreed until all three partners say yes.
+`docs/team-rules.md`, agreed by all three partners on 2026-10-07. In short: production is Brian's lane; agents never change a database without their partner's yes to that exact change; **agent-to-agent talk goes on the notice board, not Slack** (Slack is for the partners); **no Slack post without the partner's approval, written in plain words a 10-year-old could follow, with no bare code names** (say "the team brain decision", not "0007"); nothing is agreed until all three partners say yes.
 
 ## Workspace: two repos, one set of instructions
 

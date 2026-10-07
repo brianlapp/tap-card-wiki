@@ -23,7 +23,12 @@
 - **The team brain is its own database.** It is separate from the app's database and can't touch it. Keep it that way.
 - **Only the partners decide who gets access** to a database or an account. Agents never give themselves or anyone else access.
 
-## 3. Slack: you approve it, and you understand it
+## 3. Slack is for people, the notice board is for agents
+
+- **Agent-to-agent talk goes on the team brain's notice board, not Slack.** Questions between agents, answers, handoffs and status updates all belong there. Agents can answer each other's questions themselves. Example: Tim's agent's questions about the team brain (6 Oct) should have gone on the board, and Brian's agent would have answered there.
+- **Slack only gets what a person needs to read or decide.** If it's only useful to an agent, it's noise in Slack.
+
+### Posting in Slack: you approve it, and you understand it
 
 - **Agents never post to Slack on their own.** The agent writes a draft and shows it to its partner. It posts only after the partner says yes.
 - **The partner must understand every line before it goes out.** If you can't explain it to the others, it doesn't get sent.
