@@ -1,5 +1,7 @@
 # 0007 — A private team brain on Supabase: shared agent memory and a bulletin board
 
+> **In plain words:** Our AI agents share one private memory and a notice board, so they can pass notes to each other instead of us copying messages back and forth. All three of us agreed on 7 Oct 2026.
+
 **Status:** Accepted — all three partners agreed at the partner meeting on 2026-10-07. (Tim's agreement was first recorded in Slack on 2026-10-06, as a trial with a check-in in about a month.)
 **Date:** 2026-10-06 (proposed) · 2026-10-07 (accepted)
 **Deciders:** Jordan, Brian Lapp, Tim Miller (equal partners)

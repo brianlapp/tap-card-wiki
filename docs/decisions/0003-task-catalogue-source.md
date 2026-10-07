@@ -1,5 +1,7 @@
 # 0003 — Task catalogue lives in the repo
 
+> **In plain words:** The list of 526 build tasks lives in this wiki as a file agents can search, instead of in Jordan's spreadsheet. Still needs Jordan's OK.
+
 **Status:** Accepted (repo side); Jordan's confirmation still required
 **Date:** 2026-09-20
 **Deciders:** Brian Lapp (decided), Jordan (owns the spreadsheet)

@@ -1,5 +1,7 @@
 # 0006 — Gift links live on uncard.gifts, served by a Cloudflare Worker
 
+> **In plain words:** An old plan for where gift links live. It's been replaced: Jordan's current build plan serves gift links on uncard.gifts from a small Cloudflare program he's building. Don't build from this page.
+
 **Status:** Superseded by the [Phase 3 build spec](https://github.com/JNabsRepo/uncard-starter/blob/7023e9a372857fc3c1a87b898e77038e175d19ab/docs/phase-3/build-spec.md) (approved by Jordan 2026-10-05), which takes precedence over this proposal and over the Domain, Tracking and SEO Plan. Corrected 2026-10-07; see below. Kept for the record; don't build from it.
 **Date:** 2026-10-02
 **Deciders:** Jordan, Brian Lapp, Tim Miller (equal partners)

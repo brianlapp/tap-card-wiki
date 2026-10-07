@@ -1,5 +1,7 @@
 # 0008 — Run Brian's Uncard build work through the agent-team orchestrator
 
+> **In plain words:** Brian's idea: his Claude acts as a team lead with five helper agents (research, tests, building, review, cleanup) for his build work. Not agreed yet; needs Jordan and Tim.
+
 **Status:** Open — Brian's proposal, 2026-10-06. v0.1.0 is built. Becomes Accepted once Jordan and Tim agree.
 **Date:** 2026-10-06
 **Deciders:** Jordan, Brian Lapp, Tim Miller (equal partners)

@@ -12,6 +12,10 @@ The repo, file names and older docs still say Tapcard. Same product.
 
 **Current milestone:** one synthetic test card working end to end (create → preview → publish → play → export). Nothing else ships first.
 
+## Team rules: read these first
+
+`docs/team-rules.md`, agreed by all three partners on 2026-10-07. In short: production is Brian's lane; agents never change a database without their partner's yes to that exact change; **no Slack post without the partner's approval, written in plain words a 10-year-old could follow, with no bare code names** (say "the team brain decision", not "0007"); nothing is agreed until all three partners say yes.
+
 ## Workspace: two repos, one set of instructions
 
 | Repo | What it holds | Who pushes to `main` |

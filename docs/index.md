@@ -9,6 +9,7 @@ The working mockup — the line of truth — is outside `docs/`: `examples/uncar
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
 | `start-here.md` | Landing page: what this is, why it exists, how to use it | Draft | 2026-09-30 |
+| `team-rules.md` | Team rules for our agents: stay in your lane, database safety, Slack posts approved and in plain words, how we agree to things | Agreed (7 Oct meeting) | 2026-10-07 |
 
 ## product/
 

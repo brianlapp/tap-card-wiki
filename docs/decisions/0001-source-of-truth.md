@@ -1,5 +1,7 @@
 # 0001 — Authoritative project, repo and branch
 
+> **In plain words:** The real product code lives in Jordan's uncard-starter project on GitHub. That's the one everyone builds from.
+
 **Status:** Accepted
 **Date:** 2026-09-20 · **Decided:** 2026-09-30 · **Corrected:** 2026-10-01
 **Deciders:** Jordan, Brian Lapp

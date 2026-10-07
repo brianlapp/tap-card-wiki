@@ -1,5 +1,7 @@
 # 0004 — Name and brand direction
 
+> **In plain words:** The name is UNCARD, and the look is "Matinee": yellow background, black text, a red-orange full stop.
+
 **Status:** Accepted
 **Date:** 2026-09-30 · **Decided:** 2026-09-30
 **Deciders:** Jordan, Brian Lapp, Tim Miller
