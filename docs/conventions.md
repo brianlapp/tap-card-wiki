@@ -36,7 +36,7 @@ The `Method` line is the important one. It tells a future agent how much to trus
 
 ## Decision records (ADRs)
 
-Every decision starts with an **In plain words** line (team rule, `team-rules.md`). When you mention a decision anywhere else, use its plain name, not just its number.
+Every decision starts with an **In plain words** line (agent rule, `agent-rules.md`). When you mention a decision anywhere else, use its plain name, not just its number.
 
 ```
 # <NNNN> — <Decision title>

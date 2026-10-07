@@ -1,4 +1,4 @@
-# Team rules for our agents (SOPs)
+# Agent rules (our SOPs)
 
 **Status:** Agreed at the partner meeting on 7 Oct 2026 (Jordan's idea). Brian's agent wrote it up from Brian's notes. Jordan and Tim: read it, and say if anything is off.
 **Applies to:** every partner's AI helper: Brian's Claude, Jordan's Oy and Codex, Tim's Claude, and any new one.
