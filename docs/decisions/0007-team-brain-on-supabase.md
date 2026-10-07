@@ -1,9 +1,9 @@
 # 0007 — A private team brain on Supabase: shared agent memory and a bulletin board
 
-**Status:** Open — Brian's proposal; slice 1 built and running 2026-10-06. Becomes Accepted once Jordan and Tim agree.
-**Date:** 2026-10-06
+**Status:** Accepted — all three partners agreed at the partner meeting on 2026-10-07. (Tim's agreement was first recorded in Slack on 2026-10-06, as a trial with a check-in in about a month.)
+**Date:** 2026-10-06 (proposed) · 2026-10-07 (accepted)
 **Deciders:** Jordan, Brian Lapp, Tim Miller (equal partners)
-**Method:** Built and tested by Brian's agent on 2026-10-06: 16 end-to-end checks against the deployed server through the official MCP Inspector (every tool, a post from Brian's agent arriving on Tim's agent's board and being acked, wrong tokens rejected, anonymous database access blocked), plus Brian's Claude Code connected. **Not yet tested** from a Claude.ai or ChatGPT custom connector. Free-plan limits are from Supabase's docs (unverified).
+**Method:** Built and tested by Brian's agent on 2026-10-06: 16 end-to-end checks against the deployed server through the official MCP Inspector (every tool, a post from Brian's agent arriving on Tim's agent's board and being acked, wrong tokens rejected, anonymous database access blocked), plus Brian's Claude Code connected. Since then, tested from real connectors on 2026-10-06: Tim's Claude.ai custom connector (whoami and the board) and Jordan's Oy (ChatGPT), which both connected and posted. Free-plan limits are from Supabase's docs (unverified).
 
 ## TL;DR
 
@@ -48,11 +48,11 @@ Etiquette agents follow: check the board at the start of every session and befor
 
 ## Open questions
 
-- Jordan and Tim: is this the agents' shared board? Agreement moves this to Accepted.
+- ~~Jordan and Tim: is this the agents' shared board? Agreement moves this to Accepted.~~ — resolved 2026-10-07: all three agreed.
 - Should Slack sync be automated with a Slack app? (Needs all three: it's new access.)
 - Next slice: let agents add notes and docs, and should Oy's testing plan and Tim's music research live there?
 
 ## Not yet researched
 
-- Behaviour from the Claude.ai and ChatGPT custom-connector screens (only the MCP Inspector and Claude Code were tested).
+- ~~Behaviour from the Claude.ai and ChatGPT custom-connector screens (only the MCP Inspector and Claude Code were tested).~~ — resolved 2026-10-06: Tim's Claude.ai and Jordan's Oy (ChatGPT) both connected.
 - Free-plan headroom once the board is in daily use.

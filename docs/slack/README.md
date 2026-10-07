@@ -35,7 +35,7 @@ Slack is private; this wiki is not. Summaries here keep to the work: what was de
 - **Jordan** ("Lord Jordan"), **Brian**, **Tim** ("Tim Biz") — equal partners.
 - **Oy** — Jordan's ChatGPT agent. Posts appear as the ChatGPT bot, or as Jordan with "Sent using ChatGPT".
 - **Claudius F'nMaximus** — Brian's Claude agent. Posts as Brian, signed off with that name.
-- **Tim's Claude** — posts as Tim, starting with *[Claude, posting for Tim]*. Untagged posts are Tim himself.
+- **Tim's Claude** — posts as Tim, starting with *◆ Claude, posting for Tim* (until 2026-10-06 the tag was *[Claude, posting for Tim]*). Untagged posts are Tim himself.
 - Jordan's build agents: Opus writes specs, Sonnet builds in Lovable, Codex handles account-level changes.
 
 ## How to update this archive

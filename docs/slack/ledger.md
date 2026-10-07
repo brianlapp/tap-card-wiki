@@ -7,7 +7,7 @@
 
 ## TL;DR
 
-Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table, and rights emails are ready to go. D16 is settled: uncard.gifts goes on a second Lovable project per Jordan's plan (0006 superseded, 2026-10-06). The seven research, brand and strategy files from the 2026-10-02 Slack drop are now ingested (2026-10-06; see `docs/index.md`); the growth-strategy PDF and investor deck stay held, private and out of this public wiki. New as of 2026-10-06: a shared "team brain" (private Supabase project + bulletin board) for all agents, decision `0007` — Tim's agent agreed to a trial, Jordan's agreement still pending, and Tim raised four open points on access, keys and private files.
+Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table, and rights emails are ready to go. D16: uncard.gifts is the product repo's own Cloudflare Worker (`uncard-gifts`, built in Phase 2, not live yet), per the Phase 3 build spec Jordan approved 2026-10-05. Corrected 2026-10-07; it is not a second Lovable project. The seven research, brand and strategy files from the 2026-10-02 Slack drop are now ingested (2026-10-06; see `docs/index.md`); the growth-strategy PDF and investor deck stay held, private and out of this public wiki. New as of 2026-10-06: a shared "team brain" (private Supabase project + bulletin board) for all agents, decision `0007`, accepted by all three partners on 2026-10-07. Tim raised four open points on access, keys and private files.
 
 ## Decided in Slack
 
@@ -15,13 +15,13 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 |---|---|---|---|
 | 2026-09-30 | Don't share uncard.app with anyone outside the team yet; a few more rounds of fixes first | Jordan | `2026-09.md` |
 | 2026-09-30 | Golden Pass: unlimited, free for friends and family, separate from admin access | Jordan / Oy | `2026-09.md` |
-| 2026-10-02 | uncard.gifts runs on a Worker **route**, not a Custom Domain | Brian's agent, Oy | `2026-10.md` |
+| 2026-10-07 | uncard.gifts' Worker attaches **Custom Domains** (`uncard.gifts`, `www`), per `gifts/wrangler.jsonc` in the Phase 3 build. Corrected 2026-10-07; was (2026-10-02): a Worker route, not a Custom Domain, for the slice-1 placeholder | Jordan (Phase 3 spec) | `decisions/0006` |
 | 2026-10-02 | Account-level Cloudflare changes go to Jordan as a ready-to-run Codex prompt | Jordan | `2026-10.md` |
-| 2026-10-06 | **D16 settled:** gifts live on uncard.gifts as a second Lovable project (W-48), per Jordan's Domain, Tracking and SEO Plan; `decisions/0006` (Worker) superseded | Brian, choosing Jordan's plan | `strategy/domain-tracking-seo.md` |
+| 2026-10-07 | **D16:** uncard.gifts is the Cloudflare Worker `uncard-gifts` (product repo `gifts/`, built in Phase 2, not yet LIVE), deployed by Workers Builds from a `workers-live` branch that moves only when Jordan publishes uncard.app. Per the Phase 3 build spec, approved by Jordan 2026-10-05, which takes precedence over the Domain, Tracking and SEO Plan. Corrected 2026-10-07; was (2026-10-06): a second Lovable project (W-48) | Jordan (Phase 3 spec) | `decisions/0006` |
 | 2026-10-05 | Music must come from a cloud **API** the backend calls, not manual or home-PC generation; plan for 10 → 100,000+ users | Jordan | `2026-10.md` |
 | 2026-10-05 | **Suno is out** (no public API; terms ban automation and redistribution). Udio out too (downloads disabled) | Tim, agreed by Jordan | `2026-10.md` |
 | 2026-10-06 | Confirm commercial rights in writing before building on any music API | Tim | `2026-10.md` |
-| 2026-10-06 | **Team brain** (decision `0007`): a private Supabase project plus a bulletin board every partner's agent connects to, holding the wiki, shared files, Slack history and decisions. Trial, check-in in ~1 month. Tim's agent agreed; Jordan's agreement still needed | Brian proposed, Tim agreed | `2026-10.md` |
+| 2026-10-07 | **Team brain** (decision `0007`) **accepted** by all three partners at the 2026-10-07 partner meeting: a private Supabase project plus a bulletin board every partner's agent connects to, holding the wiki, shared files, Slack history and decisions. Tim first agreed in Slack 2026-10-06, as a trial with a check-in in ~1 month | All three (Brian proposed) | `2026-10.md` |
 
 ## Open questions
 
@@ -53,7 +53,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 | 2026-09-30 | Post the full testing and learning plan document once storage is agreed | Jordan / Oy | `2026-09.md` |
 | ~~2026-10-02~~ | ~~Create the `uncard-gifts` Worker and give Brian Editor on it~~ — done 2026-10-02 | Jordan (Codex) | `2026-10.md` |
 | ~~2026-10-02~~ | ~~uncard.gifts slice 1: route to the placeholder 404~~ — done 2026-10-02 | Brian | `2026-10.md` |
-| 2026-10-06 | Delete the `uncard.gifts/*` Worker route once the second Lovable project connects uncard.gifts | Brian | `decisions/0006` |
+| 2026-10-07 | Remove the slice-1 placeholder (route `uncard.gifts/*` and its proxied DNS record) before Jordan's Cloudflare steps attach the Phase 2 `uncard-gifts` Worker's Custom Domains (`gifts/README.md`, Phase 3 A5). Was (2026-10-06): delete the route once a second Lovable project connects uncard.gifts | Brian, with Jordan | `decisions/0006` |
 
 ## Waiting to be ingested
 
@@ -79,5 +79,5 @@ Places where Slack is newer than the wiki.
 
 - `product/scope.md` said "Suno for songs — manual pilot". Superseded 2026-10-05 (marked in that doc).
 - `index.md`'s "Waiting to be ingested" table was missing the Domain, Tracking and SEO Plan PDF. Added 2026-10-06.
-- `decisions/0006`: slice 1 is recorded there. Partner feedback still needed before it can move from Open to Accepted.
-- **2026-10-06:** the seven 2026-10-02 research/brand/strategy files ingested into `docs/research/`, `docs/brand/brand-guide.md` and `docs/strategy/domain-tracking-seo.md` (see `index.md`). The SEO plan PDF itself claims "Jordan adopted this plan on 2 October 2026" and that it settles D16 (a separate uncard.gifts host) — but `decisions/0006` is still `Status: Open` and this ledger's own open-questions table above shows no partner replies. It also assumes uncard.gifts runs as a second Lovable project (W-48), where `decisions/0006` chose a Cloudflare Worker instead. Neither conflict is resolved here — see `strategy/domain-tracking-seo.md`'s Open questions.
+- `decisions/0006`: superseded by the Phase 3 build spec (corrected 2026-10-07). Slice 1's placeholder still needs removing before the real Worker goes live.
+- **2026-10-06:** the seven 2026-10-02 research/brand/strategy files ingested into `docs/research/`, `docs/brand/brand-guide.md` and `docs/strategy/domain-tracking-seo.md` (see `index.md`). The SEO plan PDF itself claims "Jordan adopted this plan on 2 October 2026" and that it settles D16 (a separate uncard.gifts host) — but `decisions/0006` is still `Status: Open` and this ledger's own open-questions table above shows no partner replies. It also assumes uncard.gifts runs as a second Lovable project (W-48), where `decisions/0006` chose a Cloudflare Worker instead. Neither conflict is resolved here — see `strategy/domain-tracking-seo.md`'s Open questions. **Resolved 2026-10-07:** the Phase 3 build spec (approved 2026-10-05) supersedes both; see `decisions/0006`.
