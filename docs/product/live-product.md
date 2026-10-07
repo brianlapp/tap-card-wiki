@@ -26,7 +26,7 @@ That snapshot (commit `5649437`) said the studio and giving were labelled sample
 | Code | [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter), branch `main` |
 | Editor | Lovable project `3a7b58dd-a027-4ee9-9df4-96c469e3f8ac` — commits sync both ways |
 | Marketing + account site | **uncard.app** |
-| Gift links | Served from uncard.app at `/c/:id` today. Serving them from **uncard.gifts** instead is open decision D16; proposal in `decisions/0006` (a Cloudflare Worker, `uncard-gifts`, created 2026-10-02, no route yet) |
+| Gift links | Served from uncard.app at `/c/:id` today. Moving to **uncard.gifts** on a second Lovable project (W-48): D16 settled by Jordan's plan (`strategy/domain-tracking-seo.md`), confirmed 2026-10-06; `decisions/0006` (a Cloudflare Worker) is superseded. Earlier note: a Cloudflare Worker, `uncard-gifts`, created 2026-10-02, no route yet) |
 | DNS | Both domains on **Cloudflare** (Jordan's account). uncard.app and www point at Lovable's hosting (DNS only, not proxied). **invest.uncard.app** is a proxied placeholder record, so something on Cloudflare serves it (a Worker or Pages site, unverified). uncard.gifts has one proxied placeholder record and the route `uncard.gifts/*` → Worker `uncard-gifts`, which answers every address with a 404 "This uncard isn't here." (slice 1 of `decisions/0006`, 2026-10-02). No Worker routes on uncard.app |
 | Build docs (source of truth for status) | `docs/review-2026-09-30/` in the product repo — one report per phase in `build-reports/` |
 
@@ -165,7 +165,7 @@ From the phase reports, newest first. None blocks the build; several block real 
 | Switch card-making + studio on, make the first real card (Steph first), enter model prices (D14, D22) | Everything real — first card, first cost number, testers |
 | AI credit budget for the first lab runs (D22) — asked once, unanswered | Planning how many runs |
 | Open two pages and check Lovable's visitor stats don't count gift pages (W-37) | Sending any real gift link |
-| Where gifts live: uncard.app or uncard.gifts (D16, no default) | W-48 |
+| ~~Where gifts live: uncard.app or uncard.gifts (D16, no default)~~ Settled 2026-10-06: uncard.gifts on a second Lovable project, per Jordan's plan | W-48 |
 | Contact address for paused people (D20) | Suspending anyone |
 | Schedule the nightly job in Lovable (D21) | Permanent daily totals, 13-month cleanup |
 | Button colour: red (live) or green (W-50, side-by-side in the Phase 1 report) | — |
@@ -179,7 +179,7 @@ From the phase reports, newest first. None blocks the build; several block real 
 
 **Approved 30 Sep** (Jordan, on the build agent's recommendations): sample labels (D1) · invite testers once the studio works (D2) · 6–10 skippable interview questions, draft at 3 facts (D3) · Brian and Tim made admins after sign-in (D4) · green buttons trialled beside red (D5) · thin brief → shorter card (D6) · "private" = kept off share tiles, not hidden (D7) · Golden Pass covers everything (D8) · "coming soon" labels (D9) · Terms and Privacy drafted, lawyer before launch (D10) · pricing terms wait for payments (D11) · full measurement, recipients never tracked (D12).
 
-**Still open, for the partners** (the build is running on the bold defaults): currency, CAD or USD (D11a) · raw-data retention, **13 months** or 30 days (D12b) · copy approvals (D13) · model prices (D14) · Metrics access, **owner + admins** (D15) · gift hosting, uncard.app or uncard.gifts (D16, no default) · what happens to gifts if a pass is revoked or an account suspended, **they stay live** (D17) · milestone and birthday rules (D18–D19) · legal details (D20) · nightly job (D21) · AI budget (D22) · studio access before payments, **pass holders + staff** (D24) · email provider (D25) · scene rewrites per card, **5** (D26).
+**Still open, for the partners** (the build is running on the bold defaults): currency, CAD or USD (D11a) · raw-data retention, **13 months** or 30 days (D12b) · copy approvals (D13) · model prices (D14) · Metrics access, **owner + admins** (D15) · what happens to gifts if a pass is revoked or an account suspended, **they stay live** (D17) · milestone and birthday rules (D18–D19) · legal details (D20) · nightly job (D21) · AI budget (D22) · studio access before payments, **pass holders + staff** (D24) · email provider (D25) · scene rewrites per card, **5** (D26).
 
 Live list: `improvement-spec.md` §8.3 in the product repo.
 

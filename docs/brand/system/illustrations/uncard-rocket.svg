@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 130" role="img" aria-label="rocket illustration" xmlns="http://www.w3.org/2000/svg">
+        <path d="M40 96 Q50 128 60 96Z" fill="#F2442E"/><path d="M44 96 Q50 116 56 96Z" fill="#FFCB0A"/>
+        <path d="M33 66 L16 96 L36 90Z" fill="#F2442E" stroke="#121114" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M67 66 L84 96 L64 90Z" fill="#F2442E" stroke="#121114" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M50 6 C68 22 71 46 69 70 L66 94 L34 94 L31 70 C29 46 32 22 50 6Z" fill="#FFFFFF" stroke="#121114" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M50 6 C58 13 63 21 66 30 L34 30 C37 21 42 13 50 6Z" fill="#F2442E" stroke="#121114" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="50" cy="52" r="11" fill="#49B2F5" stroke="#121114" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M44 48 A7 7 0 0 1 50 44" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+        <rect x="41" y="94" width="18" height="6" rx="2" fill="#121114"/></svg>

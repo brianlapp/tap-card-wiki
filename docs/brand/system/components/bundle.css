@@ -1,0 +1,38 @@
+.u-scope { font-family: var(--font-text); color: var(--ink); }
+.dot { color: var(--tomato); }
+.m-kicker { font-family: var(--font-label); font-weight: 800; text-transform: uppercase; letter-spacing: .09em; font-size: 13px; }
+.m-h { font-family: var(--font-display); font-weight: 900; line-height: .92; margin: 0; color: var(--ink); }
+.m-btn { display: inline-flex; align-items: center; justify-content: center; gap: .5em; font-family: var(--font-text); font-weight: 800; font-size: 17px; line-height: 1.1; padding: .85em 1.35em; border-radius: var(--radius-button); border: var(--stroke-outline) solid var(--ink); text-decoration: none; cursor: pointer; transition: transform .12s, box-shadow .12s; white-space: nowrap; }
+.m-btn:focus-visible, .m-chip:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
+.m-btn--red { background: var(--tomato); color: var(--ink); box-shadow: var(--shadow-button); }
+.m-btn--ink { background: var(--ink); color: #ffffff; }
+.m-btn--ghost { background: transparent; color: var(--ink); }
+.m-btn:hover { transform: translate(-1px, -1px); }
+.m-btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ink); }
+.m-btn--sm { font-size: 14px; padding: .6em 1em; border-radius: var(--radius-button-sm); }
+.m-btn--sm.m-btn--red { box-shadow: 3px 3px 0 var(--ink); }
+.m-chip { display: inline-flex; align-items: center; border: var(--stroke-chip) solid var(--ink); background: var(--paper); color: var(--ink); border-radius: var(--radius-pill); padding: .38em .85em; font-family: var(--font-text); font-weight: 700; font-size: 14px; cursor: pointer; white-space: nowrap; }
+.m-chip:hover { background: var(--butter); }
+.m-pill { display: inline-block; font-family: var(--font-text); font-size: 12px; font-weight: 800; padding: 3px 10px; border-radius: var(--radius-pill); background: var(--butter); color: var(--ink); border: var(--stroke-chip) solid var(--ink); white-space: nowrap; }
+.m-pill--ink { background: var(--ink); color: #ffffff; }
+.m-ticket { position: relative; background: var(--paper); border: var(--stroke-outline) solid var(--ink); border-radius: 10px; padding: 12px 22px; display: inline-flex; flex-direction: column; gap: 2px; -webkit-mask: radial-gradient(10px at 0 50%, transparent 95%, #000) left / 51% 100% no-repeat, radial-gradient(10px at 100% 50%, transparent 95%, #000) right / 51% 100% no-repeat; mask: radial-gradient(10px at 0 50%, transparent 95%, #000) left / 51% 100% no-repeat, radial-gradient(10px at 100% 50%, transparent 95%, #000) right / 51% 100% no-repeat; }
+.m-ticket span { font-family: var(--font-label); font-weight: 800; font-size: 11px; letter-spacing: .14em; }
+.m-ticket b { font-family: var(--font-display); font-weight: 900; font-size: 27px; line-height: 1; }
+.m-ticket--red { background: var(--tomato); }
+.m-frame { background: var(--paper); padding: 10px; display: flex; flex-direction: column; gap: 6px; border-radius: 4px; width: 150px; }
+.m-frame-n { font-family: var(--font-text); font-weight: 800; font-size: 12px; }
+.m-frame b { font-family: var(--font-display); font-weight: 900; font-size: 17px; line-height: 1; }
+.m-frame-art { aspect-ratio: 4 / 3; border-radius: 6px; display: grid; place-items: center; overflow: hidden; }
+.m-frame-art img { width: 66%; height: 80%; object-fit: contain; }
+.m-frame-c { font-family: var(--font-text); font-size: 13px; line-height: 1.3; }
+.m-strip { display: inline-flex; gap: 8px; background: var(--ink); padding: 24px 10px; border-radius: 8px; position: relative; }
+.m-strip::before, .m-strip::after { content: ""; position: absolute; left: 8px; right: 8px; height: 9px; background: repeating-linear-gradient(90deg, transparent 0 9px, var(--paper) 9px 21px, transparent 21px 30px); border-radius: 2px; }
+.m-strip::before { top: 7px; }
+.m-strip::after { bottom: 7px; }
+.bg-sky-soft { background: var(--sky-soft); }
+.bg-butter { background: var(--butter); }
+.bg-mint-soft { background: var(--mint-soft); }
+.bg-bubblegum-soft { background: var(--bubblegum-soft); }
+.pv { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; padding: 20px; background: var(--marquee); min-height: 100%; box-sizing: border-box; }
+.pv--paper { background: var(--paper); }
+.pv--ink { background: var(--ink); }
