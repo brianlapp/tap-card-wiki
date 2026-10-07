@@ -1,1 +1,4 @@
 .netlify/
+
+# Local memory-plugin state (auto-generated per machine)
+.memory/
