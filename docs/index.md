@@ -9,6 +9,7 @@ The working mockup — the line of truth — is outside `docs/`: `examples/uncar
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
 | `start-here.md` | Landing page: what this is, why it exists, how to use it | Draft | 2026-09-30 |
+| `agent-rules.md` | Agent rules (our SOPs): stay in your lane, database safety, Slack posts approved and in plain words, how we agree to things | Agreed (7 Oct meeting) | 2026-10-07 |
 
 ## product/
 
@@ -45,6 +46,8 @@ What a card is made of. **Grep the CSVs; don't read them whole.**
 |---|---|---|---|
 | `brand/directions.md` | UNCARD brand (Matinee): logo, colour, type, voice | Accepted | 2026-09-30 |
 | `brand/logos/` | v0.1 logo pack, SVG + PNG, both directions | Draft | 2026-09-30 |
+| `brand/brand-guide.md` | v1.0 brand guide + system vs. `directions.md`: new tokens, components, conflicts flagged | Draft | 2026-10-06 |
+| `brand/system/` | v1.0 assets not already in `logos/`: tokens, components, illustrations, fonts (OFL), favicon | Draft | 2026-10-06 |
 
 ## research/
 
@@ -53,22 +56,20 @@ What a card is made of. **Grep the CSVs; don't read them whole.**
 | `research/competitive-landscape.md` | Ecard incumbents, custom-song vendors, one free direct competitor, pricing implications | Draft | 2026-09-30 |
 | `research/competitor-teardown-ari-gateaux.md` | Hands-on teardown of personalized-birthday-games.com | Not written | — |
 | `research/parent-willingness-to-pay.md` | What adults actually pay for kids' digital gifts | Not written | — |
+| `research/creation-flow.md` | Research-backed creation flow, landing to paid: intake, AI-disclosure penalty, pricing | Draft | 2026-10-06 |
+| `research/checkout.md` | Checkout research: paywall placement, payment methods, price testing, tax | Draft | 2026-10-06 |
+| `research/sharing-referral-loop.md` | Sharing and referral loop design, incentives, measurement | Draft | 2026-10-06 |
+| `research/recipient-attention.md` | Holding the recipient's attention: generator rules, metrics, analytics events | Draft | 2026-10-06 |
 
-### Waiting to be ingested
+Ingested 2026-10-06 from the 2026-10-02 Slack drop (`slack/ledger.md`). Each carries the research agent's own findings, not re-verified here — see each doc's Method line and Open questions.
 
-Jordan shared these in Slack on 2026-10-02 (#non-build-stuff; Slack file IDs in `slack/ledger.md`) and asked Oy to file them in his Drive, markdown under a "Research" sub-folder. **Not yet in this wiki** — the files aren't reachable from Brian's Drive or machine. Until they land, don't cite them.
+## strategy/
 
-| Source file | Intended home | Status |
-|---|---|---|
-| Uncard Checkout Research: How to Get Givers to Pay on a Phone, on the Day (.md) | `research/checkout.md` | Not ingested |
-| Making an Uncard Feel Like a Joy: Research-Backed Creation Flow, Landing to Paid (.md) | `research/creation-flow.md` | Not ingested |
-| Sharing and Referral Loop Design, Incentives and Measurement, October 2026 (.md) | `research/sharing-referral-loop.md` | Not ingested |
-| Holding the Recipient's Attention: Research Findings, Generator Rules and Metrics (.md) | `research/recipient-attention.md` | Not ingested |
-| Uncard growth strategy (.pdf) | `strategy/growth-strategy.md` | Not ingested |
-| UNCARD investor deck (.pdf) | `strategy/investor-deck.md` | Not ingested |
-| UNCARD brand guide (.pdf) | `brand/` (check against `directions.md`) | Not ingested |
-| UNCARD brand system (.zip) | `brand/` (check against `logos/`) | Not ingested |
-| uncard Domain, Tracking and SEO Plan (.pdf) — posted 2026-10-02 evening | `strategy/domain-tracking-seo.md` | Not ingested |
+| Doc | Summary | Status | Updated |
+|---|---|---|---|
+| `strategy/domain-tracking-seo.md` | Domain, tracking and SEO plan: uncard.gifts vs. uncard.app, measurement, SEO/AI-answer plan | Draft | 2026-10-06 |
+
+**Held, not ingested:** "Uncard growth strategy" (.pdf) and "UNCARD investor deck" (.pdf), both posted by Jordan in Slack #non-build-stuff on 2026-10-02 — **Held: private, not for the public wiki** (this repo is public; see `slack/ledger.md`).
 
 ## slack/
 
@@ -76,10 +77,10 @@ Running summary of the team Slack. **Start with the ledger.**
 
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
-| `slack/README.md` | How the archive works, channels, who's who, how to update it (last-read timestamps) | Draft | 2026-10-06 |
-| `slack/ledger.md` | Decisions made in Slack, open questions, action items, files waiting to be ingested | Draft | 2026-10-06 |
+| `slack/README.md` | How the archive works, channels, who's who, how to update it (last-read timestamps) | Draft | 2026-10-08 |
+| `slack/ledger.md` | Decisions made in Slack, open questions, action items, files waiting to be ingested | Draft | 2026-10-08 |
 | `slack/2026-09.md` | Day-by-day log, 21–30 Sep: wiki, brand demos, build kickoff, Golden Pass, Oy's testing plan | Draft | 2026-10-06 |
-| `slack/2026-10.md` | Day-by-day log from 1 Oct: research drop, Cloudflare Worker, uncard.gifts slice 1, music research | Draft | 2026-10-06 |
+| `slack/2026-10.md` | Day-by-day log from 1 Oct: research drop, Cloudflare Worker, uncard.gifts slice 1, music research, team brain | Draft | 2026-10-08 |
 
 ## tasks/
 
@@ -101,7 +102,9 @@ Exported from the build catalogue. **Read these instead of the spreadsheet.**
 | `decisions/0003-task-catalogue-source.md` | Task list lives in the repo, not the spreadsheet | Accepted | 2026-09-20 |
 | `decisions/0004-brand-direction.md` | UNCARD, Matinee | Accepted | 2026-09-30 |
 | `decisions/0005-demo-is-source-of-truth.md` | Where docs disagree, the brand demo wins | Accepted | 2026-09-30 |
-| `decisions/0006-gifts-on-uncard-gifts.md` | Gift links on uncard.gifts via the `uncard-gifts` Worker; recipients never reach Lovable (D16, W-37) | Open | 2026-10-02 |
+| `decisions/0006-gifts-on-uncard-gifts.md` | ~~Gift links via the `uncard-gifts` Worker, slices 2–4~~ — superseded by the Phase 3 build spec (approved 2026-10-05): uncard.gifts is the product repo's own `uncard-gifts` Worker (`gifts/`), deployed from `workers-live`; not a second Lovable project (corrected 2026-10-07) | Superseded | 2026-10-07 |
+| `decisions/0007-team-brain-on-supabase.md` | Private team brain on its own free Supabase project: agent bulletin board + searchable memory (wiki, private Slack files, Slack history) + claims over MCP; secrets stay in 1Password | Accepted | 2026-10-07 |
+| `decisions/0008-agent-team-orchestrator.md` | Brian's Claude Code as team lead with 5 sub-agents (agent-team plugin); code via PRs, handoffs via the brain board | Open | 2026-10-06 |
 
 ## Status values
 

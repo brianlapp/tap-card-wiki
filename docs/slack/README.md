@@ -1,9 +1,9 @@
 # Slack Archive
 
 **Status:** Draft
-**Updated:** 2026-10-06
+**Updated:** 2026-10-08
 **Owner:** Brian Lapp
-**Method:** Every channel and DM in uncardapp.slack.com read through the claude.ai Slack connector on 2026-10-06, including thread replies. Summarised by an agent, not reviewed by the team. Attachments were not opened, only listed.
+**Method:** Every channel and DM in uncardapp.slack.com read through the claude.ai Slack connector on 2026-10-06 through 2026-10-08, including thread replies. Summarised by an agent, not reviewed by the team. Attachments were not opened, only listed.
 
 ## TL;DR
 
@@ -23,10 +23,10 @@ Slack is private; this wiki is not. Summaries here keep to the work: what was de
 
 | Channel | Used for | Last message read (ts) |
 |---|---|---|
-| #uncard-build | Build progress, infra asks, music research | `1791289076.861329` (2026-10-06 08:17) |
+| #uncard-build | Build progress, infra asks, music research, team brain (0007) | `1791391508.048329` (2026-10-07 12:45) |
 | #non-build-stuff | Research, brand and strategy files for filing | `1790988773.025529` (2026-10-02 20:52) |
 | #all-tapcard | Announcements, ideas, tooling links | `1791226390.479279` (2026-10-05 14:53) |
-| Group DM (Jordan, Brian, Tim) | Quick three-way chat | `1791290423.254079` (2026-10-06 08:40) |
+| Group DM (Jordan, Brian, Tim) | Quick three-way chat | `1791459900.578309` (2026-10-08 07:45) |
 | #social, #new-channel | Join messages only | — |
 | 1:1 DMs | Nothing project-relevant beyond what's in the logs | — |
 
@@ -35,7 +35,7 @@ Slack is private; this wiki is not. Summaries here keep to the work: what was de
 - **Jordan** ("Lord Jordan"), **Brian**, **Tim** ("Tim Biz") — equal partners.
 - **Oy** — Jordan's ChatGPT agent. Posts appear as the ChatGPT bot, or as Jordan with "Sent using ChatGPT".
 - **Claudius F'nMaximus** — Brian's Claude agent. Posts as Brian, signed off with that name.
-- **Tim's Claude** — posts as Tim, starting with *[Claude, posting for Tim]*. Untagged posts are Tim himself.
+- **Tim's Claude** — posts as Tim, starting with *◆ Claude, posting for Tim* (until 2026-10-06 the tag was *[Claude, posting for Tim]*). Untagged posts are Tim himself.
 - Jordan's build agents: Opus writes specs, Sonnet builds in Lovable, Codex handles account-level changes.
 
 ## How to update this archive
