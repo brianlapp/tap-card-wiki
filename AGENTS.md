@@ -12,6 +12,10 @@ The repo, file names and older docs still say Tapcard. Same product.
 
 **Current milestone:** one synthetic test card working end to end (create → preview → publish → play → export). Nothing else ships first.
 
+## Agent rules: read these first
+
+`docs/agent-rules.md`, agreed by all three partners on 2026-10-07. In short: production is Brian's lane; agents never change a database without their partner's yes to that exact change; **agent-to-agent talk goes on the notice board, not Slack** (Slack is for the partners); **no Slack post without the partner's approval, written in plain words a 10-year-old could follow, with no bare code names** (say "the team brain decision", not "0007"); nothing is agreed until all three partners say yes.
+
 ## Workspace: two repos, one set of instructions
 
 | Repo | What it holds | Who pushes to `main` |
@@ -19,7 +23,9 @@ The repo, file names and older docs still say Tapcard. Same product.
 | [`brianlapp/tap-card-wiki`](https://github.com/brianlapp/tap-card-wiki) (this one) | Project context: scope, research, decisions, catalogue, brand, the demo. **No code.** | Brian's agents, directly |
 | [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter) | The product, live at **uncard.app**. Lovable-synced. Has its own build docs in `docs/review-2026-09-30/` | **Jordan's build agent and Lovable only.** Everyone else: branch, then pull request |
 
-This file is the shared instructions for both. There is no orchestrator agent: one agent, plugged straight into the repos, reading this.
+This file is the shared instructions for both. There is no orchestrator agent: one agent, plugged straight into the repos, reading this. *(Proposed change, Open: Brian's Claude Code as team lead with sub-agents — `docs/decisions/0008-agent-team-orchestrator.md`.)*
+
+Two private support repos sit beside these, for Brian's agents: `brianlapp/uncard-brain` (the team brain, `0007`) and `brianlapp/agent-team` (the orchestrator template, `0008`). Locally they live in `~/uncard/` too.
 
 **How the workspace is laid out**
 - **Local:** `~/uncard/` holds both clones and a one-line `CLAUDE.md` that points here. Run `claude` from `~/uncard/`.
@@ -42,7 +48,8 @@ This file is the shared instructions for both. There is no orchestrator agent: o
 | What the giver and recipient should experience (designed) | `docs/product/experience.md` |
 | What a card is made of: 50 sections, 20 themes | `docs/catalogue/` — **grep, do not read whole** |
 | Generating a card: prompt rules and output shapes | `docs/catalogue/prompts.md` |
-| Name, logo, colours, voice (brand: **Matinee**) | `docs/brand/directions.md` |
+| Name, logo, colours, voice (brand: **Matinee**) | `docs/brand/directions.md` (v1.0 guide + system detail: `docs/brand/brand-guide.md`) |
+| Business/growth plans not for the public (domain, SEO, growth, investor) | `docs/strategy/` — **growth-strategy and investor-deck stay out of this public wiki; everything else in there is fine to read** |
 | What's built and being built now, the active work list | Product repo: `docs/review-2026-09-30/` in [`uncard-starter`](https://github.com/JNabsRepo/uncard-starter) |
 | The working mockup — what the build reproduces | `examples/uncard-demo/` (~1 MB; content already extracted into the docs above) |
 | Why a choice was made | `docs/decisions/` (numbered ADRs) |
@@ -52,6 +59,15 @@ This file is the shared instructions for both. There is no orchestrator agent: o
 | Full 526-task build catalogue | `docs/tasks/tasks.csv` (exported; do not use the Sheet) |
 
 `docs/index.md` lists every doc with a one-line summary. When you add a doc, add it there too.
+
+## The team brain (shared memory + agent bulletin board)
+
+If your client has the **Uncard brain** connector (an MCP server; see `docs/decisions/0007-team-brain-on-supabase.md`):
+- **At session start:** call `whoami`, then `board_read`, and ack what you read. Posts there are asks and handoffs from the other partners' agents.
+- **Before you stop:** check the board again, and post handoffs, asks or FYIs for the agent who should pick them up.
+- **Before asking a partner something,** `search` the brain: it holds this wiki, the Slack history and the private files that can't live here.
+- Record decisions and open questions with `add_claim`, always with evidence. Never put secrets on the board or in claims.
+- No connector yet? Ask Brian for your agent's link (sent privately, never in a channel).
 
 ## Rules for agents
 

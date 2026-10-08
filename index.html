@@ -145,6 +145,7 @@
 const DOCS = [
   { grp:'Start here', items:[
     { p:'docs/start-here.md', t:'Start here', d:'What this is and how to use it' },
+    { p:'docs/agent-rules.md', t:'Agent rules', d:'Our SOPs. How our agents work: lanes, databases, Slack' },
     { p:'AGENTS.md',   t:'AGENTS.md',  d:'Agent entry point — rules & doc map' },
     { p:'README.md',   t:'README',     d:'What this repo is' },
   ]},
@@ -172,9 +173,17 @@ const DOCS = [
   ]},
   { grp:'Brand', items:[
     { p:'docs/brand/directions.md', t:'Brand', d:'UNCARD · Matinee' },
+    { p:'docs/brand/brand-guide.md', t:'Brand guide v1.0', d:'Guide + system vs. directions.md' },
   ]},
   { grp:'Research', items:[
     { p:'docs/research/competitive-landscape.md', t:'Competitive landscape', d:'Who we are up against' },
+    { p:'docs/research/creation-flow.md', t:'Creation flow', d:'Landing to paid, research-backed' },
+    { p:'docs/research/checkout.md', t:'Checkout', d:'Paywall, payment methods, pricing' },
+    { p:'docs/research/sharing-referral-loop.md', t:'Sharing & referral loop', d:'Design, incentives, measurement' },
+    { p:'docs/research/recipient-attention.md', t:'Recipient attention', d:'Generator rules, metrics, events' },
+  ]},
+  { grp:'Strategy', items:[
+    { p:'docs/strategy/domain-tracking-seo.md', t:'Domain, tracking & SEO', d:'uncard.gifts vs. uncard.app plan' },
   ]},
   { grp:'Tasks', items:[
     { p:'docs/tasks/README.md', t:'Task catalogue', d:'526 tasks — how to query' },
@@ -186,7 +195,9 @@ const DOCS = [
     { p:'docs/decisions/0003-task-catalogue-source.md', t:'0003 · Task catalogue', d:'Repo is the task list' },
     { p:'docs/decisions/0004-brand-direction.md', t:'0004 · Brand direction', d:'UNCARD, Matinee' },
     { p:'docs/decisions/0005-demo-is-source-of-truth.md', t:'0005 · Line of truth', d:'Where docs disagree, the demo wins' },
-    { p:'docs/decisions/0006-gifts-on-uncard-gifts.md', t:'0006 · Gifts on uncard.gifts', d:'Open: gift links via the uncard-gifts Worker' },
+    { p:'docs/decisions/0006-gifts-on-uncard-gifts.md', t:'0006 · Gifts on uncard.gifts', d:'Superseded by the Phase 3 spec (Worker from the product repo)' },
+    { p:'docs/decisions/0007-team-brain-on-supabase.md', t:'0007 · Team brain', d:'Accepted: agent board + memory on Supabase' },
+    { p:'docs/decisions/0008-agent-team-orchestrator.md', t:'0008 · Agent-team orchestrator', d:'Open: team lead + sub-agents for Brian\'s build work' },
   ]},
 ];
 

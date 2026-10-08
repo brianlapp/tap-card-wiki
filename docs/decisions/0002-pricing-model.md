@@ -1,5 +1,7 @@
 # 0002 — Pricing model: one-off vs subscription
 
+> **In plain words:** One uncard costs $5.99, or $9.99 a month gets you two. Jordan is thinking about changes, but nothing new is agreed yet.
+
 **Status:** Accepted (demo pricing, per `0005`)
 **Date:** 2026-09-20 · **Updated:** 2026-09-30
 **Deciders:** Jordan (owner), Brian Lapp, Tim Miller

@@ -1,5 +1,7 @@
 # 0005 — The brand demo is the line of truth
 
+> **In plain words:** When two of our docs disagree, the newest one wins. The older one is marked out of date, not deleted.
+
 **Status:** Accepted · amended 2026-10-01
 **Date:** 2026-09-30
 **Deciders:** Brian Lapp

@@ -36,8 +36,12 @@ The `Method` line is the important one. It tells a future agent how much to trus
 
 ## Decision records (ADRs)
 
+Every decision starts with an **In plain words** line (agent rule, `agent-rules.md`). When you mention a decision anywhere else, use its plain name, not just its number.
+
 ```
 # <NNNN> — <Decision title>
+
+> **In plain words:** <one sentence a 10-year-old could follow: what we're agreeing to and what changes>
 
 **Status:** Open | Accepted | Superseded by <NNNN>
 **Date:** YYYY-MM-DD

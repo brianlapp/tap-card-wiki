@@ -1,9 +1,24 @@
 # 0006 — Gift links live on uncard.gifts, served by a Cloudflare Worker
 
-**Status:** Open (proposed by Brian, 2026-10-02)
+> **In plain words:** An old plan for where gift links live. It's been replaced: Jordan's current build plan serves gift links on uncard.gifts from a small Cloudflare program he's building. Don't build from this page.
+
+**Status:** Superseded by the [Phase 3 build spec](https://github.com/JNabsRepo/uncard-starter/blob/7023e9a372857fc3c1a87b898e77038e175d19ab/docs/phase-3/build-spec.md) (approved by Jordan 2026-10-05), which takes precedence over this proposal and over the Domain, Tracking and SEO Plan. Corrected 2026-10-07; see below. Kept for the record; don't build from it.
 **Date:** 2026-10-02
 **Deciders:** Jordan, Brian Lapp, Tim Miller (equal partners)
 **Method:** Read from the product repo at `ffd1adc` (gift route, gift server functions, Give panel, player, spec W-37/W-47/W-48) and Cloudflare's Workers permissions docs. Not built or tested. Anything marked (unverified) needs checking before it is relied on.
+
+## Superseded
+
+**Corrected 2026-10-07, at Oy's request.** On 2026-10-06 Brian's agent marked this superseded by Jordan's Domain, Tracking and SEO Plan, meaning uncard.gifts would be a second Lovable project (W-48). That was wrong. The Phase 3 build spec, approved by Jordan on 2026-10-05, says it wins wherever it differs from the SEO plan, build spec v2 or Addendum A. What it says (product repo `JNabsRepo/uncard-starter` at `7023e9a`: `docs/phase-3/build-spec.md`, "Platforms", 10.5 and 10.8; `gifts/README.md`; `gifts/wrangler.jsonc`):
+
+- **uncard.gifts is the Cloudflare Worker `uncard-gifts`**, in the product repo's `gifts/` folder. Phase 2 built it. It is **not deployed yet**: built, not LIVE. There is no second Lovable project.
+- It attaches **Custom Domains** for `uncard.gifts` and `www.uncard.gifts`, not a route.
+- Cloudflare's Workers Builds deploys it from a **`workers-live`** branch, which the builder moves forward only when Jordan publishes uncard.app, so the two sites change together (10.8).
+- When it goes live is Phase 3 decision A5 (default: now, before testers), through Jordan's steps in `gifts/README.md`.
+
+So this proposal's direction (a Worker serves gifts and Lovable never sees a recipient) holds, but the product repo's own Worker does it. Slices 2–4 below won't be built.
+
+**Slice 1 cleanup (PLANNED).** Slice 1 is still live: the route `uncard.gifts/*` → the placeholder `uncard-gifts` Worker, plus its proxied DNS record (checked 2026-10-07: `uncard.gifts/healthz` answers the placeholder's 404). Remove both before Jordan's Cloudflare steps attach the real Worker: `gifts/README.md` step 1 says a Worker can't take over a name that already has a record (it names CNAMEs; whether our record blocks it is unverified). The placeholder already uses the name `uncard-gifts`, so Jordan's step 3 should connect that existing Worker to the repository rather than create a new one (unverified how Cloudflare handles the name clash).
 
 ## TL;DR
 
