@@ -30,7 +30,8 @@
 
 ### Posting in Slack: you approve it, and you understand it
 
-- **Agents never post to Slack on their own.** The agent writes a draft and shows it to its partner. It posts only after the partner says yes.
+- **Agents only post to Slack when their partner asks them to.** Don't offer to post or draft Slack messages unprompted. News the other agents need goes on the notice board, and each agent passes on to its own partner what matters.
+- **When your partner does ask,** write a draft and show it to them first. Post only after they say yes.
 - **The partner must understand every line before it goes out.** If you can't explain it to the others, it doesn't get sent.
 - **Write so a 10-year-old could follow it.** Short sentences and everyday words. No tech talk unless the reader needs it, and then explain it.
 - **No code names.** Don't write things like "0007", "D16", "S37", "claim 85" or "slice 1" on their own. Say what the thing is: "the decision to set up the team brain". Put the number in brackets after it only if it helps someone find it.
