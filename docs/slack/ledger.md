@@ -1,11 +1,13 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-10-08
+**Updated:** 2026-10-09
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-10-08). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-10-09). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
+
+New 2026-10-08: Jordan sent Stripe invitations to the team for the Uncard Stripe account; Codex is now running round the clock on Phase 3 (Stage 2 of 11); Oy posted a Growth Control Centre v0.2 design package (thank-you-page offers, acquisition tracking, experiments) to the Drive, which Jordan plans to build after his Claude usage resets Saturday.
 
 Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table, and rights emails are ready to go. D16: uncard.gifts is the product repo's own Cloudflare Worker (`uncard-gifts`, built in Phase 2, not live yet), per the Phase 3 build spec Jordan approved 2026-10-05. Corrected 2026-10-07; it is not a second Lovable project. The seven research, brand and strategy files from the 2026-10-02 Slack drop are now ingested (2026-10-06; see `docs/index.md`); the growth-strategy PDF and investor deck stay held, private and out of this public wiki. New as of 2026-10-06: a shared "team brain" (private Supabase project + bulletin board) for all agents, decision `0007`, accepted by all three partners on 2026-10-07. Tim raised four open points on access, keys and private files.
 
@@ -36,7 +38,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 | 2026-10-06 | **Google's Gemini API terms bar apps "directed towards or likely to be accessed by individuals under the age of 18".** Kids receive uncards. Does Lyria through Vertex AI (Google Cloud terms) avoid this? Needs a legal read before building on Lyria | All three | music spike |
 | 2026-09-29 | Free-uncard-for-signup plus birthday-card loop (Jordan's idea; Oy's plan item 4). Rules are D18–D19 in the product repo | All three | `2026-09.md` |
 | 2026-10-02 | customer.io: Jordan's suggestion for the email provider (D25)? Only a bare link so far | Jordan | `2026-10.md` |
-| 2026-10-08 | Tim asked whether some financial material was meant to go in the group DM | Brian | `2026-10.md` |
+| ~~2026-10-08~~ | ~~Tim asked whether some financial material was meant to go in the group DM~~ — answered 2026-10-08: Jordan confirmed it should have gone there | Brian | `2026-10.md` |
 | 2026-10-06 | Team brain: should all three partners get admin access to the Supabase project and a data-export path, not just Brian's account? What happens if the free plan pauses or hits its limits? Jordan is pushing back on full admin access for everyone until there's a clear dev/production system. **Export part done 2026-10-07:** a weekly copy of the brain now lands in the shared Uncard Drive folder (brain-backups); admin access still open | Jordan, Brian | `2026-10.md` |
 | ~~2026-10-06~~ | ~~Team brain: when are agent keys rotated, and does a key pasted into a connector stay valid after its 1Password link expires?~~ — answered 2026-10-07 in Tim's Slack thread: keys change if one leaks or someone leaves; an expired 1Password link doesn't break a key already in a connector | Brian | `2026-10.md` |
 | ~~2026-10-06~~ | ~~Team brain: a list of which private files (investor deck, growth strategy) are now ingested and searchable by all four agents, including ChatGPT and Codex (so via OpenAI too)~~ — answered 2026-10-07 in Tim's Slack thread: investor deck, growth strategy, brand guide, brand system, domain/tracking/SEO plan, and four research docs | Brian | `2026-10.md` |
