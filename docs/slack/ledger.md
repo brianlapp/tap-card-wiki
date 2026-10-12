@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-10-09
+**Updated:** 2026-10-12
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-10-09). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-10-12). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-10-08: Jordan sent Stripe invitations to the team for the Uncard Stripe account; Codex is now running round the clock on Phase 3 (Stage 2 of 11); Oy posted a Growth Control Centre v0.2 design package (thank-you-page offers, acquisition tracking, experiments) to the Drive, which Jordan plans to build after his Claude usage resets Saturday.
+New 2026-10-12: Phase 3 build has moved on to Stage 6 of 11, with Jordan expecting a commercial-grade, launch-ready site within a week to ten days; Jordan added Devin (a paid autonomous coding agent) alongside Codex and Claude to carry the build; Suno's API is still invite/partner-only with no written commercial terms, so Lyria/ElevenLabs/ACE-Step stay the pilot set. Jordan is also floating early product ideas ("selfcards", retro theme styles) — nothing decided.
+
+Earlier, 2026-10-08: Jordan sent Stripe invitations to the team for the Uncard Stripe account; Codex is now running round the clock on Phase 3 (Stage 2 of 11); Oy posted a Growth Control Centre v0.2 design package (thank-you-page offers, acquisition tracking, experiments) to the Drive, which Jordan plans to build after his Claude usage resets Saturday.
 
 Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table, and rights emails are ready to go. D16: uncard.gifts is the product repo's own Cloudflare Worker (`uncard-gifts`, built in Phase 2, not live yet), per the Phase 3 build spec Jordan approved 2026-10-05. Corrected 2026-10-07; it is not a second Lovable project. The seven research, brand and strategy files from the 2026-10-02 Slack drop are now ingested (2026-10-06; see `docs/index.md`); the growth-strategy PDF and investor deck stay held, private and out of this public wiki. New as of 2026-10-06: a shared "team brain" (private Supabase project + bulletin board) for all agents, decision `0007`, accepted by all three partners on 2026-10-07. Tim raised four open points on access, keys and private files.
 
@@ -58,6 +60,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 | ~~2026-10-02~~ | ~~Create the `uncard-gifts` Worker and give Brian Editor on it~~ — done 2026-10-02 | Jordan (Codex) | `2026-10.md` |
 | ~~2026-10-02~~ | ~~uncard.gifts slice 1: route to the placeholder 404~~ — done 2026-10-02 | Brian | `2026-10.md` |
 | ~~2026-10-07~~ | ~~Remove the slice-1 placeholder (route `uncard.gifts/*` and its proxied DNS record) before Jordan's Cloudflare steps attach the Phase 2 `uncard-gifts` Worker's Custom Domains~~ — done 2026-10-07: route and DNS record deleted, uncard.gifts now has no records or routes | Brian | `decisions/0006` |
+| ~~2026-10-09~~ | ~~Research Suno's official REST API: access, pricing, commercial terms, whether it's the same access reported for Grok's bot, and whether Lovable has a native connector~~ — done 2026-10-10: still invite/partner-only, no written commercial terms, no Lovable native connector; Lyria/ElevenLabs/ACE-Step stay the pilot set, Suno stays a quality reference only | Tim | `2026-10.md` |
 
 ## Waiting to be ingested
 
