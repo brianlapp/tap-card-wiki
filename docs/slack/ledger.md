@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-10-12
+**Updated:** 2026-10-13
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-10-12). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-10-13). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-10-12: Phase 3 build has moved on to Stage 6 of 11, with Jordan expecting a commercial-grade, launch-ready site within a week to ten days; Jordan added Devin (a paid autonomous coding agent) alongside Codex and Claude to carry the build; Suno's API is still invite/partner-only with no written commercial terms, so Lyria/ElevenLabs/ACE-Step stay the pilot set. Jordan is also floating early product ideas ("selfcards", retro theme styles) — nothing decided.
+New 2026-10-12: Tim's Claude posted a first badge-system draft (starter badges, teaching uncards, opt-in reminders) for Jordan and Brian's feedback; Jordan wants it built with the "Exo Skill" so it plugs into the full system and data lake. Tim also proposed a $25 cap for the first paid music test (D22) — Jordan voted yes, Brian's yes is still open.
+
+Earlier, 2026-10-11/12: Phase 3 build has moved on to Stage 6 of 11, with Jordan expecting a commercial-grade, launch-ready site within a week to ten days; Jordan added Devin (a paid autonomous coding agent) alongside Codex and Claude to carry the build; Suno's API is still invite/partner-only with no written commercial terms, so Lyria/ElevenLabs/ACE-Step stay the pilot set. Jordan is also floating early product ideas ("selfcards", retro theme styles) — nothing decided.
 
 Earlier, 2026-10-08: Jordan sent Stripe invitations to the team for the Uncard Stripe account; Codex is now running round the clock on Phase 3 (Stage 2 of 11); Oy posted a Growth Control Centre v0.2 design package (thank-you-page offers, acquisition tracking, experiments) to the Drive, which Jordan plans to build after his Claude usage resets Saturday.
 
@@ -33,7 +35,8 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 |---|---|---|---|
 | ~~2026-10-02~~ | ~~uncard.gifts plan, `decisions/0006` (D16): any objections before slices 2–4?~~ — closed 2026-10-06: Brian chose Jordan's newer plan (uncard.gifts on a second Lovable project); 0006 superseded | Brian | `2026-10.md` |
 | 2026-10-05 | Free procedural sounds plus paid sung songs (S37) as an upsell — adopt? | All three | `2026-10.md` |
-| 2026-10-05 | AI budget (D22), needed before any paid music pilot | All three | `2026-10.md` |
+| 2026-10-05 | AI budget (D22), needed before any paid music pilot. **2026-10-12:** Tim proposed a $25 cap for the first test (5 prompts × 3 tries, est. $5–$12); Jordan voted yes; Brian's yes still open | Brian | `2026-10.md` |
+| 2026-10-12 | Badge-system first draft (5 starter badges, 3 teaching uncards, opt-in reminders) — Jordan gave feedback (go further, use the "Exo Skill"); Brian's feedback still open | Brian | `2026-10.md` |
 | 2026-10-05 | Legal review of delivering generated songs to givers and recipients | All three | `2026-10.md` |
 | 2026-10-06 | **Cost per song** (Jordan). Tim's per-card figures are for one accepted song at 3 attempts, so per *attempt* that's about $0.04–0.13 ACE-Step, $0.08 Lyria, $0.19 ElevenLabs (derived here, unverified) | Tim's report | `2026-10.md` |
 | 2026-10-06 | Song lengths: which lengths, for which uses? Jordan wants variety, including short ones. Spike finding: Lyria 3.5 ignores requested length (15 s asked, 145 s back); Lyria 3 Clip is always about 30 s | All three | `2026-10.md` |
