@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-10-13
+**Updated:** 2026-10-15
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-10-13). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-10-15). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-10-12: Tim's Claude posted a first badge-system draft (starter badges, teaching uncards, opt-in reminders) for Jordan and Brian's feedback; Jordan wants it built with the "Exo Skill" so it plugs into the full system and data lake. Tim also proposed a $25 cap for the first paid music test (D22) — Jordan voted yes, Brian's yes is still open.
+New 2026-10-14: Brian's agent set up and tested API keys for all four music services (Lyria, ElevenLabs, Mureka, ACE-Step), posted a cost-vs-scale report with samples to #all-tapcard, and passed the keys to Tim for human testing — the one-day music spike action item is now done. Badge-system feedback (Brian) and the AI test budget D22 (Brian) are still open from 2026-10-12.
+
+Earlier, 2026-10-12: Tim's Claude posted a first badge-system draft (starter badges, teaching uncards, opt-in reminders) for Jordan and Brian's feedback; Jordan wants it built with the "Exo Skill" so it plugs into the full system and data lake. Tim also proposed a $25 cap for the first paid music test (D22) — Jordan voted yes, Brian's yes is still open.
 
 Earlier, 2026-10-11/12: Phase 3 build has moved on to Stage 6 of 11, with Jordan expecting a commercial-grade, launch-ready site within a week to ten days; Jordan added Devin (a paid autonomous coding agent) alongside Codex and Claude to carry the build; Suno's API is still invite/partner-only with no written commercial terms, so Lyria/ElevenLabs/ACE-Step stay the pilot set. Jordan is also floating early product ideas ("selfcards", retro theme styles) — nothing decided.
 
@@ -54,7 +56,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 
 | Since | Item | Owner | Log |
 |---|---|---|---|
-| 2026-10-05 | One-day music spike: the same 5 prompts through Lyria, ElevenLabs, ACE-Step and Mureka. **Day 1 done 2026-10-06:** Lyria 3.5 ran (94–97% of our words sung, $0.08 a song, but no line timing, no length control, filter blocked two kids' songs until reworded). Brian posted a cost breakdown and song samples 2026-10-06. Mureka, ACE-Step and ElevenLabs wait on accounts (Mureka $10 top-up, free Hugging Face token, ElevenLabs $6/mo) | Brian | `2026-10.md` |
+| ~~2026-10-05~~ | ~~One-day music spike: the same 5 prompts through Lyria, ElevenLabs, ACE-Step and Mureka.~~ Day 1 done 2026-10-06: Lyria 3.5 ran (94–97% of our words sung, $0.08 a song, but no line timing, no length control, filter blocked two kids' songs until reworded). Brian posted a cost breakdown and song samples 2026-10-06. **Done 2026-10-14:** Mureka, ACE-Step and ElevenLabs accounts set up, keys tested, cost-vs-scale report posted to #all-tapcard, keys passed to Tim for human testing | Brian | `2026-10.md` |
 | 2026-10-06 | Send the rights-confirmation emails to Google (Lyria) and ElevenLabs | Tim | `2026-10.md` |
 | 2026-10-05 | Share the music research artifact with Jordan and Brian (it's private) | Tim | `2026-10.md` |
 | 2026-10-05 | Opus review of the music research | Jordan | `2026-10.md` |

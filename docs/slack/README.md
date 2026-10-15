@@ -1,9 +1,9 @@
 # Slack Archive
 
 **Status:** Draft
-**Updated:** 2026-10-13
+**Updated:** 2026-10-15
 **Owner:** Brian Lapp
-**Method:** Every channel and DM in uncardapp.slack.com read through the claude.ai Slack connector on 2026-10-06 through 2026-10-13, including thread replies. Summarised by an agent, not reviewed by the team. Attachments were not opened, only listed.
+**Method:** Every channel and DM in uncardapp.slack.com read through the claude.ai Slack connector on 2026-10-06 through 2026-10-15, including thread replies. Summarised by an agent, not reviewed by the team. Attachments were not opened, only listed.
 
 ## TL;DR
 
@@ -25,7 +25,7 @@ Slack is private; this wiki is not. Summaries here keep to the work: what was de
 |---|---|---|
 | #uncard-build | Build progress, infra asks, music research, team brain (0007), growth control centre | `1791650699.760029` (2026-10-10 12:44) |
 | #non-build-stuff | Research, brand and strategy files for filing | `1790988773.025529` (2026-10-02 20:52) |
-| #all-tapcard | Announcements, ideas, tooling links | `1791226390.479279` (2026-10-05 14:53) |
+| #all-tapcard | Announcements, ideas, tooling links | `1791983666.462519` (2026-10-14 09:14) |
 | Group DM (Jordan, Brian, Tim) | Quick three-way chat | `1791838739.383479` (2026-10-12 16:58) |
 | #social, #new-channel | Join messages only | — |
 | 1:1 DMs | Nothing project-relevant beyond what's in the logs | — |
