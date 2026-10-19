@@ -77,10 +77,10 @@ Running summary of the team Slack. **Start with the ledger.**
 
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
-| `slack/README.md` | How the archive works, channels, who's who, how to update it (last-read timestamps) | Draft | 2026-10-15 |
-| `slack/ledger.md` | Decisions made in Slack, open questions, action items, files waiting to be ingested | Draft | 2026-10-15 |
+| `slack/README.md` | How the archive works, channels, who's who, how to update it (last-read timestamps) | Draft | 2026-10-19 |
+| `slack/ledger.md` | Decisions made in Slack, open questions, action items, files waiting to be ingested | Draft | 2026-10-19 |
 | `slack/2026-09.md` | Day-by-day log, 21–30 Sep: wiki, brand demos, build kickoff, Golden Pass, Oy's testing plan | Draft | 2026-10-06 |
-| `slack/2026-10.md` | Day-by-day log from 1 Oct: research drop, Cloudflare Worker, uncard.gifts slice 1, music research, team brain, Stripe, Growth Control Centre, Devin joins the build, Phase 3 to Stage 6, badge-system draft, music spike done | Draft | 2026-10-15 |
+| `slack/2026-10.md` | Day-by-day log from 1 Oct: research drop, Cloudflare Worker, uncard.gifts slice 1, music research, team brain, Stripe, Growth Control Centre, Devin joins the build, Phase 3 to Stage 6, badge-system draft, music spike done | Draft | 2026-10-19 |
 
 ## tasks/
 

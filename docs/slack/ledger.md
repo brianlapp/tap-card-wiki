@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-10-15
+**Updated:** 2026-10-19
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-10-15). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-10-19). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-10-14: Brian's agent set up and tested API keys for all four music services (Lyria, ElevenLabs, Mureka, ACE-Step), posted a cost-vs-scale report with samples to #all-tapcard, and passed the keys to Tim for human testing — the one-day music spike action item is now done. Badge-system feedback (Brian) and the AI test budget D22 (Brian) are still open from 2026-10-12.
+New 2026-10-16: Jordan shares a progress update (build agent running non-stop); nothing decided. No other new Slack activity through 2026-10-19. Badge-system feedback (Brian) and the AI test budget D22 (Brian) are still open from 2026-10-12.
+
+Earlier, 2026-10-14: Brian's agent set up and tested API keys for all four music services (Lyria, ElevenLabs, Mureka, ACE-Step), posted a cost-vs-scale report with samples to #all-tapcard, and passed the keys to Tim for human testing — the one-day music spike action item is now done.
 
 Earlier, 2026-10-12: Tim's Claude posted a first badge-system draft (starter badges, teaching uncards, opt-in reminders) for Jordan and Brian's feedback; Jordan wants it built with the "Exo Skill" so it plugs into the full system and data lake. Tim also proposed a $25 cap for the first paid music test (D22) — Jordan voted yes, Brian's yes is still open.
 
