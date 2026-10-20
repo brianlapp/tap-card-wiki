@@ -1,13 +1,13 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-10-19
+**Updated:** 2026-10-20
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-10-19). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-10-20). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-10-16: Jordan shares a progress update (build agent running non-stop); nothing decided. No other new Slack activity through 2026-10-19. Badge-system feedback (Brian) and the AI test budget D22 (Brian) are still open from 2026-10-12.
+New 2026-10-19: Tim's Claude posts a social-growth research summary to #uncard-build (reaction videos, Songfinch comparison, videos-before-ads); Jordan likes it but redirects to asking for a content strategy for Uncard's own social accounts (TikTok, Facebook, Instagram) — what to post, what style; nothing decided. Badge-system feedback (Brian), the AI test budget D22 (Brian) and team-brain admin access (Jordan, Brian) are still open from 2026-10-06/12.
 
 Earlier, 2026-10-14: Brian's agent set up and tested API keys for all four music services (Lyria, ElevenLabs, Mureka, ACE-Step), posted a cost-vs-scale report with samples to #all-tapcard, and passed the keys to Tim for human testing — the one-day music spike action item is now done.
 
@@ -51,6 +51,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 | 2026-10-06 | Team brain: should all three partners get admin access to the Supabase project and a data-export path, not just Brian's account? What happens if the free plan pauses or hits its limits? Jordan is pushing back on full admin access for everyone until there's a clear dev/production system. **Export part done 2026-10-07:** a weekly copy of the brain now lands in the shared Uncard Drive folder (brain-backups); admin access still open | Jordan, Brian | `2026-10.md` |
 | ~~2026-10-06~~ | ~~Team brain: when are agent keys rotated, and does a key pasted into a connector stay valid after its 1Password link expires?~~ — answered 2026-10-07 in Tim's Slack thread: keys change if one leaks or someone leaves; an expired 1Password link doesn't break a key already in a connector | Brian | `2026-10.md` |
 | ~~2026-10-06~~ | ~~Team brain: a list of which private files (investor deck, growth strategy) are now ingested and searchable by all four agents, including ChatGPT and Codex (so via OpenAI too)~~ — answered 2026-10-07 in Tim's Slack thread: investor deck, growth strategy, brand guide, brand system, domain/tracking/SEO plan, and four research docs | Brian | `2026-10.md` |
+| 2026-10-19 | Content strategy for Uncard's own social accounts (TikTok, Facebook, Instagram) — what to post, what style? Jordan asked the team in reply to Tim's social-growth research | All three | `2026-10.md` |
 | 2026-10-08 | **Business bank account and incorporation: Venn or Float?** Jordan raised both (partners' chat, 8 Oct). Brian chooses **Venn** (2026-10-08): it incorporates and opens the account in one go for about $49 net, and its free plan pays 1% cashback on the first $5k a month (Float only pays above $25k a month). Tim is fine with either if they're legit (both checked: notice board post 15). Before filing: a short accountant call on personal holding companies and a shareholders' agreement | Jordan to confirm | `2026-10.md` |
 | ~~2026-10-06~~ | ~~Team brain: keep automated Slack syncing via a Slack app as its own separate decision~~ — answered 2026-10-07 in Tim's Slack thread: agreed, a Slack app stays a separate decision; meanwhile the brain's copy of Slack refreshes every morning from Brian's Mac | All three | `2026-10.md` |
 
