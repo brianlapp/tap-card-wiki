@@ -1,15 +1,44 @@
 # The Live Product (MVP)
 
 **Status:** Draft — snapshot of a moving target
-**Updated:** 2026-10-02
+**Updated:** 2026-10-21
 **Owner:** Brian Lapp
-**Method:** Read from the product repo [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter) at commit `ffd1adc` (2026-10-02): the five phase reports in `docs/review-2026-09-30/build-reports/`, `db/README.md`, `roadmap.md`, Oy's round-2 prompt and `src/uncard/catalogue/support.ts`. Not checked in a browser here — what's "live" is what the build agent's reports say it published. **Build status changes daily — for anything current, read the product repo, not this page.**
+**Method:** 2026-10-21 refresh: TL;DR, "Changed since 2026-10-02" and the superseded notes read from `origin/main` at `84977d9` (2026-10-19): the Phase 3 completion folder (`CHECKPOINT.md`, `LIVE-STATE.md`, `ACTIVATION.md`, `FLAGS.md`) and the completion report. The how is in `product/architecture.md`. The rest of the page is the original snapshot, read at commit `ffd1adc` (2026-10-02): the five phase reports in `docs/review-2026-09-30/build-reports/`, `db/README.md`, `roadmap.md`, Oy's round-2 prompt and `src/uncard/catalogue/support.ts`. Not checked in a browser here — what's "live" is what the build agent's reports say it published. **Build status changes daily — for anything current, read the product repo, not this page.**
 
 ## TL;DR
 
-UNCARD is live at **uncard.app**. Phases 0 to 5 of the six-phase build are built and published. The real studio (the interview, edit, approve) and giving (private links, PINs, withdraw) **exist but are shut**: nobody can make or give a real uncard until card-making and the studio are switched on (that needs the owner login, which is Jordan's). No AI credits have been spent; the real AI gateway has never been called. Phase 6 (celebrations) is not built. Two worlds and fifteen scenes play, unchanged since 1 Oct.
+UNCARD is live at **uncard.app**. The last confirmed publish is commit **`72f02dd`** (18 Oct). Since 2 Oct the team built a new plan, **Phase 3**: a conversation studio, a new card engine, and the foundations for consent, checkout, recipients, a gallery, contributors, memory and AI-agent access. It is all on `main` as code (milestones M0 to M12, finished 19 Oct), and **almost all of it is switched off**:
 
-## Changed since the 2026-10-01 snapshot
+- The studio is closed. No model is called and no payment is possible.
+- 64 SQL files for Stages 4 to 10 are written and rehearsed, but none is applied.
+- uncard.gifts does not serve cards yet, and the nightly job's Worker does not exist.
+
+Turning things on happens in three releases (R1, R2, R3). Each needs publishes, Cloudflare steps and switches that use the owner login or Jordan's accounts, plus a named yes for each wave of SQL. R1 is published but not smoke-checked. On 20 Oct Jordan reported in Slack that Phase 3 is finished and Manus and Devin are live-testing uncard.app; which commit they are testing is not recorded. How it all fits together: `product/architecture.md`.
+
+## Changed since 2026-10-02
+
+The 2 Oct snapshot below described build Phases 0 to 5. Since then:
+
+- **Phase 3 plan (approved 5 Oct).** The goal: talking is the interface, every uncard is made fresh, and the infrastructure is built properly now. New words: *sender* (was giver), *moment* (was scene), *edition* (a published version). The 20 worlds and 50 scenes became internal creative knowledge, not a menu.
+- **Phase 2 (to 5 Oct) and Phase 3 Stages 0 to 3 (5 to 14 Oct).** Phase 2 wrote build spec v2 and the uncard.gifts Worker code. In Phase 3, several build agents added the rename, the command layer, measurement and the nightly lake, the v2 card engine (UncardSpec v2, 25 building blocks, renderer v2), and the conversation studio, which replaced the old interview studio. Early, switched-off pieces of Stages 4 to 10 were started too. By 15 Oct the live database had 77 migration files (0000 to 0076), up from 19 on 2 Oct.
+- **M0 (15 Oct):** the completion run took over: it integrated earlier fixes, added the check runner (`tools/ci/gates.sh`) and a list of every switch (`FLAGS.md`).
+- **M1:** a read-only live check found the live database matched the repo exactly, every switch that costs money closed, and no storage bucket. The older published site still worked with the newer database.
+- **M2:** the studio spine, from the home box to "Ready to give", with spend records. 3 of its 5 SQL files were applied live on 16 Oct (0077 to 0079).
+- **M3:** the Stage 3 clean-up (the "contraction", retiring old names and columns) rehearsed and packeted, plus the R1 release packet. Published as `72f02dd` on 18 Oct. The clean-up itself has not run.
+- **M4:** evaluation accounting and the owner's evaluation page. Nothing has been run, because no evaluation package is approved.
+- **M5 (Stage 4):** consent banner, recipient measurement, ad sets and visibility levels. 12 SQL files. Waits on counsel.
+- **M6 (Stage 5):** checkout and billing in Stripe **test mode only**, plus Apple sign-in and passkeys, all off. 9 SQL files.
+- **M7 (Stage 6):** "It's mine" claims, saved and received uncards, share controls. 3 SQL files.
+- **M8 (Stage 7):** the gallery on uncard.gifts, search pages at `/discover/<slug>`, and the crawler rules. 3 SQL files.
+- **M9 (Stage 8):** contributors: invites, a guest page at `/add/<token>`, a review tray, and "Include". 8 SQL files.
+- **M10 (Stage 9):** sender memory: "Remember?", "What I'm using", and `/memory`. 12 SQL files.
+- **M11 (Stage 10):** AI-agent access: OAuth sign-in, REST at `/api/v1`, MCP at `/mcp`, a guide at `/agents`, and revoke on `/account/agents`. 17 SQL files.
+- **M12 (19 Oct):** release candidate. Six independent reviewers found no blocker (36 findings, each fixed or recorded). The full 71-step check passed on `441c701`. The run also produced a completion report and an activation runbook.
+- **In progress, not on main:** branch `codex/m13` (20 Oct), with honest public pages, finished samples and an invite-only test window. Its own report says it is not finished.
+
+Every new door above is **built and switched off**, and its SQL is **not applied**.
+
+## Changed since the 2026-10-01 snapshot (history)
 
 That snapshot (commit `5649437`) said the studio and giving were labelled samples and the build was at Phase 0. Superseded: Phases 1–5 shipped between 30 Sep and 2 Oct. What's new, in a sentence each:
 
@@ -26,9 +55,9 @@ That snapshot (commit `5649437`) said the studio and giving were labelled sample
 | Code | [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter), branch `main` |
 | Editor | Lovable project `3a7b58dd-a027-4ee9-9df4-96c469e3f8ac` — commits sync both ways |
 | Marketing + account site | **uncard.app** |
-| Gift links | Served from uncard.app at `/c/:id` today. Moving to **uncard.gifts** on a second Lovable project (W-48): D16 settled by Jordan's plan (`strategy/domain-tracking-seo.md`), confirmed 2026-10-06; `decisions/0006` (a Cloudflare Worker) is superseded. Earlier note: a Cloudflare Worker, `uncard-gifts`, created 2026-10-02, no route yet) |
+| Gift links | *Superseded 2026-10-07 (`decisions/0006`): uncard.gifts is the product repo's own Cloudflare Worker `uncard-gifts` (`gifts/`), not a second Lovable project. Links stay on `uncard.app/c/<id>` until it is live and the owner switch `cards_on_gifts` is on; see `product/architecture.md`.* Original 2 Oct text: served from uncard.app at `/c/:id` today. Moving to **uncard.gifts** on a second Lovable project (W-48): D16 settled by Jordan's plan (`strategy/domain-tracking-seo.md`), confirmed 2026-10-06; `decisions/0006` (a Cloudflare Worker) is superseded. Earlier note: a Cloudflare Worker, `uncard-gifts`, created 2026-10-02, no route yet) |
 | DNS | Both domains on **Cloudflare** (Jordan's account). uncard.app and www point at Lovable's hosting (DNS only, not proxied). **invest.uncard.app** is a proxied placeholder record, so something on Cloudflare serves it (a Worker or Pages site, unverified). uncard.gifts has one proxied placeholder record and the route `uncard.gifts/*` → Worker `uncard-gifts`, which answers every address with a 404 "This uncard isn't here." (slice 1 of `decisions/0006`, 2026-10-02). No Worker routes on uncard.app |
-| Build docs (source of truth for status) | `docs/review-2026-09-30/` in the product repo — one report per phase in `build-reports/` |
+| Build docs (source of truth for status) | Since Phase 3: `docs/phase-3/` in the product repo, and `docs/phase-3/completion/CHECKPOINT.md` for where things stand. Phases 0–5: `docs/review-2026-09-30/` |
 
 ## Stack (verified)
 
@@ -39,6 +68,8 @@ That snapshot (commit `5649437`) said the studio and giving were labelled sample
 - **Bun** lockfile; `npm run dev` / `build` / `lint` / `format`
 
 ## What works today
+
+*Partly superseded 2026-10-21. `/worlds` and `/scenes` now redirect to the home page, and worlds and scenes are internal knowledge, not a menu. `/make` is always the conversation studio, closed, and `?studio=1` is ignored. Card-making caps are now 1,000 calls a day, 30 a job and 200 a person a day (still off). Read the rest as the 2 Oct picture.*
 
 | Area | State |
 |---|---|
@@ -57,6 +88,8 @@ That snapshot (commit `5649437`) said the studio and giving were labelled sample
 Authoritative list of what's playable: `src/uncard/catalogue/support.ts` in the product repo.
 
 ## What making an uncard will feel like (built, shut)
+
+*Superseded 2026-10-21: Phase 3 replaced this interview studio with a conversation studio (the old one is removed). See "How a card gets made and given" in `product/architecture.md`. Kept as history.*
 
 1. **Six quick basics**: name, pronouns, what they are to you, age, tone, what to avoid.
 2. **Up to ten more questions**, picked from a bank of 13 by which scenes they'd unlock — favourite foods, funny and fond stories, strengths, pets, hobbies, what they won't stop talking about. Every question can be skipped.
@@ -85,6 +118,8 @@ Who may use it while it's shut to the public (D24 default): a live Golden Pass h
 - **The browser never writes** account, job, allowance or card tables. Roles are checked server-side only.
 
 ## How a card gets made (as built)
+
+*Superseded 2026-10-21: this is the first build's generator (Phases 0–5 on this page). Phase 3 builds with the v2 engine (UncardSpec v2, renderer v2). See `product/architecture.md`.*
 
 1. **Interview** → a brief: name, pronouns, age, relationship, signed-by, tone, things to avoid, and facts.
 2. **Choose a world** filtered by age fit and what the player can draw today.
@@ -117,6 +152,8 @@ First-party only. **Recipients are never tracked.** The Metrics tab adds up **22
 
 ## Database (13 migrations)
 
+*Superseded 2026-10-21: the live database has **80** applied migrations (0000 to 0079, last read 16 Oct), with 2 more staged and 64 Stage 4–10 files waiting. See "The data layer" in `product/architecture.md`.*
+
 | # | Adds |
 |---|---|
 | 0001 | Accounts: profiles, roles, adult confirmation |
@@ -135,6 +172,8 @@ First-party only. **Recipients are never tracked.** The Metrics tab adds up **22
 Applied as 19 files (0011 and 0012 were split into parts Lovable's agent could apply). Every migration ships with SQL tests, most also run against the live database.
 
 ## How it's being built
+
+*Superseded 2026-10-21: this six-phase plan was overtaken by Phase 2 (build spec v2, to 5 Oct), then Phase 3 (Stages 0 to 11) and its completion run (M0 to M12). See "Changed since 2026-10-02" above.*
 
 A Claude build agent (Sonnet 5.5) works through **six phases** from a 52-item work list Jordan approved on 30 Sep, publishing each phase itself once its checks pass:
 
@@ -157,6 +196,8 @@ Three fictional recipients, hash-locked so tests stay comparable. Loaded in the 
 A lab run is scored on seven 0–2 marks plus ten ticks. A change may go live only if it has no hard failure, meets every must-include, drops no mark by 1+ against the baseline, and stays under the cost ceiling.
 
 ## Open items from the build
+
+*Partly superseded 2026-10-21: the current list, in priority order, is section 9 of the Phase 3 completion report (`docs/phase-3/build-reports/phase-3-completion.md` in the product repo), summarised in `product/architecture.md` under "The release path" and "Known open items".*
 
 From the phase reports, newest first. None blocks the build; several block real testers or real gifts. Items that flip a switch in the app need the owner login (Jordan's); the decisions themselves belong to the partners.
 

@@ -10,7 +10,7 @@ The repo, file names and older docs still say Tapcard. Same product.
 
 **Team:** Jordan, Brian and Tim are equal partners. Jordan holds the app's single *owner* login, so switches that need that login wait on him; decisions don't. Brian leads engineering and infrastructure.
 
-**Current milestone:** one synthetic test card working end to end (create → preview → publish → play → export). Nothing else ships first.
+**Current milestone:** Phase 3 is built on the product repo's `main` and almost all switched off; next is turning it on through releases R1 to R3 (`docs/product/architecture.md`). *Superseded 2026-10-21: "one synthetic test card working end to end" was the milestone before Phase 3.*
 
 ## Agent rules: read these first
 
@@ -21,7 +21,7 @@ The repo, file names and older docs still say Tapcard. Same product.
 | Repo | What it holds | Who pushes to `main` |
 |---|---|---|
 | [`brianlapp/tap-card-wiki`](https://github.com/brianlapp/tap-card-wiki) (this one) | Project context: scope, research, decisions, catalogue, brand, the demo. **No code.** | Brian's agents, directly |
-| [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter) | The product, live at **uncard.app**. Lovable-synced. Has its own build docs in `docs/review-2026-09-30/` | **Jordan's build agent and Lovable only.** Everyone else: branch, then pull request |
+| [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter) | The product, live at **uncard.app**. Lovable-synced. Has its own build docs in `docs/phase-3/` (status: `docs/phase-3/completion/CHECKPOINT.md`) | **Jordan's build agent and Lovable only.** Everyone else: branch, then pull request |
 
 This file is the shared instructions for both. There is no orchestrator agent: one agent, plugged straight into the repos, reading this. *(Proposed change, Open: Brian's Claude Code as team lead with sub-agents — `docs/decisions/0008-agent-team-orchestrator.md`.)*
 
@@ -50,7 +50,7 @@ Two private support repos sit beside these, for Brian's agents: `brianlapp/uncar
 | Generating a card: prompt rules and output shapes | `docs/catalogue/prompts.md` |
 | Name, logo, colours, voice (brand: **Matinee**) | `docs/brand/directions.md` (v1.0 guide + system detail: `docs/brand/brand-guide.md`) |
 | Business/growth plans not for the public (domain, SEO, growth, investor) | `docs/strategy/` — **growth-strategy and investor-deck stay out of this public wiki; everything else in there is fine to read** |
-| What's built and being built now, the active work list | Product repo: `docs/review-2026-09-30/` in [`uncard-starter`](https://github.com/JNabsRepo/uncard-starter) |
+| What's built and being built now, the active work list | Product repo: `docs/phase-3/completion/CHECKPOINT.md` in [`uncard-starter`](https://github.com/JNabsRepo/uncard-starter) |
 | The working mockup — what the build reproduces | `examples/uncard-demo/` (~1 MB; content already extracted into the docs above) |
 | Why a choice was made | `docs/decisions/` (numbered ADRs) |
 | What the team said in Slack: decisions, open asks, who owes what | `docs/slack/ledger.md` (day logs beside it) |
@@ -79,7 +79,7 @@ If your client has the **Uncard brain** connector (an MCP server; see `docs/deci
 - **No invented facts.** If a number, status or capability is unverified, write "unverified" rather than guessing.
 - **Server-side AI only.** No generated code executes in the recipient's browser.
 - **Privacy is a hard gate.** No child logins, no child contact data, no PII in telemetry.
-- **Stripe is deferred.** Do not scaffold, connect or mock payments.
+- **Payments are test mode only.** Stage 5 built Stripe checkout in test mode, switched off. Do not connect live keys or take real money until the real-money gate (S5-X1) is agreed.
 - **Small slices.** One thin vertical slice, working, before any parallel expansion.
 - **Every change needs a rollback path.**
 - **Facts come only from the giver.** In anything generated, real names, events and numbers come from the giver's facts. Flourish may exaggerate a fact, never invent one. Missing fact → skip. See `docs/catalogue/prompts.md`.

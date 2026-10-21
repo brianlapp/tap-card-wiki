@@ -8,7 +8,7 @@ The working mockup — the line of truth — is outside `docs/`: `examples/uncar
 
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
-| `start-here.md` | Landing page: what this is, why it exists, how to use it | Draft | 2026-09-30 |
+| `start-here.md` | Landing page: what this is, why it exists, how to use it | Draft | 2026-10-21 |
 | `agent-rules.md` | Agent rules (our SOPs): stay in your lane, database safety, Slack posts approved and in plain words, how we agree to things | Agreed (7 Oct meeting) | 2026-10-07 |
 
 ## product/
@@ -16,7 +16,8 @@ The working mockup — the line of truth — is outside `docs/`: `examples/uncar
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
 | `product/scope.md` | What Tapcard is, tech stack, constraints, team, phases (partly superseded — see its update note) | Draft | 2026-10-06 |
-| `product/live-product.md` | The MVP at uncard.app after build Phases 1–5: studio and giving built but shut, what's waiting on Jordan | Draft | 2026-10-02 |
+| `product/live-product.md` | What's live at uncard.app: published `72f02dd`, studio closed; Phase 3 (M0–M12) built but switched off; the 2 Oct snapshot kept below as history | Draft | 2026-10-21 |
+| `product/architecture.md` | How the system fits together: uncard.app on Lovable, Supabase Postgres, the uncard.gifts and cron Workers, the data rules, switches by stage, release path R1–R3, agent doors, checks, what's in progress | Draft | 2026-10-21 |
 | `product/experience.md` | Nine-beat arc, giver's five steps, Studio, sharing controls, hosting and keepsake | Draft | 2026-09-30 |
 | `product/user-stories.md` | Stories for the first end-to-end slice | Not written | — |
 | `product/card-schema.md` | Versioned card JSON contract and scene registry | Not written | — |
@@ -67,7 +68,7 @@ Ingested 2026-10-06 from the 2026-10-02 Slack drop (`slack/ledger.md`). Each car
 
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
-| `strategy/domain-tracking-seo.md` | Domain, tracking and SEO plan: uncard.gifts vs. uncard.app, measurement, SEO/AI-answer plan | Draft | 2026-10-06 |
+| `strategy/domain-tracking-seo.md` | Domain, tracking and SEO plan: uncard.gifts vs. uncard.app, measurement, SEO/AI-answer plan. Replaced by the Combined SEO-AEO Plan of 20 Oct (private, in the team brain) | Superseded | 2026-10-21 |
 
 **Held, not ingested:** "Uncard growth strategy" (.pdf) and "UNCARD investor deck" (.pdf), both posted by Jordan in Slack #non-build-stuff on 2026-10-02 — **Held: private, not for the public wiki** (this repo is public; see `slack/ledger.md`).
 

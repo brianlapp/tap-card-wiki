@@ -1,7 +1,7 @@
 # Start Here
 
 **Status:** Draft
-**Updated:** 2026-09-30
+**Updated:** 2026-10-21
 **Owner:** Brian Lapp
 **Method:** Written by hand. Token figures are measured, not estimated — see below.
 
@@ -33,6 +33,7 @@ So the content got restructured for machines: small files, one fact per line, gr
 **Start with what you need:**
 
 - What actually works today → `product/live-product.md` — the MVP at uncard.app
+- How the system fits together → `product/architecture.md` — hosting, database, switches, releases
 - New here → `product/experience.md` — what it's like to make one and to open one
 - What a card is made of → `catalogue/README.md` — 50 scenes, 20 worlds
 - The look and voice → `brand/directions.md` — two directions, both shown
@@ -59,4 +60,4 @@ Decided:
 - **Pricing:** $5.99 per uncard, $9.99/month for two (`decisions/0002`)
 - **Brand:** UNCARD, Matinee (`decisions/0004`)
 
-What's being built right now, and its status, lives in the product repo (`docs/review-2026-09-30/`).
+What's being built right now, and its status, lives in the product repo (`docs/phase-3/completion/CHECKPOINT.md`; before Phase 3: `docs/review-2026-09-30/`).
