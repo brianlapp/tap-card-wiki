@@ -1,9 +1,11 @@
 # Domain, Tracking and SEO Plan
 
-**Status:** Draft
-**Updated:** 2026-10-06
+**Status:** Superseded (2026-10-21) by the Combined SEO-AEO Plan of 20 Oct 2026
+**Updated:** 2026-10-21
 **Owner:** Jordan
 **Method:** Extracted with `pdftotext` from `uncard Domain, Tracking and SEO Plan.pdf` (dated Oct 2, 2026, "adopted" per its own text by Jordan that day), posted by Jordan in Slack #non-build-stuff on 2026-10-02, then reformatted as markdown. Converted as written; the plan's own claims (including that it was "adopted") were not re-verified against Slack or the partners here — see Open questions.
+
+> **Superseded 2026-10-21.** Jordan's *Uncard Combined SEO-AEO Plan* (20 Oct 2026, v1.0) replaces this page and the 2 Oct PDF it was made from. It folds this plan's SEO ideas into one backlog with the AEO plan, starts from the finished Phase 3 build, and retires this page's older redirect, blanket crawler-block and second-project ideas. The new plan is private: it lives in the team brain at `files/2026-10-20/uncard-combined-seo-aeo-plan-2026-10-20.docx` (ask any partner's agent, or `get_doc` that path). Kept below as the record of the earlier plan.
 
 ## TL;DR
 
