@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-10-20
+**Updated:** 2026-10-21
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-10-20). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-10-21). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-10-19: Tim's Claude posts a social-growth research summary to #uncard-build (reaction videos, Songfinch comparison, videos-before-ads); Jordan likes it but redirects to asking for a content strategy for Uncard's own social accounts (TikTok, Facebook, Instagram) — what to post, what style; nothing decided. Badge-system feedback (Brian), the AI test budget D22 (Brian) and team-brain admin access (Jordan, Brian) are still open from 2026-10-06/12.
+New 2026-10-20: Oy (for Jordan) DMs Brian asking him to file an updated combined SEO/AEO plan in the team brain as current and mark the 2 Oct SEO plan superseded — says Phase 3 is finished and Manus/Devin are now live-testing uncard.app (unverified here). Jordan also shares a screenshot of the Thank-You Growth Engine build still running past 5 days.
+
+Earlier, 2026-10-19: Tim's Claude posts a social-growth research summary to #uncard-build (reaction videos, Songfinch comparison, videos-before-ads); Jordan likes it but redirects to asking for a content strategy for Uncard's own social accounts (TikTok, Facebook, Instagram) — what to post, what style; nothing decided. Badge-system feedback (Brian), the AI test budget D22 (Brian) and team-brain admin access (Jordan, Brian) are still open from 2026-10-06/12.
 
 Earlier, 2026-10-14: Brian's agent set up and tested API keys for all four music services (Lyria, ElevenLabs, Mureka, ACE-Step), posted a cost-vs-scale report with samples to #all-tapcard, and passed the keys to Tim for human testing — the one-day music spike action item is now done.
 
@@ -59,6 +61,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 
 | Since | Item | Owner | Log |
 |---|---|---|---|
+| 2026-10-20 | File the updated combined SEO/AEO plan (sent by Oy, Word doc) in the team brain as current; mark the 2026-10-02 SEO plan and `strategy/domain-tracking-seo.md` superseded with links to it; report back the canonical location | Brian | `2026-10.md` |
 | ~~2026-10-05~~ | ~~One-day music spike: the same 5 prompts through Lyria, ElevenLabs, ACE-Step and Mureka.~~ Day 1 done 2026-10-06: Lyria 3.5 ran (94–97% of our words sung, $0.08 a song, but no line timing, no length control, filter blocked two kids' songs until reworded). Brian posted a cost breakdown and song samples 2026-10-06. **Done 2026-10-14:** Mureka, ACE-Step and ElevenLabs accounts set up, keys tested, cost-vs-scale report posted to #all-tapcard, keys passed to Tim for human testing | Brian | `2026-10.md` |
 | 2026-10-06 | Send the rights-confirmation emails to Google (Lyria) and ElevenLabs | Tim | `2026-10.md` |
 | 2026-10-05 | Share the music research artifact with Jordan and Brian (it's private) | Tim | `2026-10.md` |
@@ -96,3 +99,4 @@ Places where Slack is newer than the wiki.
 - `index.md`'s "Waiting to be ingested" table was missing the Domain, Tracking and SEO Plan PDF. Added 2026-10-06.
 - `decisions/0006`: superseded by the Phase 3 build spec (corrected 2026-10-07). Slice 1's placeholder was removed on 2026-10-07, so uncard.gifts is clear for the real Worker.
 - **2026-10-06:** the seven 2026-10-02 research/brand/strategy files ingested into `docs/research/`, `docs/brand/brand-guide.md` and `docs/strategy/domain-tracking-seo.md` (see `index.md`). The SEO plan PDF itself claims "Jordan adopted this plan on 2 October 2026" and that it settles D16 (a separate uncard.gifts host) — but `decisions/0006` is still `Status: Open` and this ledger's own open-questions table above shows no partner replies. It also assumes uncard.gifts runs as a second Lovable project (W-48), where `decisions/0006` chose a Cloudflare Worker instead. Neither conflict is resolved here — see `strategy/domain-tracking-seo.md`'s Open questions. **Resolved 2026-10-07:** the Phase 3 build spec (approved 2026-10-05) supersedes both; see `decisions/0006`.
+- **2026-10-20:** Oy's DM to Brian reports, via Jordan, that Phase 3 is finished and Manus/Devin are now running live tests on uncard.app. Unverified here (secondhand, via Slack DM, no direct confirmation from Jordan in a channel) — flagging rather than updating `product/live-product.md` on this alone.
