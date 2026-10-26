@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-10-23
+**Updated:** 2026-10-26
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-10-23). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-10-26). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-10-22: Group DM only, no decisions — Jordan shares three card-theme demo videos, excited about build quality and musing about a future "Choices" movie-trailer feature; no replies yet.
+New 2026-10-25: Group DM only, no decisions — Jordan posts a build-progress update (final fix before turning the build on, Opus's time estimate down from ~10 build days to ~5, two bugs fixed, TY Growth Engine on its 8th build day); Tim replies to the 10-22 demo videos ("I think these are awesome").
+
+Earlier, 2026-10-22: Group DM only, no decisions — Jordan shares three card-theme demo videos, excited about build quality and musing about a future "Choices" movie-trailer feature.
 
 Earlier, 2026-10-21: Group DM only (no activity in the other channels or DMs). Jordan, at 86% of this week's Claude usage, has handed Devin/Manus's build findings to Opus/Astra for a fix spec that "6.1-Sol" has been implementing for ~16 hours, and hopes the team can start testing live uncard builds this weekend. He also floats outsourcing TikTok/Instagram content to pamba.app (~$150/mo) — Tim's open to a one-month trial — and, much further out, turning their own build process into a course once Uncard and Menu.ca are both running; nothing decided on either.
 
