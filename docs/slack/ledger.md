@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-10-26
+**Updated:** 2026-10-27
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-10-26). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-10-27). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-10-25: Group DM only, no decisions — Jordan posts a build-progress update (final fix before turning the build on, Opus's time estimate down from ~10 build days to ~5, two bugs fixed, TY Growth Engine on its 8th build day); Tim replies to the 10-22 demo videos ("I think these are awesome").
+New 2026-10-26: Group DM only, no decisions — live testing has started. Jordan walks Tim through getting set up as a tester (sign in, confirm age, send Jordan the email to approve) since the site is still invite-only; Jordan's fixing a newly found security bug, then says the first test pass is already turning up bugs (a card "built" with no way to view it); Tim's signed up and testing.
+
+Earlier, 2026-10-25: Group DM only, no decisions — Jordan posts a build-progress update (final fix before turning the build on, Opus's time estimate down from ~10 build days to ~5, two bugs fixed, TY Growth Engine on its 8th build day); Tim replies to the 10-22 demo videos ("I think these are awesome").
 
 Earlier, 2026-10-22: Group DM only, no decisions — Jordan shares three card-theme demo videos, excited about build quality and musing about a future "Choices" movie-trailer feature.
 
