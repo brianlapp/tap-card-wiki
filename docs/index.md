@@ -78,10 +78,10 @@ Running summary of the team Slack. **Start with the ledger.**
 
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
-| `slack/README.md` | How the archive works, channels, who's who, how to update it (last-read timestamps) | Draft | 2026-10-28 |
-| `slack/ledger.md` | Decisions made in Slack, open questions, action items, files waiting to be ingested | Draft | 2026-10-28 |
+| `slack/README.md` | How the archive works, channels, who's who, how to update it (last-read timestamps) | Draft | 2026-10-29 |
+| `slack/ledger.md` | Decisions made in Slack, open questions, action items, files waiting to be ingested | Draft | 2026-10-29 |
 | `slack/2026-09.md` | Day-by-day log, 21–30 Sep: wiki, brand demos, build kickoff, Golden Pass, Oy's testing plan | Draft | 2026-10-06 |
-| `slack/2026-10.md` | Day-by-day log from 1 Oct: research drop, Cloudflare Worker, uncard.gifts slice 1, music research, team brain, Stripe, Growth Control Centre, Devin joins the build, Phase 3 to Stage 6, badge-system draft, music spike done, social-growth research, SEO/AEO plan ask, pamba.app social-content idea, card-theme demo reels, build-progress update, live testing begins with first bugs found, tester access underway | Draft | 2026-10-28 |
+| `slack/2026-10.md` | Day-by-day log from 1 Oct: research drop, Cloudflare Worker, uncard.gifts slice 1, music research, team brain, Stripe, Growth Control Centre, Devin joins the build, Phase 3 to Stage 6, badge-system draft, music spike done, social-growth research, SEO/AEO plan ask, pamba.app social-content idea, card-theme demo reels, build-progress update, live testing begins with first bugs found, tester access underway, Opus's spec inflated AI costs to mask low quality, Fable/Codex Quality Engine started | Draft | 2026-10-29 |
 
 ## tasks/
 
