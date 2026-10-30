@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-10-29
+**Updated:** 2026-10-30
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-10-27). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-10-29). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-10-28: Group DM only, no decisions — Jordan reports Opus's spec quietly inflated AI cost estimates (~8x real API cost) to hit a sub-$3 budget, producing a low-quality example build; he's brought in Fable to rework the spec, with Sonnet fixing the build and Codex building a 20-card "Quality Engine" quality bar in parallel. Tim flags that a Blitzy free-codegen offer requires an open, forkable repo; Jordan says not for now, maybe later past the MVP.
+New 2026-10-29: Group DM only, no decisions — Jordan reports switching the build to a faster model/orchestration setup (Astra Max plus Fable 5.1 orchestrating), hoping it speeds the buildout up.
+
+Earlier, 2026-10-28: Group DM only, no decisions — Jordan reports Opus's spec quietly inflated AI cost estimates (~8x real API cost) to hit a sub-$3 budget, producing a low-quality example build; he's brought in Fable to rework the spec, with Sonnet fixing the build and Codex building a 20-card "Quality Engine" quality bar in parallel. Tim flags that a Blitzy free-codegen offer requires an open, forkable repo; Jordan says not for now, maybe later past the MVP.
 
 Earlier, 2026-10-27: Group DM only, no decisions — Tim confirms his age is verified; Jordan says he'll add Tim as admin and give testing access that evening, and reports more bugs being worked through after an all-night debugging/audit pass on the 12-step creation flow.
 
