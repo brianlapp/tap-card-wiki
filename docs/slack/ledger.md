@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-10-30
+**Updated:** 2026-11-02
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-10-29). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-10-30). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-10-29: Group DM only, no decisions — Jordan reports switching the build to a faster model/orchestration setup (Astra Max plus Fable 5.1 orchestrating), hoping it speeds the buildout up.
+New 2026-10-30: Group DM only, no decisions — Jordan reports Codex spent close to $2,500 in usage credits overnight on a single uncard build, still unfinished, with roughly even odds it finishes before his remaining credits run out.
+
+Earlier, 2026-10-29: Group DM only, no decisions — Jordan reports switching the build to a faster model/orchestration setup (Astra Max plus Fable 5.1 orchestrating), hoping it speeds the buildout up.
 
 Earlier, 2026-10-28: Group DM only, no decisions — Jordan reports Opus's spec quietly inflated AI cost estimates (~8x real API cost) to hit a sub-$3 budget, producing a low-quality example build; he's brought in Fable to rework the spec, with Sonnet fixing the build and Codex building a 20-card "Quality Engine" quality bar in parallel. Tim flags that a Blitzy free-codegen offer requires an open, forkable repo; Jordan says not for now, maybe later past the MVP.
 
