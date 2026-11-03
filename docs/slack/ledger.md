@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-11-02
+**Updated:** 2026-11-03
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-10-30). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-11-02). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-10-30: Group DM only, no decisions — Jordan reports Codex spent close to $2,500 in usage credits overnight on a single uncard build, still unfinished, with roughly even odds it finishes before his remaining credits run out.
+New 2026-11-02: Group DM only, no decisions — Jordan gives Jordan, Brian and Tim access to a new internal roadmap tool at build.uncard.app plus a Claude artifact on how to connect Claude/Codex to it over MCP; asks everyone to hold off adding to it until he's organized it, and to keep it human-directed (no autonomous agent posting) for now.
+
+Earlier, 2026-10-30: Group DM only, no decisions — Jordan reports Codex spent close to $2,500 in usage credits overnight on a single uncard build, still unfinished, with roughly even odds it finishes before his remaining credits run out.
 
 Earlier, 2026-10-29: Group DM only, no decisions — Jordan reports switching the build to a faster model/orchestration setup (Astra Max plus Fable 5.1 orchestrating), hoping it speeds the buildout up.
 
@@ -77,6 +79,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 
 | Since | Item | Owner | Log |
 |---|---|---|---|
+| 2026-11-02 | Hold off adding anything to the new roadmap tool (build.uncard.app) until Jordan organizes it; keep agent use human-directed only for now | All three | `2026-11.md` |
 | 2026-10-20 | File the updated combined SEO/AEO plan (sent by Oy, Word doc) in the team brain as current; mark the 2026-10-02 SEO plan and `strategy/domain-tracking-seo.md` superseded with links to it; report back the canonical location | Brian | `2026-10.md` |
 | ~~2026-10-05~~ | ~~One-day music spike: the same 5 prompts through Lyria, ElevenLabs, ACE-Step and Mureka.~~ Day 1 done 2026-10-06: Lyria 3.5 ran (94–97% of our words sung, $0.08 a song, but no line timing, no length control, filter blocked two kids' songs until reworded). Brian posted a cost breakdown and song samples 2026-10-06. **Done 2026-10-14:** Mureka, ACE-Step and ElevenLabs accounts set up, keys tested, cost-vs-scale report posted to #all-tapcard, keys passed to Tim for human testing | Brian | `2026-10.md` |
 | 2026-10-06 | Send the rights-confirmation emails to Google (Lyria) and ElevenLabs | Tim | `2026-10.md` |

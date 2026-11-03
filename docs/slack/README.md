@@ -1,9 +1,9 @@
 # Slack Archive
 
 **Status:** Draft
-**Updated:** 2026-11-02
+**Updated:** 2026-11-03
 **Owner:** Brian Lapp
-**Method:** Every channel and DM in uncardapp.slack.com read through the claude.ai Slack connector on 2026-10-06 through 2026-10-30, including thread replies. Summarised by an agent, not reviewed by the team. Attachments were not opened, only listed.
+**Method:** Every channel and DM in uncardapp.slack.com read through the claude.ai Slack connector on 2026-10-06 through 2026-11-02, including thread replies. Summarised by an agent, not reviewed by the team. Attachments were not opened, only listed.
 
 ## TL;DR
 
@@ -13,7 +13,8 @@ A running summary of the team Slack, so any partner's agent can catch up without
 |---|---|
 | `ledger.md` | Current state: decisions made in Slack, open questions, action items, files waiting to be ingested, wiki follow-ups |
 | `2026-09.md` | Day-by-day log, 21–30 Sep 2026 |
-| `2026-10.md` | Day-by-day log, 1 Oct 2026 onward |
+| `2026-10.md` | Day-by-day log, Oct 2026 |
+| `2026-11.md` | Day-by-day log, 1 Nov 2026 onward |
 
 ## This repo is public
 
@@ -26,8 +27,8 @@ Slack is private; this wiki is not. Summaries here keep to the work: what was de
 | #uncard-build | Build progress, infra asks, music research, team brain (0007), growth control centre, social-growth research | `1792453644.408549` (2026-10-19 19:47) |
 | #non-build-stuff | Research, brand and strategy files for filing | `1790988773.025529` (2026-10-02 20:52) |
 | #all-tapcard | Announcements, ideas, tooling links | `1791983666.462519` (2026-10-14 09:14) |
-| Group DM (Jordan, Brian, Tim) | Quick three-way chat | `1793373754.035689` (2026-10-30 11:22) |
-| DM: Jordan (incl. Oy, posting as Jordan) | Direct asks to Brian | `1792522074.921559` (2026-10-20 14:47) |
+| Group DM (Jordan, Brian, Tim) | Quick three-way chat | `1793672583.168059` (2026-11-02 21:23) |
+| DM: Jordan (incl. Oy, posting as Jordan) | Direct asks to Brian | `1793653595.406069` (2026-11-02 16:06) |
 | DM: Tim | Nothing project-relevant beyond what's in the logs | — |
 | #social, #new-channel | Join messages only | — |
 | Other 1:1 DMs (bots, Jordan's agents) | Nothing project-relevant beyond what's in the logs | — |
