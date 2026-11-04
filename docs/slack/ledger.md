@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-11-03
+**Updated:** 2026-11-04
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-11-02). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-11-03). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-11-02: Group DM only, no decisions — Jordan gives Jordan, Brian and Tim access to a new internal roadmap tool at build.uncard.app plus a Claude artifact on how to connect Claude/Codex to it over MCP; asks everyone to hold off adding to it until he's organized it, and to keep it human-directed (no autonomous agent posting) for now.
+New 2026-11-03: Group DM only, no decisions — Jordan floats turning Uncard into a monorepo (prompted by recent public write-ups on git at scale), using a tool called Pando; nothing decided.
+
+Earlier, 2026-11-02: Group DM only, no decisions — Jordan gives Jordan, Brian and Tim access to a new internal roadmap tool at build.uncard.app plus a Claude artifact on how to connect Claude/Codex to it over MCP; asks everyone to hold off adding to it until he's organized it, and to keep it human-directed (no autonomous agent posting) for now.
 
 Earlier, 2026-10-30: Group DM only, no decisions — Jordan reports Codex spent close to $2,500 in usage credits overnight on a single uncard build, still unfinished, with roughly even odds it finishes before his remaining credits run out.
 
