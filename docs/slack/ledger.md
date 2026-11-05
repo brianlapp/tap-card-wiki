@@ -61,7 +61,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 |---|---|---|---|
 | ~~2026-10-02~~ | ~~uncard.gifts plan, `decisions/0006` (D16): any objections before slices 2–4?~~ — closed 2026-10-06: Brian chose Jordan's newer plan (uncard.gifts on a second Lovable project); 0006 superseded | Brian | `2026-10.md` |
 | 2026-10-05 | Free procedural sounds plus paid sung songs (S37) as an upsell — adopt? | All three | `2026-10.md` |
-| 2026-10-05 | AI budget (D22), needed before any paid music pilot. **2026-10-12:** Tim proposed a $25 cap for the first test (5 prompts × 3 tries, est. $5–$12); Jordan voted yes; Brian's yes still open | Brian | `2026-10.md` |
+| ~~2026-10-05~~ | ~~AI budget (D22), needed before any paid music pilot. **2026-10-12:** Tim proposed a $25 cap for the first test (5 prompts × 3 tries, est. $5–$12); Jordan voted yes~~ **Done 2026-10-13:** settled by doing it. Brian paid for ElevenLabs Starter ($6/mo) and $10 of Mureka credits that day and the paid test ran inside the cap; no separate vote needed | Brian | `2026-10.md` |
 | 2026-10-12 | Badge-system first draft (5 starter badges, 3 teaching uncards, opt-in reminders) — Jordan gave feedback (go further, use the "Exo Skill"); Brian's feedback still open | Brian | `2026-10.md` |
 | 2026-10-05 | Legal review of delivering generated songs to givers and recipients | All three | `2026-10.md` |
 | 2026-10-06 | **Cost per song** (Jordan). Tim's per-card figures are for one accepted song at 3 attempts, so per *attempt* that's about $0.04–0.13 ACE-Step, $0.08 Lyria, $0.19 ElevenLabs (derived here, unverified) | Tim's report | `2026-10.md` |
