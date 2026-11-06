@@ -33,7 +33,9 @@ So the content got restructured for machines: small files, one fact per line, gr
 **Start with what you need:**
 
 - What actually works today → `product/live-product.md` — the MVP at uncard.app
+- Which repo to work in → `product/repos.md` — the four repos, who can push, who builds where
 - How the system fits together → `product/architecture.md` — hosting, database, switches, releases
+- The team's Roadmap app → `product/roadmap-app.md` — build.uncard.app, how to connect your assistant
 - New here → `product/experience.md` — what it's like to make one and to open one
 - What a card is made of → `catalogue/README.md` — 50 scenes, 20 worlds
 - The look and voice → `brand/directions.md` — two directions, both shown

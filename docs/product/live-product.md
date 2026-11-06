@@ -1,19 +1,31 @@
 # The Live Product (MVP)
 
 **Status:** Draft — snapshot of a moving target
-**Updated:** 2026-10-21
+**Updated:** 2026-11-06
 **Owner:** Brian Lapp
-**Method:** 2026-10-21 refresh: TL;DR, "Changed since 2026-10-02" and the superseded notes read from `origin/main` at `84977d9` (2026-10-19): the Phase 3 completion folder (`CHECKPOINT.md`, `LIVE-STATE.md`, `ACTIVATION.md`, `FLAGS.md`) and the completion report. The how is in `product/architecture.md`. The rest of the page is the original snapshot, read at commit `ffd1adc` (2026-10-02): the five phase reports in `docs/review-2026-09-30/build-reports/`, `db/README.md`, `roadmap.md`, Oy's round-2 prompt and `src/uncard/catalogue/support.ts`. Not checked in a browser here — what's "live" is what the build agent's reports say it published. **Build status changes daily — for anything current, read the product repo, not this page.**
+**Method:** 2026-11-06 refresh: TL;DR, "Changed since 2026-10-21" and the dated notes below read from `origin/main` at `6e0997d6` (2026-11-03) and the unmerged branch `devin/1793889643-show-phase3b` (5 Nov): the show builder reports, the studio and Big Bold Beautiful reports, the `db/` and `cron/` READMEs and commit messages. The how, with sources, is in `product/architecture.md`. 2026-10-21 refresh: TL;DR, "Changed since 2026-10-02" and the superseded notes read from `origin/main` at `84977d9` (2026-10-19): the Phase 3 completion folder (`CHECKPOINT.md`, `LIVE-STATE.md`, `ACTIVATION.md`, `FLAGS.md`) and the completion report. The how is in `product/architecture.md`. The rest of the page is the original snapshot, read at commit `ffd1adc` (2026-10-02): the five phase reports in `docs/review-2026-09-30/build-reports/`, `db/README.md`, `roadmap.md`, Oy's round-2 prompt and `src/uncard/catalogue/support.ts`. Not checked in a browser here — what's "live" is what the build agent's reports say it published. **Build status changes daily — for anything current, read the product repo, not this page.**
 
 ## TL;DR
 
-UNCARD is live at **uncard.app**. The last confirmed publish is commit **`72f02dd`** (18 Oct). Since 2 Oct the team built a new plan, **Phase 3**: a conversation studio, a new card engine, and the foundations for consent, checkout, recipients, a gallery, contributors, memory and AI-agent access. It is all on `main` as code (milestones M0 to M12, finished 19 Oct), and **almost all of it is switched off**:
+UNCARD is live at **uncard.app**. The last publish named in the product repo is commit **`4487dbce`** (1 Nov); which commit is published now is unknown. Since 19 Oct the team moved from "built and switched off" to trying it for real:
 
-- The studio is closed. No model is called and no payment is possible.
-- 64 SQL files for Stages 4 to 10 are written and rehearsed, but none is applied.
-- uncard.gifts does not serve cards yet, and the nightly job's Worker does not exist.
+- Making opened in a practice window on 25 Oct (by 27 Oct it held Jordan, Brian and Tim). Real model calls have been made since 26 Oct.
+- Most switches, budgets and time limits were removed (29–30 Oct). Card making now has one stop button, which read **closed** on 3 Nov. Claude opens it only around Jordan's tests.
+- In `main`'s code since 2 Nov, **one model call writes a whole card**. Giving is free while we launch; there are no payments.
+- The newest work is the **show builder** (3 Nov): a card the recipient plays one section at a time. It runs only from staff Lab buttons. The sender's version is not authorized yet.
+- The database has **161 migration files** (0000 to 0160, last added 1 Nov), plus show files applied on 3 Nov. Four more show files wait for Claude to apply.
 
-Turning things on happens in three releases (R1, R2, R3). Each needs publishes, Cloudflare steps and switches that use the owner login or Jordan's accounts, plus a named yes for each wave of SQL. R1 is published but not smoke-checked. On 20 Oct Jordan reported in Slack that Phase 3 is finished and Manus and Devin are live-testing uncard.app; which commit they are testing is not recorded. How it all fits together: `product/architecture.md`.
+As recorded on 5 Nov, `main` is frozen at `6e0997d6` while Jordan runs the paid feasibility test. How it all fits together: `product/architecture.md`.
+
+## Changed since 2026-10-21
+
+The 21 Oct refresh described Phase 3 as built and switched off. Since then (details and sources in `product/architecture.md`, "What changed since 19 Oct"):
+
+- **20–24 Oct, M13 merged** (Codex): honest public pages, sample uncards, an invite-only test window.
+- **25–27 Oct, studio practice** (Claude): a two-pane studio, photos, the age line at 13. Practice windows opened; the one from 27 Oct held Jordan, Brian and Tim. The agent door's database part went live on 27 Oct.
+- **28–30 Oct, Delight and Big Bold Beautiful**: new kinds of moment, 20 themes, the shared Uncard Viewer, free-launch giving. Most switches and limits were removed, and the practice-window tables were dropped.
+- **31 Oct–2 Nov**: the cron Worker took over each model call. Its minute timer was switched off on 1 Nov after an unattended build kept making calls. Then one call per card.
+- **3 Nov, show builder Phases 1–3** (Devin and Claude). Phase 3b is on a branch (5 Nov).
 
 ## Changed since 2026-10-02
 
@@ -34,9 +46,9 @@ The 2 Oct snapshot below described build Phases 0 to 5. Since then:
 - **M10 (Stage 9):** sender memory: "Remember?", "What I'm using", and `/memory`. 12 SQL files.
 - **M11 (Stage 10):** AI-agent access: OAuth sign-in, REST at `/api/v1`, MCP at `/mcp`, a guide at `/agents`, and revoke on `/account/agents`. 17 SQL files.
 - **M12 (19 Oct):** release candidate. Six independent reviewers found no blocker (36 findings, each fixed or recorded). The full 71-step check passed on `441c701`. The run also produced a completion report and an activation runbook.
-- **In progress, not on main:** branch `codex/m13` (20 Oct), with honest public pages, finished samples and an invite-only test window. Its own report says it is not finished.
+- **In progress, not on main:** branch `codex/m13` (20 Oct), with honest public pages, finished samples and an invite-only test window. Its own report says it is not finished. *(Merged 24 Oct by pull request #3.)*
 
-Every new door above is **built and switched off**, and its SQL is **not applied**.
+Every new door above is **built and switched off**, and its SQL is **not applied**. *(Superseded 2026-11-06: much of that SQL was applied between 27 and 31 Oct, and most switches were removed on 29–30 Oct. See "Changed since 2026-10-21".)*
 
 ## Changed since the 2026-10-01 snapshot (history)
 
@@ -57,19 +69,21 @@ That snapshot (commit `5649437`) said the studio and giving were labelled sample
 | Marketing + account site | **uncard.app** |
 | Gift links | *Superseded 2026-10-07 (`decisions/0006`): uncard.gifts is the product repo's own Cloudflare Worker `uncard-gifts` (`gifts/`), not a second Lovable project. Links stay on `uncard.app/c/<id>` until it is live and the owner switch `cards_on_gifts` is on; see `product/architecture.md`.* Original 2 Oct text: served from uncard.app at `/c/:id` today. Moving to **uncard.gifts** on a second Lovable project (W-48): D16 settled by Jordan's plan (`strategy/domain-tracking-seo.md`), confirmed 2026-10-06; `decisions/0006` (a Cloudflare Worker) is superseded. Earlier note: a Cloudflare Worker, `uncard-gifts`, created 2026-10-02, no route yet) |
 | DNS | Both domains on **Cloudflare** (Jordan's account). uncard.app and www point at Lovable's hosting (DNS only, not proxied). **invest.uncard.app** is a proxied placeholder record, so something on Cloudflare serves it (a Worker or Pages site, unverified). uncard.gifts has one proxied placeholder record and the route `uncard.gifts/*` → Worker `uncard-gifts`, which answers every address with a 404 "This uncard isn't here." (slice 1 of `decisions/0006`, 2026-10-02). No Worker routes on uncard.app |
-| Build docs (source of truth for status) | Since Phase 3: `docs/phase-3/` in the product repo, and `docs/phase-3/completion/CHECKPOINT.md` for where things stand. Phases 0–5: `docs/review-2026-09-30/` |
+| Build docs (source of truth for status) | Since 21 Oct, one folder per build in the product repo: `docs/show-builder/` (newest), `docs/big-bold-beautiful/`, `docs/studio/`, `docs/viewer/`, `docs/delight/`. Phase 3: `docs/phase-3/` (its `completion/CHECKPOINT.md` was last changed 24 Oct). Phases 0–5: `docs/review-2026-09-30/` |
 
 ## Stack (verified)
 
 - **TanStack Start** (React, Vite, TypeScript), file-based routes in `src/routes/`
 - **Tailwind + shadcn/Radix** UI
 - **Supabase**: auth, Postgres with row-level security everywhere; **Drizzle** migrations, each with SQL tests
-- **AI**: Lovable AI gateway. Default model `openai/gpt-6-astra`. Never called by the build yet — every AI answer in the build's checks was a stand-in
+- **AI**: Lovable AI gateway. Default model `openai/gpt-6-astra`. Never called by the build yet — every AI answer in the build's checks was a stand-in. *(Superseded 2026-11-06: real calls since 26 Oct. A route table now picks the model per job: Gemini 3.8 Flash for studio chat, Claude Opus 5.5 for show plans and builds, `openai/gpt-6-astra` for the one-call card. The build's own checks still use a stand-in gateway.)*
 - **Bun** lockfile; `npm run dev` / `build` / `lint` / `format`
 
 ## What works today
 
 *Partly superseded 2026-10-21. `/worlds` and `/scenes` now redirect to the home page, and worlds and scenes are internal knowledge, not a menu. `/make` is always the conversation studio, closed, and `?studio=1` is ignored. Card-making caps are now 1,000 calls a day, 30 a job and 200 a person a day (still off). Read the rest as the 2 Oct picture.*
+
+*Superseded again 2026-11-06: the caps and most switches were removed on 29–30 Oct. Card making has one stop button (closed on 3 Nov). Giving is free while we launch. The photo store exists (25 Oct). See `product/architecture.md`.*
 
 | Area | State |
 |---|---|
@@ -148,11 +162,11 @@ First-party only. **Recipients are never tracked.** The Metrics tab adds up **22
 
 **Never measured:** anything about who opens a card; third-party analytics, pixels or scripts; card or brief text, names, birthdays, emails or private messages; keystrokes, session replay or emotion scores.
 
-**Nightly job** (daily totals, clears raw records after 13 months): built and tested, **not scheduled**. Lovable's agent can't create it; Jordan has to add it in the Lovable editor under Cloud → Jobs (D21).
+**Nightly job** (daily totals, clears raw records after 13 months): built and tested, **not scheduled**. Lovable's agent can't create it; Jordan has to add it in the Lovable editor under Cloud → Jobs (D21). *(Superseded 2026-11-06: the nightly job is the Cloudflare Worker `uncard-cron`, which a 1 Nov commit records as deployed. Whether a night has run is unknown. See `product/architecture.md`.)*
 
 ## Database (13 migrations)
 
-*Superseded 2026-10-21: the live database has **80** applied migrations (0000 to 0079, last read 16 Oct), with 2 more staged and 64 Stage 4–10 files waiting. See "The data layer" in `product/architecture.md`.*
+*Superseded 2026-11-06: the repo records **161** migration files (0000 to 0160, last added 1 Nov), plus show files applied on 3 Nov through Lovable's database API, and 4 staged. See "The data layer" in `product/architecture.md`. (21 Oct note: 80 applied, read 16 Oct.)*
 
 | # | Adds |
 |---|---|
@@ -226,4 +240,4 @@ Live list: `improvement-spec.md` §8.3 in the product repo.
 
 ## Security note
 
-`.env` is still committed to the product repo (checked 2026-10-02). It holds the Supabase project URL and **publishable** key only — designed to be public — and no service-role key. Low risk, but `.env` should be in `.gitignore` so a secret never follows it in.
+`.env` is still committed to the product repo (checked 2026-10-02, and again 2026-11-06 at `6e0997d6`). It holds the Supabase project URL and **publishable** key only — designed to be public — plus two build switches, and no service-role key. Low risk, but `.env` should be in `.gitignore` so a secret never follows it in.

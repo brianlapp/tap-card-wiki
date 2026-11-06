@@ -10,27 +10,29 @@ The repo, file names and older docs still say Tapcard. Same product.
 
 **Team:** Jordan, Brian and Tim are equal partners. Jordan holds the app's single *owner* login, so switches that need that login wait on him; decisions don't. Brian leads engineering and infrastructure.
 
-**Current milestone:** Phase 3 is built on the product repo's `main` and almost all switched off; next is turning it on through releases R1 to R3 (`docs/product/architecture.md`). *Superseded 2026-10-21: "one synthetic test card working end to end" was the milestone before Phase 3.*
+**Current milestone (2026-11-06):** the show builder. Phases 1 to 3 are on the product repo's `main` as staff-only Lab tools; `main` is frozen at `6e0997d6` until Jordan finishes the paid feasibility test and phone checks (`docs/product/architecture.md`). *Superseded 2026-11-06: "turning Phase 3 on through releases R1 to R3". Superseded 2026-10-21: "one synthetic test card working end to end".*
 
 ## Agent rules: read these first
 
 `docs/agent-rules.md`, agreed by all three partners on 2026-10-07. In short: production is Brian's lane; agents never change a database without their partner's yes to that exact change; **agent-to-agent talk goes on the notice board, not Slack** (Slack is for the partners); **agents only post to Slack when their partner asks, and only after the partner approves the draft, written in plain words a 10-year-old could follow, with no bare code names** (say "the team brain decision", not "0007"); nothing is agreed until all three partners say yes.
 
-## Workspace: two repos, one set of instructions
+## Workspace: four repos
+
+**Which repo for which job, who can push, and who builds on which branches: `docs/product/repos.md`.** Read it before you touch code.
 
 | Repo | What it holds | Who pushes to `main` |
 |---|---|---|
-| [`brianlapp/tap-card-wiki`](https://github.com/brianlapp/tap-card-wiki) (this one) | Project context: scope, research, decisions, catalogue, brand, the demo. **No code.** | Brian's agents, directly |
-| [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter) | The product, live at **uncard.app**. Lovable-synced. Has its own build docs in `docs/phase-3/` (status: `docs/phase-3/completion/CHECKPOINT.md`) | **Jordan's build agent and Lovable only.** Everyone else: branch, then pull request |
+| [`brianlapp/tap-card-wiki`](https://github.com/brianlapp/tap-card-wiki) (this one, **public**) | Project context: scope, research, decisions, catalogue, brand, the demo. **No code.** | Brian's agents, directly |
+| [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter) (private) | The product, live at **uncard.app**. Lovable-synced. How it fits together: `docs/product/architecture.md` | **Jordan's builders and Lovable only.** Everyone else: branch, then pull request |
+| [`JNabsRepo/uncard-team-roadmap`](https://github.com/JNabsRepo/uncard-team-roadmap) (private) | The Roadmap app at **build.uncard.app**: the partners' planning and handoff board. Lovable-synced. See `docs/product/roadmap-app.md` | Jordan's builders and Lovable |
+| `brianlapp/uncard-brain` (private) | The team brain (`0007`): shared memory and the notice board. Agents use it through its MCP tools, not the repo | Brian's agents |
 
-This file is the shared instructions for both. There is no orchestrator agent: one agent, plugged straight into the repos, reading this. *(Proposed change, Open: Brian's Claude Code as team lead with sub-agents — `docs/decisions/0008-agent-team-orchestrator.md`.)*
-
-Two private support repos sit beside these, for Brian's agents: `brianlapp/uncard-brain` (the team brain, `0007`) and `brianlapp/agent-team` (the orchestrator template, `0008`). Locally they live in `~/uncard/` too.
+Jordan and Brian can both push to both app repos (checked 2026-11-06). One more private repo sits beside these for Brian's agents: `brianlapp/agent-team` (the orchestrator template, `0008`, Open). There is no orchestrator agent today: one agent, plugged straight into the repos, reading this.
 
 **How the workspace is laid out**
-- **Local:** `~/uncard/` holds both clones and a one-line `CLAUDE.md` that points here. Run `claude` from `~/uncard/`.
+- **Local (Brian's Mac):** `~/dev/uncard/` holds the two app repos and this wiki. The brain lives in `~/uncard/uncard-brain`.
   Keep the clones out of iCloud-synced folders (`~/Documents`, `~/Desktop`): iCloud offloads git's pack files and git then hangs or reports a corrupt repo.
-- **Cloud or phone:** start the session with **both repos selected**.
+- **Cloud or phone:** start the session with the repos your task needs selected (see `docs/product/repos.md`).
 
 **Habits**
 - **Pull both repos before you start. Commit and push before you stop** or switch device. Cloud sessions are thrown away; unpushed work is lost.
@@ -44,6 +46,9 @@ Two private support repos sit beside these, for Brian's agents: `brianlapp/uncar
 |---|---|
 | What we're building, stack, constraints | `docs/product/scope.md` |
 | Who we compete with, pricing reality | `docs/research/competitive-landscape.md` |
+| Which repo to work in, who can push, who builds where | `docs/product/repos.md` |
+| How the product fits together (snapshot) | `docs/product/architecture.md` |
+| The Roadmap app: what it is, how to connect an assistant | `docs/product/roadmap-app.md` |
 | What's built and live today (snapshot) | `docs/product/live-product.md` |
 | What the giver and recipient should experience (designed) | `docs/product/experience.md` |
 | What a card is made of: 50 sections, 20 themes | `docs/catalogue/` — **grep, do not read whole** |
