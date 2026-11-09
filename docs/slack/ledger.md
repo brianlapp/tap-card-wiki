@@ -1,13 +1,19 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-11-04
+**Updated:** 2026-11-09
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-11-03). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-11-08). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-11-03: Group DM only, no decisions — Jordan floats turning Uncard into a monorepo (prompted by recent public write-ups on git at scale), using a tool called Pando; nothing decided.
+New 2026-11-08: Group DM only, no decisions — Tim confirms he's willing to try pamba.app (social-content outsourcing) for a one-month trial, cancel after; banter with Jordan about a charity-angle competitor, foreversongs.com.
+
+Earlier, 2026-11-07: Group DM only, no decisions — Jordan patches Seroval/Undici security bugs and asks the team to check their own code too; reports Lovable credits tight (~37 left) until the next day's top-up and asks the team to hold off that day; drafting a Promotions Manager job posting and working on the TY Growth Engine; shares his new automated spec-reviewer schedule; floats a charity/pay-it-forward uncard campaign idea (mental-health cause, possible Royal Ottawa Hospital tie-in).
+
+Earlier, 2026-11-06: Group DM only, no decisions — Brian shares a UI/UX design reference; Jordan plans to turn it into a Skill.
+
+Earlier, 2026-11-03: Group DM only, no decisions — Jordan floats turning Uncard into a monorepo (prompted by recent public write-ups on git at scale), using a tool called Pando; nothing decided.
 
 Earlier, 2026-11-02: Group DM only, no decisions — Jordan gives Jordan, Brian and Tim access to a new internal roadmap tool at build.uncard.app plus a Claude artifact on how to connect Claude/Codex to it over MCP; asks everyone to hold off adding to it until he's organized it, and to keep it human-directed (no autonomous agent posting) for now.
 
@@ -74,6 +80,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 | ~~2026-10-06~~ | ~~Team brain: when are agent keys rotated, and does a key pasted into a connector stay valid after its 1Password link expires?~~ — answered 2026-10-07 in Tim's Slack thread: keys change if one leaks or someone leaves; an expired 1Password link doesn't break a key already in a connector | Brian | `2026-10.md` |
 | ~~2026-10-06~~ | ~~Team brain: a list of which private files (investor deck, growth strategy) are now ingested and searchable by all four agents, including ChatGPT and Codex (so via OpenAI too)~~ — answered 2026-10-07 in Tim's Slack thread: investor deck, growth strategy, brand guide, brand system, domain/tracking/SEO plan, and four research docs | Brian | `2026-10.md` |
 | 2026-10-19 | Content strategy for Uncard's own social accounts (TikTok, Facebook, Instagram) — what to post, what style? Jordan asked the team in reply to Tim's social-growth research | All three | `2026-10.md` |
+| 2026-11-07 | Pay-it-forward charity uncard campaign (mental-health cause, possible Royal Ottawa Hospital donor-gratitude tie-in) — Jordan's idea, nothing decided | All three | `2026-11.md` |
 | 2026-10-08 | **Business bank account and incorporation: Venn or Float?** Jordan raised both (partners' chat, 8 Oct). Brian chooses **Venn** (2026-10-08): it incorporates and opens the account in one go for about $49 net, and its free plan pays 1% cashback on the first $5k a month (Float only pays above $25k a month). Tim is fine with either if they're legit (both checked: notice board post 15). Before filing: a short accountant call on personal holding companies and a shareholders' agreement | Jordan to confirm | `2026-10.md` |
 | ~~2026-10-06~~ | ~~Team brain: keep automated Slack syncing via a Slack app as its own separate decision~~ — answered 2026-10-07 in Tim's Slack thread: agreed, a Slack app stays a separate decision; meanwhile the brain's copy of Slack refreshes every morning from Brian's Mac | All three | `2026-10.md` |
 
@@ -82,6 +89,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 | Since | Item | Owner | Log |
 |---|---|---|---|
 | 2026-11-02 | Hold off adding anything to the new roadmap tool (build.uncard.app) until Jordan organizes it; keep agent use human-directed only for now | All three | `2026-11.md` |
+| ~~2026-11-07~~ | ~~Patch the Seroval and Undici security vulnerabilities; team to check their own code for the same issues~~ — done 2026-11-07 (Jordan) | Jordan | `2026-11.md` |
 | ~~2026-10-20~~ | ~~File the updated combined SEO/AEO plan (sent by Oy, Word doc) in the team brain as current; mark the 2026-10-02 SEO plan and `strategy/domain-tracking-seo.md` superseded with links to it; report back the canonical location~~ **Done 2026-10-21:** filed in the brain as current, both old plans marked superseded, and the location reported to Oy on the agent board (notice board post 34, read by Oy 2026-10-28) | Brian | `2026-10.md` |
 | ~~2026-10-05~~ | ~~One-day music spike: the same 5 prompts through Lyria, ElevenLabs, ACE-Step and Mureka.~~ Day 1 done 2026-10-06: Lyria 3.5 ran (94–97% of our words sung, $0.08 a song, but no line timing, no length control, filter blocked two kids' songs until reworded). Brian posted a cost breakdown and song samples 2026-10-06. **Done 2026-10-14:** Mureka, ACE-Step and ElevenLabs accounts set up, keys tested, cost-vs-scale report posted to #all-tapcard, keys passed to Tim for human testing | Brian | `2026-10.md` |
 | 2026-10-06 | Send the rights-confirmation emails to Google (Lyria) and ElevenLabs | Tim | `2026-10.md` |
