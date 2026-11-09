@@ -1,7 +1,7 @@
 # How Uncard Fits Together (Architecture)
 
 **Status:** Draft. This is a snapshot, and the product repo is the source of truth.
-**Updated:** 2026-11-06
+**Updated:** 2026-11-09
 **Owner:** Brian Lapp
 **Method:** Read from the product repo [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter) at `origin/main` = **`6e0997d6`** (2026-11-03, the last show builder Phase 3 report), 543 commits after the last snapshot (`84977d9`, 19 Oct). Also read: the unmerged branch `devin/1793889643-show-phase3b` at `d7f78885` (5 Nov). Sources: `docs/show-builder/` (the spec, the Phase 1 to 3 reports, the kit report, `KIT.md`), the Phase 3b report on its branch, `docs/studio/` (to 27 Oct), `docs/big-bold-beautiful/` (to 1 Nov), the READMEs for `db/`, `cron/`, `gifts/`, `photo-convert/` and `tools/ci/`, `src/uncard/generator/routes.ts`, and commit messages. Counts come from `git ls-tree`. Branch state comes from `git merge-base --is-ancestor`. Who built what comes from commit authors and co-author lines. Nothing was checked in a browser or against the live database. "Live" facts are what the builders recorded. The newest is a read-only live database check on **3 Nov** (show builder spec). Anything newer is marked unknown.
 
@@ -10,7 +10,7 @@
 - **Since 19 Oct the work went from "built and switched off" to "trying it for real".** Making opened in a practice window on 25 Oct (by 27 Oct it held Jordan, Brian and Tim). Then the way a card is made was rebuilt three times. Most on/off switches, budgets and time limits were removed (29–30 Oct). In `main`'s code since 2 Nov, **one model call writes a whole card**.
 - **New: the show builder (3 Nov).** A card made as a playable "show", one section at a time. Plan, then one build, then a free test drive, then fix only what you press. Phases 1 to 3 are on `main`, as **staff-only Lab buttons**. The sender's version (Phase 4) is not authorized yet.
 - **What is live:** uncard.app on Lovable. The last publish named in the repo is commit **`4487dbce`** (1 Nov). The database has **161 migration files** (0000 to 0160, the last added 1 Nov), plus three show files Claude applied on 3 Nov. Card making has one stop button. It read **closed** on 3 Nov, and Claude opens it only around Jordan's tests.
-- **What waits:** Claude applies four staged show files (0142 to 0145). Jordan publishes, runs the paid feasibility test and checks a real iPhone and Android. As recorded on 5 Nov, **`main` is frozen at `6e0997d6`** until Jordan says that test is finished. Phase 3b waits on its branch.
+- **What waits:** Claude applies four staged show files (0142 to 0145). Jordan publishes, runs the paid feasibility test and checks a real iPhone and Android. As recorded on 5 Nov, **`main` is frozen at `6e0997d6`** until Jordan says that test is finished. One exception since: a security update to two code libraries landed on `main` on 7 Nov (`1cb67edb`). Nothing else changed. Phase 3b waits on its branch (a sound fix was added to it on 7 Nov).
 
 ## What changed since 19 Oct
 

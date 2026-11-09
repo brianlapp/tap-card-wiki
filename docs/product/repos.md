@@ -1,7 +1,7 @@
 # Repos: Where to Work
 
 **Status:** Draft
-**Updated:** 2026-11-06
+**Updated:** 2026-11-09
 **Owner:** Brian Lapp
 **Method:** Checked with the GitHub API, signed in as `brianlapp`, on 2026-11-06: each repo's visibility, default branch and collaborator list with roles. Branches, authors and dates come from `git` on each repo's `origin`. Live sites were checked with `curl` (build.uncard.app/agents answered 200 on 2026-11-05). Not checked: pending GitHub invites (the collaborator list doesn't show them) and Lovable's own project settings.
 
@@ -9,7 +9,7 @@
 
 - **Uncard has four repos.** Two hold apps and sync with Lovable. Both are Jordan's and private: the product (uncard.app) and the Roadmap app (build.uncard.app). The other two are Brian's: this public wiki and the private team brain.
 - **Jordan and Brian can both push to both app repos.** Brian has write access (not admin), checked 2026-11-06. Tim isn't on either collaborator list.
-- **Product `main` is frozen at `6e0997d6`** (recorded 5 Nov) until Jordan says his show builder feasibility test is finished. New work goes on a branch.
+- **Product `main` is frozen for new features** (recorded 5 Nov at `6e0997d6`) until Jordan says his show builder feasibility test is finished. The only change since is a security update to two code libraries on 7 Nov (`1cb67edb`). New work goes on a branch.
 - **Pick the repo by the job** (table below). Code goes in the app repos. Facts, decisions and history go in the wiki. Agent handoffs go on the brain's notice board.
 
 ## The four repos
@@ -41,8 +41,8 @@ Branch names say which builder made them. Commit authors don't always: Devin's c
 
 | Branch | Builder | Latest commit | Notes |
 |---|---|---|---|
-| `main` | Lovable's bot, plus Jordan's builders once he merges | 2026-11-03 | The live site's source. Lovable syncs it both ways. Lovable's bot commits here when it applies a database change |
-| `devin/*` (20 branches) | Jordan's Devin | 2026-11-05 | The show builder. The Nov 5 branch (`…-show-phase3b`) isn't on `main` yet |
+| `main` | Lovable's bot, plus Jordan's builders once he merges | 2026-11-07 (security update from a Claude session, via `security/*` branch) | The live site's source. Lovable syncs it both ways. Lovable's bot commits here when it applies a database change |
+| `devin/*` (20 branches) | Jordan's Devin | 2026-11-07 | The show builder. The Phase 3b branch (`…-show-phase3b`, sound fix added 7 Nov) isn't on `main` yet |
 | `sonnet/*` (16), `studio/*` (3) | Jordan's Claude Code cloud sessions (Sonnet 5.5) | 2026-11-03 | Its checkpoint can say work is on `main` before it is. Check with `git merge-base --is-ancestor` |
 | `codex/*` (18) | Jordan's Codex | 2026-10-30 | |
 | `claude/*` (1) | A Claude Code session (Opus 5.5; whose account: unverified) | 2026-11-02 | `claude/no-refusals` |
