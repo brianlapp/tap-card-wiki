@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-11-09
+**Updated:** 2026-11-10
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-11-08). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-11-09). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-11-08: Group DM only, no decisions — Tim confirms he's willing to try pamba.app (social-content outsourcing) for a one-month trial, cancel after; banter with Jordan about a charity-angle competitor, foreversongs.com.
+New 2026-11-09: #uncard-build — UR-24 (Kit 1.1, Spec B) needs a second clear from Brian or Tim; Group DM — Jordan lays out a cost-vs-ROI test for recurring tools, reports Tim is now doing UR-24's second review with two more items (Promotion Manager, TY Growth Engine) also waiting on review, and reminds the team the new MCP connection is for the Roadmap tool only. No decisions.
+
+Earlier, 2026-11-08: Group DM only, no decisions — Tim confirms he's willing to try pamba.app (social-content outsourcing) for a one-month trial, cancel after; banter with Jordan about a charity-angle competitor, foreversongs.com.
 
 Earlier, 2026-11-07: Group DM only, no decisions — Jordan patches Seroval/Undici security bugs and asks the team to check their own code too; reports Lovable credits tight (~37 left) until the next day's top-up and asks the team to hold off that day; drafting a Promotions Manager job posting and working on the TY Growth Engine; shares his new automated spec-reviewer schedule; floats a charity/pay-it-forward uncard campaign idea (mental-health cause, possible Royal Ottawa Hospital tie-in).
 
