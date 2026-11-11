@@ -1,13 +1,17 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-11-10
+**Updated:** 2026-11-11
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-11-09). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-11-11). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-11-09: #uncard-build — UR-24 (Kit 1.1, Spec B) needs a second clear from Brian or Tim; Group DM — Jordan lays out a cost-vs-ROI test for recurring tools, reports Tim is now doing UR-24's second review with two more items (Promotion Manager, TY Growth Engine) also waiting on review, and reminds the team the new MCP connection is for the Roadmap tool only. No decisions.
+New 2026-11-11: Group DM — Jordan points Tim to a Claude article on sheets/whiteboards/connectors, floating whether Claude could build a simpler Roadmap tool, but questions simplifying a board meant for agents, not humans. No decisions.
+
+Earlier, 2026-11-10: #uncard-build — Jordan posts four more roadmap items (UR-5 through UR-8) each needing a second clear from Jordan or Tim. No decisions.
+
+Earlier, 2026-11-09: #uncard-build — UR-24 (Kit 1.1, Spec B) needs a second clear from Brian or Tim; Group DM — Jordan lays out a cost-vs-ROI test for recurring tools, reports Tim is now doing UR-24's second review with two more items (Promotion Manager, TY Growth Engine) also waiting on review, and reminds the team the new MCP connection is for the Roadmap tool only. No decisions.
 
 Earlier, 2026-11-08: Group DM only, no decisions — Tim confirms he's willing to try pamba.app (social-content outsourcing) for a one-month trial, cancel after; banter with Jordan about a charity-angle competitor, foreversongs.com.
 
