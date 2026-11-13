@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-11-11
+**Updated:** 2026-11-13
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-11-11). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-11-12). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-11-11: Group DM — Jordan points Tim to a Claude article on sheets/whiteboards/connectors, floating whether Claude could build a simpler Roadmap tool, but questions simplifying a board meant for agents, not humans. No decisions.
+New 2026-11-12: #uncard-build — Jordan posts UR-30 ("Great cards from little input"), 1 of 2 clears, needs a second clear from Jordan or Brian. No decisions.
+
+Earlier, 2026-11-11: Group DM — Jordan points Tim to a Claude article on sheets/whiteboards/connectors, floating whether Claude could build a simpler Roadmap tool, but questions simplifying a board meant for agents, not humans. No decisions.
 
 Earlier, 2026-11-10: #uncard-build — Jordan posts four more roadmap items (UR-5 through UR-8) each needing a second clear from Jordan or Tim. No decisions.
 
