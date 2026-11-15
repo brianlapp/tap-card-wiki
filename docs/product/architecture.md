@@ -3,14 +3,16 @@
 **Status:** Draft. This is a snapshot, and the product repo is the source of truth.
 **Updated:** 2026-11-09
 **Owner:** Brian Lapp
-**Method:** Read from the product repo [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter) at `origin/main` = **`6e0997d6`** (2026-11-03, the last show builder Phase 3 report), 543 commits after the last snapshot (`84977d9`, 19 Oct). Also read: the unmerged branch `devin/1793889643-show-phase3b` at `d7f78885` (5 Nov). Sources: `docs/show-builder/` (the spec, the Phase 1 to 3 reports, the kit report, `KIT.md`), the Phase 3b report on its branch, `docs/studio/` (to 27 Oct), `docs/big-bold-beautiful/` (to 1 Nov), the READMEs for `db/`, `cron/`, `gifts/`, `photo-convert/` and `tools/ci/`, `src/uncard/generator/routes.ts`, and commit messages. Counts come from `git ls-tree`. Branch state comes from `git merge-base --is-ancestor`. Who built what comes from commit authors and co-author lines. Nothing was checked in a browser or against the live database. "Live" facts are what the builders recorded. The newest is a read-only live database check on **3 Nov** (show builder spec). Anything newer is marked unknown.
+**Method:** 2026-11-15 refresh: read from the product repo [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter) at `origin/main` = **`e4867c71`** (2026-11-11), 31 commits after `1cb67edb` (7 Nov). New since the 6 Nov page: Kit 1.1 (`docs/show-builder/REPORT-kit-1-1.md`), the Promotions Manager (`docs/offers/`: SPEC, HANDBACK, APPLY) and a dev-server security patch. Live facts for the Promotions Manager come from Jordan's hand-off card on the Roadmap (UR-32, 12 Nov), which his assistant checked against the live database. Open pull requests and branch state come from `gh` and `git merge-base --is-ancestor` on 15 Nov. Everything else below is from the 6 Nov read of `6e0997d6` and is marked with its date. Nothing was checked in a browser or against the live database for this refresh.
 
 ## TL;DR
 
 - **Since 19 Oct the work went from "built and switched off" to "trying it for real".** Making opened in a practice window on 25 Oct (by 27 Oct it held Jordan, Brian and Tim). Then the way a card is made was rebuilt three times. Most on/off switches, budgets and time limits were removed (29–30 Oct). In `main`'s code since 2 Nov, **one model call writes a whole card**.
 - **New: the show builder (3 Nov).** A card made as a playable "show", one section at a time. Plan, then one build, then a free test drive, then fix only what you press. Phases 1 to 3 are on `main`, as **staff-only Lab buttons**. The sender's version (Phase 4) is not authorized yet.
 - **What is live:** uncard.app on Lovable. The last publish named in the repo is commit **`4487dbce`** (1 Nov). The database has **161 migration files** (0000 to 0160, the last added 1 Nov), plus three show files Claude applied on 3 Nov. Card making has one stop button. It read **closed** on 3 Nov, and Claude opens it only around Jordan's tests.
-- **What waits:** Claude applies four staged show files (0142 to 0145). Jordan publishes, runs the paid feasibility test and checks a real iPhone and Android. As recorded on 5 Nov, **`main` is frozen at `6e0997d6`** until Jordan says that test is finished. One exception since: a security update to two code libraries landed on `main` on 7 Nov (`1cb67edb`). Nothing else changed. Phase 3b waits on its branch (a sound fix was added to it on 7 Nov).
+- **New: Kit 1.1 (10 Nov, Devin).** Five ready-made toys a show can use: a 15-second pop game with a remembered score, a prize wheel with a prize list, a scratch reveal, a personalised joke award, and an optional "ask" toy whose answer the finale recaps. Plus a quiet opt-in weather layer. Old shows play exactly as before. Staff Lab only, like the rest of the show builder.
+- **New: the Promotions Manager (11 Nov, Jordan's Codex).** One owner-controlled place in Admin that decides what Uncard sells, at what price and on what terms, built for the TY Growth Engine to test offers later. Its four SQL files went live on 11 Nov. The manager is **off** and Growth offers are off; givers see the same prices and words. Only the owner (Jordan's account) can switch it on.
+- **What waits:** Claude applies four staged show files (0142 to 0145). Jordan publishes, runs the paid feasibility test and checks a real iPhone and Android. As recorded on 5 Nov, **`main` is frozen at `6e0997d6`** until Jordan says that test is finished. Jordan then chose not to wait: Kit 1.1 and a dev-server security patch landed on 10 Nov, and the Promotions Manager on 11 Nov, pushed straight to `main` without pull requests (his call, per the hand-off card). Phase 3b still waits on its branch (last commit 7 Nov). Since 14 Nov Brian's Claude has 28 pull requests open for review (see "In progress now").
 
 ## What changed since 19 Oct
 
@@ -24,6 +26,9 @@
 | 1 Nov | The Worker's minute timer was switched off after an unattended build made 13 unreadable calls in a row | Claude (Sonnet 5.5) |
 | 2 Nov | **One call per card.** The old 27-role pipeline is frozen. Code mends small slips instead of paying to ask again. The cron Worker now deploys from `main` | Claude (Sonnet 5.5, Opus 5.5) |
 | 3 Nov | **Show builder** Phases 1 to 3, and the show kit | Devin, Claude (Sonnet 5.5) |
+| 7 Nov | Security update to two code libraries (`1cb67edb`) | Claude |
+| 10 Nov | **Kit 1.1**: five toys, the finale recap, opt-in weather, the Lab's shelf fixture. Old shows unchanged. A dev-server security patch (Vite) | Devin; Claude (Sonnet 5.5, Fable 5.2) |
+| 11 Nov | **Promotions Manager** (six slices, P1 to P6), fast-forwarded onto `main` without pull requests; its SQL applied live the same day | Jordan's Codex (GPT 6.1 Sol), reviewed by Jordan's Claude |
 
 ## The moving parts
 
@@ -84,6 +89,7 @@
 | 1 | Model doors, the cheaper chat, prices, never losing an answer | On `main`. SQL 0137, 0139, 0140 applied by Claude on 3 Nov |
 | 2 | The kit plugged in, Booter hosted, the free test drive, "Save a show to an uncard" (staff Lab) | On `main`. 0142 staged. The kit came from a Claude session (`sonnet/show-kit`, merged 3 Nov) |
 | 3 | The engine: staff Lab buttons for Plan, Build, Continue, Fix, Change, Review and Apply; three test briefs; free line edits and Undo | On `main` (code `dff9921d`). 0143 to 0145 staged |
+| Kit 1.1 | Five toys (pop game, prize wheel, scratch reveal, joke award, ask), finale recap, opt-in weather. The old request contract is kept byte for byte; new fields are optional | On `main` (10 Nov, `5fe1016e` and `dc45cb60`). No SQL. Phone play and acceptance are Jordan's |
 | 3b | Sound on phones, an always-visible close button, shows read-only in the classic studio and the agent door | **Branch only** (5 Nov). 0146 staged on it |
 | 4 | The sender's board and pack `studio-5.1` | **Not authorized.** Needs Jordan's go and his approval of the board reference page |
 | 5 | A one-time model bake-off, then rollout | Not started. The new Make becomes everyone's default only after three different cards pass Jordan's acceptance |
@@ -115,14 +121,23 @@
 - **What sits in `db/pending/`** (12 files, at `6e0997d6`): four data files already applied and kept by design; four show files already live and kept for local replay (**never apply again**); and four to apply (0142 to 0145).
 - **How SQL reaches the live database** (since 3 Nov, `db/README.md`): the SQL and its checks are written locally. **Claude applies each file through Lovable's free database API, as one guarded transaction that commits only if its checks pass.** SQL is never pasted into Lovable chat, and Devin never writes to the live database. Until 1 Nov, Lovable's agent applied each file as a migration, one per message, after a rolled-back rehearsal.
 
+## The Promotions Manager (new, 11 Nov)
+
+- **What it is.** Admin → Offers: the one place that decides what Uncard sells, at what price and on what terms. Every change is a reviewed, versioned decision. Price words on the public pages come from it once it is on. Assistants can read and draft offers through a private connection the owner grants; they never activate anything.
+- **How it fits.** Sixteen new private tables, closed to browser roles. Quotes are fixed when made and re-checked at payment. Orders and payment use a neutral local "payment port" for now: real checkout (UR-15) is not built, and the order tables are not applied live. The TY Growth Engine will test offers through it later without ever setting a price.
+- **State (hand-off card, 12 Nov):** the four SQL files (0146 to 0149) are live; the manager is off; Growth offers are off; nobody has used it. The database holds today's three list prices (5.99, 9.99 and 2.99 CAD) and the locked "Free while we launch" promotion. Only the owner can switch the manager on, activate or schedule an offer, or change a list price; an admin can draft, send for review, end a promotion and turn Growth offers off.
+- **Before it is switched on:** promotion times are shown in UTC and need Toronto time (fix waiting as a pull request); two foreign keys need delete rules (pull request waiting); Tim's experience verdict on the Offers tab (35 screenshots in `docs/offers/design/captures/`).
+- **The TY Growth Engine** (UR-26) is built in its own repo, `JNabsRepo/uncard-growth-engine`, with a draft pull request and nothing deployed. Connecting it to Uncard is UR-17 (Uncard's feed to Growth), UR-19 (offers in the thank-you flow) and UR-29 (Promotions Manager follow-on).
+
 ## Switches
 
-The Big Bold Beautiful build (29–30 Oct) **removed most switches, budgets, call caps and time limits**. Its report says the safety rules stay: sign-in, ownership, suspension, age, the sandbox and content safety. The contributor, memory and agent switches are gone from production code. What is left at `6e0997d6`:
+The Big Bold Beautiful build (29–30 Oct) **removed most switches, budgets, call caps and time limits**. Its report says the safety rules stay: sign-in, ownership, suspension, age, the sandbox and content safety. The contributor, memory and agent switches are gone from production code. What is left at `6e0997d6` (6 Nov read; the offers switches were added on 11 Nov):
 
 | Switch | Kind | What it holds back |
 |---|---|---|
 | `creative_settings.creative_mode` | Database stop button. Claude sets it in a guarded transaction when Jordan says | Every card build, show press and studio chat. **Closed** on 3 Nov |
 | `cards_on_gifts` | Owner-only database switch | Moving card links to uncard.gifts |
+| Offers manager on/off, Growth offers on/off | Owner-only database settings (11 Nov). Both **off** on 12 Nov | Offer-driven prices on the public pages; Growth's offer tests |
 | `LEGAL_APPROVED`, `CONTACT_EMAIL` | Code constants | Final Terms and Privacy; the "Report this uncard" link. `CONTACT_EMAIL` is still `[contact email]` |
 | `APP_CONSENT_LIVE_READY`, `RECIPIENT_MEASUREMENT_READY`, `AD_SOURCE_LIVE_READY` | App settings | Stage 4 consent and measurement |
 | `UNCARD_GALLERY_READY`, `UNCARD_GALLERY_DRAFTS_READY`, Worker `GALLERY_READY`, `SHARE_TILES_READY` | App and Worker settings | The gallery and share tiles |
@@ -163,11 +178,12 @@ This replaces the R1/R2/R3 runbook (`ACTIVATION.md`, last changed 20 Oct). Rules
 
 ## In progress now (branches not on `main`)
 
-Checked on 6 Nov with `git merge-base --is-ancestor <branch> origin/main`. "Ahead" means commits not on `main`. Merged since the last snapshot: `codex/m13`, `codex/big-bold-beautiful`, `studio/*`, `sonnet/runs-to-the-end`, `sonnet/one-call-cards`, `claude/no-refusals`, `sonnet/show-kit`, `devin/show-builder` and `devin/1793740200-show-phase3`.
+Checked on 15 Nov with `git merge-base --is-ancestor <branch> origin/main` and `gh pr list`. The six Promotions Manager branches (`pm/p1-catalog` to `pm/p6-proof`) are merged and can be deleted. "Ahead" means commits not on `main`. Merged since the last snapshot: `codex/m13`, `codex/big-bold-beautiful`, `studio/*`, `sonnet/runs-to-the-end`, `sonnet/one-call-cards`, `claude/no-refusals`, `sonnet/show-kit`, `devin/show-builder` and `devin/1793740200-show-phase3`.
 
 | Branch | Last commit | Ahead | Merged? | What it is |
 |---|---|---|---|---|
-| `devin/1793889643-show-phase3b` | 5 Nov | 4 | **No** | Show builder Phase 3b. Waits for Jordan to finish the feasibility test |
+| `devin/1793889643-show-phase3b` | 7 Nov | 4+ | **No** | Show builder Phase 3b. Waits for Jordan to finish the feasibility test. Its live `0146_show_account_cover.sql` shares the number 0146 with the offers catalog file |
+| 28 pull requests, #5 to #32 | 14–15 Nov | — | **No** (open, waiting for review) | Brian's Claude (the hourly wake job). Four groups: "Great cards from little input" parts 1 to 6c (#7 to #16); the database test suites passing on today's schema (#20, #21, #25 to #28, #32, stacked: merge in number order); the Promotions Manager fixes (#5 Toronto time, #6 delete rules, #19, #22); small UX-review fixes and a few docs (#17, #18, #23, #24, #29 to #31). Several add SQL files to `db/pending/` that Jordan's agent applies through Lovable |
 | `codex/quality-engine` | 28 Oct | 16 | **No** | A "Quality Engine": a judge for finished cards, a staff dashboard, references. Whether it will be merged: unknown |
 | `lovable-sync` | 31 Oct | 3 | **No** | Lovable's commits applying 0126 parts 1–2; `main` records 0126 another way |
 | `codex/*` security, Windows harness and codec (6 branches) | 24 Oct | 1–4 each | **No** | Side branches. `main` took the reviewed security and photo work on 24 Oct |
@@ -185,9 +201,11 @@ From commit authors, co-author lines and branch names (19 Oct to 5 Nov). All of 
 | `sonnet/*`, `studio/*` | **Jordan's Claude Code cloud sessions** (Sonnet 5.5) | Author "Claude", a "Claude Sonnet 5.5" co-author line and a Claude Code session link (174 commits on `main`). Jordan, 27 Oct: "I build Uncard in Claude." |
 | `claude/*` | **Claude Code** (Opus 5.5) | `claude/no-refusals` (2 Nov). Sessions on Fable 5.1 also committed the 30–31 Oct SQL records straight to `main` |
 | `codex/*` | **Jordan's Codex** | Author "JordanLMC" or "Jordan Nabigon", with no tool line. The M13 and Big Bold Beautiful reports name Codex |
+| `pm/*` | **Jordan's Codex (GPT 6.1 Sol)** | The Promotions Manager slices, author "Jordan Nabigon" with no tool line; the hand-off card names the builder |
+| PR branches #5 to #32 (no prefix) | **Brian's Claude Code** (Opus 5.5, hourly wake job) | Author "Claude" with a "Claude Opus 5.5" co-author line; every one is a pull request, never a push to `main` |
 | `lovable-sync`, and direct commits | **Lovable's agent** | Author `gpt-engineer-app[bot]` (217 commits on `main`: applied SQL and editor changes) |
 
-**How it lands:** Devin fast-forwards `main` when a phase is green. Codex's M13 came in by pull request #3. Claude's branches are merged in. Lovable writes straight to `main`. As of 5 Nov, `main` is frozen until Jordan says the feasibility test is finished.
+**How it lands:** Devin fast-forwards `main` when a phase is green. The Promotions Manager was fast-forwarded by Jordan's assistant on 11 Nov. Brian's Claude opens pull requests and never merges them. Codex's M13 came in by pull request #3. Claude's branches are merged in. Lovable writes straight to `main`. The 5 Nov freeze ended in practice on 10 Nov (Jordan chose not to wait).
 
 ## Known open items
 
@@ -202,11 +220,12 @@ From commit authors, co-author lines and branch names (19 Oct to 5 Nov). All of 
 
 - Which commit is published now? The last one named in the repo is `4487dbce` (1 Nov).
 - Were 0142 to 0145 applied, and is the stop button open or closed today?
-- Does `uncard-gifts` deploy from `main` (spec, 3 Nov) or from `workers-live` (its README, 14 Oct; the 2 Nov cron commit says gifts and photo-convert "still document workers-live")? Does it serve cards yet, and is `cards_on_gifts` on?
+- Workers deploy branch: Brian answered on 10 Nov that all three Workers build from `workers-live`, moved fast-forward only after a publish (pull request #29 fixes the docs). Switching `uncard-cron` itself is a step in Jordan's Cloudflare account; not confirmed done. Does `uncard-gifts` serve cards yet, and is `cards_on_gifts` on?
 - Does the `uncard-lake` bucket exist, and has a nightly run been recorded?
 - Which app settings in the Switches table are set in Lovable today?
 - Has ChatGPT or Claude connected through the agent door?
 - Will `codex/quality-engine` be merged, parked or dropped?
+- When is the Promotions Manager switched on, and who reviews the 28 open pull requests?
 - Which of the Stage 4 to 10 SQL files that the 21 Oct page listed as waiting are still unapplied? Many were applied between 27 and 31 Oct; this page did not recount them.
 
 ## Sources
