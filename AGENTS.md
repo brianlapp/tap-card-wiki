@@ -10,7 +10,7 @@ The repo, file names and older docs still say Tapcard. Same product.
 
 **Team:** Jordan, Brian and Tim are equal partners. Jordan holds the app's single *owner* login, so switches that need that login wait on him; decisions don't. Brian leads engineering and infrastructure.
 
-**Current milestone (2026-11-09):** the show builder. Phases 1 to 3 are on the product repo's `main` as staff-only Lab tools; `main` is frozen for new features (at `1cb67edb` since a 7 Nov security update) until Jordan finishes the paid feasibility test and phone checks (`docs/product/architecture.md`). *Superseded 2026-11-06: "turning Phase 3 on through releases R1 to R3". Superseded 2026-10-21: "one synthetic test card working end to end".*
+**Current milestone (2026-11-15):** the show builder and better cards. Phases 1 to 3 and Kit 1.1 are on the product repo's `main` as staff-only Lab tools; the Promotions Manager landed on 11 Nov (live, switched off). `main` = `e4867c71`; 28 pull requests from Brian's Claude wait for review, led by "Great cards from little input" (`docs/product/architecture.md`). *Superseded 2026-11-09: "`main` is frozen at `1cb67edb` until the feasibility test". Superseded 2026-11-06: "turning Phase 3 on through releases R1 to R3". Superseded 2026-10-21: "one synthetic test card working end to end".*
 
 ## Agent rules: read these first
 

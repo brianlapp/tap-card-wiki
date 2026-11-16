@@ -1,9 +1,9 @@
 # The Live Product (MVP)
 
 **Status:** Draft — snapshot of a moving target
-**Updated:** 2026-11-09
+**Updated:** 2026-11-15
 **Owner:** Brian Lapp
-**Method:** 2026-11-06 refresh: TL;DR, "Changed since 2026-10-21" and the dated notes below read from `origin/main` at `6e0997d6` (2026-11-03) and the unmerged branch `devin/1793889643-show-phase3b` (5 Nov): the show builder reports, the studio and Big Bold Beautiful reports, the `db/` and `cron/` READMEs and commit messages. The how, with sources, is in `product/architecture.md`. 2026-10-21 refresh: TL;DR, "Changed since 2026-10-02" and the superseded notes read from `origin/main` at `84977d9` (2026-10-19): the Phase 3 completion folder (`CHECKPOINT.md`, `LIVE-STATE.md`, `ACTIVATION.md`, `FLAGS.md`) and the completion report. The how is in `product/architecture.md`. The rest of the page is the original snapshot, read at commit `ffd1adc` (2026-10-02): the five phase reports in `docs/review-2026-09-30/build-reports/`, `db/README.md`, `roadmap.md`, Oy's round-2 prompt and `src/uncard/catalogue/support.ts`. Not checked in a browser here — what's "live" is what the build agent's reports say it published. **Build status changes daily — for anything current, read the product repo, not this page.**
+**Method:** 2026-11-15 refresh: TL;DR and "Changed since 2026-11-06" read from `origin/main` at `e4867c71` (11 Nov) and Jordan's hand-off card on the Roadmap (UR-32, 12 Nov). 2026-11-06 refresh: TL;DR, "Changed since 2026-10-21" and the dated notes below read from `origin/main` at `6e0997d6` (2026-11-03) and the unmerged branch `devin/1793889643-show-phase3b` (5 Nov): the show builder reports, the studio and Big Bold Beautiful reports, the `db/` and `cron/` READMEs and commit messages. The how, with sources, is in `product/architecture.md`. 2026-10-21 refresh: TL;DR, "Changed since 2026-10-02" and the superseded notes read from `origin/main` at `84977d9` (2026-10-19): the Phase 3 completion folder (`CHECKPOINT.md`, `LIVE-STATE.md`, `ACTIVATION.md`, `FLAGS.md`) and the completion report. The how is in `product/architecture.md`. The rest of the page is the original snapshot, read at commit `ffd1adc` (2026-10-02): the five phase reports in `docs/review-2026-09-30/build-reports/`, `db/README.md`, `roadmap.md`, Oy's round-2 prompt and `src/uncard/catalogue/support.ts`. Not checked in a browser here — what's "live" is what the build agent's reports say it published. **Build status changes daily — for anything current, read the product repo, not this page.**
 
 ## TL;DR
 
@@ -12,10 +12,20 @@ UNCARD is live at **uncard.app**. The last publish named in the product repo is 
 - Making opened in a practice window on 25 Oct (by 27 Oct it held Jordan, Brian and Tim). Real model calls have been made since 26 Oct.
 - Most switches, budgets and time limits were removed (29–30 Oct). Card making now has one stop button, which read **closed** on 3 Nov. Claude opens it only around Jordan's tests.
 - In `main`'s code since 2 Nov, **one model call writes a whole card**. Giving is free while we launch; there are no payments.
-- The newest work is the **show builder** (3 Nov): a card the recipient plays one section at a time. It runs only from staff Lab buttons. The sender's version is not authorized yet.
+- **Promotions Manager** (11 Nov): Admin → Offers, the one place that decides prices and offers. Its SQL is live, but it is **off**: givers see the same prices and words. Only Jordan's owner account can switch it on.
+- **Kit 1.1** (10 Nov): five ready-made toys for shows (pop game, prize wheel, scratch reveal, joke award, an "ask" the finale remembers). Staff Lab only.
+- The **show builder** (3 Nov): a card the recipient plays one section at a time. It runs only from staff Lab buttons. The sender's version is not authorized yet.
 - The database has **161 migration files** (0000 to 0160, last added 1 Nov), plus show files applied on 3 Nov. Four more show files wait for Claude to apply.
 
-As recorded on 5 Nov, `main` is frozen at `6e0997d6` while Jordan runs the paid feasibility test. One exception since: a security update to two code libraries landed on `main` on 7 Nov (`1cb67edb`). Nothing else changed. Lovable credits were topped up on 8 Nov, so the test can run. How it all fits together: `product/architecture.md`.
+The 5 Nov freeze at `6e0997d6` ended in practice: Kit 1.1 and a security patch landed on 10 Nov and the Promotions Manager on 11 Nov (`main` = `e4867c71`). Brian's Claude has 28 pull requests waiting for review (better cards from little input, database test suites, Promotions Manager fixes, small UX fixes). Lovable credits were topped up on 8 Nov, so the test can run. How it all fits together: `product/architecture.md`.
+
+## Changed since 2026-11-06
+
+- **7 Nov**: a security update to two code libraries (`1cb67edb`).
+- **10 Nov, Kit 1.1** (Devin): five toys, a finale recap and opt-in weather for shows; old shows play exactly as before. A dev-server security patch (Claude).
+- **11 Nov, Promotions Manager** (Jordan's Codex): built in six slices, pushed to `main` without pull requests; four SQL files applied live; manager and Growth offers off.
+- **12–13 Nov**: Jordan handed the Promotions Manager and the TY Growth Engine to Brian (Roadmap UR-32). The Growth Engine lives in its own repo, not deployed.
+- **14–15 Nov**: Brian's Claude opened pull requests #5 to #32; none merged yet.
 
 ## Changed since 2026-10-21
 
