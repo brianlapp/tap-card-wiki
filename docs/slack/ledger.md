@@ -1,13 +1,17 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-11-13
+**Updated:** 2026-11-16
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-11-12). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-11-15). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-11-12: #uncard-build — Jordan posts UR-30 ("Great cards from little input"), 1 of 2 clears, needs a second clear from Jordan or Brian. No decisions.
+New 2026-11-15: Group DM — Jordan grants Brian's Uncard-roadmap agent as much Cloudflare access as possible short of full workspace admin (more available if needed); Lovable editor access for agents waits on a business-plan upgrade (2x price), so for now agents get GitHub + Cloudflare only. Decided.
+
+Earlier, 2026-11-13: Group DM — Jordan hands the TY Growth Engine and Promotions Manager to Brian to take over, connect and polish; next step for all three is testing and notes toward "ready to live." No decision — action item for Brian.
+
+Earlier, 2026-11-12: #uncard-build — Jordan posts UR-30 ("Great cards from little input"), 1 of 2 clears, needs a second clear from Jordan or Brian. No decisions.
 
 Earlier, 2026-11-11: Group DM — Jordan points Tim to a Claude article on sheets/whiteboards/connectors, floating whether Claude could build a simpler Roadmap tool, but questions simplifying a board meant for agents, not humans. No decisions.
 
@@ -68,6 +72,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 | 2026-10-05 | **Suno is out** (no public API; terms ban automation and redistribution). Udio out too (downloads disabled) | Tim, agreed by Jordan | `2026-10.md` |
 | 2026-10-06 | Confirm commercial rights in writing before building on any music API | Tim | `2026-10.md` |
 | 2026-10-07 | **Team brain** (decision `0007`) **accepted** by all three partners at the 2026-10-07 partner meeting: a private Supabase project plus a bulletin board every partner's agent connects to, holding the wiki, shared files, Slack history and decisions. Tim first agreed in Slack 2026-10-06, as a trial with a check-in in ~1 month | All three (Brian proposed) | `2026-10.md` |
+| 2026-11-15 | Brian's Uncard-roadmap agent gets GitHub + as much Cloudflare access as possible short of full workspace admin (more available on request); Lovable editor access for agents waits on a business-plan upgrade (2x price) | Jordan | `2026-11.md` |
 
 ## Open questions
 
@@ -97,6 +102,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 | Since | Item | Owner | Log |
 |---|---|---|---|
 | 2026-11-02 | Hold off adding anything to the new roadmap tool (build.uncard.app) until Jordan organizes it; keep agent use human-directed only for now | All three | `2026-11.md` |
+| 2026-11-13 | Take over connecting and polishing the TY Growth Engine and Promotions Manager integrations | Brian | `2026-11.md` |
 | ~~2026-11-07~~ | ~~Patch the Seroval and Undici security vulnerabilities; team to check their own code for the same issues~~ — done 2026-11-07 (Jordan) | Jordan | `2026-11.md` |
 | ~~2026-10-20~~ | ~~File the updated combined SEO/AEO plan (sent by Oy, Word doc) in the team brain as current; mark the 2026-10-02 SEO plan and `strategy/domain-tracking-seo.md` superseded with links to it; report back the canonical location~~ **Done 2026-10-21:** filed in the brain as current, both old plans marked superseded, and the location reported to Oy on the agent board (notice board post 34, read by Oy 2026-10-28) | Brian | `2026-10.md` |
 | ~~2026-10-05~~ | ~~One-day music spike: the same 5 prompts through Lyria, ElevenLabs, ACE-Step and Mureka.~~ Day 1 done 2026-10-06: Lyria 3.5 ran (94–97% of our words sung, $0.08 a song, but no line timing, no length control, filter blocked two kids' songs until reworded). Brian posted a cost breakdown and song samples 2026-10-06. **Done 2026-10-14:** Mureka, ACE-Step and ElevenLabs accounts set up, keys tested, cost-vs-scale report posted to #all-tapcard, keys passed to Tim for human testing | Brian | `2026-10.md` |
