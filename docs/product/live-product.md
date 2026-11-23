@@ -1,23 +1,37 @@
 # The Live Product (MVP)
 
 **Status:** Draft — snapshot of a moving target
-**Updated:** 2026-11-15
+**Updated:** 2026-11-23
 **Owner:** Brian Lapp
-**Method:** 2026-11-15 refresh: TL;DR and "Changed since 2026-11-06" read from `origin/main` at `e4867c71` (11 Nov) and Jordan's hand-off card on the Roadmap (UR-32, 12 Nov). 2026-11-06 refresh: TL;DR, "Changed since 2026-10-21" and the dated notes below read from `origin/main` at `6e0997d6` (2026-11-03) and the unmerged branch `devin/1793889643-show-phase3b` (5 Nov): the show builder reports, the studio and Big Bold Beautiful reports, the `db/` and `cron/` READMEs and commit messages. The how, with sources, is in `product/architecture.md`. 2026-10-21 refresh: TL;DR, "Changed since 2026-10-02" and the superseded notes read from `origin/main` at `84977d9` (2026-10-19): the Phase 3 completion folder (`CHECKPOINT.md`, `LIVE-STATE.md`, `ACTIVATION.md`, `FLAGS.md`) and the completion report. The how is in `product/architecture.md`. The rest of the page is the original snapshot, read at commit `ffd1adc` (2026-10-02): the five phase reports in `docs/review-2026-09-30/build-reports/`, `db/README.md`, `roadmap.md`, Oy's round-2 prompt and `src/uncard/catalogue/support.ts`. Not checked in a browser here — what's "live" is what the build agent's reports say it published. **Build status changes daily — for anything current, read the product repo, not this page.**
+**Method:** 2026-11-23 refresh: TL;DR and "Changed since 2026-11-15" read at `origin/main` = **`327d4a47`** (22 Nov), 577 commits after `e4867c71`: `docs/README.md`, `db/applied.txt`, the Studio fix, new look, Build 6 and Build 7 specs and hand-backs, the Worker READMEs, merge messages and `gh pr list` (23 Nov). Live facts marked "the Roadmap, 22 Nov" come from the team's Roadmap. Not checked in a browser or against the live database. The how, with sources, is in `product/architecture.md`. 2026-11-15 refresh: read at `e4867c71` (11 Nov) and Jordan's hand-off card (UR-32, 12 Nov). 2026-11-06 refresh: read at `6e0997d6` (3 Nov) and the Phase 3b branch. 2026-10-21 refresh: read at `84977d9` (19 Oct), the Phase 3 completion folder and report. The rest of the page is the original snapshot, read at `ffd1adc` (2 Oct): the five phase reports in `docs/review-2026-09-30/build-reports/`, `db/README.md`, `roadmap.md`, Oy's round-2 prompt and `src/uncard/catalogue/support.ts`. **Build status changes daily — for anything current, read the product repo (start with its `docs/README.md`), not this page.**
 
 ## TL;DR
 
-UNCARD is live at **uncard.app**. The last publish named in the product repo is commit **`4487dbce`** (1 Nov); which commit is published now is unknown. Since 19 Oct the team moved from "built and switched off" to trying it for real:
+UNCARD is live at **uncard.app**, for the team only: nobody else can sign up (the Roadmap, 22 Nov). **Build 7 is published**, and Jordan publishes `327d4a47` (22 Nov) next. What is new on `main` since 11 Nov:
 
-- Making opened in a practice window on 25 Oct (by 27 Oct it held Jordan, Brian and Tim). Real model calls have been made since 26 Oct.
-- Most switches, budgets and time limits were removed (29–30 Oct). Card making now has one stop button, which read **closed** on 3 Nov. Claude opens it only around Jordan's tests.
-- In `main`'s code since 2 Nov, **one model call writes a whole card**. Giving is free while we launch; there are no payments.
-- **Promotions Manager** (11 Nov): Admin → Offers, the one place that decides prices and offers. Its SQL is live, but it is **off**: givers see the same prices and words. Only Jordan's owner account can switch it on.
-- **Kit 1.1** (10 Nov): five ready-made toys for shows (pop game, prize wheel, scratch reveal, joke award, an "ask" the finale remembers). Staff Lab only.
-- The **show builder** (3 Nov): a card the recipient plays one section at a time. It runs only from staff Lab buttons. The sender's version is not authorized yet.
-- The database has **161 migration files** (0000 to 0160, last added 1 Nov), plus show files applied on 3 Nov. Four more show files wait for Claude to apply.
+- **Better cards from little input** (Brian's pull requests, on `main` since 19 Nov): start with Quick & Easy or The Full Experience; a progress bar that fills at six details; a card as long as what you gave (3 to 8 moments); Colour and Energy sliders that need no AI call.
+- **The Studio fix** (18 Nov): each uncard has its own lane, the same problem twice ends with a receipt, "Make it now" and "Update the uncard".
+- **The new look** on every screen a visitor or giver sees (19–20 Nov). The recipient's uncard keeps its own world.
+- **Build 6** (21 Nov): one age rule. Anyone 13 or older can do everything an adult can; under 13 is the only refusal. A child's uncard stays a child's. The first reply arrives by itself, nothing typed at the start is lost, and a line nobody can trace to the giver is left out.
+- **Build 7** (22 Nov): a finished card shows by itself, a stopped build says so, a second message waits its turn, Move up and Move down work, and Home, About and Pricing say a free-launch link stays open until you close it.
+- **Giving is free while we launch;** there are no payments. The Promotions Manager is built; it was off on 12 Nov, and its state today is unknown.
+- **The database:** every SQL file up to **0175** is live (`db/applied.txt`).
+- **The Workers** (the Roadmap, 22 Nov): the nightly job has run 22 times, and the last 7 nights ended "partial" (cause not read yet). The gifts Worker runs 2 Oct code, so cards open on uncard.app. There is no photo converter Worker.
+- **Use:** no uncard has been made on the live site since 18 Nov (the Roadmap, 22 Nov). Four accounts exist, all on the team (Build 7 spec, 21 Nov).
 
-The 5 Nov freeze at `6e0997d6` ended in practice: Kit 1.1 and a security patch landed on 10 Nov and the Promotions Manager on 11 Nov (`main` = `e4867c71`). Brian's Claude has 28 pull requests waiting for review (better cards from little input, database test suites, Promotions Manager fixes, small UX fixes). Lovable credits were topped up on 8 Nov, so the test can run. How it all fits together: `product/architecture.md`.
+Open: 17 pull requests from Brian's side wait for review (mostly checks brought up to today's screens). Jordan's phone checks and Tim's word calls are listed in the Build 7 hand-back. How it all fits together: `product/architecture.md`.
+
+## Changed since 2026-11-15
+
+- **14–17 Nov**: Brian's Claude opened pull requests #5 to #39: better cards (parts 1 to 6c), the database checks passing on today's schema, Promotions Manager fixes, UX-review fixes, a guest can take their words back, a card made before "under 13" is not given as an adult's, and show builder Phase 3b on today's code.
+- **17–18 Nov, the Studio fix** (UR-33, Jordan's builder): ten slices (#45 to #54), then Brian's rulings and review fixes (#55). Writer packs `studio-5.1` and `studio-5.2` registered; the app uses one only after Jordan approves it, and which is on today is unknown.
+- **18–19 Nov, the integration base** (#57): all of the above in one branch, which became `main` on 19 Nov.
+- **19–20 Nov, the new look** (UR-34): every screen restyled, with every function kept. SQL 0150 to 0169 applied live on 20 Nov (UR-35). Jordan published `503dec06` on 20 Nov.
+- **20 Nov**: a whole-system review (UR-37, Jordan's Codex). Build 6 was written from it.
+- **21 Nov, Build 6** (UR-38): the age rule, a child's uncard, nothing lost, nothing invented, guests come back, the pricing page tells the truth. SQL 0170 to 0174 live the same day.
+- **21–22 Nov, Build 7** (UR-39): the finish. SQL 0175 live on 22 Nov. Published (the Roadmap, 22 Nov).
+- **22 Nov**: on Jordan's instruction, #68 to #73 merged: the Promotions Manager's review faults, a failed night now fails visibly, deletion replay gets "Go on", the recipient's first screen loads lighter, and three check fixes. They wait for the publish of `327d4a47`.
+- **22–23 Nov**: Brian's Claude opened #74 to #89; none merged yet.
 
 ## Changed since 2026-11-06
 
@@ -25,17 +39,17 @@ The 5 Nov freeze at `6e0997d6` ended in practice: Kit 1.1 and a security patch l
 - **10 Nov, Kit 1.1** (Devin): five toys, a finale recap and opt-in weather for shows; old shows play exactly as before. A dev-server security patch (Claude).
 - **11 Nov, Promotions Manager** (Jordan's Codex): built in six slices, pushed to `main` without pull requests; four SQL files applied live; manager and Growth offers off.
 - **12–13 Nov**: Jordan handed the Promotions Manager and the TY Growth Engine to Brian (Roadmap UR-32). The Growth Engine lives in its own repo, not deployed.
-- **14–15 Nov**: Brian's Claude opened pull requests #5 to #32; none merged yet.
+- **14–15 Nov**: Brian's Claude opened pull requests #5 to #32; none merged yet. *(Superseded 2026-11-23: merged on 19 Nov through the integration base, #57.)*
 
 ## Changed since 2026-10-21
 
-The 21 Oct refresh described Phase 3 as built and switched off. Since then (details and sources in `product/architecture.md`, "What changed since 19 Oct"):
+The 21 Oct refresh described Phase 3 as built and switched off. Since then (details and sources in `product/architecture.md`, "What changed from 19 Oct to 11 Nov"):
 
 - **20–24 Oct, M13 merged** (Codex): honest public pages, sample uncards, an invite-only test window.
 - **25–27 Oct, studio practice** (Claude): a two-pane studio, photos, the age line at 13. Practice windows opened; the one from 27 Oct held Jordan, Brian and Tim. The agent door's database part went live on 27 Oct.
 - **28–30 Oct, Delight and Big Bold Beautiful**: new kinds of moment, 20 themes, the shared Uncard Viewer, free-launch giving. Most switches and limits were removed, and the practice-window tables were dropped.
 - **31 Oct–2 Nov**: the cron Worker took over each model call. Its minute timer was switched off on 1 Nov after an unattended build kept making calls. Then one call per card.
-- **3 Nov, show builder Phases 1–3** (Devin and Claude). Phase 3b is on a branch (5 Nov).
+- **3 Nov, show builder Phases 1–3** (Devin and Claude). Phase 3b is on a branch (5 Nov). *(On `main` since 19 Nov, #34.)*
 
 ## Changed since 2026-10-02
 
@@ -77,23 +91,25 @@ That snapshot (commit `5649437`) said the studio and giving were labelled sample
 | Code | [`JNabsRepo/uncard-starter`](https://github.com/JNabsRepo/uncard-starter), branch `main` |
 | Editor | Lovable project `3a7b58dd-a027-4ee9-9df4-96c469e3f8ac` — commits sync both ways |
 | Marketing + account site | **uncard.app** |
-| Gift links | *Superseded 2026-10-07 (`decisions/0006`): uncard.gifts is the product repo's own Cloudflare Worker `uncard-gifts` (`gifts/`), not a second Lovable project. Links stay on `uncard.app/c/<id>` until it is live and the owner switch `cards_on_gifts` is on; see `product/architecture.md`.* Original 2 Oct text: served from uncard.app at `/c/:id` today. Moving to **uncard.gifts** on a second Lovable project (W-48): D16 settled by Jordan's plan (`strategy/domain-tracking-seo.md`), confirmed 2026-10-06; `decisions/0006` (a Cloudflare Worker) is superseded. Earlier note: a Cloudflare Worker, `uncard-gifts`, created 2026-10-02, no route yet) |
+| Gift links | *Superseded 2026-10-07 (`decisions/0006`): uncard.gifts is the product repo's own Cloudflare Worker `uncard-gifts` (`gifts/`), not a second Lovable project. Links stay on `uncard.app/c/<id>` until it is live and the owner switch `cards_on_gifts` is on; see `product/architecture.md`. 2026-11-23: cards still open on uncard.app; the gifts Worker runs 2 Oct code (the Roadmap, 22 Nov).* Original 2 Oct text: served from uncard.app at `/c/:id` today. Moving to **uncard.gifts** on a second Lovable project (W-48): D16 settled by Jordan's plan (`strategy/domain-tracking-seo.md`), confirmed 2026-10-06; `decisions/0006` (a Cloudflare Worker) is superseded. Earlier note: a Cloudflare Worker, `uncard-gifts`, created 2026-10-02, no route yet) |
 | DNS | Both domains on **Cloudflare** (Jordan's account). uncard.app and www point at Lovable's hosting (DNS only, not proxied). **invest.uncard.app** is a proxied placeholder record, so something on Cloudflare serves it (a Worker or Pages site, unverified). uncard.gifts has one proxied placeholder record and the route `uncard.gifts/*` → Worker `uncard-gifts`, which answers every address with a 404 "This uncard isn't here." (slice 1 of `decisions/0006`, 2026-10-02). No Worker routes on uncard.app |
-| Build docs (source of truth for status) | Since 21 Oct, one folder per build in the product repo: `docs/show-builder/` (newest), `docs/big-bold-beautiful/`, `docs/studio/`, `docs/viewer/`, `docs/delight/`. Phase 3: `docs/phase-3/` (its `completion/CHECKPOINT.md` was last changed 24 Oct). Phases 0–5: `docs/review-2026-09-30/` |
+| Build docs (source of truth for status) | Start with the product repo's `docs/README.md` (what is current and what is live). Since 21 Oct, one folder per build: `docs/build-7/` and `docs/build-6/` (newest), `docs/look/`, `docs/studio-fix/`, `docs/offers/`, `docs/show-builder/`, `docs/big-bold-beautiful/`, `docs/studio/`, `docs/viewer/`, `docs/delight/`. Phase 3: `docs/phase-3/` (its `completion/CHECKPOINT.md` was last changed 24 Oct). Phases 0–5: `docs/review-2026-09-30/` |
 
 ## Stack (verified)
 
 - **TanStack Start** (React, Vite, TypeScript), file-based routes in `src/routes/`
 - **Tailwind + shadcn/Radix** UI
 - **Supabase**: auth, Postgres with row-level security everywhere; **Drizzle** migrations, each with SQL tests
-- **AI**: Lovable AI gateway. Default model `openai/gpt-6-astra`. Never called by the build yet — every AI answer in the build's checks was a stand-in. *(Superseded 2026-11-06: real calls since 26 Oct. A route table now picks the model per job: Gemini 3.8 Flash for studio chat, Claude Opus 5.5 for show plans and builds, `openai/gpt-6-astra` for the one-call card. The build's own checks still use a stand-in gateway.)*
+- **AI**: Lovable AI gateway. Default model `openai/gpt-6-astra`. Never called by the build yet — every AI answer in the build's checks was a stand-in. *(Superseded 2026-11-06: real calls since 26 Oct. A route table now picks the model per job: Gemini 3.8 Flash for studio chat, Claude Opus 5.5 for show plans and builds, `openai/gpt-6-astra` for the one-call card. The build's own checks still use a stand-in gateway. 2026-11-23: the route table is unchanged at `327d4a47`.)*
 - **Bun** lockfile; `npm run dev` / `build` / `lint` / `format`
 
 ## What works today
 
-*Partly superseded 2026-10-21. `/worlds` and `/scenes` now redirect to the home page, and worlds and scenes are internal knowledge, not a menu. `/make` is always the conversation studio, closed, and `?studio=1` is ignored. Card-making caps are now 1,000 calls a day, 30 a job and 200 a person a day (still off). Read the rest as the 2 Oct picture.*
+*Partly superseded 2026-10-21. `/worlds` and `/scenes` now redirect to the home page, and worlds and scenes are internal knowledge, not a menu. `/make` is always the conversation studio, closed, and `?studio=1` is ignored. Card-making caps were raised, per day, per job and per person (still off). Read the rest as the 2 Oct picture.*
 
 *Superseded again 2026-11-06: the caps and most switches were removed on 29–30 Oct. Card making has one stop button (closed on 3 Nov). Giving is free while we launch. The photo store exists (25 Oct). See `product/architecture.md`.*
+
+*Superseded again 2026-11-23: sign-in is for anyone 13 or older, with one age rule (Build 6); under 13 is refused. The site is team-only (the Roadmap, 22 Nov). Every screen has the new look, and the samples play from a ticket on Home and Examples. See the TL;DR above.*
 
 | Area | State |
 |---|---|
@@ -105,7 +121,7 @@ That snapshot (commit `5649437`) said the studio and giving were labelled sample
 | Giving | **Built and published**, but nothing can be given until the studio opens. Unknown, closed or withdrawn links all show the same "This uncard isn't here." page |
 | Card lab | `/admin/lab` — make a test card and watch every model call, its tokens and cost. Unused: card-making is off |
 | Admin | Tabs: People and cards, Testers, Metrics, Gifts. Panels for the card-making switch and the studio (owner only) |
-| Card-making | **Off.** Limits unchanged: 60 calls a day, 30 per card |
+| Card-making | **Off.** Daily and per-card call limits unchanged |
 | Payments | **Off.** None built |
 | Celebrations (Phase 6) | **Not built.** The build agent ran out of room in its session; it's the next job |
 
@@ -126,7 +142,9 @@ Who may use it while it's shut to the public (D24 default): a live Golden Pass h
 
 ## What giving will feel like (built, waiting on the studio)
 
-- An approved uncard gets a **private link**, with an optional **4–8 digit PIN**. Five wrong PIN tries lock it for 15 minutes.
+*Superseded 2026-11-23 for hosting: while we launch, a link stays open until the giver closes it (0118). Giving is built and free; see `product/architecture.md`.*
+
+- An approved uncard gets a **private link**, with an optional **4–8 digit PIN**. Repeated wrong PIN tries lock it for a while.
 - The giver can copy the link or close it again. **Staff** can withdraw a gift (with a reason), restore it, or look at it read-only — every look is audited.
 - **Hosting:** three calendar months from first publish; Golden Pass gifts stay up past that.
 - **Still "coming soon":** share tiles, captions and keepsake downloads. The rule that keeps the private letter off them is built and tested.
@@ -137,7 +155,7 @@ Who may use it while it's shut to the public (D24 default): a live Golden Pass h
 - **Only the owner** makes admins, switches card-making or the studio on, or changes their limits. Brian and Tim are promoted by the owner login after they sign in (D4). **Contradiction:** in Slack on 30 Sep Jordan told Brian "You are now admin" (Oy granted it), but every phase report through 2 Oct still lists D4 as open. Unverified which is current.
 - **Golden Pass:** granted by email, even before sign-up, singly or as a list of up to 50. Covers everything, including hosting past three months (D8).
 - **Suspend and restore** exist. A suspended person sees "contact [contact email]" — the address is still a placeholder (D20), so nobody should be suspended yet.
-- **Cloudflare:** since 2026-10-02 Brian is **Domain Administrator** on uncard.app and uncard.gifts (plus Workers Routes), not a member of Jordan's account (Jordan confirmed full admin on both domains in Slack, 2 Oct). So he can change DNS, settings, SSL, cache and Worker *routes*. Deploying Worker *code* is account-level: hand Jordan a ready-to-run prompt for his Codex, or ask him to do it (his preference, 2 Oct). Brian's agents use a zone-only API token (1Password: "Cloudflare API Token (uncard)"). Changing DNS touches the live site, so tell the team before you do.
+- **Cloudflare:** since 2026-10-02 Brian is **Domain Administrator** on uncard.app and uncard.gifts (plus Workers Routes), not a member of Jordan's account (Jordan confirmed full admin on both domains in Slack, 2 Oct). So he can change DNS, settings, SSL, cache and Worker *routes*. Deploying Worker *code* is account-level: hand Jordan a ready-to-run prompt for his Codex, or ask him to do it (his preference, 2 Oct). On 15 Nov Jordan widened Brian's Cloudflare access to just short of workspace admin (Slack, 15 Nov). Changing DNS touches the live site, so tell the team before you do.
 - **Everything is audited:** every access, settings or gift-withdrawal change writes an `admin_audit` row in the same transaction.
 - **The browser never writes** account, job, allowance or card tables. Roles are checked server-side only.
 
@@ -153,7 +171,7 @@ Who may use it while it's shut to the public (D24 default): a live Golden Pass h
 6. **Avoid-list check**: short items ban their words; long ones become a topic one extra model call checks the finished card for. The person's name and facts are never banned. A scene that breaks the list is rewritten up to twice, then the card stops rather than show it.
 7. **Assemble** into the player's card spec and save a draft.
 
-**Rough cost shape (unverified until the first real run):** about 10–12 model calls a card; a typical studio session about 15, a talkative one up to 30. The daily cap of 60 holds two to four sessions.
+**Rough cost shape (unverified until the first real run):** about 10–12 model calls a card; a typical studio session about 15, a talkative one up to 30. The daily cap then held two to four sessions.
 
 **Guard rails, enforced in the database:** card-making switch (off by default); call caps; failed or timed-out jobs refund their attempt; a card's look must differ on 4 of 6 axes from the last 20 in its world. Every model call's cost is recorded — model prices are still empty, so costs read "Unknown" until Jordan enters them (D14).
 
@@ -172,11 +190,11 @@ First-party only. **Recipients are never tracked.** The Metrics tab adds up **22
 
 **Never measured:** anything about who opens a card; third-party analytics, pixels or scripts; card or brief text, names, birthdays, emails or private messages; keystrokes, session replay or emotion scores.
 
-**Nightly job** (daily totals, clears raw records after 13 months): built and tested, **not scheduled**. Lovable's agent can't create it; Jordan has to add it in the Lovable editor under Cloud → Jobs (D21). *(Superseded 2026-11-06: the nightly job is the Cloudflare Worker `uncard-cron`, which a 1 Nov commit records as deployed. Whether a night has run is unknown. See `product/architecture.md`.)*
+**Nightly job** (daily totals, clears raw records after 13 months): built and tested, **not scheduled**. Lovable's agent can't create it; Jordan has to add it in the Lovable editor under Cloud → Jobs (D21). *(Superseded 2026-11-06: the nightly job is the Cloudflare Worker `uncard-cron`, which a 1 Nov commit records as deployed. Whether a night has run is unknown. See `product/architecture.md`. 2026-11-23: it has run 22 times; the last 7 nights ended "partial", cause not read yet (the Roadmap, 22 Nov).)*
 
 ## Database (13 migrations)
 
-*Superseded 2026-11-06: the repo records **161** migration files (0000 to 0160, last added 1 Nov), plus show files applied on 3 Nov through Lovable's database API, and 4 staged. See "The data layer" in `product/architecture.md`. (21 Oct note: 80 applied, read 16 Oct.)*
+*Superseded 2026-11-06: the repo records **161** migration files (0000 to 0160, last added 1 Nov), plus show files applied on 3 Nov through Lovable's database API, and 4 staged. See "The data layer" in `product/architecture.md`. (21 Oct note: 80 applied, read 16 Oct.) Superseded 2026-11-23: still 161 migration files, plus 47 files applied with the database tool, all live through 0175 (`db/applied.txt`).*
 
 | # | Adds |
 |---|---|
@@ -221,7 +239,7 @@ A lab run is scored on seven 0–2 marks plus ten ticks. A change may go live on
 
 ## Open items from the build
 
-*Partly superseded 2026-10-21: the current list, in priority order, is section 9 of the Phase 3 completion report (`docs/phase-3/build-reports/phase-3-completion.md` in the product repo), summarised in `product/architecture.md` under "The release path" and "Known open items".*
+*Partly superseded 2026-10-21: the current list, in priority order, is section 9 of the Phase 3 completion report (`docs/phase-3/build-reports/phase-3-completion.md` in the product repo), summarised in `product/architecture.md` under "The release path" and "Known open items". 2026-11-23: the current open items are under "Known open items" in `product/architecture.md` and "Not done, and why" in the product repo's `docs/build-7/HANDBACK.md`.*
 
 From the phase reports, newest first. None blocks the build; several block real testers or real gifts. Items that flip a switch in the app need the owner login (Jordan's); the decisions themselves belong to the partners.
 
@@ -250,4 +268,4 @@ Live list: `improvement-spec.md` §8.3 in the product repo.
 
 ## Security note
 
-`.env` is still committed to the product repo (checked 2026-10-02, and again 2026-11-06 at `6e0997d6`). It holds the Supabase project URL and **publishable** key only — designed to be public — plus two build switches, and no service-role key. Low risk, but `.env` should be in `.gitignore` so a secret never follows it in.
+`.env` is still committed to the product repo (checked 2026-10-02, 2026-11-06 at `6e0997d6`, and 2026-11-23 at `327d4a47`). It holds the Supabase project URL and **publishable** key only — designed to be public — plus two build switches, and no service-role key. Low risk, but `.env` should be in `.gitignore` so a secret never follows it in.

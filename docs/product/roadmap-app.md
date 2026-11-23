@@ -1,9 +1,9 @@
 # The Roadmap App (build.uncard.app)
 
 **Status:** Draft
-**Updated:** 2026-11-15
+**Updated:** 2026-11-23
 **Owner:** Brian Lapp
-**Method:** 2026-11-15 refresh: `main` = **`eda822b`** (2026-11-10), five commits after `cdccea4`; the open pull requests #2 to #13 (`gh pr list`); the live board read through the Roadmap's own MCP on 15 Nov (`board_summary`, `get_item`); curl of `/agents` and `/mcp`. 2026-11-06 read: the private repo [`JNabsRepo/uncard-team-roadmap`](https://github.com/JNabsRepo/uncard-team-roadmap) at `main` = **`cdccea4`** (2026-11-03). Files: `README.md`, `AGENTS.md`, `docs/ARCHITECTURE.md`, `docs/OVERSIGHT.md`, the runbook, `docs/SETUP-AFTER-MERGE.md`, the build reports (`final.md`, `followup.md`, `playbook-v3.md`), `docs/agents/*.md`, sections 1 to 4 of `docs/MCP.md`, and `Walkthroughs.tsx` (the connect steps). Role use was checked in the code with grep. Live checks, no sign-in tried: `GET /agents` and an unsigned `POST /mcp` on 2026-11-06. **Not checked:** signing in, the live screens, the live database, or connecting any assistant. Where the repo's docs disagree, the newest (Playbook v3, 2 Nov) wins.
+**Method:** 2026-11-23 refresh: `main` is still **`eda822b`** (no commits since 10 Nov); the open pull requests #2 to #15 (`gh pr list`); the live board through the Roadmap's own MCP on 23 Nov (`board_summary`, `next_ready`); curl of `/agents` and `/mcp`. 2026-11-15 refresh: `main` = **`eda822b`** (2026-11-10), five commits after `cdccea4`; the open pull requests #2 to #13 (`gh pr list`); the live board read through the Roadmap's own MCP on 15 Nov (`board_summary`, `get_item`); curl of `/agents` and `/mcp`. 2026-11-06 read: the private repo [`JNabsRepo/uncard-team-roadmap`](https://github.com/JNabsRepo/uncard-team-roadmap) at `main` = **`cdccea4`** (2026-11-03). Files: `README.md`, `AGENTS.md`, `docs/ARCHITECTURE.md`, `docs/OVERSIGHT.md`, the runbook, `docs/SETUP-AFTER-MERGE.md`, the build reports (`final.md`, `followup.md`, `playbook-v3.md`), `docs/agents/*.md`, sections 1 to 4 of `docs/MCP.md`, and `Walkthroughs.tsx` (the connect steps). Role use was checked in the code with grep. Live checks, no sign-in tried: `GET /agents` and an unsigned `POST /mcp` on 2026-11-06. **Not checked:** signing in, the live screens, the live database, or connecting any assistant. Where the repo's docs disagree, the newest (Playbook v3, 2 Nov) wins.
 
 ## TL;DR
 
@@ -11,7 +11,7 @@
 - It is its own app, with its own database and its own sign-in. It never reads uncard.app's database, its customers, the team brain or Slack (`docs/OVERSIGHT.md`, "Data boundaries").
 - Work moves from Ideas to Delivered in seven stages. Priority is a vote by all three partners. Roles are labels, not permissions.
 - People and assistants use it through three doors: the website, REST and MCP. All three run the same commands.
-- Real assistants use it now: Jordan's Claude posts through MCP (for example the 12 Nov hand-off card, UR-32), and Brian's Claude reads it through the claude.ai connector. On 15 Nov the board held 32 items: 25 in Ideas, 6 in Plan & design, 1 in Review spec, none Ready yet.
+- Real assistants use it now: Jordan's Claude posts through MCP (for example the 12 Nov hand-off card, UR-32), and Brian's Claude reads it through the claude.ai connector. On 23 Nov the board held 32 items: 27 in Ideas, 5 in Plan & design, none in Review spec or Ready. Most big work now runs on cards in Ideas (for example the Build 7 card, UR-39), with the plan and hand-back in the card's thread.
 - On 2 Nov Jordan asked everyone to hold off adding things until he had organized it ([`slack/2026-11.md`](../slack/2026-11.md)); by 7 Nov he had filled the board with the sweep's work packages.
 
 ## How work moves through it
@@ -114,9 +114,9 @@ On the approval page you sign in, name the connection, and pick **Read** (always
 | `src/routes/`, `src/components/roadmap/` | Pages and screens |
 | `db/migrations/`, `tools/`, `tests/` | SQL, helper scripts, tests |
 
-## Open pull requests (15 Nov)
+## Open pull requests (23 Nov)
 
-All from Brian's Claude, none merged: #2 edit an item's description after it is made; #3 the browser checks pass again (merge first); #4 Needs you drops stale review and drafter cards (SQL 015); #5 any two partners promote a protected lesson; #6 Acknowledge takes a card off the Needs-you count; #7 a candidate links its pull request (SQL 016, after #4); #8 a builder key reads the item it is building; #9 "No searchable text" on scanned PDFs; #10 the release policy counts a key as the partner who made it; #11 tidy-up (stacked: #12 every tool's "who may use this" label is true); #13 spec v2.2.
+All from Brian's Claude, none merged yet: #2 edit an item's description after it is made; #3 the browser checks pass again (merge first); #4 Needs you drops stale review and drafter cards (SQL 015); #5 any two partners promote a protected lesson; #6 Acknowledge takes a card off the Needs-you count; #7 a candidate links its pull request (SQL 016, after #4); #8 a builder key reads the item it is building; #9 "No searchable text" on scanned PDFs; #10 the release policy counts a key as the partner who made it; #11 tidy-up (stacked: #12 every tool's "who may use this" label is true); #13 spec v2.2; #14 the sign-in page offers no "Create your account" (all three partners have accounts); #15 assistants stay connected when two sessions refresh at once (a just-rotated refresh token works for 2 minutes). Every one shows the red browser check that #3 fixes, because `main` has it too.
 
 ## Live status
 
@@ -128,7 +128,7 @@ All from Brian's Claude, none merged: #2 edit an item's description after it is 
 | Migration 014 (Playbook v3) | "Not applied anywhere" | 2026-11-02 | `playbook-v3.md` |
 | Real Claude, Claude Code or ChatGPT connection | Done: Jordan's Claude writes through MCP; Brian's Claude reads through the claude.ai connector | 2026-11-13, 2026-11-15 | the board (UR-32's author line), this refresh |
 | Playbook v3 working live | Yes: clears, drafters and peer-review requests show on live items (UR-24, UR-30), so migration 014 is applied | 2026-11-15 | `board_summary`, `get_item` |
-| `GET /agents`, unsigned `POST /mcp` | 200 and 401 (expected) | 2026-11-15 | curl |
+| `GET /agents`, unsigned `POST /mcp` | 200 and 401 (expected) | 2026-11-15, 2026-11-23 | curl |
 
 The `/agents` page builds itself in the browser, so its text was not checked. **Unknown:** which commit is published, which migrations are live, who has signed in, whether the GitHub copy and the scheduled jobs are on.
 
