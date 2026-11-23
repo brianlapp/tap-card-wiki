@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-11-16
+**Updated:** 2026-11-23
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-11-15). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-11-22). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-11-15: Group DM — Jordan grants Brian's Uncard-roadmap agent as much Cloudflare access as possible short of full workspace admin (more available if needed); Lovable editor access for agents waits on a business-plan upgrade (2x price), so for now agents get GitHub + Cloudflare only. Decided.
+New 2026-11-22: #uncard-build — Jordan posts two more roadmap items, UR-40 (better covers) and UR-41 (a skills library for editing/making cards and the Studio chat), each with 1 of 2 clears and needing a second. No decisions.
+
+Earlier, 2026-11-15: Group DM — Jordan grants Brian's Uncard-roadmap agent as much Cloudflare access as possible short of full workspace admin (more available if needed); Lovable editor access for agents waits on a business-plan upgrade (2x price), so for now agents get GitHub + Cloudflare only. Decided.
 
 Earlier, 2026-11-13: Group DM — Jordan hands the TY Growth Engine and Promotions Manager to Brian to take over, connect and polish; next step for all three is testing and notes toward "ready to live." No decision — action item for Brian.
 
