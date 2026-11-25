@@ -1,13 +1,15 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-11-23
+**Updated:** 2026-11-25
 **Owner:** Brian Lapp
-**Method:** Pulled from the Slack logs in this folder (read through 2026-11-22). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
+**Method:** Pulled from the Slack logs in this folder (read through 2026-11-24). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-11-22: #uncard-build — Jordan posts two more roadmap items, UR-40 (better covers) and UR-41 (a skills library for editing/making cards and the Studio chat), each with 1 of 2 clears and needing a second. No decisions.
+New 2026-11-24: #uncard-build — Brian's agent posts 30 code fixes ready for Jordan to merge (16 card-site, 14 Roadmap) plus 4 more skills-library PRs, the UR-40/UR-41 plans for Jordan's and Tim's agents to review, and six sample UR-40 covers for Tim to approve before they go live; Jordan posts review feedback on both specs. No decisions.
+
+Earlier, 2026-11-22: #uncard-build — Jordan posts two more roadmap items, UR-40 (better covers) and UR-41 (a skills library for editing/making cards and the Studio chat), each with 1 of 2 clears and needing a second. No decisions.
 
 Earlier, 2026-11-15: Group DM — Jordan grants Brian's Uncard-roadmap agent as much Cloudflare access as possible short of full workspace admin (more available if needed); Lovable editor access for agents waits on a business-plan upgrade (2x price), so for now agents get GitHub + Cloudflare only. Decided.
 
@@ -96,6 +98,7 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 | ~~2026-10-06~~ | ~~Team brain: a list of which private files (investor deck, growth strategy) are now ingested and searchable by all four agents, including ChatGPT and Codex (so via OpenAI too)~~ — answered 2026-10-07 in Tim's Slack thread: investor deck, growth strategy, brand guide, brand system, domain/tracking/SEO plan, and four research docs | Brian | `2026-10.md` |
 | 2026-10-19 | Content strategy for Uncard's own social accounts (TikTok, Facebook, Instagram) — what to post, what style? Jordan asked the team in reply to Tim's social-growth research | All three | `2026-10.md` |
 | 2026-11-07 | Pay-it-forward charity uncard campaign (mental-health cause, possible Royal Ottawa Hospital donor-gratitude tie-in) — Jordan's idea. Tim likes it (8 Nov). Brian: yes (9 Nov, told his agent; not yet said in Slack). No plan or charity picked yet | All three | `2026-11.md` |
+| 2026-11-24 | UR-40 and UR-41 specs v2: Jordan posted review feedback (UR-40: 4 must/7 should/2 could; UR-41: 4 must/8 should/3 could) — a second review from Brian or Tim's agents still needed before either ships | Brian, Tim | `2026-11.md` |
 | 2026-10-08 | **Business bank account and incorporation: Venn or Float?** Jordan raised both (partners' chat, 8 Oct). Brian chooses **Venn** (2026-10-08): it incorporates and opens the account in one go for about $49 net, and its free plan pays 1% cashback on the first $5k a month (Float only pays above $25k a month). Tim is fine with either if they're legit (both checked: notice board post 15). Before filing: a short accountant call on personal holding companies and a shareholders' agreement | Jordan to confirm | `2026-10.md` |
 | ~~2026-10-06~~ | ~~Team brain: keep automated Slack syncing via a Slack app as its own separate decision~~ — answered 2026-10-07 in Tim's Slack thread: agreed, a Slack app stays a separate decision; meanwhile the brain's copy of Slack refreshes every morning from Brian's Mac | All three | `2026-10.md` |
 
@@ -105,6 +108,8 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 |---|---|---|---|
 | 2026-11-02 | Hold off adding anything to the new roadmap tool (build.uncard.app) until Jordan organizes it; keep agent use human-directed only for now | All three | `2026-11.md` |
 | 2026-11-13 | Take over connecting and polishing the TY Growth Engine and Promotions Manager integrations | Brian | `2026-11.md` |
+| 2026-11-24 | Merge Brian's 30 ready fixes (card site 16, in order 84→85→86, plus 89 with its SQL in Lovable; Roadmap 14, including 15) and the 4 skills-library PRs (91–94) | Jordan | `2026-11.md` |
+| 2026-11-24 | Say yes, or say what to change, on the six UR-40 sample covers before they go on the real screens | Tim | `2026-11.md` |
 | ~~2026-11-07~~ | ~~Patch the Seroval and Undici security vulnerabilities; team to check their own code for the same issues~~ — done 2026-11-07 (Jordan) | Jordan | `2026-11.md` |
 | ~~2026-10-20~~ | ~~File the updated combined SEO/AEO plan (sent by Oy, Word doc) in the team brain as current; mark the 2026-10-02 SEO plan and `strategy/domain-tracking-seo.md` superseded with links to it; report back the canonical location~~ **Done 2026-10-21:** filed in the brain as current, both old plans marked superseded, and the location reported to Oy on the agent board (notice board post 34, read by Oy 2026-10-28) | Brian | `2026-10.md` |
 | ~~2026-10-05~~ | ~~One-day music spike: the same 5 prompts through Lyria, ElevenLabs, ACE-Step and Mureka.~~ Day 1 done 2026-10-06: Lyria 3.5 ran (94–97% of our words sung, $0.08 a song, but no line timing, no length control, filter blocked two kids' songs until reworded). Brian posted a cost breakdown and song samples 2026-10-06. **Done 2026-10-14:** Mureka, ACE-Step and ElevenLabs accounts set up, keys tested, cost-vs-scale report posted to #all-tapcard, keys passed to Tim for human testing | Brian | `2026-10.md` |
