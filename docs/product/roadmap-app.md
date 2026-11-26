@@ -1,9 +1,9 @@
 # The Roadmap App (build.uncard.app)
 
 **Status:** Draft
-**Updated:** 2026-11-06
+**Updated:** 2026-11-23
 **Owner:** Brian Lapp
-**Method:** Read from the private repo [`JNabsRepo/uncard-team-roadmap`](https://github.com/JNabsRepo/uncard-team-roadmap) at `main` = **`cdccea4`** (2026-11-03). Files: `README.md`, `AGENTS.md`, `docs/ARCHITECTURE.md`, `docs/OVERSIGHT.md`, the runbook, `docs/SETUP-AFTER-MERGE.md`, the build reports (`final.md`, `followup.md`, `playbook-v3.md`), `docs/agents/*.md`, sections 1 to 4 of `docs/MCP.md`, and `Walkthroughs.tsx` (the connect steps). Role use was checked in the code with grep. Live checks, no sign-in tried: `GET /agents` and an unsigned `POST /mcp` on 2026-11-06. **Not checked:** signing in, the live screens, the live database, or connecting any assistant. Where the repo's docs disagree, the newest (Playbook v3, 2 Nov) wins.
+**Method:** 2026-11-23 refresh: `main` is still **`eda822b`** (no commits since 10 Nov); the open pull requests #2 to #15 (`gh pr list`); the live board through the Roadmap's own MCP on 23 Nov (`board_summary`, `next_ready`); curl of `/agents` and `/mcp`. 2026-11-15 refresh: `main` = **`eda822b`** (2026-11-10), five commits after `cdccea4`; the open pull requests #2 to #13 (`gh pr list`); the live board read through the Roadmap's own MCP on 15 Nov (`board_summary`, `get_item`); curl of `/agents` and `/mcp`. 2026-11-06 read: the private repo [`JNabsRepo/uncard-team-roadmap`](https://github.com/JNabsRepo/uncard-team-roadmap) at `main` = **`cdccea4`** (2026-11-03). Files: `README.md`, `AGENTS.md`, `docs/ARCHITECTURE.md`, `docs/OVERSIGHT.md`, the runbook, `docs/SETUP-AFTER-MERGE.md`, the build reports (`final.md`, `followup.md`, `playbook-v3.md`), `docs/agents/*.md`, sections 1 to 4 of `docs/MCP.md`, and `Walkthroughs.tsx` (the connect steps). Role use was checked in the code with grep. Live checks, no sign-in tried: `GET /agents` and an unsigned `POST /mcp` on 2026-11-06. **Not checked:** signing in, the live screens, the live database, or connecting any assistant. Where the repo's docs disagree, the newest (Playbook v3, 2 Nov) wins.
 
 ## TL;DR
 
@@ -11,8 +11,8 @@
 - It is its own app, with its own database and its own sign-in. It never reads uncard.app's database, its customers, the team brain or Slack (`docs/OVERSIGHT.md`, "Data boundaries").
 - Work moves from Ideas to Delivered in seven stages. Priority is a vote by all three partners. Roles are labels, not permissions.
 - People and assistants use it through three doors: the website, REST and MCP. All three run the same commands.
-- No real Claude, Claude Code or ChatGPT connection has been recorded yet. The connect steps below are **untried**.
-- On 2 Nov Jordan asked everyone to hold off adding things until he has organized it, and to keep agents human-directed ([`slack/2026-11.md`](../slack/2026-11.md)).
+- Real assistants use it now: Jordan's Claude posts through MCP (for example the 12 Nov hand-off card, UR-32), and Brian's Claude reads it through the claude.ai connector. On 23 Nov the board held 32 items: 27 in Ideas, 5 in Plan & design, none in Review spec or Ready. Most big work now runs on cards in Ideas (for example the Build 7 card, UR-39), with the plan and hand-back in the card's thread.
+- On 2 Nov Jordan asked everyone to hold off adding things until he had organized it ([`slack/2026-11.md`](../slack/2026-11.md)); by 7 Nov he had filled the board with the sweep's work packages.
 
 ## How work moves through it
 
@@ -24,7 +24,7 @@ Ideas → Plan & design → Review spec → Ready to build → Building → Chec
 
 1. **Ideas.** Anything goes in. Each partner scores each idea from 1 to 10, and the queue is the average score. When two different partners **clear** an idea, it can get a spec.
 2. **Plan & design.** One drafter at a time takes the idea, writes the plan and prepares the spec.
-3. **Review spec.** Another partner (usually through their assistant) writes a review with suggestions marked *must*, *should* or *could*. The drafter answers every suggestion. Anyone can raise a concern. A concern never blocks.
+3. **Review spec.** Another partner (usually through their assistant) writes a review with suggestions marked *must*, *should* or *could*. The drafter answers every suggestion. Anyone can raise a concern. A concern never blocks. **One review is enough (9 Nov):** after it, the drafter keeps editing until the spec is ready, with no second review. **Second-provider review (10 Nov):** if the other two partners aren't available, the drafter's own assistant may review, if it declares a top-tier model from a different company than the one that drafted the spec.
 4. **Ready to build.** The spec must be cleared, testable, measurable, reversible and fully reviewed. Then it is frozen as **Final v{n}**, and anyone can pick it up. No one person's approval is needed.
 5. **Building.** **Take this build** hands a Ready item to your own assistant or to a builder key. Opening the sheet claims nothing. The builder saves checkpoints. If its session runs out of usage, any partner can press **Continue**.
 6. **Check & release.** A different agent or person checks the build. Some work can't be undone, touches accounts or payments, or changes a public promise. That work needs one release approval from a partner who neither drafted nor built it. **The Roadmap never merges, deploys or publishes anything.** A person does that and records it.
@@ -41,7 +41,7 @@ The **Needs you** page lists what is waiting on you: scores, clears, reviews, st
 - a verifier's escalated question about a build;
 - delivery requests, which go to "the integrator (Brian by default)".
 
-One leftover still reads roles: lesson promotion. The builder flagged it as open (`playbook-v3.md`). Older docs (the 1 Nov runbook, `final.md`) say only Jordan sets priority and Brian must review releases. Playbook v3 replaced both rules.
+One leftover still reads roles: promoting a *protected* lesson needs the domain owner, then Jordan. Pull request #5 (open) changes it to any two different partners. Older docs (the 1 Nov runbook, `final.md`) say only Jordan sets priority and Brian must review releases. Playbook v3 replaced both rules.
 
 **Assistants and keys.** An assistant is your Claude or ChatGPT, connected with your sign-in. It acts as you and is labelled "via <assistant>". A key is for a build agent and is made on the site.
 
@@ -114,6 +114,10 @@ On the approval page you sign in, name the connection, and pick **Read** (always
 | `src/routes/`, `src/components/roadmap/` | Pages and screens |
 | `db/migrations/`, `tools/`, `tests/` | SQL, helper scripts, tests |
 
+## Open pull requests (23 Nov)
+
+All from Brian's Claude, none merged yet: #2 edit an item's description after it is made; #3 the browser checks pass again (merge first); #4 Needs you drops stale review and drafter cards (SQL 015); #5 any two partners promote a protected lesson; #6 Acknowledge takes a card off the Needs-you count; #7 a candidate links its pull request (SQL 016, after #4); #8 a builder key reads the item it is building; #9 "No searchable text" on scanned PDFs; #10 the release policy counts a key as the partner who made it; #11 tidy-up (stacked: #12 every tool's "who may use this" label is true); #13 spec v2.2; #14 the sign-in page offers no "Create your account" (all three partners have accounts); #15 assistants stay connected when two sessions refresh at once (a just-rotated refresh token works for 2 minutes). Every one shows the red browser check that #3 fixes, because `main` has it too.
+
 ## Live status
 
 | Check | Result | Date | Source |
@@ -122,17 +126,17 @@ On the approval page you sign in, name the connection, and pick **Read** (always
 | Unsigned `POST /mcp` | 401, asks for a sign-in token (expected) | 2026-11-06 | curl |
 | Partners given access | Jordan gave all three access | 2026-11-02 | [`slack/2026-11.md`](../slack/2026-11.md) |
 | Migration 014 (Playbook v3) | "Not applied anywhere" | 2026-11-02 | `playbook-v3.md` |
-| Real Claude, Claude Code or ChatGPT connection | Not done | 2026-11-03 | `playbook-v3.md` |
+| Real Claude, Claude Code or ChatGPT connection | Done: Jordan's Claude writes through MCP; Brian's Claude reads through the claude.ai connector | 2026-11-13, 2026-11-15 | the board (UR-32's author line), this refresh |
+| Playbook v3 working live | Yes: clears, drafters and peer-review requests show on live items (UR-24, UR-30), so migration 014 is applied | 2026-11-15 | `board_summary`, `get_item` |
+| `GET /agents`, unsigned `POST /mcp` | 200 and 401 (expected) | 2026-11-15, 2026-11-23 | curl |
 
 The `/agents` page builds itself in the browser, so its text was not checked. **Unknown:** which commit is published, which migrations are live, who has signed in, whether the GitHub copy and the scheduled jobs are on.
 
 ## Open questions
 
-- Is migration 014 applied on the live site? Until it is, the Playbook v3 tools fail there (`playbook-v3.md`).
 - Who connects first and records it? The compatibility table on the site starts empty.
-- When does Jordan lift the 2 Nov "hold off" ask?
-- Lesson promotion still checks roles. Who is the "second key" now that roles are labels?
-- The 1 Nov runbook and `final.md` still describe Jordan-only priority and required reviewers. Should they be marked superseded in the repo?
+- Who merges the Roadmap pull requests? #3 fixes the red browser checks every other pull request shows; #4 and #7 add SQL (015, 016) for Jordan's agent to apply.
+- The 1 Nov runbook and `final.md` still describe Jordan-only priority and required reviewers. Pull request #13 (spec v2.2) folds everything into one spec and #11 marks the older design notes as replaced.
 
 ## Sources
 

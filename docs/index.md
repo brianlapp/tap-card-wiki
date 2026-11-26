@@ -16,10 +16,10 @@ The working mockup — the line of truth — is outside `docs/`: `examples/uncar
 | Doc | Summary | Status | Updated |
 |---|---|---|---|
 | `product/scope.md` | What Tapcard is, tech stack, constraints, team, phases (partly superseded — see its update note) | Draft | 2026-10-06 |
-| `product/live-product.md` | What's live at uncard.app: last named publish `4487dbce` (1 Nov), one stop button for card making, what changed since 21 Oct; older snapshots kept below as history | Draft | 2026-11-06 |
-| `product/architecture.md` | How the system fits together at `main` `6e0997d6` (3 Nov): what changed since 19 Oct, the show builder, the Workers, data rules, how a change reaches the live site, branches in progress, where builders work | Draft | 2026-11-06 |
-| `product/repos.md` | The four repos (two Lovable-synced app repos, the wiki, the brain): what each holds, who can push (checked 2026-11-06), which repo for which job, who builds on which branches | Draft | 2026-11-06 |
-| `product/roadmap-app.md` | The partners' Roadmap app at build.uncard.app: how work moves through it, roles, the three doors, how to connect an assistant | Draft | 2026-11-06 |
+| `product/live-product.md` | What's live at uncard.app: last named publish `4487dbce` (1 Nov), one stop button for card making, what changed since 21 Oct; older snapshots kept below as history | Draft | 2026-11-15 |
+| `product/architecture.md` | How the system fits together at `main` `e4867c71` (11 Nov): what changed since 19 Oct, the show builder, Kit 1.1, the Promotions Manager, the Workers, data rules, how a change reaches the live site, branches in progress, where builders work | Draft | 2026-11-15 |
+| `product/repos.md` | The four repos (two Lovable-synced app repos, the wiki, the brain): what each holds, who can push (checked 2026-11-23), which repo for which job, who builds on which branches | Draft | 2026-11-23 |
+| `product/roadmap-app.md` | The partners' Roadmap app at build.uncard.app: how work moves through it, roles, the three doors, how to connect an assistant, open pull requests | Draft | 2026-11-23 |
 | `product/experience.md` | Nine-beat arc, giver's five steps, Studio, sharing controls, hosting and keepsake | Draft | 2026-09-30 |
 | `product/user-stories.md` | Stories for the first end-to-end slice | Not written | — |
 | `product/card-schema.md` | Versioned card JSON contract and scene registry | Not written | — |
