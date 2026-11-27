@@ -1,13 +1,13 @@
 # Slack Ledger
 
 **Status:** Draft
-**Updated:** 2026-11-26
+**Updated:** 2026-11-27
 **Owner:** Brian Lapp
 **Method:** Pulled from the Slack logs in this folder (read through 2026-11-26). Agent summary, not reviewed by the team. Each line links back to the day in the month log. Closed items are struck through with the date, never deleted.
 
 ## TL;DR
 
-New 2026-11-26: #uncard-build — Jordan posts another review round on the UR-40 spec, now v6 (0 must/2 should/5 could). No decisions.
+New 2026-11-26: #uncard-build — four more review rounds through the day end with UR-40 fully cleared (v10: 0 must/0 should/0 could) and UR-41 down to one "could" (v9); Brian's agent fixes three of Tim's 25 Nov bugs plus two cover age bugs, posts the six sample covers directly in Slack so Tim can view them without GitHub, asks Jordan to approve two writer-safety rules (no age-based cover titles; keep a child's school/street/last name out of generated words), and asks Jordan to give Tim GitHub write access (Jordan logs it as UR-43). No partner decisions beyond the UR-40 clear.
 
 Earlier, 2026-11-25: #uncard-build — Jordan posts three more review rounds as Brian's agent revises UR-40/UR-41 (down to v5: UR-40 0 must/3 should/3 could, UR-41 0 must/2 should/3 could); Brian's agent tells Tim the covers now render correctly in all 20 themes and asks for his sign-off; Tim's agent says Brian's six sample covers' GitHub links won't open for him and asks Brian to attach them directly or post them in the channel (open); Tim's agent posts a full 25 Nov bug/test report on uncard.app (heading-copy request, no visible Next button, stalling right arrow, stale "3 to 8 moments" copy, plus 11 more issues), which Jordan logs on the roadmap as UR-42. Jordan also asks the team to keep Uncard work to early mornings/evenings, not work hours. No decisions.
 
@@ -102,7 +102,8 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 | ~~2026-10-06~~ | ~~Team brain: a list of which private files (investor deck, growth strategy) are now ingested and searchable by all four agents, including ChatGPT and Codex (so via OpenAI too)~~ — answered 2026-10-07 in Tim's Slack thread: investor deck, growth strategy, brand guide, brand system, domain/tracking/SEO plan, and four research docs | Brian | `2026-10.md` |
 | 2026-10-19 | Content strategy for Uncard's own social accounts (TikTok, Facebook, Instagram) — what to post, what style? Jordan asked the team in reply to Tim's social-growth research | All three | `2026-10.md` |
 | 2026-11-07 | Pay-it-forward charity uncard campaign (mental-health cause, possible Royal Ottawa Hospital donor-gratitude tie-in) — Jordan's idea. Tim likes it (8 Nov). Brian: yes (9 Nov, told his agent; not yet said in Slack). No plan or charity picked yet | All three | `2026-11.md` |
-| 2026-11-24 | UR-40 and UR-41 specs: Jordan has kept reviewing new revisions himself, down to v6 (UR-40, 26 Nov: 0 must/2 should/5 could) and v5 (UR-41, 25 Nov: 0 must/2 should/3 could) — a review from Brian's or Tim's own agents still hasn't appeared, and Tim still can't open the six sample covers to give his sign-off (see action item below) | Brian, Tim | `2026-11.md` |
+| 2026-11-24 | UR-40 and UR-41 specs: Jordan kept reviewing new revisions himself through 26 Nov — UR-40 now fully cleared (v10: 0 must/0 should/0 could), UR-41 down to one "could" (v9) — a review from Brian's or Tim's own agents still hasn't appeared. ~~Tim couldn't open the six sample covers to give his sign-off~~ — fixed 2026-11-26: Brian's agent posted them directly as Slack files instead | Brian, Tim | `2026-11.md` |
+| 2026-11-26 | Two writer-safety rules need Jordan's yes before they go live: never make a birthday number the whole idea (no "Level 9" covers); keep a child's school, street and last name out of generated words (PR 97, PR 104) | Jordan | `2026-11.md` |
 | 2026-11-25 | UR-42 (uncard.app bug list from Tim's 25 Nov desktop test: no visible Next button, stalling right arrow, stale "3 to 8 moments" copy, 11 more issues, 1 copy change) — logged on the roadmap by Jordan, not yet triaged here | Jordan | `2026-11.md` |
 | 2026-10-08 | **Business bank account and incorporation: Venn or Float?** Jordan raised both (partners' chat, 8 Oct). Brian chooses **Venn** (2026-10-08): it incorporates and opens the account in one go for about $49 net, and its free plan pays 1% cashback on the first $5k a month (Float only pays above $25k a month). Tim is fine with either if they're legit (both checked: notice board post 15). Before filing: a short accountant call on personal holding companies and a shareholders' agreement | Jordan to confirm | `2026-10.md` |
 | ~~2026-10-06~~ | ~~Team brain: keep automated Slack syncing via a Slack app as its own separate decision~~ — answered 2026-10-07 in Tim's Slack thread: agreed, a Slack app stays a separate decision; meanwhile the brain's copy of Slack refreshes every morning from Brian's Mac | All three | `2026-10.md` |
@@ -111,7 +112,8 @@ Music is the live topic: Suno is out, Lyria/ElevenLabs/ACE-Step are on the table
 
 | Since | Item | Owner | Log |
 |---|---|---|---|
-| 2026-11-25 | Attach the six UR-40 sample covers and the 20 theme images directly (or post them in #uncard-build) — Tim can't open the GitHub links Brian's agent shared | Brian | `2026-11.md` |
+| ~~2026-11-25~~ | ~~Attach the six UR-40 sample covers and the 20 theme images directly (or post them in #uncard-build) — Tim can't open the GitHub links Brian's agent shared~~ — done 2026-11-26: Brian's agent posted both sets of files directly in Slack | Brian | `2026-11.md` |
+| 2026-11-26 | UR-43: add Tim to the uncard-starter GitHub repo with write access, so PR and picture links aren't dead ends for him | Jordan | `2026-11.md` |
 | 2026-11-02 | Hold off adding anything to the new roadmap tool (build.uncard.app) until Jordan organizes it; keep agent use human-directed only for now | All three | `2026-11.md` |
 | 2026-11-13 | Take over connecting and polishing the TY Growth Engine and Promotions Manager integrations | Brian | `2026-11.md` |
 | 2026-11-24 | Merge Brian's 30 ready fixes (card site 16, in order 84→85→86, plus 89 with its SQL in Lovable; Roadmap 14, including 15) and the 4 skills-library PRs (91–94) | Jordan | `2026-11.md` |
